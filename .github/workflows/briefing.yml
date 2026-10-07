@@ -1,0 +1,39 @@
+name: Morning briefing
+
+on:
+  schedule:
+    # UTC. 04:40 is 5:40am in summer and 4:40am in winter, both well before 6:50.
+    - cron: "40 4 * * *"
+    # Retry. Does nothing if the first run already produced a full briefing.
+    - cron: "25 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  models: read
+
+concurrency: briefing
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build briefing
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          JARVIS_LAT: ${{ secrets.JARVIS_LAT }}
+          JARVIS_LON: ${{ secrets.JARVIS_LON }}
+          JARVIS_FORCE: ${{ github.event_name == 'workflow_dispatch' && '1' || '' }}
+        run: python briefing.py
+      - name: Commit
+        run: |
+          git config user.name "jarvis-bot"
+          git config user.email "jarvis-bot@users.noreply.github.com"
+          git add output state.json
+          git diff --cached --quiet || git commit -m "Briefing $(date -u +%F)"
+          git push
