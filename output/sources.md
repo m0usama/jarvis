@@ -17,4 +17,4 @@ Learning concept: Webhooks versus polling, and when each is right
 - [Radisson Hotel Group brings hotel discovery into ChatGPT](https://openai.com/index/radisson) (OpenAI, 07 Oct 07:00 UTC)
 - [Quoting Jake Boggan](https://simonwillison.net/2026/Oct/7/jake-boggan/) (Simon Willison, 07 Oct 04:47 UTC)
 
-Feeds that failed: Hacker News front page
+Feeds that failed: Google DeepMind
