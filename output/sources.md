@@ -16,5 +16,3 @@ Learning concept: Webhooks versus polling, and when each is right
 - [Helping teens learn, plan, and shape the future of AI](https://openai.com/index/teens-learn-and-plan) (OpenAI, 07 Oct 12:00 UTC)
 - [Radisson Hotel Group brings hotel discovery into ChatGPT](https://openai.com/index/radisson) (OpenAI, 07 Oct 07:00 UTC)
 - [Quoting Jake Boggan](https://simonwillison.net/2026/Oct/7/jake-boggan/) (Simon Willison, 07 Oct 04:47 UTC)
-
-Feeds that failed: Google DeepMind
