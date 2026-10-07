@@ -157,14 +157,12 @@ The text is read aloud by a text-to-speech voice. Write for the ear: plain sente
 HARD RULES
 - News: use ONLY the stories supplied. Never add facts, figures, names or dates that are not in the supplied title and summary. If a summary is thin, say what is known and stop. Name the source of each story.
 - If the stories are from {window} rather than the last 24 hours, say so once.
-- Weather: use only the supplied weather facts. If none are supplied, say weather was unavailable.
-- Career: you have no live job-market data. Present career points as general guidance, never as current hiring evidence, and never mention specific vacancies.
+{weather_rule}- Career: you have no live job-market data. Present career points as general guidance, never as current hiring evidence, and never mention specific vacancies.
 - Total length 750 to 950 words.
 
 STRUCTURE
 1. Opening: "Good morning {name}. It's {date_spoken}, and here's your personal intelligence briefing."
-2. Weather: temperature and feels-like, high and low, rain chance and timing, wind if notable, umbrella and clothing advice.
-3. Technology news: pick the 3 or 4 most significant stories for him. Skip repetitive or trivial ones. For each: what happened, why it matters, whether it looks like a real development or mostly marketing, how he could use it, and a verdict of learn, test or ignore.
+{weather_step}3. Technology news: pick the 3 or 4 most significant stories for him. Skip repetitive or trivial ones. For each: what happened, why it matters, whether it looks like a real development or mostly marketing, how he could use it, and a verdict of learn, test or ignore.
 4. Automation opportunity: one tool, integration or workflow worth investigating, ideally suggested by today's stories, tied to business process automation, CRM, data enrichment, reporting, document processing or API integration. Say what problem it solves, whether it is free to try and what skill it builds. Do not repeat: {opportunities}.
 5. Learning moment: teach today's concept, "{concept}". Simple explanation first, then one concrete practical example, then how it shows up in real engineering work. Assume he already covered: {covered}.
 6. Career: one specific portfolio, CV, GitHub or interview improvement, framed as general guidance.
@@ -209,9 +207,9 @@ def clean_for_speech(text):
     return re.sub(r"\n{3,}", "\n\n", text).strip()
 
 
-def fallback(name, date_spoken, w, stories, window):
+def fallback(name, date_spoken, w, stories, window, phone_weather=False):
     parts = [f"Good morning {name}. It's {date_spoken}. The full briefing could not be generated today, so here is the short version.",
-             weather_sentence(w)]
+             ] + ([] if phone_weather else [weather_sentence(w)])
     if stories:
         parts.append(f"Headlines from {window}. " + " ".join(
             f"From {s['source']}: {s['title']}." for s in stories[:6]))
@@ -243,13 +241,18 @@ def main():
     w = weather_facts(now)
     idx = state["curriculum_index"] % len(cfg["curriculum"])
     concept = cfg["curriculum"][idx]
+    phone_weather = not os.environ.get("JARVIS_LAT")  # no coordinates: the phone speaks live weather itself
     system = SYSTEM.format(
+        weather_rule="- Do not mention the weather at all. The phone reports it separately at the end.\n" if phone_weather else
+                     "- Weather: use only the supplied weather facts. If none are supplied, say weather was unavailable.\n",
+        weather_step="2. No weather section. Go straight from the opening to the news.\n" if phone_weather else
+                     "2. Weather: temperature and feels-like, high and low, rain chance and timing, wind if notable, umbrella and clothing advice.\n",
         name=cfg["name"], window=window, date_spoken=date_spoken, concept=concept,
         covered="; ".join(cfg["curriculum"][:idx][-8:]) or "nothing yet",
         opportunities="; ".join(state["opportunities"][-14:]) or "none yet",
         missions="; ".join(state["missions"][-14:]) or "none yet")
-    user = ("WEATHER FACTS:\n" + (json.dumps(w) if w else "unavailable") +
-            f"\n\nSTORIES (from {window}):\n" + "\n".join(
+    user = (("" if phone_weather else "WEATHER FACTS:\n" + (json.dumps(w) if w else "unavailable") + "\n\n") +
+            f"STORIES (from {window}):\n" + "\n".join(
                 f"{n}. [{s['source']}, {s['date'].astimezone(LONDON):%a %d %b %H:%M}] {s['title']} :: {s['summary']}"
                 for n, s in enumerate(stories, 1)))
 
@@ -268,7 +271,7 @@ def main():
     except Exception as e:
         print(f"falling back to basic briefing: {e}", file=sys.stderr)
         status = "basic"
-        text = fallback(cfg["name"], date_spoken, w, stories, window)
+        text = fallback(cfg["name"], date_spoken, w, stories, window, phone_weather)
 
     def write(name, content):
         with open(os.path.join(out, name), "w", encoding="utf-8") as f:
