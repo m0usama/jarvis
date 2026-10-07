@@ -152,25 +152,49 @@ def weather_sentence(w):
 # ---------- model ----------
 SYSTEM = """You write a spoken morning briefing for {name}, a UK-based MSc Data Science graduate aiming for junior AI engineering, automation engineering, data engineering and Python roles. He knows Python, SQL, FastAPI, pandas, scikit-learn, JavaScript and React, and has done real business automation, data enrichment and CRM workflow work.
 
+HIS BACKGROUND (use it to personalise; never read it out as a list, and never invent experience that is not written here):
+{profile}
+
 The text is read aloud by a text-to-speech voice. Write for the ear: plain sentences, natural transitions, warm, efficient and professional. No markdown, bullets, headings, symbols, emoji, URLs or bracketed notes. Write numbers and abbreviations so they are spoken correctly. No filler, hype or motivational cliches. Separate sections with one blank line.
 
 HARD RULES
 - News: use ONLY the stories supplied. Never add facts, figures, names or dates that are not in the supplied title and summary. If a summary is thin, say what is known and stop. Name the source of each story.
 - If the stories are from {window} rather than the last 24 hours, say so once.
 {weather_rule}- Career: you have no live job-market data. Present career points as general guidance, never as current hiring evidence, and never mention specific vacancies.
-- Total length 750 to 950 words.
+- Total length 900 to 1100 words.
 
 STRUCTURE
-1. Opening: "Good morning {name}. It's {date_spoken}, and here's your personal intelligence briefing."
-{weather_step}3. Technology news: pick the 3 or 4 most significant stories for him. Skip repetitive or trivial ones. For each: what happened, why it matters, whether it looks like a real development or mostly marketing, how he could use it, and a verdict of learn, test or ignore.
+1. Opening: {opening}
+{weather_step}3. Technology news: pick the 3 or 4 most significant stories for him. Skip repetitive or trivial ones. For each: what happened, why it matters, whether it looks like a real development or mostly marketing, and a verdict of learn, test or ignore. Then make it personal: name one specific piece of his background above that this connects to, the concrete skill he would gain by acting on it, and the advantage that gives him over other junior candidates. If a story has no honest link to his background, say so briefly and move on rather than forcing one.
 4. Automation opportunity: one tool, integration or workflow worth investigating, ideally suggested by today's stories, tied to business process automation, CRM, data enrichment, reporting, document processing or API integration. Say what problem it solves, whether it is free to try and what skill it builds. Do not repeat: {opportunities}.
 5. Learning moment: teach today's concept, "{concept}". Simple explanation first, then one concrete practical example, then how it shows up in real engineering work. Assume he already covered: {covered}.
-6. Career: one specific portfolio, CV, GitHub or interview improvement, framed as general guidance.
+6. Career: one specific portfolio, CV, GitHub or interview improvement that builds on a named part of his background, for example how to turn a piece of his placement work into a portfolio project or interview story. Framed as general guidance.
 7. Mission: one task he can finish in 15 to 30 minutes today, measurable and linked to the learning moment or a story. Do not repeat: {missions}.
 
 After the briefing, add two final lines exactly in this form, which will be removed before speaking:
 OPPORTUNITY: <four to eight word label>
 MISSION: <one sentence summary>"""
+
+
+ERRORS = []
+
+
+def load_profile():
+    text = os.environ.get("JARVIS_PROFILE", "").strip()
+    path = os.path.join(ROOT, "profile.txt")
+    if not text and os.path.exists(path):
+        text = open(path, encoding="utf-8").read().strip()
+    return text[:6000] or "No further background supplied."
+
+
+def catalog():
+    try:
+        req = urllib.request.Request("https://models.github.ai/catalog/models", headers={
+            "Authorization": f"Bearer {os.environ.get('GITHUB_TOKEN', '')}", "Accept": "application/vnd.github+json", **UA})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            return ", ".join(m.get("id", "?") for m in json.loads(r.read()))
+    except Exception as e:
+        return f"catalog unavailable: {e}"
 
 
 def call_model(cfg, system, user):
@@ -179,7 +203,7 @@ def call_model(cfg, system, user):
         raise RuntimeError("no GITHUB_TOKEN")
     last = None
     for model in cfg["models"]:
-        body = json.dumps({"model": model, "temperature": 0.5, "max_tokens": 1900,
+        body = json.dumps({"model": model, "temperature": 0.5, "max_tokens": 2400,
                            "messages": [{"role": "system", "content": system},
                                         {"role": "user", "content": user}]}).encode()
         req = urllib.request.Request(ENDPOINT, data=body, headers={
@@ -196,8 +220,9 @@ def call_model(cfg, system, user):
             last = f"{model}: HTTP {e.code} {e.read()[:200]!r}"
         except Exception as e:
             last = f"{model}: {e}"
+        ERRORS.append(last)
         print(f"model failed: {last}", file=sys.stderr)
-    raise RuntimeError(last)
+    raise RuntimeError(" || ".join(ERRORS))
 
 
 def clean_for_speech(text):
@@ -208,7 +233,8 @@ def clean_for_speech(text):
 
 
 def fallback(name, date_spoken, w, stories, window, phone_weather=False):
-    parts = [f"Good morning {name}. It's {date_spoken}. The full briefing could not be generated today, so here is the short version.",
+    parts = [(f"It's {date_spoken}. " if phone_weather else f"Good morning {name}. It's {date_spoken}. ") +
+             "The full briefing could not be generated today, so here is the short version.",
              ] + ([] if phone_weather else [weather_sentence(w)])
     if stories:
         parts.append(f"Headlines from {window}. " + " ".join(
@@ -243,7 +269,10 @@ def main():
     concept = cfg["curriculum"][idx]
     phone_weather = not os.environ.get("JARVIS_LAT")  # no coordinates: the phone speaks live weather itself
     system = SYSTEM.format(
-        weather_rule="- Do not mention the weather at all. The phone reports it separately at the end.\n" if phone_weather else
+        profile=load_profile(),
+        opening=f'"Now for your intelligence briefing. It\'s {date_spoken}."  Do not say good morning; the phone has already greeted him and given the weather.'
+                if phone_weather else f'"Good morning {cfg["name"]}. It\'s {date_spoken}, and here\'s your personal intelligence briefing."',
+        weather_rule="- Do not mention the weather at all. The phone has already reported it.\n" if phone_weather else
                      "- Weather: use only the supplied weather facts. If none are supplied, say weather was unavailable.\n",
         weather_step="2. No weather section. Go straight from the opening to the news.\n" if phone_weather else
                      "2. Weather: temperature and feels-like, high and low, rain chance and timing, wind if notable, umbrella and clothing advice.\n",
@@ -256,7 +285,7 @@ def main():
                 f"{n}. [{s['source']}, {s['date'].astimezone(LONDON):%a %d %b %H:%M}] {s['title']} :: {s['summary']}"
                 for n, s in enumerate(stories, 1)))
 
-    status = "full"
+    status, error_note = "full", "none"
     try:
         if len(stories) < 2:
             raise RuntimeError("too few stories to brief on")
@@ -271,6 +300,7 @@ def main():
     except Exception as e:
         print(f"falling back to basic briefing: {e}", file=sys.stderr)
         status = "basic"
+        error_note = f"{e}\n\nModels available: {catalog()}"
         text = fallback(cfg["name"], date_spoken, w, stories, window, phone_weather)
 
     def write(name, content):
@@ -280,6 +310,7 @@ def main():
     write("briefing.txt", clean_for_speech(text))
     write("date.txt", today.strftime("%Y-%m-%d"))
     write("status.txt", status)
+    write("error.txt", error_note)
     write("sources.md", f"# Sources for {today:%Y-%m-%d} ({status})\n\nLearning concept: {concept}\n\n" +
           "\n".join(f"- [{s['title']}]({s['link']}) ({s['source']}, {s['date']:%d %b %H:%M} UTC)" for s in stories) +
           (f"\n\nFeeds that failed: {', '.join(failed)}" if failed else ""))
