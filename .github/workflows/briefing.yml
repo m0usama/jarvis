@@ -14,7 +14,6 @@ on:
 
 permissions:
   contents: write
-  models: read
 
 concurrency: briefing
 
@@ -29,7 +28,7 @@ jobs:
           python-version: "3.12"
       - name: Build briefing
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           JARVIS_LAT: ${{ secrets.JARVIS_LAT }}
           JARVIS_LON: ${{ secrets.JARVIS_LON }}
           JARVIS_PROFILE: ${{ secrets.JARVIS_PROFILE }}

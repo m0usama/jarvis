@@ -1,6 +1,6 @@
 """Project Jarvis: builds the morning briefing script the iPhone reads aloud.
 
-Standard library only. Runs in GitHub Actions; writes output/briefing.txt,
+Standard library only. Runs in GitHub Actions with a free Gemini API key; writes output/briefing.txt,
 output/date.txt and output/sources.md, and updates state.json.
 """
 import json, os, re, sys, html, urllib.request, urllib.error
@@ -186,17 +186,15 @@ def load_profile():
     return text[:6000] or "No further background supplied."
 
 
-ENDPOINTS = [
-    # (url, model-name transform)
-    ("https://models.github.ai/inference/chat/completions", lambda m: m),
-    ("https://models.inference.ai.azure.com/chat/completions", lambda m: m.split("/")[-1]),
-]
+# GitHub Models was retired on 30 July 2026; Google's Gemini API has a free tier
+# and an OpenAI-compatible endpoint, so the request shape stays the same.
+BASE = "https://generativelanguage.googleapis.com/v1beta/openai"
 
 
-def http_json(url, payload=None, timeout=120):
+def http_json(url, payload=None, timeout=180):
     """Request JSON and decode it; on failure, say exactly what came back."""
-    headers = {"Authorization": f"Bearer {os.environ.get('GITHUB_TOKEN', '')}",
-               "Accept": "application/json", "X-GitHub-Api-Version": "2022-11-28", **UA}
+    headers = {"Authorization": f"Bearer {os.environ.get('GEMINI_API_KEY', '')}",
+               "Accept": "application/json", **UA}
     data = None
     if payload is not None:
         data = json.dumps(payload).encode()
@@ -206,41 +204,40 @@ def http_json(url, payload=None, timeout=120):
         with urllib.request.urlopen(req, timeout=timeout) as r:
             raw, status, ctype, enc = r.read(), r.status, r.headers.get("Content-Type", ""), r.headers.get("Content-Encoding", "")
     except urllib.error.HTTPError as e:
-        raise RuntimeError(f"HTTP {e.code} from {url}: {e.read()[:300]!r}")
+        raise RuntimeError(f"HTTP {e.code}: {e.read()[:300]!r}")
     if enc == "gzip" or raw[:2] == b"\x1f\x8b":
         import gzip
         raw = gzip.decompress(raw)
     try:
         return json.loads(raw)
     except ValueError:
-        raise RuntimeError(f"non-JSON reply from {url}: status {status}, type {ctype!r}, "
-                           f"{len(raw)} bytes, starts {raw[:200]!r}")
+        raise RuntimeError(f"non-JSON reply: status {status}, type {ctype!r}, {len(raw)} bytes, starts {raw[:200]!r}")
 
 
 def catalog():
     try:
-        return ", ".join(m.get("id", "?") for m in http_json("https://models.github.ai/catalog/models", timeout=30))
+        ids = [m.get("id", "?").replace("models/", "") for m in http_json(BASE + "/models", timeout=30).get("data", [])]
+        return ", ".join(i for i in ids if "gemini" in i) or "none listed"
     except Exception as e:
         return f"catalog unavailable: {e}"
 
 
 def call_model(cfg, system, user):
-    if not os.environ.get("GITHUB_TOKEN"):
-        raise RuntimeError("no GITHUB_TOKEN")
-    for url, name in ENDPOINTS:
-        for model in cfg["models"]:
-            try:
-                reply = http_json(url, {"model": name(model), "temperature": 0.5, "max_tokens": 2400,
-                                        "messages": [{"role": "system", "content": system},
-                                                     {"role": "user", "content": user}]})
-                text = reply["choices"][0]["message"]["content"].strip()
-                if len(text.split()) < 300:
-                    raise RuntimeError(f"response too short ({len(text.split())} words)")
-                print(f"model used: {name(model)} via {url}", file=sys.stderr)
-                return text
-            except Exception as e:
-                ERRORS.append(f"{name(model)} via {url}: {e}")
-                print(f"model failed: {ERRORS[-1]}", file=sys.stderr)
+    if not os.environ.get("GEMINI_API_KEY"):
+        raise RuntimeError("no GEMINI_API_KEY secret set")
+    for model in cfg["models"]:
+        try:
+            reply = http_json(BASE + "/chat/completions", {
+                "model": model, "temperature": 0.5, "max_tokens": 8192, "reasoning_effort": "low",
+                "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}]})
+            text = (reply["choices"][0]["message"].get("content") or "").strip()
+            if len(text.split()) < 300:
+                raise RuntimeError(f"response too short ({len(text.split())} words)")
+            print(f"model used: {model}", file=sys.stderr)
+            return text
+        except Exception as e:
+            ERRORS.append(f"{model}: {e}")
+            print(f"model failed: {ERRORS[-1]}", file=sys.stderr)
     raise RuntimeError(" || ".join(ERRORS))
 
 

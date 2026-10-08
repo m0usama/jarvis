@@ -1,9 +1,11 @@
 {
   "name": "Usama",
   "models": [
-    "openai/gpt-4.1",
-    "openai/gpt-4o",
-    "openai/gpt-4o-mini"
+    "gemini-flash-latest",
+    "gemini-3.8-flash",
+    "gemini-3.5-flash",
+    "gemini-2.5-flash",
+    "gemini-flash-lite-latest"
   ],
   "max_stories_to_model": 14,
   "feeds": [
