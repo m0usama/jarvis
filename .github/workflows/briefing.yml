@@ -2,10 +2,14 @@ name: Morning briefing
 
 on:
   schedule:
-    # UTC. 04:40 is 5:40am in summer and 4:40am in winter, both well before 6:50.
-    - cron: "40 4 * * *"
-    # Retry. Does nothing if the first run already produced a full briefing.
-    - cron: "25 5 * * *"
+    # UTC. Several tries before 6:50 London time in both summer and winter.
+    # GitHub can start scheduled jobs late or skip them when busy, so one slot is not enough.
+    # Later runs do nothing once a full briefing exists for the day.
+    - cron: "7 2 * * *"
+    - cron: "37 3 * * *"
+    - cron: "13 4 * * *"
+    - cron: "47 4 * * *"
+    - cron: "19 5 * * *"
   workflow_dispatch:
 
 permissions:
@@ -37,4 +41,5 @@ jobs:
           git config user.email "jarvis-bot@users.noreply.github.com"
           git add output state.json
           git diff --cached --quiet || git commit -m "Briefing $(date -u +%F)"
+          git pull --rebase
           git push

@@ -12,7 +12,6 @@ from zoneinfo import ZoneInfo
 ROOT = os.path.dirname(os.path.abspath(__file__))
 LONDON = ZoneInfo("Europe/London")
 UA = {"User-Agent": "jarvis-briefing/1.0"}
-ENDPOINT = "https://models.github.ai/inference/chat/completions"
 
 
 def load(name):
@@ -187,41 +186,61 @@ def load_profile():
     return text[:6000] or "No further background supplied."
 
 
+ENDPOINTS = [
+    # (url, model-name transform)
+    ("https://models.github.ai/inference/chat/completions", lambda m: m),
+    ("https://models.inference.ai.azure.com/chat/completions", lambda m: m.split("/")[-1]),
+]
+
+
+def http_json(url, payload=None, timeout=120):
+    """Request JSON and decode it; on failure, say exactly what came back."""
+    headers = {"Authorization": f"Bearer {os.environ.get('GITHUB_TOKEN', '')}",
+               "Accept": "application/json", "X-GitHub-Api-Version": "2022-11-28", **UA}
+    data = None
+    if payload is not None:
+        data = json.dumps(payload).encode()
+        headers["Content-Type"] = "application/json"
+    req = urllib.request.Request(url, data=data, headers=headers)
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            raw, status, ctype, enc = r.read(), r.status, r.headers.get("Content-Type", ""), r.headers.get("Content-Encoding", "")
+    except urllib.error.HTTPError as e:
+        raise RuntimeError(f"HTTP {e.code} from {url}: {e.read()[:300]!r}")
+    if enc == "gzip" or raw[:2] == b"\x1f\x8b":
+        import gzip
+        raw = gzip.decompress(raw)
+    try:
+        return json.loads(raw)
+    except ValueError:
+        raise RuntimeError(f"non-JSON reply from {url}: status {status}, type {ctype!r}, "
+                           f"{len(raw)} bytes, starts {raw[:200]!r}")
+
+
 def catalog():
     try:
-        req = urllib.request.Request("https://models.github.ai/catalog/models", headers={
-            "Authorization": f"Bearer {os.environ.get('GITHUB_TOKEN', '')}", "Accept": "application/vnd.github+json", **UA})
-        with urllib.request.urlopen(req, timeout=30) as r:
-            return ", ".join(m.get("id", "?") for m in json.loads(r.read()))
+        return ", ".join(m.get("id", "?") for m in http_json("https://models.github.ai/catalog/models", timeout=30))
     except Exception as e:
         return f"catalog unavailable: {e}"
 
 
 def call_model(cfg, system, user):
-    token = os.environ.get("GITHUB_TOKEN")
-    if not token:
+    if not os.environ.get("GITHUB_TOKEN"):
         raise RuntimeError("no GITHUB_TOKEN")
-    last = None
-    for model in cfg["models"]:
-        body = json.dumps({"model": model, "temperature": 0.5, "max_tokens": 2400,
-                           "messages": [{"role": "system", "content": system},
-                                        {"role": "user", "content": user}]}).encode()
-        req = urllib.request.Request(ENDPOINT, data=body, headers={
-            "Authorization": f"Bearer {token}", "Content-Type": "application/json",
-            "Accept": "application/vnd.github+json", **UA})
-        try:
-            with urllib.request.urlopen(req, timeout=120) as r:
-                text = json.loads(r.read())["choices"][0]["message"]["content"].strip()
-            if len(text.split()) < 300:
-                raise RuntimeError("response too short")
-            print(f"model used: {model}", file=sys.stderr)
-            return text
-        except urllib.error.HTTPError as e:
-            last = f"{model}: HTTP {e.code} {e.read()[:200]!r}"
-        except Exception as e:
-            last = f"{model}: {e}"
-        ERRORS.append(last)
-        print(f"model failed: {last}", file=sys.stderr)
+    for url, name in ENDPOINTS:
+        for model in cfg["models"]:
+            try:
+                reply = http_json(url, {"model": name(model), "temperature": 0.5, "max_tokens": 2400,
+                                        "messages": [{"role": "system", "content": system},
+                                                     {"role": "user", "content": user}]})
+                text = reply["choices"][0]["message"]["content"].strip()
+                if len(text.split()) < 300:
+                    raise RuntimeError(f"response too short ({len(text.split())} words)")
+                print(f"model used: {name(model)} via {url}", file=sys.stderr)
+                return text
+            except Exception as e:
+                ERRORS.append(f"{name(model)} via {url}: {e}")
+                print(f"model failed: {ERRORS[-1]}", file=sys.stderr)
     raise RuntimeError(" || ".join(ERRORS))
 
 
