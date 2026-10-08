@@ -1,4 +1,4 @@
-# Sources for 2026-10-08 (basic)
+# Sources for 2026-10-08 (full)
 
 Learning concept: Webhooks versus polling, and when each is right
 

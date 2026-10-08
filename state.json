@@ -1,1 +1,25 @@
-{"curriculum_index": 0, "seen": [], "missions": [], "opportunities": []}
+{
+ "curriculum_index": 1,
+ "seen": [
+  "https://simonwillison.net/2026/Oct/7/ben-affleck/",
+  "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
+  "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/",
+  "https://techcrunch.com/2026/10/07/microsoft-releases-new-nvidia-chip-ai-pcs-with-revamped-windows-11/",
+  "https://www.theverge.com/ai-artificial-intelligence/1007276/openai-chatgpt-intelligent-ui-gpt-6",
+  "https://www.theverge.com/tech/1007147/microsoft-surface-laptop-ultra-windows-event-everything-announced",
+  "https://techcrunch.com/2026/10/07/metas-muse-launches-on-ipad-just-a-month-after-its-mobile-debut/",
+  "https://www.theverge.com/tech/1007113/microsoft-windows-copilot-ai-control-search-hybrid-intelligence",
+  "https://github.blog/ai-and-ml/github-copilot/secret-protection-must-scale-with-software/",
+  "https://huggingface.co/blog/LiquidAI/open-d1",
+  "https://simonwillison.net/2026/Oct/7/anti-patterns-in-software-blogging/",
+  "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
+  "https://openai.com/index/teens-learn-and-plan",
+  "https://openai.com/index/radisson"
+ ],
+ "missions": [
+  "Move Project Jarvis API keys to GitHub Secrets."
+ ],
+ "opportunities": [
+  "Secure environment variable management with Doppler"
+ ]
+}

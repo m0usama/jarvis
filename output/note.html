@@ -1,0 +1,57 @@
+<h1>Morning Brief: Thursday 8 October 2026</h1>
+<h2>Weather</h2>
+<p>{{WEATHER}}</p>
+<h2>Top Stories</h2>
+<h3>Anthropic Releases Claude Haiku 5.5</h3>
+<ul>
+<li><b>What happened</b>: Anthropic introduced Claude Haiku 5.5, a fast, low-cost model designed to replace the previous version which was priced at $1 per million input tokens and $5 per million output tokens.</li>
+<li><b>Why it matters</b>: The older model was showing its age, making this a highly practical update.</li>
+<li><b>Hype check</b>: Highly practical development rather than mere marketing.</li>
+<li><b>Verdict</b>: Test.</li>
+<li><b>Your angle</b>: Directly connects to your Project Jarvis pipeline and job card print automation, allowing you to evaluate if it lowers latency and API costs for unattended workflows while maintaining extraction quality. This helps you discuss actual cost-to-performance trade-offs in interviews.</li>
+<li><b>Source</b>: <a href="https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/">Simon Willison</a></li>
+</ul>
+<h3>Microsoft Copilot Gains Local File and System Control</h3>
+<ul>
+<li><b>What happened</b>: Microsoft announced an upgrade to Copilot that gives it access to local files and the ability to take actions across the Windows OS, a concept called Hybrid Intelligence.</li>
+<li><b>Why it matters</b>: It marks a significant shift toward local agentic control.</li>
+<li><b>Hype check</b>: There is a lot of marketing surrounding the release, but the underlying shift is real.</li>
+<li><b>Verdict</b>: Learn.</li>
+<li><b>Your angle</b>: Connects to your Claude to InDesign project where you automated native desktop publishing files, helping you design better, more secure desktop automation tools.</li>
+<li><b>Source</b>: <a href="https://www.theverge.com/tech/1007113/microsoft-windows-copilot-ai-control-search-hybrid-intelligence">The Verge AI</a></li>
+</ul>
+<h3>Scaling Secret Protection in Software Development</h3>
+<ul>
+<li><b>What happened</b>: The GitHub Blog published a piece explaining that secret protection must scale alongside software creation because developers are being outpaced by the volume of code generated.</li>
+<li><b>Why it matters</b>: It is a critical engineering reality as developers are not becoming more careless but simply have more code to manage.</li>
+<li><b>Hype check</b>: This is a critical engineering reality, not marketing.</li>
+<li><b>Verdict</b>: Learn and apply immediately.</li>
+<li><b>Your angle</b>: Connects to your goal of building solid continuous integration and testing pipelines, ensuring you never leak API keys in your public portfolio.</li>
+<li><b>Source</b>: <a href="https://github.blog/ai-and-ml/github-copilot/secret-protection-must-scale-with-software/">GitHub Blog</a></li>
+</ul>
+<h2>Automation Opportunity</h2>
+<ul>
+<li><b>What it is</b>: Doppler, a multi-platform secret manager that centralizes environment variables and injects secrets at runtime.</li>
+<li><b>Problem it solves</b>: Eliminates secret sprawl, hardcoded keys, and manual copying of environment files across local machines, GitHub Actions, and cloud servers.</li>
+<li><b>Free to try</b>: Yes, free to try for individual developers.</li>
+<li><b>Skill gained</b>: Modern DevOps, secure configuration, and containerized deployment readiness.</li>
+</ul>
+<h2>Learning Moment: Webhooks vs. Polling</h2>
+<ul>
+<li>Polling involves a script repeatedly checking an API on a schedule (e.g., every five minutes) for new data, which is simple but highly inefficient and wastes API limits.</li>
+<li>Webhooks are event-driven, meaning the external service instantly sends an HTTP POST request directly to a URL you expose (like a FastAPI endpoint) the moment an event occurs.</li>
+<li>Webhooks are the industry standard for real-time, event-driven architectures, but they require managing public-facing endpoints and verifying webhook signatures for security.</li>
+<li><b>Example:</b> In your job card print automation, a phone upload triggering a webhook to a FastAPI endpoint starts the print job instantly, whereas polling might check a Google Sheet only once every ten minutes.</li>
+</ul>
+<h2>Career Move</h2>
+<ul>
+<li>Frame your B2B trade data placement work at Redo Print and Design as an end-to-end data engineering pipeline on your CV and GitHub, rather than just saying you cleaned data.</li>
+<li>Describe the raw, unstructured state of the trade data, the specific pandas and SQL cleaning steps you designed, and how restructuring that marketplace listing data directly enabled the company to launch its website.</li>
+</ul>
+<h2>Today's Mission</h2>
+<p>Take thirty minutes to review your Project Jarvis repository's API key storage and transition them to GitHub Secrets to ensure secure automation.</p>
+<ul>
+<li>☐ Review your Project Jarvis repository to see how you are currently storing and accessing API keys for the RSS feed and the LLM.</li>
+<li>☐ Transition the API keys from a local file to GitHub Secrets.</li>
+<li>☐ Configure your GitHub Actions workflow to inject the secrets securely at runtime.</li>
+</ul>
