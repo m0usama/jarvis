@@ -222,7 +222,7 @@ def catalog():
         return f"catalog unavailable: {e}"
 
 
-def call_model(cfg, system, user):
+def call_model(cfg, system, user, min_words=300):
     if not os.environ.get("GEMINI_API_KEY"):
         raise RuntimeError("no GEMINI_API_KEY secret set")
     for model in cfg["models"]:
@@ -231,7 +231,7 @@ def call_model(cfg, system, user):
                 "model": model, "temperature": 0.5, "max_tokens": 8192, "reasoning_effort": "low",
                 "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}]})
             text = (reply["choices"][0]["message"].get("content") or "").strip()
-            if len(text.split()) < 300:
+            if len(text.split()) < min_words:
                 raise RuntimeError(f"response too short ({len(text.split())} words)")
             print(f"model used: {model}", file=sys.stderr)
             return text
@@ -239,6 +239,86 @@ def call_model(cfg, system, user):
             ERRORS.append(f"{model}: {e}")
             print(f"model failed: {ERRORS[-1]}", file=sys.stderr)
     raise RuntimeError(" || ".join(ERRORS))
+
+
+NOTE_PROMPT = """Turn this spoken morning briefing into a well-structured note for Apple Notes, written in Markdown.
+
+Use exactly this structure and these headings, in this order, and include only what the briefing says:
+
+# Morning Brief: {date_title}
+
+## Weather
+{{{{WEATHER}}}}
+
+## Top Stories
+For each story: a ### heading with a short title, then bullets: **What happened**, **Why it matters**, **Hype check**, **Verdict** (learn, test or ignore), **Your angle** (the link to his background, if the briefing gives one), and **Source** as a Markdown link using the matching URL from the list below.
+
+## Automation Opportunity
+Short bullets: what it is, problem it solves, free to try, skill gained.
+
+## Learning Moment: <concept>
+Bullets with the key ideas, then one bullet starting **Example:**.
+
+## Career Move
+One or two bullets.
+
+## Today's Mission
+One sentence describing the mission, then 3 to 5 concrete steps as a checklist, each line starting "- [ ] ".
+
+Rules: keep the line {{{{WEATHER}}}} exactly as written. Bullets must be short. Use only facts from the briefing. Output Markdown only, no code fences.
+
+STORY LINKS:
+{links}
+
+BRIEFING:
+{briefing}"""
+
+
+def md_inline(t):
+    t = html.escape(t, quote=False)
+    t = re.sub(r"\[([^\]]+)\]\((https?://[^)\s]+)\)", lambda m: f'<a href="{m.group(2)}">{m.group(1)}</a>', t)
+    return re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", t)
+
+
+def md_to_html(md):
+    """Small Markdown-to-HTML converter for headings, bullets, checklists, bold and links."""
+    out, depth = [], 0
+    def close_to(n):
+        nonlocal depth
+        while depth > n:
+            out.append("</ul>"); depth -= 1
+    for line in md.strip("`\n ").splitlines():
+        if not line.strip():
+            continue
+        m = re.match(r"^(\s*)[-*]\s+(\[( |x)\]\s+)?(.*)$", line)
+        if m:
+            level = len(m.group(1).replace("\t", "  ")) // 2 + 1
+            while depth < level:
+                out.append("<ul>"); depth += 1
+            close_to(level)
+            box = ("\u2611 " if m.group(3) == "x" else "\u2610 ") if m.group(2) else ""
+            out.append(f"<li>{box}{md_inline(m.group(4))}</li>")
+            continue
+        close_to(0)
+        h = re.match(r"^(#{1,3})\s+(.*)$", line)
+        if h:
+            n = len(h.group(1))
+            out.append(f"<h{n}>{md_inline(h.group(2))}</h{n}>")
+        else:
+            out.append(f"<p>{md_inline(line.strip())}</p>")
+    close_to(0)
+    return "\n".join(out)
+
+
+def basic_note(date_title, stories, window, body=None):
+    lines = [f"# Morning Brief: {date_title}", "## Weather", "{{WEATHER}}"]
+    if body:  # full briefing exists but could not be reformatted: keep the text
+        lines += ["## Briefing"] + [p.strip() for p in body.split("\n\n") if p.strip()]
+        lines += ["## Sources"]
+    else:
+        lines += [f"## Headlines ({window})", "The full briefing could not be generated today."]
+    lines += [f"- **{s['source']}:** [{s['title']}]({s['link']})" for s in stories[:8]] or ["- No news sources could be reached."]
+    return "\n".join(lines)
 
 
 def clean_for_speech(text):
@@ -319,11 +399,26 @@ def main():
         error_note = f"{e}\n\nModels available: {catalog()}"
         text = fallback(cfg["name"], date_spoken, w, stories, window, phone_weather)
 
+    date_title = today.strftime("%A ") + str(today.day) + today.strftime(" %B %Y")
+    links = "\n".join(f"- {s['title']} ({s['source']}): {s['link']}" for s in stories)
+    note_md = basic_note(date_title, stories, window)
+    if status == "full":
+        note_md = basic_note(date_title, stories, window, body=clean_for_speech(text))
+        try:
+            note_md = call_model(cfg, "You format briefings into clear, scannable notes.",
+                                 NOTE_PROMPT.format(date_title=date_title, links=links, briefing=clean_for_speech(text)),
+                                 min_words=60)
+            if "{{WEATHER}}" not in note_md:
+                note_md = note_md.replace("## Top Stories", "## Weather\n{{WEATHER}}\n\n## Top Stories", 1)
+        except Exception as e:
+            print(f"note formatting failed, using basic note: {e}", file=sys.stderr)
+
     def write(name, content):
         with open(os.path.join(out, name), "w", encoding="utf-8") as f:
             f.write(content.strip() + "\n")
 
     write("briefing.txt", clean_for_speech(text))
+    write("note.html", md_to_html(note_md))
     write("date.txt", today.strftime("%Y-%m-%d"))
     write("status.txt", status)
     write("error.txt", error_note)
