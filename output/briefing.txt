@@ -1,5 +1,5 @@
-It's Wednesday the 7 of October. The full briefing could not be generated today, so here is the short version.
+It's Thursday the 8 of October. The full briefing could not be generated today, so here is the short version.
 
-Headlines from the last 24 hours. From Simon Willison: Claude Haiku 5.5. From TechCrunch AI: Nous Research confirms it hit $1.5B valuation, launches AI agents for business users. From TechCrunch AI: Microsoft releases new Nvidia-chip AI PCs with revamped Windows 11. From The Verge AI: ChatGPT’s ‘Intelligent UI’ update fills its responses with pictures, charts, and buttons. From The Verge AI: Everything announced at Microsoft’s Surface Laptop Ultra event. From TechCrunch AI: Meta’s Muse launches on iPad just a month after its mobile debut.
+Headlines from the last 24 hours. From Simon Willison: Quoting Ben Affleck. From Simon Willison: Claude Haiku 5.5. From TechCrunch AI: Nous Research confirms it hit $1.5B valuation, launches AI agents for business users. From TechCrunch AI: Microsoft releases new Nvidia-chip AI PCs with revamped Windows 11. From The Verge AI: ChatGPT’s ‘Intelligent UI’ update fills its responses with pictures, charts, and buttons. From The Verge AI: Everything announced at Microsoft’s Surface Laptop Ultra event.
 
 That's everything for now.

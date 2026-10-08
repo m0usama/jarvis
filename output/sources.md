@@ -1,7 +1,8 @@
-# Sources for 2026-10-07 (basic)
+# Sources for 2026-10-08 (basic)
 
 Learning concept: Webhooks versus polling, and when each is right
 
+- [Quoting Ben Affleck](https://simonwillison.net/2026/Oct/7/ben-affleck/) (Simon Willison, 07 Oct 23:14 UTC)
 - [Claude Haiku 5.5](https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/) (Simon Willison, 07 Oct 20:56 UTC)
 - [Nous Research confirms it hit $1.5B valuation, launches AI agents for business users](https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/) (TechCrunch AI, 07 Oct 20:48 UTC)
 - [Microsoft releases new Nvidia-chip AI PCs with revamped Windows 11](https://techcrunch.com/2026/10/07/microsoft-releases-new-nvidia-chip-ai-pcs-with-revamped-windows-11/) (TechCrunch AI, 07 Oct 20:22 UTC)
@@ -15,4 +16,3 @@ Learning concept: Webhooks versus polling, and when each is right
 - [One Model Family, Two Gold-Level Results: Fine-Tuning Nemotron for IOI and IMO](https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026) (Hugging Face, 07 Oct 12:45 UTC)
 - [Helping teens learn, plan, and shape the future of AI](https://openai.com/index/teens-learn-and-plan) (OpenAI, 07 Oct 12:00 UTC)
 - [Radisson Hotel Group brings hotel discovery into ChatGPT](https://openai.com/index/radisson) (OpenAI, 07 Oct 07:00 UTC)
-- [Quoting Jake Boggan](https://simonwillison.net/2026/Oct/7/jake-boggan/) (Simon Willison, 07 Oct 04:47 UTC)
