@@ -1,5 +1,5 @@
 {
- "curriculum_index": 1,
+ "curriculum_index": 2,
  "seen": [
   "https://simonwillison.net/2026/Oct/7/ben-affleck/",
   "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
@@ -14,12 +14,27 @@
   "https://simonwillison.net/2026/Oct/7/anti-patterns-in-software-blogging/",
   "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
   "https://openai.com/index/teens-learn-and-plan",
-  "https://openai.com/index/radisson"
+  "https://openai.com/index/radisson",
+  "https://simonwillison.net/2026/Oct/8/ttok/",
+  "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner",
+  "https://simonwillison.net/2026/Oct/8/carson-gross/",
+  "https://techcrunch.com/2026/10/08/pretend-youre-sitting-at-elizabeth-holmes-desk-on-this-weirdly-detailed-website/",
+  "https://www.theverge.com/tech/1008401/california-shut-down-rek-fighting-robot-company-human",
+  "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/",
+  "https://techcrunch.com/2026/10/08/ben-affleck-is-an-ai-nerd-and-the-internet-is-impressed/",
+  "https://www.theverge.com/ai-artificial-intelligence/1008198/usa-today-openai-copyright-lawsuit",
+  "https://github.blog/security/how-one-bug-bounty-researcher-chooses-the-features-they-investigate/",
+  "https://openai.com/index/oracle",
+  "https://openai.com/index/pollo-ai",
+  "https://openai.com/index/legalon-halves-codex-costs",
+  "https://huggingface.co/blog/building-with-ml-intern"
  ],
  "missions": [
-  "Move Project Jarvis API keys to GitHub Secrets."
+  "Move Project Jarvis API keys to GitHub Secrets.",
+  "Write a Python script using tiktoken that counts tokens for a text string and triggers a limit warning."
  ],
  "opportunities": [
-  "Secure environment variable management with Doppler"
+  "Secure environment variable management with Doppler",
+  "Automated token budgeting for API calls"
  ]
 }

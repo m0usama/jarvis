@@ -1,20 +1,19 @@
-# Sources for 2026-10-08 (full)
+# Sources for 2026-10-09 (full)
 
-Learning concept: Webhooks versus polling, and when each is right
+Learning concept: Function calling (tool use) in LLM applications
 
-- [Quoting Ben Affleck](https://simonwillison.net/2026/Oct/7/ben-affleck/) (Simon Willison, 07 Oct 23:14 UTC)
-- [Claude Haiku 5.5](https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/) (Simon Willison, 07 Oct 20:56 UTC)
-- [Nous Research confirms it hit $1.5B valuation, launches AI agents for business users](https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/) (TechCrunch AI, 07 Oct 20:48 UTC)
-- [Microsoft releases new Nvidia-chip AI PCs with revamped Windows 11](https://techcrunch.com/2026/10/07/microsoft-releases-new-nvidia-chip-ai-pcs-with-revamped-windows-11/) (TechCrunch AI, 07 Oct 20:22 UTC)
-- [ChatGPT’s ‘Intelligent UI’ update fills its responses with pictures, charts, and buttons](https://www.theverge.com/ai-artificial-intelligence/1007276/openai-chatgpt-intelligent-ui-gpt-6) (The Verge AI, 07 Oct 15:10 UTC)
-- [Everything announced at Microsoft’s Surface Laptop Ultra event](https://www.theverge.com/tech/1007147/microsoft-surface-laptop-ultra-windows-event-everything-announced) (The Verge AI, 07 Oct 14:42 UTC)
-- [Meta’s Muse launches on iPad just a month after its mobile debut](https://techcrunch.com/2026/10/07/metas-muse-launches-on-ipad-just-a-month-after-its-mobile-debut/) (TechCrunch AI, 07 Oct 18:30 UTC)
-- [Microsoft is giving Copilot more control over Windows and your files](https://www.theverge.com/tech/1007113/microsoft-windows-copilot-ai-control-search-hybrid-intelligence) (The Verge AI, 07 Oct 14:01 UTC)
-- [Secret protection must scale with software](https://github.blog/ai-and-ml/github-copilot/secret-protection-must-scale-with-software/) (GitHub Blog, 07 Oct 17:45 UTC)
-- [Multimodal open d1 decision models for the edge](https://huggingface.co/blog/LiquidAI/open-d1) (Hugging Face, 07 Oct 16:54 UTC)
-- [Anti-Patterns in Software Blogging](https://simonwillison.net/2026/Oct/7/anti-patterns-in-software-blogging/) (Simon Willison, 07 Oct 14:53 UTC)
-- [One Model Family, Two Gold-Level Results: Fine-Tuning Nemotron for IOI and IMO](https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026) (Hugging Face, 07 Oct 12:45 UTC)
-- [Helping teens learn, plan, and shape the future of AI](https://openai.com/index/teens-learn-and-plan) (OpenAI, 07 Oct 12:00 UTC)
-- [Radisson Hotel Group brings hotel discovery into ChatGPT](https://openai.com/index/radisson) (OpenAI, 07 Oct 07:00 UTC)
+- [ttok 0.4](https://simonwillison.net/2026/Oct/8/ttok/) (Simon Willison, 08 Oct 23:34 UTC)
+- [Anthropic launches free AI security scans for open-source projects](https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner) (The Verge AI, 08 Oct 17:53 UTC)
+- [Quoting Carson Gross](https://simonwillison.net/2026/Oct/8/carson-gross/) (Simon Willison, 08 Oct 21:05 UTC)
+- [Pretend you’re sitting at Elizabeth Holmes’ desk on this weirdly detailed website](https://techcrunch.com/2026/10/08/pretend-youre-sitting-at-elizabeth-holmes-desk-on-this-weirdly-detailed-website/) (TechCrunch AI, 08 Oct 21:00 UTC)
+- [California is trying to shut down robot vs. human cage matches](https://www.theverge.com/tech/1008401/california-shut-down-rek-fighting-robot-company-human) (The Verge AI, 08 Oct 16:06 UTC)
+- [Fired OpenAI safety researchers dispute misconduct claims, warn of chilling effect](https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/) (TechCrunch AI, 08 Oct 20:04 UTC)
+- [Ben Affleck is an AI nerd, and the internet is impressed](https://techcrunch.com/2026/10/08/ben-affleck-is-an-ai-nerd-and-the-internet-is-impressed/) (TechCrunch AI, 08 Oct 18:20 UTC)
+- [USA Today becomes the latest publisher to sue OpenAI](https://www.theverge.com/ai-artificial-intelligence/1008198/usa-today-openai-copyright-lawsuit) (The Verge AI, 08 Oct 13:58 UTC)
+- [How one bug bounty researcher chooses the features they investigate](https://github.blog/security/how-one-bug-bounty-researcher-chooses-the-features-they-investigate/) (GitHub Blog, 08 Oct 17:02 UTC)
+- [How Oracle turns days of work into minutes with ChatGPT and Codex](https://openai.com/index/oracle) (OpenAI, 08 Oct 16:00 UTC)
+- [Pollo AI turns creative ideas into campaigns with OpenAI](https://openai.com/index/pollo-ai) (OpenAI, 08 Oct 12:00 UTC)
+- [LegalOn halves Codex costs while maintaining development speed](https://openai.com/index/legalon-halves-codex-costs) (OpenAI, 08 Oct 12:00 UTC)
+- [The model that didn't exist, so you made it yourself](https://huggingface.co/blog/building-with-ml-intern) (Hugging Face, 08 Oct 00:00 UTC)
 
 Feeds that failed: Google DeepMind
