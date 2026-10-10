@@ -1,5 +1,5 @@
 {
- "curriculum_index": 2,
+ "curriculum_index": 3,
  "seen": [
   "https://simonwillison.net/2026/Oct/7/ben-affleck/",
   "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
@@ -27,14 +27,30 @@
   "https://openai.com/index/oracle",
   "https://openai.com/index/pollo-ai",
   "https://openai.com/index/legalon-halves-codex-costs",
-  "https://huggingface.co/blog/building-with-ml-intern"
+  "https://huggingface.co/blog/building-with-ml-intern",
+  "https://simonwillison.net/2026/Oct/10/the-new-york-times/",
+  "https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/",
+  "https://simonwillison.net/2026/Oct/9/deno-is-joining-cloudflare/",
+  "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/",
+  "https://www.theverge.com/ai-artificial-intelligence/1009090/anthropic-fake-homicide-information-philadelphia-pd-tip",
+  "https://techcrunch.com/2026/10/09/an-anthropic-ai-model-sent-a-false-homicide-tip-to-philadelphia-police/",
+  "https://www.theverge.com/ai-artificial-intelligence/1008726/openai-mathematics-solutions-chaos",
+  "https://arstechnica.com/information-technology/2026/10/pc-shipments-fall-20-1-percent-in-sharpest-decline-since-q1-2023/",
+  "https://www.theverge.com/ai-artificial-intelligence/1008930/nikon-small-world-in-motion-winner-ai",
+  "https://github.blog/developer-skills/career-growth/hack-the-world-why-hackathons-are-still-the-best-place-to-learn-to-build/",
+  "https://huggingface.co/blog/allenai/impactful-scheduling",
+  "https://simonwillison.net/2026/Oct/9/matthew-green/",
+  "https://openai.com/index/sophos",
+  "https://openai.com/index/asana-browser-agent"
  ],
  "missions": [
   "Move Project Jarvis API keys to GitHub Secrets.",
-  "Write a Python script using tiktoken that counts tokens for a text string and triggers a limit warning."
+  "Write a Python script using tiktoken that counts tokens for a text string and triggers a limit warning.",
+  "Write a Pydantic schema script that parses and validates sample order JSON."
  ],
  "opportunities": [
   "Secure environment variable management with Doppler",
-  "Automated token budgeting for API calls"
+  "Automated token budgeting for API calls",
+  "Deterministic API mock server testing workflows"
  ]
 }
