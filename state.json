@@ -1,5 +1,5 @@
 {
- "curriculum_index": 3,
+ "curriculum_index": 4,
  "seen": [
   "https://simonwillison.net/2026/Oct/7/ben-affleck/",
   "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
@@ -41,16 +41,24 @@
   "https://huggingface.co/blog/allenai/impactful-scheduling",
   "https://simonwillison.net/2026/Oct/9/matthew-green/",
   "https://openai.com/index/sophos",
-  "https://openai.com/index/asana-browser-agent"
+  "https://openai.com/index/asana-browser-agent",
+  "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
+  "https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/",
+  "https://techcrunch.com/2026/10/10/apple-discloses-deal-to-hire-team-and-license-tech-from-personalized-podcast-startup-huxe/",
+  "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit",
+  "https://techcrunch.com/2026/10/10/3-days-to-disrupt-2026-meet-the-startups-before-they-hit-mainstream/",
+  "https://www.theverge.com/ai-artificial-intelligence/1009286/anthropic-is-cutting-off-its-internal-evaluations-from-the-internet"
  ],
  "missions": [
   "Move Project Jarvis API keys to GitHub Secrets.",
   "Write a Python script using tiktoken that counts tokens for a text string and triggers a limit warning.",
-  "Write a Pydantic schema script that parses and validates sample order JSON."
+  "Write a Pydantic schema script that parses and validates sample order JSON.",
+  "Build a standalone Python script calculating vector cosine similarity between mock documents and a query string."
  ],
  "opportunities": [
   "Secure environment variable management with Doppler",
   "Automated token budgeting for API calls",
-  "Deterministic API mock server testing workflows"
+  "Deterministic API mock server testing workflows",
+  "Circuit breaker dead letter queue pattern"
  ]
 }
