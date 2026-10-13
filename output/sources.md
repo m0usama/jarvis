@@ -1,13 +1,13 @@
-# Sources for 2026-10-12 (full)
+# Sources for 2026-10-13 (basic)
 
-Learning concept: Embeddings and vector databases
+Learning concept: Chunking strategies and why retrieval fails
 
-- [Will the HomeView be Apple’s first smart home success?](https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success/) (TechCrunch AI, 11 Oct 21:14 UTC)
-- [48 hours to TechCrunch Disrupt 2026 — hear directly from the people building what’s next](https://techcrunch.com/2026/10/11/48-hours-to-techcrunch-disrupt-2026-hear-directly-from-the-people-building-whats-next/) (TechCrunch AI, 11 Oct 19:00 UTC)
-- [Silicon Valley is falling in line with Trump’s attempt to rename AI](https://www.theverge.com/ai-artificial-intelligence/1009406/silicon-valley-is-falling-in-line-with-trumps-attempt-to-rename-ai) (The Verge AI, 11 Oct 14:33 UTC)
-- [Can the AI industry persuade data center opponents by getting rid of NDAs?](https://techcrunch.com/2026/10/11/can-the-ai-industry-persuade-data-center-opponents-by-getting-rid-of-ndas/) (TechCrunch AI, 11 Oct 16:52 UTC)
-- [Learning to use local AI is exciting, overwhelming, and frustrating](https://www.theverge.com/ai-artificial-intelligence/1008484/learning-local-ai-hermes-qwen-model-mac-studio-testing-diary-progress) (The Verge AI, 11 Oct 07:00 UTC)
-- [Dwarf Fortress uses version control now](https://simonwillison.net/2026/Oct/11/dwarf-fortress/) (Simon Willison, 11 Oct 00:52 UTC)
-- [Python 3.15.0 added to actions/python-versions](https://simonwillison.net/2026/Oct/10/python-actions/) (Simon Willison, 10 Oct 23:58 UTC)
-
-Feeds that failed: Google DeepMind
+- [Hello Python 3.15, goodbye 3.10, and now I can use 3.11](https://simonwillison.net/2026/Oct/12/python-3-15/) (Simon Willison, 12 Oct 18:15 UTC)
+- [Meta releases its first frontier model, Muse Wonder](https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/) (TechCrunch AI, 12 Oct 17:56 UTC)
+- [GitHub Copilot app for Beginners: How to teach Copilot about your codebase](https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase/) (GitHub Blog, 12 Oct 17:43 UTC)
+- [WindBorne wins a hefty US Air Force contract for its balloon data](https://techcrunch.com/2026/10/12/windborne-wins-a-hefty-us-air-force-contract-for-its-balloon-data/) (TechCrunch AI, 12 Oct 17:19 UTC)
+- [Meta has some Wonder Full new AI models](https://www.theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model) (The Verge AI, 12 Oct 13:00 UTC)
+- [web-edit 0.1a0](https://simonwillison.net/2026/Oct/12/web-edit/) (Simon Willison, 12 Oct 15:54 UTC)
+- [Honeyjar offers AI tools to improve PR and comms at every company](https://techcrunch.com/2026/10/12/honeyjar-offers-ai-tools-to-improve-pr-and-comms-at-every-company/) (TechCrunch AI, 12 Oct 15:45 UTC)
+- [Microsoft’s new AI chip makes it less reliant on Nvidia’s GPUs](https://www.theverge.com/news/1009465/microsoft-maia-300-chip-improvements-rollout) (The Verge AI, 12 Oct 09:00 UTC)
+- [datasette-ports 0.4](https://simonwillison.net/2026/Oct/12/datasette-ports/) (Simon Willison, 12 Oct 04:57 UTC)
