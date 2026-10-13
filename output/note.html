@@ -1,15 +1,67 @@
 <h1>Morning Brief: Tuesday 13 October 2026</h1>
 <h2>Weather</h2>
 <p>{{WEATHER}}</p>
-<h2>Headlines (the last 24 hours)</h2>
-<p>The full briefing could not be generated today.</p>
+<h2>Top Stories</h2>
+<h3>Python 3.15 Released, Python 3.10 Reaches End-of-Life</h3>
 <ul>
-<li><b>Simon Willison:</b> <a href="https://simonwillison.net/2026/Oct/12/python-3-15/">Hello Python 3.15, goodbye 3.10, and now I can use 3.11</a></li>
-<li><b>TechCrunch AI:</b> <a href="https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/">Meta releases its first frontier model, Muse Wonder</a></li>
-<li><b>GitHub Blog:</b> <a href="https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase/">GitHub Copilot app for Beginners: How to teach Copilot about your codebase</a></li>
-<li><b>TechCrunch AI:</b> <a href="https://techcrunch.com/2026/10/12/windborne-wins-a-hefty-us-air-force-contract-for-its-balloon-data/">WindBorne wins a hefty US Air Force contract for its balloon data</a></li>
-<li><b>The Verge AI:</b> <a href="https://www.theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model">Meta has some Wonder Full new AI models</a></li>
-<li><b>Simon Willison:</b> <a href="https://simonwillison.net/2026/Oct/12/web-edit/">web-edit 0.1a0</a></li>
-<li><b>TechCrunch AI:</b> <a href="https://techcrunch.com/2026/10/12/honeyjar-offers-ai-tools-to-improve-pr-and-comms-at-every-company/">Honeyjar offers AI tools to improve PR and comms at every company</a></li>
-<li><b>The Verge AI:</b> <a href="https://www.theverge.com/news/1009465/microsoft-maia-300-chip-improvements-rollout">Microsoft’s new AI chip makes it less reliant on Nvidia’s GPUs</a></li>
+<li><b>What happened</b>: Python 3.15 arrived and Python 3.10 reached its end-of-life cycle.</li>
+<li><b>Why it matters</b>: Updates dictate baseline runtime deprecations, performance gains, and library compatibility requirements across production environments.</li>
+<li><b>Hype check</b>: A foundational engineering development rather than shiny syntax chasing.</li>
+<li><b>Verdict</b>: Learn.</li>
+<li><b>Your angle</b>: Connects directly to scheduled Python pipelines in Project Jarvis and FastAPI backend work, demonstrating deliberate runtime management and dependency auditing.</li>
+<li><b>Source</b>: <a href="https://simonwillison.net/2026/Oct/12/python-3-15/">Hello Python 3.15, goodbye 3.10, and now I can use 3.11</a></li>
+</ul>
+<h3>Meta Releases Muse Wonder Frontier Models</h3>
+<ul>
+<li><b>What happened</b>: Meta launched its Muse Wonder frontier models following its smaller Muse Spark release, claiming top industry performance on coding and agent tasks.</li>
+<li><b>Why it matters</b>: Frontier models are demonstrating improved code generation and structured reasoning capabilities.</li>
+<li><b>Hype check</b>: Heavy marketing around benchmark claims, requiring empirical verification.</li>
+<li><b>Verdict</b>: Test.</li>
+<li><b>Your angle</b>: Links to AI engineering track and Claude to InDesign logic, focusing on rigorous output evaluation and benchmarking on print tasks rather than using default endpoints.</li>
+<li><b>Source</b>: <a href="https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/">Meta releases its first frontier model, Muse Wonder</a></li>
+</ul>
+<h3>Teaching GitHub Copilot Local Codebase Context</h3>
+<ul>
+<li><b>What happened</b>: GitHub detailed how developers can teach Copilot about codebases via repository instructions, skills, custom agents, and Model Context Protocol servers like Playwright.</li>
+<li><b>Why it matters</b>: Represents an operational shift toward local codebases exposing standardized context and tools to coding assistants.</li>
+<li><b>Hype check</b>: A genuine tooling shift beyond simple autocomplete.</li>
+<li><b>Verdict</b>: Test.</li>
+<li><b>Your angle</b>: Connects to mastering agent frameworks and Model Context Protocol, proving competence in production-grade AI development workflows.</li>
+<li><b>Source</b>: <a href="https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase/">GitHub Copilot app for Beginners: How to teach Copilot about your codebase</a></li>
+</ul>
+<h3>Character.AI Files for Bankruptcy</h3>
+<ul>
+<li><b>What happened</b>: Character.AI filed for bankruptcy and is selling certain assets to Disney following lawsuits and safety scrutiny.</li>
+<li><b>Why it matters</b>: Highlights that consumer chat novelty without durable business utility or strong margins carries severe business risk.</li>
+<li><b>Hype check</b>: Consumer chatbot hype collapsing under operational and legal pressure.</li>
+<li><b>Verdict</b>: Ignore for engineering stack; heed as a business lesson.</li>
+<li><b>Your angle</b>: Validates focusing on real enterprise automation and physical business workflows over consumer chat wrappers.</li>
+<li><b>Source</b>: <a href="https://www.theverge.com/ai-artificial-intelligence/1009802/character-ai-files-for-bankruptcy-disney">Character.AI files for bankruptcy</a></li>
+</ul>
+<h2>Automation Opportunity</h2>
+<ul>
+<li><b>What it is</b>: Model Context Protocol file system servers for safe agentic tool use.</li>
+<li><b>Problem it solves</b>: Eliminates security and reliability risks of giving AI agents direct shell access by providing an isolated interface restricted to authorized directories.</li>
+<li><b>Free to try</b>: Completely free to set up locally with Python or Node.</li>
+<li><b>Skill gained</b>: Practical engineering experience with agent tool protocols and safe automated workflows.</li>
+</ul>
+<h2>Learning Moment: Chunking Strategies and Why Retrieval Fails</h2>
+<ul>
+<li>RAG systems rarely fail because of vector math; they fail due to improper document chunking prior to embedding.</li>
+<li>Overly large chunks dilute semantic embeddings, while overly small chunks strip context and split critical thoughts.</li>
+<li>Production systems utilize recursive character or document-aware chunking to respect natural boundaries like paragraphs and tables.</li>
+<li><b>Example:</b> A fixed 200-character split cuts a print manual sentence between general card stock limits and a warning on textured stock, causing retrieval to fetch only the first clause and generate damaging instructions.</li>
+</ul>
+<h2>Career Move</h2>
+<ul>
+<li>Frame the job card print automation system as an unattended physical-to-digital business workflow rather than an AI API integration.</li>
+<li>Emphasize the architecture: physical image handling, zero-cost constraints, OCR error management, and live operational integration bridging messy documents to structured records.</li>
+</ul>
+<h2>Today's Mission</h2>
+<p>Ground document-aware chunking in clean, native Python by building a basic paragraph-splitting script with metadata.</p>
+<ul>
+<li>☐ Open a Python terminal.</li>
+<li>☐ Define a multiline string containing two distinct paragraphs separated by double line breaks.</li>
+<li>☐ Write a 15-line script using standard string tools to split the text into chunks based on double line breaks.</li>
+<li>☐ Attach a metadata dictionary to each chunk containing its chunk index and character length.</li>
 </ul>

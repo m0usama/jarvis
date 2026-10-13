@@ -1,5 +1,5 @@
 {
- "curriculum_index": 5,
+ "curriculum_index": 6,
  "seen": [
   "https://simonwillison.net/2026/Oct/7/ben-affleck/",
   "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
@@ -54,20 +54,31 @@
   "https://techcrunch.com/2026/10/11/can-the-ai-industry-persuade-data-center-opponents-by-getting-rid-of-ndas/",
   "https://www.theverge.com/ai-artificial-intelligence/1008484/learning-local-ai-hermes-qwen-model-mac-studio-testing-diary-progress",
   "https://simonwillison.net/2026/Oct/11/dwarf-fortress/",
-  "https://simonwillison.net/2026/Oct/10/python-actions/"
+  "https://simonwillison.net/2026/Oct/10/python-actions/",
+  "https://www.theverge.com/ai-artificial-intelligence/1009802/character-ai-files-for-bankruptcy-disney",
+  "https://simonwillison.net/2026/Oct/12/python-3-15/",
+  "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
+  "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase/",
+  "https://techcrunch.com/2026/10/12/windborne-wins-a-hefty-us-air-force-contract-for-its-balloon-data/",
+  "https://www.theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model",
+  "https://simonwillison.net/2026/Oct/12/web-edit/",
+  "https://techcrunch.com/2026/10/12/honeyjar-offers-ai-tools-to-improve-pr-and-comms-at-every-company/",
+  "https://www.theverge.com/news/1009465/microsoft-maia-300-chip-improvements-rollout"
  ],
  "missions": [
   "Move Project Jarvis API keys to GitHub Secrets.",
   "Write a Python script using tiktoken that counts tokens for a text string and triggers a limit warning.",
   "Write a Pydantic schema script that parses and validates sample order JSON.",
   "Build a standalone Python script calculating vector cosine similarity between mock documents and a query string.",
-  "Write a short Python script querying three mock print product descriptions using an in-memory Chroma collection."
+  "Write a short Python script querying three mock print product descriptions using an in-memory Chroma collection.",
+  "Write a Python script splitting paragraphs into structured chunks with length metadata."
  ],
  "opportunities": [
   "Secure environment variable management with Doppler",
   "Automated token budgeting for API calls",
   "Deterministic API mock server testing workflows",
   "Circuit breaker dead letter queue pattern",
-  "Embedded local vector storage with Chroma"
+  "Embedded local vector storage with Chroma",
+  "Local Model Context Protocol file system integration"
  ]
 }
