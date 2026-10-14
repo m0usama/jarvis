@@ -1,5 +1,5 @@
 {
- "curriculum_index": 6,
+ "curriculum_index": 7,
  "seen": [
   "https://simonwillison.net/2026/Oct/7/ben-affleck/",
   "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
@@ -63,7 +63,21 @@
   "https://www.theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model",
   "https://simonwillison.net/2026/Oct/12/web-edit/",
   "https://techcrunch.com/2026/10/12/honeyjar-offers-ai-tools-to-improve-pr-and-comms-at-every-company/",
-  "https://www.theverge.com/news/1009465/microsoft-maia-300-chip-improvements-rollout"
+  "https://www.theverge.com/news/1009465/microsoft-maia-300-chip-improvements-rollout",
+  "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+  "https://techcrunch.com/2026/10/13/science-corporation-implants-its-vision-restoring-chip-in-its-first-stargardt-disease-patient/",
+  "https://techcrunch.com/2026/10/13/cerebras-ceo-says-were-nearing-a-future-where-everyone-has-a-personal-ai-assistant-at-home/",
+  "https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/",
+  "https://techcrunch.com/2026/10/13/industrial-next-wants-factory-robots-to-switch-tasks-in-minutes-not-weeks/",
+  "https://simonwillison.net/2026/Oct/13/llm-gemini/",
+  "https://arstechnica.com/information-technology/2026/10/topgolf-saved-over-11-3-million-after-leaving-vmware/",
+  "https://www.theverge.com/ai-artificial-intelligence/1010642/openai-employee-arrested-recording-device",
+  "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+  "https://www.theverge.com/news/1010365/shopify-opens-its-catalog-up-to-more-ai-agents",
+  "https://www.theverge.com/news/1010406/xbox-labs-game-decompiling-emulation-exploration",
+  "https://github.blog/ai-and-ml/githubs-model-for-secret-detection-finding-more-secrets-with-less-noise/",
+  "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
+  "https://deepmind.google/blog/gemini-4-argon-for-robotics/"
  ],
  "missions": [
   "Move Project Jarvis API keys to GitHub Secrets.",
@@ -71,7 +85,8 @@
   "Write a Pydantic schema script that parses and validates sample order JSON.",
   "Build a standalone Python script calculating vector cosine similarity between mock documents and a query string.",
   "Write a short Python script querying three mock print product descriptions using an in-memory Chroma collection.",
-  "Write a Python script splitting paragraphs into structured chunks with length metadata."
+  "Write a Python script splitting paragraphs into structured chunks with length metadata.",
+  "Write a Python script using the watchdog library to monitor a local folder for new files."
  ],
  "opportunities": [
   "Secure environment variable management with Doppler",
@@ -79,6 +94,7 @@
   "Deterministic API mock server testing workflows",
   "Circuit breaker dead letter queue pattern",
   "Embedded local vector storage with Chroma",
-  "Local Model Context Protocol file system integration"
+  "Local Model Context Protocol file system integration",
+  "Python watchdog file monitoring automation"
  ]
 }
