@@ -1,5 +1,5 @@
 {
- "curriculum_index": 7,
+ "curriculum_index": 8,
  "seen": [
   "https://simonwillison.net/2026/Oct/7/ben-affleck/",
   "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
@@ -77,7 +77,21 @@
   "https://www.theverge.com/news/1010406/xbox-labs-game-decompiling-emulation-exploration",
   "https://github.blog/ai-and-ml/githubs-model-for-secret-detection-finding-more-secrets-with-less-noise/",
   "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
-  "https://deepmind.google/blog/gemini-4-argon-for-robotics/"
+  "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
+  "https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/",
+  "https://techcrunch.com/2026/10/14/ricursive-intelligence-is-betting-on-ai-designed-chips-to-help-solve-the-compute-crisis/",
+  "https://techcrunch.com/2026/10/14/gudea-leverages-ai-to-help-organizations-prevent-social-media-crises-before-they-erupt/",
+  "https://www.theverge.com/news/1011654/mckinsey-ai-client-interview",
+  "https://arstechnica.com/security/2026/10/fridge-hack-costing-millions-and-sparking-fires-stemmed-from-poor-security/",
+  "https://simonwillison.net/2026/Oct/14/tree-appreciator/",
+  "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety",
+  "https://github.blog/news-insights/company-news/github-availability-report-september-2026/",
+  "https://github.blog/engineering/architecture-optimization/from-2500-requests-to-24-rebuilding-star-history-without-the-stargazers/",
+  "https://www.theverge.com/ai-artificial-intelligence/1011311/the-ai-race-is-back-on",
+  "https://simonwillison.net/2026/Oct/14/ai-is-mass-decompiling-games/",
+  "https://huggingface.co/blog/allenai/hiro-acev2",
+  "https://arstechnica.com/security/2026/10/anthropic-warns-small-ai-models-could-self-replicate-through-iot-devices/",
+  "https://openai.com/index/amp-beyond-coding"
  ],
  "missions": [
   "Move Project Jarvis API keys to GitHub Secrets.",
@@ -86,7 +100,8 @@
   "Build a standalone Python script calculating vector cosine similarity between mock documents and a query string.",
   "Write a short Python script querying three mock print product descriptions using an in-memory Chroma collection.",
   "Write a Python script splitting paragraphs into structured chunks with length metadata.",
-  "Write a Python script using the watchdog library to monitor a local folder for new files."
+  "Write a Python script using the watchdog library to monitor a local folder for new files.",
+  "Build a standalone Python script running a basic plan-act-observe agent loop against a local dictionary tool."
  ],
  "opportunities": [
   "Secure environment variable management with Doppler",
@@ -95,6 +110,7 @@
   "Circuit breaker dead letter queue pattern",
   "Embedded local vector storage with Chroma",
   "Local Model Context Protocol file system integration",
-  "Python watchdog file monitoring automation"
+  "Python watchdog file monitoring automation",
+  "Structured API retry pipelines with Tenacity"
  ]
 }
