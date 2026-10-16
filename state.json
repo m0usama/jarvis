@@ -1,5 +1,5 @@
 {
- "curriculum_index": 8,
+ "curriculum_index": 9,
  "seen": [
   "https://simonwillison.net/2026/Oct/7/ben-affleck/",
   "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
@@ -91,7 +91,21 @@
   "https://simonwillison.net/2026/Oct/14/ai-is-mass-decompiling-games/",
   "https://huggingface.co/blog/allenai/hiro-acev2",
   "https://arstechnica.com/security/2026/10/anthropic-warns-small-ai-models-could-self-replicate-through-iot-devices/",
-  "https://openai.com/index/amp-beyond-coding"
+  "https://openai.com/index/amp-beyond-coding",
+  "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
+  "https://techcrunch.com/2026/10/15/when-it-came-to-cal-ais-viral-success-a-small-army-of-influencers-paid-off/",
+  "https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs",
+  "https://www.theverge.com/games/1012512/sega-total-war-shogun-2-remaster-pulled",
+  "https://www.theverge.com/entertainment/1012438/hollywood-tech-backlash-you-can-see-everything-musk-the-social-reckoning-artificial",
+  "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
+  "https://arstechnica.com/security/2026/10/targeted-ads-delivered-0-click-exploits-to-install-mercenary-malware/",
+  "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/",
+  "https://techcrunch.com/2026/10/15/amazon-devices-chief-panos-panay-sees-a-future-where-ai-devices-replace-the-need-to-use-apps/",
+  "https://simonwillison.net/2026/Oct/15/chirp-pong/",
+  "https://github.blog/news-insights/company-news/the-next-developer-interface-is-ambient-intelligence/",
+  "https://openai.com/index/introducing-the-rosalind-academic-plan",
+  "https://github.blog/engineering/platform-security/staying-evergreen-how-we-automated-secure-access-and-repo-hygiene-in-a-shared-org/",
+  "https://deepmind.google/blog/accelerating-antimicrobial-discovery/"
  ],
  "missions": [
   "Move Project Jarvis API keys to GitHub Secrets.",
@@ -101,7 +115,8 @@
   "Write a short Python script querying three mock print product descriptions using an in-memory Chroma collection.",
   "Write a Python script splitting paragraphs into structured chunks with length metadata.",
   "Write a Python script using the watchdog library to monitor a local folder for new files.",
-  "Build a standalone Python script running a basic plan-act-observe agent loop against a local dictionary tool."
+  "Build a standalone Python script running a basic plan-act-observe agent loop against a local dictionary tool.",
+  "Write a Python script that validates mock AI extraction results against threshold rules."
  ],
  "opportunities": [
   "Secure environment variable management with Doppler",
@@ -111,6 +126,7 @@
   "Embedded local vector storage with Chroma",
   "Local Model Context Protocol file system integration",
   "Python watchdog file monitoring automation",
-  "Structured API retry pipelines with Tenacity"
+  "Structured API retry pipelines with Tenacity",
+  "Python local file log rotation"
  ]
 }
