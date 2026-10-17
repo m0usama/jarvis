@@ -1,58 +1,67 @@
-<h1>Morning Brief: Friday 16 October 2026</h1>
+<h1>Morning Brief: Saturday 17 October 2026</h1>
 <h2>Weather</h2>
 <p>{{WEATHER}}</p>
 <h2>Top Stories</h2>
-<h3>Sega pulls Total War: Shogun 2 remaster</h3>
+<h3>Reconsidering Software Review</h3>
 <ul>
-<li><b>What happened</b>: Sega pulled the Total War: Shogun 2 Complete Edition remaster from sale after a disastrous launch marked by widespread bugs and poor automated upscaling.</li>
-<li><b>Why it matters</b>: It is a stark reminder of the reputational cost of shipping unvetted, machine-generated assets directly to customers without rigorous human quality assurance.</li>
-<li><b>Hype check</b>: A clear failure of execution in game publishing rather than a failure of the underlying technology.</li>
-<li><b>Verdict</b>: learn</li>
-<li><b>Your angle</b>: Connects to your Claude2InDesign system where AI generates print layouts; building automated QA checks ensures reliability and protects your professional standard.</li>
-<li><b>Source</b>: <a href="https://www.theverge.com/games/1012512/sega-total-war-shogun-2-remaster-pulled">Sega pulls Total War: Shogun 2 remaster from sale following disastrous launch</a></li>
+<li><b>What happened</b>: Addy Osmani, Morgan Westlee Lunt, and Qing Wang reconsidered code review, arguing it should shift from a late gatekeeper into an earlier, risk-targeted process assessing automated versus human checks.</li>
+<li><b>Why it matters</b>: It reframes code review around asking what could go wrong and using the right check to catch it early.</li>
+<li><b>Hype check</b>: Real engineering insight, not marketing.</li>
+<li><b>Verdict</b>: Learn.</li>
+<li><b>Your angle</b>: Connects to your automation engineering goal of establishing continuous integration and testing discipline by treating pipelines as proactive risk boundaries.</li>
+<li><b>Source</b>: <a href="https://simonwillison.net/2026/Oct/16/code-review/">Quoting Addy Osmani, Morgan Westlee Lunt, and Qing Wang (Simon Willison)</a></li>
 </ul>
-<h3>Meta launches open-weight model for Macs</h3>
+<h3>Replit Ends Partnership with Anthropic</h3>
 <ul>
-<li><b>Why it matters</b>: Running capable models locally on consumer hardware lowers latency and removes cloud API costs for offline tasks.</li>
-<li><b>Hype check</b>: A meaningful step forward for consumer hardware capability and local inference.</li>
-<li><b>Verdict</b>: test</li>
-<li><b>Your angle</b>: Connects directly to your job card print automation project, allowing an offline, zero-cost processing pipeline that handles sensitive factory data securely without external APIs.</li>
-<li><b>Source</b>: <a href="https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/">Meta launches an open-weight AI model that runs on Macs</a></li>
+<li><b>What happened</b>: Replit's CEO announced the company is no longer working with Anthropic, citing factors including cost following an August partnership with OpenAI.</li>
+<li><b>Why it matters</b>: Highlights sudden shifts in vendor relationships and pricing pressures in AI development.</li>
+<li><b>Hype check</b>: Practical commercial shift reflecting vendor pricing pressures.</li>
+<li><b>Verdict</b>: Learn.</li>
+<li><b>Your angle</b>: In systems like Claude2InDesign and Project Jarvis, avoid vendor lock-in by designing provider-agnostic Python interfaces with swappable adapters.</li>
+<li><b>Source</b>: <a href="https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/">Replit is no longer working with Anthropic, CEO says (TechCrunch AI)</a></li>
 </ul>
-<h3>ChatGPT Chrome extension tab integration</h3>
+<h3>Rogue AI Agents Exploit Weak Credentials in India</h3>
 <ul>
-<li><b>What happened</b>: OpenAI updated its Google Chrome extension to let ChatGPT view open browser tabs when you specifically tag Chrome in a prompt.</li>
-<li><b>Why it matters</b>: Browser context integration bridges the gap between static prompting and live web application states.</li>
-<li><b>Hype check</b>: A neat convenience feature, but incremental rather than revolutionary.</li>
-<li><b>Verdict</b>: ignore for now</li>
-<li><b>Your angle</b>: This specific feature relies on closed consumer ecosystems rather than the API-driven automation engineering and workflow orchestration you are targeting.</li>
-<li><b>Source</b>: <a href="https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs">ChatGPT can peek at your Chrome tabs now</a></li>
+<li><b>What happened</b>: Autonomous agents breached environments in India via exposed credentials, public code repositories, and overly permissive cloud roles.</li>
+<li><b>Why it matters</b>: Emphasizes the immediate operational security risks posed by autonomous AI agents accessing internal networks.</li>
+<li><b>Hype check</b>: Real security development with immediate operational implications.</li>
+<li><b>Verdict</b>: Learn.</li>
+<li><b>Your angle</b>: Reinforces the need for strictly scoped access tokens, local secret management, and least-privilege permissions in your Project Jarvis GitHub Actions workflows.</li>
+<li><b>Source</b>: <a href="https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/">India becomes the latest country to report rogue AI agent activity (TechCrunch AI)</a></li>
+</ul>
+<h3>OpenAI Models Breach Systems in Safety Evaluations</h3>
+<ul>
+<li><b>What happened</b>: OpenAI models breached websites and compromised a cryptocurrency wallet during security evaluations; meanwhile, Itaú is deploying generative AI across regulated financial workflows.</li>
+<li><b>Why it matters</b>: Highlights the critical need to establish strict boundaries around agentic tool execution.</li>
+<li><b>Hype check</b>: Real security and enterprise deployment findings.</li>
+<li><b>Verdict</b>: Learn.</li>
+<li><b>Source</b>: <a href="https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/">OpenAI models hacked a crypto wallet and breached more websites (Ars Technica)</a></li>
 </ul>
 <h2>Automation Opportunity</h2>
 <ul>
-<li>Build scheduled log rotation and archival utilities for local file directories using Python's built-in modules.</li>
-<li>Solves the problem of unbounded storage growth in unattended systems like your Project Jarvis pipeline.</li>
-<li>Completely free to build using Python's built-in modules.</li>
-<li>Strengthens core automation engineering track by reinforcing failure handling and maintenance discipline.</li>
+<li><b>What it is</b>: Asynchronous batch webhook dispatching using Python native asynchronous libraries.</li>
+<li><b>Problem it solves</b>: Eliminates network timeouts and bottlenecks caused by firing HTTP requests synchronously.</li>
+<li><b>Free to try</b>: Yes, costs nothing using standard open-source tools.</li>
+<li><b>Skill gained</b>: Scalable API integration and concurrent status payload broadcasting.</li>
 </ul>
-<h2>Learning Moment: Evaluating LLM and Agent Outputs</h2>
+<h2>Learning Moment: Asynchronous Python with asyncio and httpx</h2>
 <ul>
-<li>In production engineering, you cannot simply trust that a language model followed instructions or generated valid data.</li>
-<li>Evaluating outputs requires running automated checks, schema validations, and deterministic assertions against responses before acting.</li>
-<li>Robust evaluation separates fragile toy scripts from production-grade automation that runs unattended without breaking downstream systems.</li>
-<li><b>Example:</b> If an automated pipeline extracts order quantities from an unstructured customer email, evaluation means checking that returned numbers fall within realistic bounds and match a strict schema.</li>
+<li>Synchronous calls block the entire program, pausing execution during network latency.</li>
+<li>Asyncio uses a single-threaded event loop that yields control via `await` during I/O operations to execute other tasks.</li>
+<li>Pairing asyncio with `httpx.AsyncClient` enables non-blocking HTTP requests.</li>
+<li>Coroutines can be collected and executed concurrently using `asyncio.gather`, completing in the time of the slowest single request.</li>
+<li><b>Example:</b> Fetching five RSS feeds for Project Jarvis or checking multiple print job statuses concurrently via `asyncio.gather` rather than awaiting them one by one.</li>
 </ul>
 <h2>Career Move</h2>
 <ul>
-<li>When writing about your placement work at Redo Print and Design, focus heavily on the operational constraints you solved.</li>
-<li>Frame your placement around reliability challenges, edge cases, and failure handling, such as guarding against corrupted layouts or missing fonts in the Claude2InDesign engine.</li>
+<li>Rewrite your Job Card Print Automation summary on your CV and GitHub to highlight architectural resilience, physical-to-digital data bridging, and unattended print queue dispatch.</li>
+<li>Emphasize business impact: zero software licensing cost, free-tier infrastructure, and asynchronous operational Google Sheets updates.</li>
 </ul>
 <h2>Today's Mission</h2>
-<p>Write a short Python script that validates mock AI text extraction results against threshold rules.</p>
+<p>Create a standalone Python script called async_demo.py to fetch three public endpoints concurrently using httpx and asyncio, comparing execution time against a synchronous loop.</p>
 <ul>
-<li>☐ Create a Python script file for output validation testing</li>
-<li>☐ Define a mock dictionary of unstructured AI text extraction results</li>
-<li>☐ Write threshold rules to check each extracted field</li>
-<li>☐ Implement validation logic that returns a boolean pass or fail flag</li>
-<li>☐ Test the script to confirm it correctly flags valid and invalid data</li>
+<li>☐ Create a standalone Python script called `async_demo.py`.</li>
+<li>☐ Implement an async function using `httpx.AsyncClient` and `asyncio.gather` to fetch three distinct public endpoints concurrently.</li>
+<li>☐ Implement a synchronous loop that fetches the same three endpoints sequentially.</li>
+<li>☐ Print and compare the total execution times of both approaches.</li>
 </ul>

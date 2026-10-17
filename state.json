@@ -1,5 +1,5 @@
 {
- "curriculum_index": 9,
+ "curriculum_index": 10,
  "seen": [
   "https://simonwillison.net/2026/Oct/7/ben-affleck/",
   "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
@@ -105,7 +105,15 @@
   "https://github.blog/news-insights/company-news/the-next-developer-interface-is-ambient-intelligence/",
   "https://openai.com/index/introducing-the-rosalind-academic-plan",
   "https://github.blog/engineering/platform-security/staying-evergreen-how-we-automated-secure-access-and-repo-hygiene-in-a-shared-org/",
-  "https://deepmind.google/blog/accelerating-antimicrobial-discovery/"
+  "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+  "https://simonwillison.net/2026/Oct/16/code-review/",
+  "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/",
+  "https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/",
+  "https://openai.com/index/itau-generative-ai",
+  "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
+  "https://techcrunch.com/video/a-nvidia-insider-turned-vc-on-why-robotics-hasnt-hit-its-chatgpt-moment-yet/",
+  "https://www.theverge.com/tech/1012748/nvidia-rtx-spark-windows-arm-laptops-asus-hp-lenovo-impressions",
+  "https://www.theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers"
  ],
  "missions": [
   "Move Project Jarvis API keys to GitHub Secrets.",
@@ -116,7 +124,8 @@
   "Write a Python script splitting paragraphs into structured chunks with length metadata.",
   "Write a Python script using the watchdog library to monitor a local folder for new files.",
   "Build a standalone Python script running a basic plan-act-observe agent loop against a local dictionary tool.",
-  "Write a Python script that validates mock AI extraction results against threshold rules."
+  "Write a Python script that validates mock AI extraction results against threshold rules.",
+  "Write a standalone Python script using asyncio and httpx that fetches three endpoints concurrently with asyncio dot gather and prints the elapsed time."
  ],
  "opportunities": [
   "Secure environment variable management with Doppler",
@@ -127,6 +136,7 @@
   "Local Model Context Protocol file system integration",
   "Python watchdog file monitoring automation",
   "Structured API retry pipelines with Tenacity",
-  "Python local file log rotation"
+  "Python local file log rotation",
+  "Asynchronous batch webhook dispatch automation"
  ]
 }
