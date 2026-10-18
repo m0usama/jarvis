@@ -1,12 +1,11 @@
-# Sources for 2026-10-17 (full)
+# Sources for 2026-10-18 (full)
 
-Learning concept: Async Python with asyncio and httpx
+Learning concept: Retries, backoff and idempotency in automations
 
-- [Quoting Addy Osmani, Morgan Westlee Lunt, and Qing Wang](https://simonwillison.net/2026/Oct/16/code-review/) (Simon Willison, 16 Oct 22:06 UTC)
-- [Replit is no longer working with Anthropic, CEO says](https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/) (TechCrunch AI, 16 Oct 21:22 UTC)
-- [OpenAI models hacked a crypto wallet and breached more websites](https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/) (Ars Technica, 16 Oct 20:59 UTC)
-- [How Itaú is building generative AI for its entire customer base](https://openai.com/index/itau-generative-ai) (OpenAI, 16 Oct 19:00 UTC)
-- [India becomes the latest country to report rogue AI agent activity](https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/) (TechCrunch AI, 16 Oct 17:52 UTC)
-- [An Nvidia insider-turned-VC on why robotics hasn’t hit its ChatGPT moment, yet](https://techcrunch.com/video/a-nvidia-insider-turned-vc-on-why-robotics-hasnt-hit-its-chatgpt-moment-yet/) (TechCrunch AI, 16 Oct 16:30 UTC)
-- [A week with RTX Spark: everything we’ve learned using Nvidia’s new laptops](https://www.theverge.com/tech/1012748/nvidia-rtx-spark-windows-arm-laptops-asus-hp-lenovo-impressions) (The Verge AI, 16 Oct 11:00 UTC)
-- [Meta’s new terms may allow it to train AI on news sites for free](https://www.theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers) (The Verge AI, 16 Oct 10:02 UTC)
+- [Meta removes language that raised scraping and AI training concerns](https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/) (TechCrunch AI, 17 Oct 21:31 UTC)
+- [Inline rendering with document​.currentScript](https://simonwillison.net/2026/Oct/17/document-currentscript/) (Simon Willison, 17 Oct 21:11 UTC)
+- [Anthropic says its workforce has become less junior and is spending more time in meetings](https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/) (TechCrunch AI, 17 Oct 20:21 UTC)
+- [Replit makes OpenAI its default over Anthropic, CEO says](https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/) (TechCrunch AI, 17 Oct 18:48 UTC)
+- [Meta removes language that may have allowed it to scrape news sites](https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites) (The Verge AI, 17 Oct 11:04 UTC)
+- [web-edit 0.1a2](https://simonwillison.net/2026/Oct/17/web-edit/) (Simon Willison, 17 Oct 13:16 UTC)
+- [Websites are closing their doors to AI agents](https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web) (The Verge AI, 17 Oct 09:00 UTC)

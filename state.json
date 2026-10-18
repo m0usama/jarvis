@@ -1,5 +1,5 @@
 {
- "curriculum_index": 10,
+ "curriculum_index": 11,
  "seen": [
   "https://simonwillison.net/2026/Oct/7/ben-affleck/",
   "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
@@ -113,7 +113,14 @@
   "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
   "https://techcrunch.com/video/a-nvidia-insider-turned-vc-on-why-robotics-hasnt-hit-its-chatgpt-moment-yet/",
   "https://www.theverge.com/tech/1012748/nvidia-rtx-spark-windows-arm-laptops-asus-hp-lenovo-impressions",
-  "https://www.theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers"
+  "https://www.theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers",
+  "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
+  "https://simonwillison.net/2026/Oct/17/document-currentscript/",
+  "https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/",
+  "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
+  "https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites",
+  "https://simonwillison.net/2026/Oct/17/web-edit/",
+  "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web"
  ],
  "missions": [
   "Move Project Jarvis API keys to GitHub Secrets.",
@@ -125,7 +132,8 @@
   "Write a Python script using the watchdog library to monitor a local folder for new files.",
   "Build a standalone Python script running a basic plan-act-observe agent loop against a local dictionary tool.",
   "Write a Python script that validates mock AI extraction results against threshold rules.",
-  "Write a standalone Python script using asyncio and httpx that fetches three endpoints concurrently with asyncio dot gather and prints the elapsed time."
+  "Write a standalone Python script using asyncio and httpx that fetches three endpoints concurrently with asyncio dot gather and prints the elapsed time.",
+  "Write a Python script implementing an idempotent processing function with exponential backoff and duplicate key tracking."
  ],
  "opportunities": [
   "Secure environment variable management with Doppler",
@@ -137,6 +145,7 @@
   "Python watchdog file monitoring automation",
   "Structured API retry pipelines with Tenacity",
   "Python local file log rotation",
-  "Asynchronous batch webhook dispatch automation"
+  "Asynchronous batch webhook dispatch automation",
+  "Local SQLite webhook deduplication idempotency layer"
  ]
 }
