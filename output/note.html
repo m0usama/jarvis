@@ -1,60 +1,59 @@
-<h1>Morning Brief: Sunday 18 October 2026</h1>
+<h1>Morning Brief: Monday 19 October 2026</h1>
 <h2>Weather</h2>
 <p>{{WEATHER}}</p>
 <h2>Top Stories</h2>
-<h3>Websites Are Closing Their Doors to AI Agents</h3>
+<h3>Simon Willison Updates CLI Ecosystem (llm-echo 0.5 &amp; llm-tools-datasette 0.1.1)</h3>
 <ul>
-<li><b>What happened</b>: Web publishers and platforms are actively locking down their properties against automated scraping and autonomous AI agent interactions.</li>
-<li><b>Why it matters</b>: Autonomous agent protocols trying to navigate the open web are hitting defensive technical barriers rather than operating freely.</li>
-<li><b>Hype check</b>: Critical development rather than marketing hype.</li>
-<li><b>Verdict</b>: Learn.</li>
-<li><b>Your angle</b>: Connects to your automation engineering track and work on CRM workflows, lead prospecting, and data enrichment; reinforces building API-first integrations and structured partner connections over brittle scraping.</li>
-<li><b>Source</b>: <a href="https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web">The Verge AI</a></li>
+<li><b>What happened:</b> Released `llm-echo` 0.5 (a dummy model mirroring prompts without external API calls) and `llm-tools-datasette` 0.1.1 (fixes broken dependency handling from a network library upgrade).</li>
+<li><b>Why it matters:</b> Local mock providers and strict dependency isolation enable fast, zero-cost test suites.</li>
+<li><b>Hype check:</b> Real engineering development focused on developer tooling.</li>
+<li><b>Verdict:</b> Test.</li>
+<li><b>Your angle:</b> Directly connects to Project Jarvis; integrating a local echo mock allows prompt orchestration testing without API costs or network latency, demonstrating local integration testing skills.</li>
+<li><b>Source:</b> <a href="https://simonwillison.net/2026/Oct/18/llm-echo/">llm-echo 0.5</a> / <a href="https://simonwillison.net/2026/Oct/18/llm-tools-datasette/">llm-tools-datasette 0.1.1</a></li>
 </ul>
-<h3>Replit Makes OpenAI Default Model Provider</h3>
+<h3>Disney Agrees to Hire Majority of Character.AI Workforce</h3>
 <ul>
-<li><b>What happened</b>: Replit announced OpenAI is now its default model provider over Anthropic, though Claude remains available to users.</li>
-<li><b>Why it matters</b>: Demonstrates a major real-world vendor shift in developer tooling, highlighting the need for model portability.</li>
-<li><b>Hype check</b>: Real-world vendor shift.</li>
-<li><b>Verdict</b>: Test.</li>
-<li><b>Your angle</b>: Applies to Claude2InDesign and Project Jarvis; reinforces abstracting the model layer with clean interfaces so switching providers requires changing a single configuration variable.</li>
-<li><b>Source</b>: <a href="https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/">TechCrunch AI</a></li>
+<li><b>What happened:</b> Disney agreed to hire the vast majority of Character.AI's workforce in a stalking horse bid, leaving room for rival offers.</li>
+<li><b>Why it matters:</b> Demonstrates legacy media conglomerates acquiring specialized conversational AI talent rather than funding multi-year internal research.</li>
+<li><b>Hype check:</b> Corporate restructuring and talent acquisition rather than an open technical breakthrough.</li>
+<li><b>Verdict:</b> Ignore.</li>
+<li><b>Your angle:</b> No honest link to your immediate daily stack, deployable tooling, or system architecture.</li>
+<li><b>Source:</b> <a href="https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/">Disney agrees to hire the majority of Character.AI’s workforce</a></li>
 </ul>
-<h3>Web-Edit Adds Direct Clipboard Support</h3>
+<h3>Anthropic Commits 5% of Shares to Public Benefit Fund</h3>
 <ul>
-<li><b>What happened</b>: Simon Willison updated web-edit (version 0.1a2), adding direct clipboard support for text and image data for browsing and editing files across local directories.</li>
-<li><b>Why it matters</b>: Provides a lightweight, open-source utility for managing local file interfaces across machines via private networking.</li>
-<li><b>Hype check</b>: Practical, open-source utility rather than marketing fluff.</li>
-<li><b>Verdict</b>: Test.</li>
-<li><b>Your angle</b>: Connects to your job card print automation project where staff photograph physical job cards; shows the value of building simple, self-hosted internal web utilities over massive external platforms.</li>
-<li><b>Source</b>: <a href="https://simonwillison.net/2026/Oct/17/web-edit/">Simon Willison</a></li>
+<li><b>What happened:</b> Anthropic pledged 5% of its corporate shares to a public benefit fund.</li>
+<li><b>Why it matters:</b> Reflects standard corporate governance for benefit corporations establishing long-term safety and community funding pledges.</li>
+<li><b>Hype check:</b> Corporate governance move with no architectural changes or API updates.</li>
+<li><b>Verdict:</b> Ignore.</li>
+<li><b>Your angle:</b> No technical takeaway for your active development roadmap.</li>
+<li><b>Source:</b> <a href="https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/">Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’</a></li>
 </ul>
 <h2>Automation Opportunity</h2>
 <ul>
-<li>SQLite-based request deduplication for unattended webhook endpoints.</li>
-<li>Solves duplicate event delivery caused by network timeouts in automated pipelines like CRM updates or incoming orders.</li>
-<li>Free to try using Python's built-in `sqlite3` module to manage an embedded local idempotency table.</li>
-<li>Builds skills in backend reliability, data integrity, and defensive API design.</li>
+<li>Containerised headless document processing with WeasyPrint.</li>
+<li>Replaces inconsistent desktop OS libraries and heavy browser automation for rendering styled HTML/CSS into clean PDFs (invoices, trade reports, proofs).</li>
+<li>Open source and free Python library.</li>
+<li>Deepens document automation skills, complementing trade catalogue work and print workflow background.</li>
 </ul>
-<h2>Learning Moment: Retries, Backoff, and Idempotency in Automations</h2>
+<h2>Learning Moment: Docker Fundamentals for Python Services</h2>
 <ul>
-<li>Network hiccups and rate limits cause transient failures when scripts communicate with external systems.</li>
-<li>Immediate retries can cause a thundering herd problem that overwhelms struggling servers.</li>
-<li>Exponential backoff with jitter avoids synchronized traffic spikes by increasing delays (e.g., 1s, 2s, 4s) plus a small random delay.</li>
-<li>Retrying safely requires idempotency, ensuring operations produce the exact same outcome whether run once or multiple times.</li>
-<li>Non-idempotent actions (like charging payments or inserting orders) require unique idempotency keys to safely return previous results without executing side effects twice.</li>
-<li><b>Example:</b> Attaching a unique idempotency key (such as a hash of job card details or a timestamped UUID) to a request so the receiving system checks if it already handled it and returns the original success message without duplicating the action.</li>
+<li>Solves environment drift between local development and host servers by packaging Python runtime, system dependencies, and code into an immutable image.</li>
+<li>A Dockerfile acts as an automated recipe starting from a minimal base OS layer (e.g., `python:3.11-slim`), adding requirements, installing packages, copying code, and setting default run commands.</li>
+<li>Containerisation guarantees identical execution across staging and production, removing a key barrier for junior backend engineering roles.</li>
+<li><b>Example:</b> Containerising a FastAPI service by defining a working directory, copying the dependency manifest, running `pip install` without caching, copying application files, exposing port 8000, and mapping host port 8000 to the container port to run in full isolation from host binaries.</li>
 </ul>
 <h2>Career Move</h2>
 <ul>
-<li>Frame the job card print automation on your CV and GitHub as an end-to-end, unattended print automation pipeline rather than a mere script.</li>
-<li>Explicitly detail operational edge cases: image quality validation, parsing structured fields via a free-tier vision model, handling Fiery print workflow communication failures, and choosing direct integration over brittle GUI automation.</li>
+<li>Reframe your automated job card print project from a basic code script into a portfolio case study focused on operational constraints, business friction (manual paper cards causing production delays), and technical trade-offs.</li>
+<li>Highlight specific engineering choices: using a free-tier vision model for OCR, integrating unattended workflows with the Fiery print environment, maintaining state via Google Sheets and archived photo directories, and building failure recovery for blurred images.</li>
 </ul>
 <h2>Today's Mission</h2>
-<p>Take twenty minutes to write a standalone Python script demonstrating an idempotent processing function using a local Python dictionary as an in-memory store.</p>
+<p>Create a complete, valid Dockerfile for a minimal FastAPI application.</p>
 <ul>
-<li>☐ Define a list of incoming mock payloads containing duplicate IDs.</li>
-<li>☐ Implement an in-memory dictionary store to check for existing IDs before processing.</li>
-<li>☐ Simulate a transient error that triggers an exponential retry loop for new items.</li>
-<li>☐ Print a clear confirmation when a duplicate payload is safely skipped.</li>
+<li>☐ Write the Dockerfile using a slim Python base image</li>
+<li>☐ Establish a non-root working directory</li>
+<li>☐ Copy the requirements file and install dependencies with the no-cache-dir flag</li>
+<li>☐ Copy your main application file</li>
+<li>☐ Define the entry point command using Uvicorn</li>
 </ul>

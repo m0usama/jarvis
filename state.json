@@ -1,5 +1,5 @@
 {
- "curriculum_index": 11,
+ "curriculum_index": 12,
  "seen": [
   "https://simonwillison.net/2026/Oct/7/ben-affleck/",
   "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
@@ -120,7 +120,12 @@
   "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
   "https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites",
   "https://simonwillison.net/2026/Oct/17/web-edit/",
-  "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web"
+  "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+  "https://simonwillison.net/2026/Oct/18/llm-tools-datasette/",
+  "https://simonwillison.net/2026/Oct/18/llm-echo/",
+  "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
+  "https://www.theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot",
+  "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/"
  ],
  "missions": [
   "Move Project Jarvis API keys to GitHub Secrets.",
@@ -133,7 +138,8 @@
   "Build a standalone Python script running a basic plan-act-observe agent loop against a local dictionary tool.",
   "Write a Python script that validates mock AI extraction results against threshold rules.",
   "Write a standalone Python script using asyncio and httpx that fetches three endpoints concurrently with asyncio dot gather and prints the elapsed time.",
-  "Write a Python script implementing an idempotent processing function with exponential backoff and duplicate key tracking."
+  "Write a Python script implementing an idempotent processing function with exponential backoff and duplicate key tracking.",
+  "Write a complete production-style Dockerfile for a minimal FastAPI service using a slim Python base image."
  ],
  "opportunities": [
   "Secure environment variable management with Doppler",
@@ -146,6 +152,7 @@
   "Structured API retry pipelines with Tenacity",
   "Python local file log rotation",
   "Asynchronous batch webhook dispatch automation",
-  "Local SQLite webhook deduplication idempotency layer"
+  "Local SQLite webhook deduplication idempotency layer",
+  "Containerised headless document rendering with WeasyPrint"
  ]
 }
