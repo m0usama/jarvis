@@ -1,5 +1,5 @@
 {
- "curriculum_index": 12,
+ "curriculum_index": 13,
  "seen": [
   "https://simonwillison.net/2026/Oct/7/ben-affleck/",
   "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
@@ -125,7 +125,18 @@
   "https://simonwillison.net/2026/Oct/18/llm-echo/",
   "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
   "https://www.theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot",
-  "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/"
+  "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
+  "https://techcrunch.com/2026/10/19/mamdani-says-feds-have-abdicated-on-ai-urges-new-yorkers-to-push-back/",
+  "https://simonwillison.net/2026/Oct/19/my-obituary-for-programming/",
+  "https://techcrunch.com/2026/10/19/nscale-and-anthropic-are-reportedly-in-talks-for-yet-another-45-billion-compute-deal/",
+  "https://techcrunch.com/2026/10/19/embedded-ai-evaluators-wont-be-an-easy-solution-hugging-faces-policy-chief-says/",
+  "https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report",
+  "https://www.theverge.com/ai-artificial-intelligence/1014045/coreweave-stock-debt-sector-ai",
+  "https://arstechnica.com/security/2026/10/recently-fixed-plex-media-vulnerabilities-are-being-exploited-to-install-malware/",
+  "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code/",
+  "https://arstechnica.com/information-technology/2026/10/reactos-reaches-major-milestone-with-ntfs-install-support/",
+  "https://www.theverge.com/podcast/1012839/pritzker-ai-privacy-data-centers-flock-congress-laws",
+  "https://openai.com/index/low-resource-programming-languages"
  ],
  "missions": [
   "Move Project Jarvis API keys to GitHub Secrets.",
@@ -139,7 +150,8 @@
   "Write a Python script that validates mock AI extraction results against threshold rules.",
   "Write a standalone Python script using asyncio and httpx that fetches three endpoints concurrently with asyncio dot gather and prints the elapsed time.",
   "Write a Python script implementing an idempotent processing function with exponential backoff and duplicate key tracking.",
-  "Write a complete production-style Dockerfile for a minimal FastAPI service using a slim Python base image."
+  "Write a complete production-style Dockerfile for a minimal FastAPI service using a slim Python base image.",
+  "Create a GitHub Actions workflow that automatically runs pytest on every push."
  ],
  "opportunities": [
   "Secure environment variable management with Doppler",
@@ -153,6 +165,7 @@
   "Python local file log rotation",
   "Asynchronous batch webhook dispatch automation",
   "Local SQLite webhook deduplication idempotency layer",
-  "Containerised headless document rendering with WeasyPrint"
+  "Containerised headless document rendering with WeasyPrint",
+  "Automated pipeline validation using Great Expectations"
  ]
 }
