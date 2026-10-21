@@ -1,15 +1,20 @@
-# Sources for 2026-10-20 (full)
+# Sources for 2026-10-21 (full)
 
-Learning concept: CI/CD with GitHub Actions
+Learning concept: Workflow orchestration: cron versus Airflow and Prefect
 
-- [Mamdani says feds have abdicated on AI, urges New Yorkers to push back](https://techcrunch.com/2026/10/19/mamdani-says-feds-have-abdicated-on-ai-urges-new-yorkers-to-push-back/) (TechCrunch AI, 20 Oct 01:27 UTC)
-- [My obituary for programming](https://simonwillison.net/2026/Oct/19/my-obituary-for-programming/) (Simon Willison, 19 Oct 23:58 UTC)
-- [Nscale and Anthropic are reportedly in talks for yet another $45B compute deal](https://techcrunch.com/2026/10/19/nscale-and-anthropic-are-reportedly-in-talks-for-yet-another-45-billion-compute-deal/) (TechCrunch AI, 19 Oct 23:39 UTC)
-- [Embedded AI evaluators won’t be an easy solution, Hugging Face’s policy chief says](https://techcrunch.com/2026/10/19/embedded-ai-evaluators-wont-be-an-easy-solution-hugging-faces-policy-chief-says/) (TechCrunch AI, 19 Oct 22:49 UTC)
-- [The fossil fuel comeback is here](https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report) (The Verge AI, 19 Oct 17:48 UTC)
-- [CoreWeave’s debt is becoming the whole AI industry’s problem](https://www.theverge.com/ai-artificial-intelligence/1014045/coreweave-stock-debt-sector-ai) (The Verge AI, 19 Oct 17:28 UTC)
-- [PSA: Patch your Plex media server before someone hacks it](https://arstechnica.com/security/2026/10/recently-fixed-plex-media-vulnerabilities-are-being-exploited-to-install-malware/) (Ars Technica, 19 Oct 19:39 UTC)
-- [How to continue a GitHub Copilot app session in VS Code](https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code/) (GitHub Blog, 19 Oct 18:47 UTC)
-- [ReactOS reaches major milestone with NTFS install support](https://arstechnica.com/information-technology/2026/10/reactos-reaches-major-milestone-with-ntfs-install-support/) (Ars Technica, 19 Oct 18:30 UTC)
-- [JB Pritzker thinks AI could help us live to 100 — or threaten us like nukes](https://www.theverge.com/podcast/1012839/pritzker-ai-privacy-data-centers-flock-congress-laws) (The Verge AI, 19 Oct 10:30 UTC)
-- [Advancing coding in low‑resource programming languages](https://openai.com/index/low-resource-programming-languages) (OpenAI, 19 Oct 12:00 UTC)
+- [PHP warns it plans to release 2 emergency patches imminently](https://arstechnica.com/security/2026/10/php-maintainers-tell-web-devs-to-prepare-themselves-for-critical-security-patches/) (Ars Technica, 21 Oct 02:12 UTC)
+- [eMudhra Intermediate CA Compromise](https://simonwillison.net/2026/Oct/20/emudhra-certificates/) (Simon Willison, 20 Oct 23:50 UTC)
+- [Judge dismisses Sam Altman’s sister’s sexual abuse lawsuit](https://www.theverge.com/ai-artificial-intelligence/1014976/sam-altman-ann-altman-lawsuit-dismissed) (The Verge AI, 20 Oct 19:04 UTC)
+- [Anthropic pitches AI safety bill that may block a model if 50+ people could be killed](https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/) (TechCrunch AI, 20 Oct 23:01 UTC)
+- [Hugging Face CEO warns that Netflix’s OpenAI hack documentary isn’t accurate](https://techcrunch.com/2026/10/20/hugging-face-ceo-warns-that-netflixs-openai-hack-documentary-isnt-accurate/) (TechCrunch AI, 20 Oct 22:24 UTC)
+- [Google’s more personalized Gemini AI is heading to your car](https://www.theverge.com/tech/1014999/google-gemini-ai-cars-android-auto) (The Verge AI, 20 Oct 18:11 UTC)
+- [Anthropic’s cloud partnerships are getting messy](https://techcrunch.com/2026/10/20/anthropics-cloud-partnerships-are-getting-messy/) (TechCrunch AI, 20 Oct 21:25 UTC)
+- [The Internet goes on high alert after discovery of 8 compromised TLS certs](https://arstechnica.com/security/2026/10/the-internet-goes-on-high-alert-after-discovery-of-8-compromised-tls-certs/) (Ars Technica, 20 Oct 19:47 UTC)
+- [Battle Drones - a vibe coded RTS with audio-based multiplayer](https://simonwillison.net/2026/Oct/20/battledrones/) (Simon Willison, 20 Oct 19:34 UTC)
+- [NVIDIA Cosmos3-H-Dreams: Bringing Clinical Surgery to Life Through Generative Simulation](https://huggingface.co/blog/nvidia/cosmos3-h-dreams) (Hugging Face, 20 Oct 18:17 UTC)
+- [Meta pauses Muse sharing after researchers find AI chats on the web](https://www.theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats) (The Verge AI, 20 Oct 14:07 UTC)
+- [FairStress: A deeper evaluation of fairness in LLM decision-making](https://huggingface.co/blog/allenai/fairstress) (Hugging Face, 20 Oct 16:09 UTC)
+- [How 3 Java Champions are using GitHub Copilot for increased productivity](https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/) (GitHub Blog, 20 Oct 16:05 UTC)
+- [ALTK-Evolve: How learned memory tops the τ²-bench leaderboard on customer service tasks without a frontier model](https://huggingface.co/blog/ibm-research/altk-evolve-bc) (Hugging Face, 20 Oct 15:19 UTC)
+
+Feeds that failed: Google DeepMind

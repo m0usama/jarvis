@@ -1,5 +1,5 @@
 {
- "curriculum_index": 13,
+ "curriculum_index": 14,
  "seen": [
   "https://simonwillison.net/2026/Oct/7/ben-affleck/",
   "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
@@ -136,7 +136,21 @@
   "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code/",
   "https://arstechnica.com/information-technology/2026/10/reactos-reaches-major-milestone-with-ntfs-install-support/",
   "https://www.theverge.com/podcast/1012839/pritzker-ai-privacy-data-centers-flock-congress-laws",
-  "https://openai.com/index/low-resource-programming-languages"
+  "https://openai.com/index/low-resource-programming-languages",
+  "https://arstechnica.com/security/2026/10/php-maintainers-tell-web-devs-to-prepare-themselves-for-critical-security-patches/",
+  "https://simonwillison.net/2026/Oct/20/emudhra-certificates/",
+  "https://www.theverge.com/ai-artificial-intelligence/1014976/sam-altman-ann-altman-lawsuit-dismissed",
+  "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/",
+  "https://techcrunch.com/2026/10/20/hugging-face-ceo-warns-that-netflixs-openai-hack-documentary-isnt-accurate/",
+  "https://www.theverge.com/tech/1014999/google-gemini-ai-cars-android-auto",
+  "https://techcrunch.com/2026/10/20/anthropics-cloud-partnerships-are-getting-messy/",
+  "https://arstechnica.com/security/2026/10/the-internet-goes-on-high-alert-after-discovery-of-8-compromised-tls-certs/",
+  "https://simonwillison.net/2026/Oct/20/battledrones/",
+  "https://huggingface.co/blog/nvidia/cosmos3-h-dreams",
+  "https://www.theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats",
+  "https://huggingface.co/blog/allenai/fairstress",
+  "https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/",
+  "https://huggingface.co/blog/ibm-research/altk-evolve-bc"
  ],
  "missions": [
   "Move Project Jarvis API keys to GitHub Secrets.",
@@ -151,7 +165,8 @@
   "Write a standalone Python script using asyncio and httpx that fetches three endpoints concurrently with asyncio dot gather and prints the elapsed time.",
   "Write a Python script implementing an idempotent processing function with exponential backoff and duplicate key tracking.",
   "Write a complete production-style Dockerfile for a minimal FastAPI service using a slim Python base image.",
-  "Create a GitHub Actions workflow that automatically runs pytest on every push."
+  "Create a GitHub Actions workflow that automatically runs pytest on every push.",
+  "Write a two-task local Prefect workflow script that passes mock job data and logs execution state."
  ],
  "opportunities": [
   "Secure environment variable management with Doppler",
@@ -166,6 +181,7 @@
   "Asynchronous batch webhook dispatch automation",
   "Local SQLite webhook deduplication idempotency layer",
   "Containerised headless document rendering with WeasyPrint",
-  "Automated pipeline validation using Great Expectations"
+  "Automated pipeline validation using Great Expectations",
+  "Unified pipeline error alerting with Apprise"
  ]
 }
