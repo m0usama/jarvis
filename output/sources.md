@@ -1,20 +1,18 @@
-# Sources for 2026-10-21 (full)
+# Sources for 2026-10-22 (full)
 
-Learning concept: Workflow orchestration: cron versus Airflow and Prefect
+Learning concept: Data pipelines: ETL versus ELT
 
-- [PHP warns it plans to release 2 emergency patches imminently](https://arstechnica.com/security/2026/10/php-maintainers-tell-web-devs-to-prepare-themselves-for-critical-security-patches/) (Ars Technica, 21 Oct 02:12 UTC)
-- [eMudhra Intermediate CA Compromise](https://simonwillison.net/2026/Oct/20/emudhra-certificates/) (Simon Willison, 20 Oct 23:50 UTC)
-- [Judge dismisses Sam Altman’s sister’s sexual abuse lawsuit](https://www.theverge.com/ai-artificial-intelligence/1014976/sam-altman-ann-altman-lawsuit-dismissed) (The Verge AI, 20 Oct 19:04 UTC)
-- [Anthropic pitches AI safety bill that may block a model if 50+ people could be killed](https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/) (TechCrunch AI, 20 Oct 23:01 UTC)
-- [Hugging Face CEO warns that Netflix’s OpenAI hack documentary isn’t accurate](https://techcrunch.com/2026/10/20/hugging-face-ceo-warns-that-netflixs-openai-hack-documentary-isnt-accurate/) (TechCrunch AI, 20 Oct 22:24 UTC)
-- [Google’s more personalized Gemini AI is heading to your car](https://www.theverge.com/tech/1014999/google-gemini-ai-cars-android-auto) (The Verge AI, 20 Oct 18:11 UTC)
-- [Anthropic’s cloud partnerships are getting messy](https://techcrunch.com/2026/10/20/anthropics-cloud-partnerships-are-getting-messy/) (TechCrunch AI, 20 Oct 21:25 UTC)
-- [The Internet goes on high alert after discovery of 8 compromised TLS certs](https://arstechnica.com/security/2026/10/the-internet-goes-on-high-alert-after-discovery-of-8-compromised-tls-certs/) (Ars Technica, 20 Oct 19:47 UTC)
-- [Battle Drones - a vibe coded RTS with audio-based multiplayer](https://simonwillison.net/2026/Oct/20/battledrones/) (Simon Willison, 20 Oct 19:34 UTC)
-- [NVIDIA Cosmos3-H-Dreams: Bringing Clinical Surgery to Life Through Generative Simulation](https://huggingface.co/blog/nvidia/cosmos3-h-dreams) (Hugging Face, 20 Oct 18:17 UTC)
-- [Meta pauses Muse sharing after researchers find AI chats on the web](https://www.theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats) (The Verge AI, 20 Oct 14:07 UTC)
-- [FairStress: A deeper evaluation of fairness in LLM decision-making](https://huggingface.co/blog/allenai/fairstress) (Hugging Face, 20 Oct 16:09 UTC)
-- [How 3 Java Champions are using GitHub Copilot for increased productivity](https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/) (GitHub Blog, 20 Oct 16:05 UTC)
-- [ALTK-Evolve: How learned memory tops the τ²-bench leaderboard on customer service tasks without a frontier model](https://huggingface.co/blog/ibm-research/altk-evolve-bc) (Hugging Face, 20 Oct 15:19 UTC)
-
-Feeds that failed: Google DeepMind
+- [Blackstone’s Jas Khaira says fears over AI-buildout debt are overblown](https://techcrunch.com/2026/10/21/blackstones-jas-khaira-says-fears-over-ai-buildout-debt-are-overblown/) (TechCrunch AI, 21 Oct 22:51 UTC)
+- [Data centers could erase decades of air quality gains](https://www.theverge.com/ai-artificial-intelligence/1015958/data-center-pollution-rising-report) (The Verge AI, 21 Oct 18:33 UTC)
+- [Enterprises keep buying software upgrades that IT thinks will make things worse](https://arstechnica.com/information-technology/2026/10/survey-enterprises-waste-28-percent-of-software-budgets-on-unwanted-upgrades/) (Ars Technica, 21 Oct 21:48 UTC)
+- [Meta to create a new class of shares to fund AI push](https://www.theverge.com/tech/1015799/meta-shares-class-ai-q3-2026-earnings) (The Verge AI, 21 Oct 17:30 UTC)
+- [TechCrunch Founder Summit 2026: Everything you need to know](https://techcrunch.com/2026/10/21/techcrunch-founder-summit-2026-everything-you-need-to-know/) (TechCrunch AI, 21 Oct 21:16 UTC)
+- [Meta says Muse has over 10M users, with shopping a top activity](https://techcrunch.com/2026/10/21/meta-says-muse-has-over-10m-users-with-shopping-a-top-activity/) (TechCrunch AI, 21 Oct 21:14 UTC)
+- [Broad access through consistent standards](https://openai.com/index/broad-access-through-consistent-standards) (OpenAI, 21 Oct 21:00 UTC)
+- [Anthropic takes on Muse with Claude Duet, its new AI agent](https://www.theverge.com/ai-artificial-intelligence/1015843/anthropic-claude-duet-ai-agent) (The Verge AI, 21 Oct 15:53 UTC)
+- [Today's PHP Security Release, and How We're Strengthening PHP Security](https://simonwillison.net/2026/Oct/21/php-security-release/) (Simon Willison, 21 Oct 18:41 UTC)
+- [NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required](https://huggingface.co/blog/nvidia/kumo-relational) (Hugging Face, 21 Oct 18:26 UTC)
+- [How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications](https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization) (Hugging Face, 21 Oct 17:35 UTC)
+- [How AT&T is rethinking in-house legal work with OpenAI](https://openai.com/index/att-legal) (OpenAI, 21 Oct 17:00 UTC)
+- [Panache — RTS Belle Époque pour mobile](https://simonwillison.net/2026/Oct/21/panache/) (Simon Willison, 21 Oct 16:25 UTC)
+- [Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.](https://huggingface.co/blog/amazon/profiling-torchneuron-part-1) (Hugging Face, 21 Oct 16:04 UTC)

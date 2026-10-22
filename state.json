@@ -1,5 +1,5 @@
 {
- "curriculum_index": 14,
+ "curriculum_index": 15,
  "seen": [
   "https://simonwillison.net/2026/Oct/7/ben-affleck/",
   "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
@@ -150,7 +150,21 @@
   "https://www.theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats",
   "https://huggingface.co/blog/allenai/fairstress",
   "https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/",
-  "https://huggingface.co/blog/ibm-research/altk-evolve-bc"
+  "https://huggingface.co/blog/ibm-research/altk-evolve-bc",
+  "https://techcrunch.com/2026/10/21/blackstones-jas-khaira-says-fears-over-ai-buildout-debt-are-overblown/",
+  "https://www.theverge.com/ai-artificial-intelligence/1015958/data-center-pollution-rising-report",
+  "https://arstechnica.com/information-technology/2026/10/survey-enterprises-waste-28-percent-of-software-budgets-on-unwanted-upgrades/",
+  "https://www.theverge.com/tech/1015799/meta-shares-class-ai-q3-2026-earnings",
+  "https://techcrunch.com/2026/10/21/techcrunch-founder-summit-2026-everything-you-need-to-know/",
+  "https://techcrunch.com/2026/10/21/meta-says-muse-has-over-10m-users-with-shopping-a-top-activity/",
+  "https://openai.com/index/broad-access-through-consistent-standards",
+  "https://www.theverge.com/ai-artificial-intelligence/1015843/anthropic-claude-duet-ai-agent",
+  "https://simonwillison.net/2026/Oct/21/php-security-release/",
+  "https://huggingface.co/blog/nvidia/kumo-relational",
+  "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
+  "https://openai.com/index/att-legal",
+  "https://simonwillison.net/2026/Oct/21/panache/",
+  "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1"
  ],
  "missions": [
   "Move Project Jarvis API keys to GitHub Secrets.",
@@ -166,7 +180,8 @@
   "Write a Python script implementing an idempotent processing function with exponential backoff and duplicate key tracking.",
   "Write a complete production-style Dockerfile for a minimal FastAPI service using a slim Python base image.",
   "Create a GitHub Actions workflow that automatically runs pytest on every push.",
-  "Write a two-task local Prefect workflow script that passes mock job data and logs execution state."
+  "Write a two-task local Prefect workflow script that passes mock job data and logs execution state.",
+  "Write a Python script using in-memory SQLite demonstrating ELT by loading raw JSON into a staging table and transforming it via SQL into a clean reporting table."
  ],
  "opportunities": [
   "Secure environment variable management with Doppler",
@@ -182,6 +197,7 @@
   "Local SQLite webhook deduplication idempotency layer",
   "Containerised headless document rendering with WeasyPrint",
   "Automated pipeline validation using Great Expectations",
-  "Unified pipeline error alerting with Apprise"
+  "Unified pipeline error alerting with Apprise",
+  "Local tabular data profiling with DuckDB"
  ]
 }
