@@ -1,5 +1,5 @@
 {
- "curriculum_index": 15,
+ "curriculum_index": 16,
  "seen": [
   "https://simonwillison.net/2026/Oct/7/ben-affleck/",
   "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
@@ -164,7 +164,21 @@
   "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
   "https://openai.com/index/att-legal",
   "https://simonwillison.net/2026/Oct/21/panache/",
-  "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1"
+  "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
+  "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/",
+  "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
+  "https://openai.com/index/openai-nask-ai-safety-security-partnership",
+  "https://huggingface.co/blog/microsoft/thinkingbox-training",
+  "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
+  "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
+  "https://www.theverge.com/tech/1017082/meta-terms-update-ai-training-concerns",
+  "https://www.theverge.com/tech/1017066/meta-muse-sharing-back-on-artifiacts",
+  "https://arstechnica.com/security/2026/10/disgraced-emudhra-drops-out-of-tls-business-following-certificate-debacle/",
+  "https://simonwillison.net/2026/Oct/22/de-staat-freedom/",
+  "https://openai.com/index/decisions-api",
+  "https://simonwillison.net/2026/Oct/22/donating-agent-skills/",
+  "https://github.blog/security/how-bug-bounty-sharpens-one-researchers-security-skills/",
+  "https://huggingface.co/blog/allenai/olmoearth-v1-3"
  ],
  "missions": [
   "Move Project Jarvis API keys to GitHub Secrets.",
@@ -181,7 +195,8 @@
   "Write a complete production-style Dockerfile for a minimal FastAPI service using a slim Python base image.",
   "Create a GitHub Actions workflow that automatically runs pytest on every push.",
   "Write a two-task local Prefect workflow script that passes mock job data and logs execution state.",
-  "Write a Python script using in-memory SQLite demonstrating ELT by loading raw JSON into a staging table and transforming it via SQL into a clean reporting table."
+  "Write a Python script using in-memory SQLite demonstrating ELT by loading raw JSON into a staging table and transforming it via SQL into a clean reporting table.",
+  "Write a Python script using SQLite comparing query plans before and after indexing ten thousand records."
  ],
  "opportunities": [
   "Secure environment variable management with Doppler",
@@ -198,6 +213,7 @@
   "Containerised headless document rendering with WeasyPrint",
   "Automated pipeline validation using Great Expectations",
   "Unified pipeline error alerting with Apprise",
-  "Local tabular data profiling with DuckDB"
+  "Local tabular data profiling with DuckDB",
+  "Automated incoming webhook schema validation with Pydantic"
  ]
 }
