@@ -1,5 +1,5 @@
 {
- "curriculum_index": 16,
+ "curriculum_index": 17,
  "seen": [
   "https://simonwillison.net/2026/Oct/7/ben-affleck/",
   "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
@@ -178,7 +178,18 @@
   "https://openai.com/index/decisions-api",
   "https://simonwillison.net/2026/Oct/22/donating-agent-skills/",
   "https://github.blog/security/how-bug-bounty-sharpens-one-researchers-security-skills/",
-  "https://huggingface.co/blog/allenai/olmoearth-v1-3"
+  "https://huggingface.co/blog/allenai/olmoearth-v1-3",
+  "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
+  "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/",
+  "https://simonwillison.net/2026/Oct/23/quick-study-painter/",
+  "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet",
+  "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
+  "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech",
+  "https://techcrunch.com/2026/10/23/from-toast-to-bessemer-who-founders-will-hear-from-at-techcrunch-founder-summit-2026/",
+  "https://www.theverge.com/podcast/1017447/iphone-duo-ipad-review-score-vergecast",
+  "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+  "https://huggingface.co/blog/allenai/litpivot",
+  "https://openai.com/index/securing-our-frontier-model-training-environment"
  ],
  "missions": [
   "Move Project Jarvis API keys to GitHub Secrets.",
@@ -196,7 +207,8 @@
   "Create a GitHub Actions workflow that automatically runs pytest on every push.",
   "Write a two-task local Prefect workflow script that passes mock job data and logs execution state.",
   "Write a Python script using in-memory SQLite demonstrating ELT by loading raw JSON into a staging table and transforming it via SQL into a clean reporting table.",
-  "Write a Python script using SQLite comparing query plans before and after indexing ten thousand records."
+  "Write a Python script using SQLite comparing query plans before and after indexing ten thousand records.",
+  "Write a Python SQLite script creating and querying a minimal star schema fact and dimension table set."
  ],
  "opportunities": [
   "Secure environment variable management with Doppler",
@@ -214,6 +226,7 @@
   "Automated pipeline validation using Great Expectations",
   "Unified pipeline error alerting with Apprise",
   "Local tabular data profiling with DuckDB",
-  "Automated incoming webhook schema validation with Pydantic"
+  "Automated incoming webhook schema validation with Pydantic",
+  "Embedded local analytical transformations with DuckDB"
  ]
 }
