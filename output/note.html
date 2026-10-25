@@ -1,69 +1,60 @@
-<h1>Morning Brief: Saturday 24 October 2026</h1>
+<h1>Morning Brief: Sunday 25 October 2026</h1>
 <h2>Weather</h2>
 <p>{{WEATHER}}</p>
 <h2>Top Stories</h2>
-<h3>OpenAI Stops Training Frontier Models on Live Internet</h3>
+<h3>Block’s New Human-Like Local Voice Model</h3>
 <ul>
-<li><b>What happened</b>: OpenAI announced it will no longer train frontier models on the live internet, shifting to an offline environment using indexed, cached web content following rogue hacking risks.</li>
-<li><b>Why it matters</b>: Cuts off models from exploiting live endpoints during training, removing uncontrolled external dependencies and vulnerabilities.</li>
-<li><b>Hype check</b>: A real architectural shift rather than marketing.</li>
-<li><b>Verdict</b>: Learn.</li>
-<li><b>Your angle</b>: Relevant to your AI engineering track and systems like Project Jarvis; mastering local sandboxing, static data isolation, and mock inputs provides an edge over relying on unconstrained live web connections.</li>
-<li><b>Source</b>: <a href="https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/">TechCrunch AI</a></li>
+<li><b>What happened:</b> Block introduced a human-sounding voice model capable of running locally on an Apple Silicon M4 Max chip.</li>
+<li><b>Why it matters:</b> It removes high-latency cloud API dependencies, network overhead, and usage costs, making local tooling and voice interfaces significantly more responsive.</li>
+<li><b>Hype check:</b> Genuine engineering milestone, though it currently requires high-end hardware.</li>
+<li><b>Verdict:</b> Test (once weights or lightweight variants are accessible).</li>
+<li><b>Your angle:</b> Directly connects to Project Jarvis spoken briefings; demonstrates practical offline latency optimization, resource constraint management, and local model deployment over relying on third-party cloud endpoints.</li>
+<li><b>Source:</b> <a href="https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/">TechCrunch AI</a></li>
 </ul>
-<h3>OpenAI Details Storage Scaling for One Billion Users</h3>
+<h3>The AI Graveyard Tracks Failed Projects</h3>
 <ul>
-<li><b>What happened</b>: OpenAI published an engineering breakdown (Habitat Part Two) on combining multi-tenancy, global caching layers, and Azure Cosmos DB to reach 12x faster read operations.</li>
-<li><b>Why it matters</b>: Demonstrates the necessity of separating primary transaction stores from high-speed read caches to prevent latency bottlenecks.</li>
-<li><b>Hype check</b>: Solid infrastructure reality.</li>
-<li><b>Verdict</b>: Test concepts locally.</li>
-<li><b>Your angle</b>: Directly applies to your data and automation tracks managing trade databases and e-commerce analytics; read-through caching makes pipeline designs significantly more robust.</li>
-<li><b>Source</b>: <a href="https://openai.com/index/scaling-storage-one-billion-users-part-two">OpenAI</a></li>
+<li><b>What happened:</b> TechCrunch published a running list of failed AI startups, corporate initiatives, and delayed assistants that missed expectations.</li>
+<li><b>Why it matters:</b> The industry is moving away from blind experimentation toward demanding real commercial utility and sustainable unit economics.</li>
+<li><b>Hype check:</b> Analytical report grounded in corporate reality.</li>
+<li><b>Verdict:</b> Learn.</li>
+<li><b>Your angle:</b> Validates your focus on Claude2InDesign and Redo Print and Design automations; positions you as someone building tools with measurable operational savings rather than speculative, generic chatbot wrappers.</li>
+<li><b>Source:</b> <a href="https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/">TechCrunch AI</a></li>
 </ul>
-<h3>Moonshot Releases Kimi K3.1 Pro on API</h3>
+<h3>Pennsylvania Passes AI Advertising Disclosure Law</h3>
 <ul>
-<li><b>What happened</b>: Moonshot launched Kimi K3.1 Pro on their API with weights promised for November 4, 2026, alongside a high-speed variant running 2x to 3x faster for double the price.</li>
-<li><b>Why it matters</b>: Offers an alternative frontier endpoint requiring cost-per-second and latency evaluation.</li>
-<li><b>Hype check</b>: Commercial frontier model release with upcoming weights.</li>
-<li><b>Verdict</b>: Test when weights release.</li>
-<li><b>Your angle</b>: Relevant to your AI engineering evaluation work and Claude to InDesign automation; balancing latency, token costs, and context windows is critical for production deployments.</li>
-<li><b>Source</b>: <a href="https://simonwillison.net/2026/Oct/23/kimi-k31-pro/">Simon Willison</a></li>
-</ul>
-<h3>Simon Willison Demos Quick Study Canvas Tool</h3>
-<ul>
-<li><b>What happened</b>: Simon Willison shared an experiment using Claude Opus 5.5 High to build a self-contained web artifact that repaints uploaded photos onto an HTML canvas element.</li>
-<li><b>Why it matters</b>: Demonstrates using vision and generative models to create deterministic canvas and native document assets.</li>
-<li><b>Hype check</b>: Exploratory tool demonstration.</li>
-<li><b>Verdict</b>: Test.</li>
-<li><b>Your angle</b>: Connects to your Claude to InDesign pipeline and job card print automation where raw visual inputs must become structured native assets.</li>
-<li><b>Source</b>: <a href="https://simonwillison.net/2026/Oct/23/quick-study-painter/">Simon Willison</a></li>
+<li><b>What happened:</b> Pennsylvania Governor Josh Shapiro signed the Artificial Intelligence Deceptive Advertising Act, mandating clear disclosures on significantly modified or AI-generated political and commercial ads.</li>
+<li><b>Why it matters:</b> Signals growing jurisdictional legal transparency requirements for automated creative generation and marketing assets.</li>
+<li><b>Hype check:</b> Genuine legal development with immediate compliance implications.</li>
+<li><b>Verdict:</b> Learn.</li>
+<li><b>Your angle:</b> Ties to your product catalogue restructuring and automated design pipelines; incorporating automated metadata tagging and audit logs demonstrates compliance by design and traceable asset provenance.</li>
+<li><b>Source:</b> <a href="https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act">The Verge AI</a></li>
 </ul>
 <h2>Automation Opportunity</h2>
 <ul>
-<li><b>What it is</b>: Embedded transformation engine using DuckDB to run analytical SQL queries in memory on local Parquet, CSV, or JSON files.</li>
-<li><b>Problem it solves</b>: Removes the latency, cost, and overhead of spinning up full cloud databases or ETL servers just to clean raw local imports.</li>
-<li><b>Free to try</b>: Completely free and open-source.</li>
-<li><b>Skill gained</b>: Local batch transformation and lightweight data engineering for processing trade catalogues and production logs.</li>
+<li><b>What it is:</b> Internal PDF rendering engine using PyMuPDF to extract text coordinates and bounding boxes from structured print documents.</li>
+<li><b>Problem it solves:</b> Handles messy incoming print files by programmatically parsing layout coordinates, embedded vector text, and visual boundaries before downstream processing.</li>
+<li><b>Free to try:</b> Entirely free, open-source, and runs locally without API costs.</li>
+<li><b>Skill gained:</b> Document processing, visual boundary validation, and automation engineering depth.</li>
 </ul>
-<h2>Learning Moment: Star Schemas and dbt</h2>
+<h2>Learning Moment: Running FastAPI in Production</h2>
 <ul>
-<li>Transactional databases normalize operational data across fragmented tables for fast single-row writes, but result in slow, complex analytical queries.</li>
-<li>Star schemas reorganize data into a central fact table (containing quantitative numerical metrics and foreign keys) surrounded by dimension tables (containing descriptive context).</li>
-<li>dbt (data build tool) replaces brittle extraction scripts with declarative version-controlled SQL `SELECT` statements to transform raw tables into staging and dimensional models.</li>
-<li>dbt automatically infers dependency graphs, tests primary keys, and builds reliable, audit-ready data models for downstream automations.</li>
-<li><b>Example:</b> In a print business, a central `fact_print_jobs` table stores sheet counts, print duration, and revenue, linking to `dim_customer`, `dim_machine`, and `dim_date`; calculating total sheets by customer tier requires only one fast join instead of querying multiple normalized tables.</li>
+<li>Transitioning to production requires moving beyond basic route functions to modular resources, predictable lifecycles, and non-blocking responses.</li>
+<li>Dependency injection (`Depends`) allows clean sharing and automatic cleanup of database sessions, configs, and validation logic without global variables.</li>
+<li>Background tasks prevent latency and server connection exhaustion by returning immediate HTTP 200 responses while executing heavier downstream operations right after.</li>
+<li>Authentication dependencies centrally inspect authorization headers, check API keys, or decode tokens to protect routes uniformly.</li>
+<li><b>Example:</b> An automated print job submission endpoint validates payload parameters, authenticates a bearer token via dependency injection to identify the user, writes a database record, queues file conversion into `BackgroundTasks`, and returns a job ID within 5ms while conversion runs in the background.</li>
 </ul>
 <h2>Career Move</h2>
 <ul>
-<li>Reframe trade catalogue restructuring on your CV and GitHub portfolio as a structured dimensional modelling initiative rather than basic data cleaning or spreadsheet formatting.</li>
-<li>Detail how you decoupled products from vendor attributes into distinct entities, established direct e-commerce schema standards, and built validation rules to prove formal data modelling and data integrity competence.</li>
+<li>Reframe Claude2InDesign on your CV and GitHub from a generic model integration into an "automated document compilation pipeline."</li>
+<li>Highlight how you bridged stochastic language model outputs with rigid commercial software environments, using a test framework incorporating real client feedback to handle strict InDesign styles and typography hierarchies.</li>
 </ul>
 <h2>Today's Mission</h2>
-<p>Write a standalone Python script using in-memory SQLite to build, populate, and query a minimal print production star schema in 15 to 20 minutes.</p>
+<p>Build and locally test a minimal, standalone FastAPI script implementing dependency-based API key authentication and a non-blocking background task.</p>
 <ul>
-<li>☐ Initialize an in-memory SQLite database using Python.</li>
-<li>☐ Create a central `fact_print_jobs` table (job ID, date key, customer key, sheet count, revenue) and a `dim_customer` table (customer key, company name, trade tier).</li>
-<li>☐ Insert three mock records into each table.</li>
-<li>☐ Run an aggregated SQL query calculating total revenue and total sheet count grouped by trade tier.</li>
-<li>☐ Run the script and verify the console output.</li>
+<li>☐ Create a standalone Python script with a minimal FastAPI application.</li>
+<li>☐ Write a security dependency to validate a mock API key from the HTTP authorization header.</li>
+<li>☐ Define an endpoint that uses the authentication dependency and attaches a background task that prints a processing message.</li>
+<li>☐ Return an immediate JSON response from the route.</li>
+<li>☐ Test the route locally using FastAPI's built-in test client.</li>
 </ul>

@@ -1,5 +1,5 @@
 {
- "curriculum_index": 17,
+ "curriculum_index": 18,
  "seen": [
   "https://simonwillison.net/2026/Oct/7/ben-affleck/",
   "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
@@ -189,7 +189,13 @@
   "https://www.theverge.com/podcast/1017447/iphone-duo-ipad-review-score-vergecast",
   "https://openai.com/index/scaling-storage-one-billion-users-part-two",
   "https://huggingface.co/blog/allenai/litpivot",
-  "https://openai.com/index/securing-our-frontier-model-training-environment"
+  "https://openai.com/index/securing-our-frontier-model-training-environment",
+  "https://www.theverge.com/ai-artificial-intelligence/1018205/blue-planet-iii-authentic-organic-ai",
+  "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+  "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
+  "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
+  "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/",
+  "https://simonwillison.net/2026/Oct/24/battledrones/"
  ],
  "missions": [
   "Move Project Jarvis API keys to GitHub Secrets.",
@@ -208,7 +214,8 @@
   "Write a two-task local Prefect workflow script that passes mock job data and logs execution state.",
   "Write a Python script using in-memory SQLite demonstrating ELT by loading raw JSON into a staging table and transforming it via SQL into a clean reporting table.",
   "Write a Python script using SQLite comparing query plans before and after indexing ten thousand records.",
-  "Write a Python SQLite script creating and querying a minimal star schema fact and dimension table set."
+  "Write a Python SQLite script creating and querying a minimal star schema fact and dimension table set.",
+  "Write a FastAPI script demonstrating header authentication dependencies alongside non-blocking background task execution tested with TestClient."
  ],
  "opportunities": [
   "Secure environment variable management with Doppler",
@@ -227,6 +234,7 @@
   "Unified pipeline error alerting with Apprise",
   "Local tabular data profiling with DuckDB",
   "Automated incoming webhook schema validation with Pydantic",
-  "Embedded local analytical transformations with DuckDB"
+  "Embedded local analytical transformations with DuckDB",
+  "Local layout extraction using PyMuPDF engine"
  ]
 }
