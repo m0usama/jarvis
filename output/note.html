@@ -1,60 +1,65 @@
-<h1>Morning Brief: Sunday 25 October 2026</h1>
+<h1>Morning Brief: Monday 26 October 2026</h1>
 <h2>Weather</h2>
 <p>{{WEATHER}}</p>
 <h2>Top Stories</h2>
-<h3>Block’s New Human-Like Local Voice Model</h3>
+<h3>Expedited Python Security Releases Issued to Revoke Compromised CA Keys</h3>
 <ul>
-<li><b>What happened:</b> Block introduced a human-sounding voice model capable of running locally on an Apple Silicon M4 Max chip.</li>
-<li><b>Why it matters:</b> It removes high-latency cloud API dependencies, network overhead, and usage costs, making local tooling and voice interfaces significantly more responsive.</li>
-<li><b>Hype check:</b> Genuine engineering milestone, though it currently requires high-end hardware.</li>
-<li><b>Verdict:</b> Test (once weights or lightweight variants are accessible).</li>
-<li><b>Your angle:</b> Directly connects to Project Jarvis spoken briefings; demonstrates practical offline latency optimization, resource constraint management, and local model deployment over relying on third-party cloud endpoints.</li>
-<li><b>Source:</b> <a href="https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/">TechCrunch AI</a></li>
+<li><b>What happened</b>: Python released versions 3.15.2, 3.14.10, 3.13.18, 3.12.16, and 3.11.18 to distrust compromised eMudhra intermediate certificate authority keys.</li>
+<li><b>Why it matters</b>: It is a critical infrastructure fix focused on cryptographic security rather than a feature update.</li>
+<li><b>Hype check</b>: Critical infrastructure security fix, not feature hype.</li>
+<li><b>Verdict</b>: Learn</li>
+<li><b>Your angle</b>: Connects to your work building Python automation pipelines and FastAPI services where secure TLS and dependency integrity matter; auditing your local environment and understanding certificate handling gives an edge over candidates who only write application logic.</li>
+<li><b>Source</b>: <a href="https://blog.python.org/2026/10/python-3152-31410-31318-31216-31118/">Python 3.15.2, 3.14.10, 3.13.18, 3.12.16 and 3.11.18 are out</a></li>
 </ul>
-<h3>The AI Graveyard Tracks Failed Projects</h3>
+<h3>Economist Claims AI Delivers Zero Payoff Outside Tech Sector</h3>
 <ul>
-<li><b>What happened:</b> TechCrunch published a running list of failed AI startups, corporate initiatives, and delayed assistants that missed expectations.</li>
-<li><b>Why it matters:</b> The industry is moving away from blind experimentation toward demanding real commercial utility and sustainable unit economics.</li>
-<li><b>Hype check:</b> Analytical report grounded in corporate reality.</li>
-<li><b>Verdict:</b> Learn.</li>
-<li><b>Your angle:</b> Validates your focus on Claude2InDesign and Redo Print and Design automations; positions you as someone building tools with measurable operational savings rather than speculative, generic chatbot wrappers.</li>
-<li><b>Source:</b> <a href="https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/">TechCrunch AI</a></li>
+<li><b>What happened</b>: An Apollo economist reported that AI currently delivers zero financial payoff to corporate America outside of the tech industry despite massive investment.</li>
+<li><b>Why it matters</b>: It provides a sober reality check on corporate ROI amidst widespread market hype.</li>
+<li><b>Hype check</b>: Macroeconomic reality check on overhyped corporate ROI.</li>
+<li><b>Verdict</b>: Ignore</li>
+<li><b>Your angle</b>: Connects to your placement at Redo Print and Design automating physical print workflows; building targeted, high-ROI automation like your Claude to InDesign converter gives an edge over candidates chasing hype without business context.</li>
+<li><b>Source</b>: <a href="https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/">AI delivers ‘zero financial payoff’ to most companies, Apollo economist says</a></li>
 </ul>
-<h3>Pennsylvania Passes AI Advertising Disclosure Law</h3>
+<h3>r/opensource Bans AI-Related Projects and Contributions</h3>
 <ul>
-<li><b>What happened:</b> Pennsylvania Governor Josh Shapiro signed the Artificial Intelligence Deceptive Advertising Act, mandating clear disclosures on significantly modified or AI-generated political and commercial ads.</li>
-<li><b>Why it matters:</b> Signals growing jurisdictional legal transparency requirements for automated creative generation and marketing assets.</li>
-<li><b>Hype check:</b> Genuine legal development with immediate compliance implications.</li>
-<li><b>Verdict:</b> Learn.</li>
-<li><b>Your angle:</b> Ties to your product catalogue restructuring and automated design pipelines; incorporating automated metadata tagging and audit logs demonstrates compliance by design and traceable asset provenance.</li>
-<li><b>Source:</b> <a href="https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act">The Verge AI</a></li>
+<li><b>What happened</b>: Reddit's r/opensource moderators posted new rules banning projects that use AI, are made by AI, or are intended for AI.</li>
+<li><b>Why it matters</b>: It highlights a growing cultural and governance backlash against AI within traditional developer communities.</li>
+<li><b>Hype check</b>: Reflects open-source community sentiment and policy shifts.</li>
+<li><b>Verdict</b>: Learn</li>
+</ul>
+<h3>Google AI Search Changes Upend Online Publishing Traffic</h3>
+<ul>
+<li><b>What happened</b>: Google's AI search changes and AI summaries are drastically affecting web traffic and content discovery for publishers.</li>
+<li><b>Why it matters</b>: Represents a major industry disruption affecting digital content creators and web data ingestion.</li>
+<li><b>Hype check</b>: Real-world industry disruption altering traffic patterns.</li>
+<li><b>Verdict</b>: Test</li>
+<li><b>Your angle</b>: Connects to your Jarvis project where you gather RSS news and process it with an LLM; building robust data ingestion wrappers that handle shifting content formats gives an advantage in data engineering roles.</li>
+<li><b>Source</b>: <a href="https://www.theverge.com/column/1017983/google-ai-search-online-publishing">Google’s AI search changes upended online publishing</a></li>
 </ul>
 <h2>Automation Opportunity</h2>
 <ul>
-<li><b>What it is:</b> Internal PDF rendering engine using PyMuPDF to extract text coordinates and bounding boxes from structured print documents.</li>
-<li><b>Problem it solves:</b> Handles messy incoming print files by programmatically parsing layout coordinates, embedded vector text, and visual boundaries before downstream processing.</li>
-<li><b>Free to try:</b> Entirely free, open-source, and runs locally without API costs.</li>
-<li><b>Skill gained:</b> Document processing, visual boundary validation, and automation engineering depth.</li>
+<li><b>What it is</b>: Python local SQLite queue tables for managing deferred asynchronous tasks.</li>
+<li><b>Problem it solves</b>: Prevents dropped background jobs when an API request fails or a service restarts, without needing heavy infrastructure like Redis or RabbitMQ.</li>
+<li><b>Free to try</b>: Yes, built using the standard library.</li>
+<li><b>Skill gained</b>: Writing reliable, stateful backend systems.</li>
 </ul>
-<h2>Learning Moment: Running FastAPI in Production</h2>
+<h2>Learning Moment: Queues and Event-Driven Design</h2>
 <ul>
-<li>Transitioning to production requires moving beyond basic route functions to modular resources, predictable lifecycles, and non-blocking responses.</li>
-<li>Dependency injection (`Depends`) allows clean sharing and automatic cleanup of database sessions, configs, and validation logic without global variables.</li>
-<li>Background tasks prevent latency and server connection exhaustion by returning immediate HTTP 200 responses while executing heavier downstream operations right after.</li>
-<li>Authentication dependencies centrally inspect authorization headers, check API keys, or decode tokens to protect routes uniformly.</li>
-<li><b>Example:</b> An automated print job submission endpoint validates payload parameters, authenticates a bearer token via dependency injection to identify the user, writes a database record, queues file conversion into `BackgroundTasks`, and returns a job ID within 5ms while conversion runs in the background.</li>
+<li>Decouples the component producing an action from the component consuming it using a buffer.</li>
+<li>Prevents downstream system overload and absorbs traffic spikes.</li>
+<li>Ensures messages remain safely stored for retry if a worker crashes mid-task.</li>
+<li><b>Example:</b> In a job card print automation, pushing a processed job payload onto a queue allows it to be processed sequentially even if the print queue is busy or temporary failures occur.</li>
 </ul>
 <h2>Career Move</h2>
 <ul>
-<li>Reframe Claude2InDesign on your CV and GitHub from a generic model integration into an "automated document compilation pipeline."</li>
-<li>Highlight how you bridged stochastic language model outputs with rigid commercial software environments, using a test framework incorporating real client feedback to handle strict InDesign styles and typography hierarchies.</li>
+<li>Frame your trade platform and e-commerce analytics work at Redo Print and Design around business bottlenecks removed rather than just listing tools.</li>
+<li>Highlight specific operational impacts, such as cutting manual data cleaning time or accelerating order workflows, to stand out to hiring managers.</li>
 </ul>
 <h2>Today's Mission</h2>
-<p>Build and locally test a minimal, standalone FastAPI script implementing dependency-based API key authentication and a non-blocking background task.</p>
+<p>Write a short Python script that implements a basic SQLite-backed task queue, inserting a mock print job record and fetching it for processing.</p>
 <ul>
-<li>☐ Create a standalone Python script with a minimal FastAPI application.</li>
-<li>☐ Write a security dependency to validate a mock API key from the HTTP authorization header.</li>
-<li>☐ Define an endpoint that uses the authentication dependency and attaches a background task that prints a processing message.</li>
-<li>☐ Return an immediate JSON response from the route.</li>
-<li>☐ Test the route locally using FastAPI's built-in test client.</li>
+<li>☐ Create a local SQLite database and define a simple task queue table structure.</li>
+<li>☐ Write a function to insert a mock print job record into the queue.</li>
+<li>☐ Write a worker function to fetch, process, and update the status of the job.</li>
+<li>☐ Test the script to ensure the job state persists correctly across execution.</li>
 </ul>

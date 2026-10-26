@@ -1,5 +1,5 @@
 {
- "curriculum_index": 18,
+ "curriculum_index": 19,
  "seen": [
   "https://simonwillison.net/2026/Oct/7/ben-affleck/",
   "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
@@ -195,7 +195,14 @@
   "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
   "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
   "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/",
-  "https://simonwillison.net/2026/Oct/24/battledrones/"
+  "https://simonwillison.net/2026/Oct/24/battledrones/",
+  "https://blog.python.org/2026/10/python-3152-31410-31318-31216-31118/",
+  "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/",
+  "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+  "https://simonwillison.net/2026/Oct/25/seam-cutter/",
+  "https://techcrunch.com/2026/10/25/the-hottest-ai-wearables-and-gadgets-you-should-know-about/",
+  "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban",
+  "https://www.theverge.com/column/1017983/google-ai-search-online-publishing"
  ],
  "missions": [
   "Move Project Jarvis API keys to GitHub Secrets.",
@@ -215,7 +222,8 @@
   "Write a Python script using in-memory SQLite demonstrating ELT by loading raw JSON into a staging table and transforming it via SQL into a clean reporting table.",
   "Write a Python script using SQLite comparing query plans before and after indexing ten thousand records.",
   "Write a Python SQLite script creating and querying a minimal star schema fact and dimension table set.",
-  "Write a FastAPI script demonstrating header authentication dependencies alongside non-blocking background task execution tested with TestClient."
+  "Write a FastAPI script demonstrating header authentication dependencies alongside non-blocking background task execution tested with TestClient.",
+  "Write a short Python script implementing a basic SQLite-backed task queue."
  ],
  "opportunities": [
   "Secure environment variable management with Doppler",
@@ -235,6 +243,7 @@
   "Local tabular data profiling with DuckDB",
   "Automated incoming webhook schema validation with Pydantic",
   "Embedded local analytical transformations with DuckDB",
-  "Local layout extraction using PyMuPDF engine"
+  "Local layout extraction using PyMuPDF engine",
+  "SQLite-backed task queues for reliability"
  ]
 }

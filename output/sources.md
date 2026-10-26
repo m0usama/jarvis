@@ -1,10 +1,13 @@
-# Sources for 2026-10-25 (full)
+# Sources for 2026-10-26 (full)
 
-Learning concept: FastAPI in production: dependencies, background tasks, auth
+Learning concept: Queues and event-driven design
 
-- [Blue Planet III is keeping the rough edges in the age of AI](https://www.theverge.com/ai-artificial-intelligence/1018205/blue-planet-iii-authentic-organic-ai) (The Verge AI, 24 Oct 17:29 UTC)
-- [The AI graveyard: a running list of projects and startups that didn’t make it](https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/) (TechCrunch AI, 24 Oct 19:00 UTC)
-- [Pennsylvania will require labels on AI-generated ads](https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act) (The Verge AI, 24 Oct 14:32 UTC)
-- [Block’s new voice model sounds eerily human](https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/) (TechCrunch AI, 24 Oct 16:00 UTC)
-- [Forced to pick, Grok’s AI model chooses Republicans. OpenAI’s picks Democrats.](https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/) (TechCrunch AI, 24 Oct 15:00 UTC)
-- [battledrones v14: Compass Rose, a four player map](https://simonwillison.net/2026/Oct/24/battledrones/) (Simon Willison, 24 Oct 03:59 UTC)
+- [Python 3.15.2, 3.14.10, 3.13.18, 3.12.16 and 3.11.18 are out](https://blog.python.org/2026/10/python-3152-31410-31318-31216-31118/) (Python Insider, 26 Oct 00:00 UTC)
+- [Grok releases the first seven minutes of its AI-generated ‘Odyssey’](https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/) (TechCrunch AI, 25 Oct 21:31 UTC)
+- [AI delivers ‘zero financial payoff’ to most companies, Apollo economist says](https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/) (TechCrunch AI, 25 Oct 16:57 UTC)
+- [Seam Cutter](https://simonwillison.net/2026/Oct/25/seam-cutter/) (Simon Willison, 25 Oct 15:10 UTC)
+- [The hottest AI wearables and gadgets you should know about](https://techcrunch.com/2026/10/25/the-hottest-ai-wearables-and-gadgets-you-should-know-about/) (TechCrunch AI, 25 Oct 14:10 UTC)
+- [r/opensource just banned AI, non-English speakers, and more](https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban) (The Verge AI, 25 Oct 09:25 UTC)
+- [Google’s AI search changes upended online publishing](https://www.theverge.com/column/1017983/google-ai-search-online-publishing) (The Verge AI, 25 Oct 08:00 UTC)
+
+Feeds that failed: Google DeepMind
