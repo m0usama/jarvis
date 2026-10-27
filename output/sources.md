@@ -1,13 +1,16 @@
-# Sources for 2026-10-26 (full)
+# Sources for 2026-10-27 (full)
 
-Learning concept: Queues and event-driven design
+Learning concept: Secrets management and API key hygiene
 
-- [Python 3.15.2, 3.14.10, 3.13.18, 3.12.16 and 3.11.18 are out](https://blog.python.org/2026/10/python-3152-31410-31318-31216-31118/) (Python Insider, 26 Oct 00:00 UTC)
-- [Grok releases the first seven minutes of its AI-generated ‘Odyssey’](https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/) (TechCrunch AI, 25 Oct 21:31 UTC)
-- [AI delivers ‘zero financial payoff’ to most companies, Apollo economist says](https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/) (TechCrunch AI, 25 Oct 16:57 UTC)
-- [Seam Cutter](https://simonwillison.net/2026/Oct/25/seam-cutter/) (Simon Willison, 25 Oct 15:10 UTC)
-- [The hottest AI wearables and gadgets you should know about](https://techcrunch.com/2026/10/25/the-hottest-ai-wearables-and-gadgets-you-should-know-about/) (TechCrunch AI, 25 Oct 14:10 UTC)
-- [r/opensource just banned AI, non-English speakers, and more](https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban) (The Verge AI, 25 Oct 09:25 UTC)
-- [Google’s AI search changes upended online publishing](https://www.theverge.com/column/1017983/google-ai-search-online-publishing) (The Verge AI, 25 Oct 08:00 UTC)
-
-Feeds that failed: Google DeepMind
+- [How OpenAI turned its coding tools into dots, an always-on personal assistant](https://techcrunch.com/2026/10/26/how-openai-turned-its-coding-tools-into-dots-an-always-on-personal-assistant/) (TechCrunch AI, 27 Oct 02:00 UTC)
+- [Cohere says Alibaba’s Qwen model tried to send a file to Beijing](https://techcrunch.com/2026/10/26/cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing/) (TechCrunch AI, 27 Oct 01:12 UTC)
+- [GPT-6.1 Terra](https://simonwillison.net/2026/Oct/26/gpt-61-terra/) (Simon Willison, 26 Oct 23:53 UTC)
+- [OpenAI announces three big science discoveries and a new way to work with academics](https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics) (The Verge AI, 26 Oct 19:34 UTC)
+- [Greptile takes bug detection beyond code review with GPT-6 Astra](https://openai.com/index/greptile-code-review-codex-astra) (OpenAI, 26 Oct 22:00 UTC)
+- [Anthropic is burning gas to feed the AI boom](https://www.theverge.com/ai-artificial-intelligence/1018994/anthropic-ipo-ai-data-center-energy-climate-risk) (The Verge AI, 26 Oct 17:45 UTC)
+- [Quoting Jason Koebler](https://simonwillison.net/2026/Oct/26/jason-koebler/) (Simon Willison, 26 Oct 19:00 UTC)
+- [The RealReal won’t let AI agents hog designer clothing](https://www.theverge.com/news/1018713/meta-muse-agentic-shopping-ai-the-realreal) (The Verge AI, 26 Oct 13:30 UTC)
+- [Anthropic’s IPO filing reveals its strategy for keeping enterprise customers hooked](https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/) (TechCrunch AI, 26 Oct 16:49 UTC)
+- [webframe: evaluated as a scraper and a sandbox](https://simonwillison.net/2026/Oct/26/webframe-evaluation/) (Simon Willison, 26 Oct 16:15 UTC)
+- [Working with academic communities to build scientific understanding](https://openai.com/index/building-scientific-understanding-with-academic-communities) (OpenAI, 26 Oct 14:30 UTC)
+- [GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases](https://openai.com/index/gpt-6-1-sol-coderabbit-code-security) (OpenAI, 26 Oct 13:45 UTC)

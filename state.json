@@ -1,5 +1,5 @@
 {
- "curriculum_index": 19,
+ "curriculum_index": 20,
  "seen": [
   "https://simonwillison.net/2026/Oct/7/ben-affleck/",
   "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
@@ -202,7 +202,19 @@
   "https://simonwillison.net/2026/Oct/25/seam-cutter/",
   "https://techcrunch.com/2026/10/25/the-hottest-ai-wearables-and-gadgets-you-should-know-about/",
   "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban",
-  "https://www.theverge.com/column/1017983/google-ai-search-online-publishing"
+  "https://www.theverge.com/column/1017983/google-ai-search-online-publishing",
+  "https://techcrunch.com/2026/10/26/how-openai-turned-its-coding-tools-into-dots-an-always-on-personal-assistant/",
+  "https://techcrunch.com/2026/10/26/cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing/",
+  "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
+  "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics",
+  "https://openai.com/index/greptile-code-review-codex-astra",
+  "https://www.theverge.com/ai-artificial-intelligence/1018994/anthropic-ipo-ai-data-center-energy-climate-risk",
+  "https://simonwillison.net/2026/Oct/26/jason-koebler/",
+  "https://www.theverge.com/news/1018713/meta-muse-agentic-shopping-ai-the-realreal",
+  "https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/",
+  "https://simonwillison.net/2026/Oct/26/webframe-evaluation/",
+  "https://openai.com/index/building-scientific-understanding-with-academic-communities",
+  "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security"
  ],
  "missions": [
   "Move Project Jarvis API keys to GitHub Secrets.",
@@ -223,7 +235,8 @@
   "Write a Python script using SQLite comparing query plans before and after indexing ten thousand records.",
   "Write a Python SQLite script creating and querying a minimal star schema fact and dimension table set.",
   "Write a FastAPI script demonstrating header authentication dependencies alongside non-blocking background task execution tested with TestClient.",
-  "Write a short Python script implementing a basic SQLite-backed task queue."
+  "Write a short Python script implementing a basic SQLite-backed task queue.",
+  "Create a clean environment variable template and verify git tracking excludes local credential files."
  ],
  "opportunities": [
   "Secure environment variable management with Doppler",
@@ -244,6 +257,7 @@
   "Automated incoming webhook schema validation with Pydantic",
   "Embedded local analytical transformations with DuckDB",
   "Local layout extraction using PyMuPDF engine",
-  "SQLite-backed task queues for reliability"
+  "SQLite-backed task queues for reliability",
+  "Headless web execution for data pipelines"
  ]
 }
