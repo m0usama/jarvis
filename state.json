@@ -1,5 +1,5 @@
 {
- "curriculum_index": 20,
+ "curriculum_index": 21,
  "seen": [
   "https://simonwillison.net/2026/Oct/7/ben-affleck/",
   "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
@@ -214,7 +214,20 @@
   "https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/",
   "https://simonwillison.net/2026/Oct/26/webframe-evaluation/",
   "https://openai.com/index/building-scientific-understanding-with-academic-communities",
-  "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security"
+  "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
+  "https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more/",
+  "https://techcrunch.com/2026/10/27/parents-sue-openai-alleging-gpt-4o-coached-their-daughter-off-seizure-medication/",
+  "https://techcrunch.com/2026/10/27/the-data-center-boom-has-an-upside-innovation-for-the-us-grid/",
+  "https://www.theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics",
+  "https://arstechnica.com/security/2026/10/code-execution-flaw-in-uefi-firmware-threatens-most-servers-on-planet-earth/",
+  "https://simonwillison.net/2026/Oct/27/game-boy-color-on-my-conference-badge/",
+  "https://www.theverge.com/ai-artificial-intelligence/1017064/visionquest-marvel-rogue-ai",
+  "https://huggingface.co/blog/LiquidAI/lfm3",
+  "https://www.theverge.com/ai-artificial-intelligence/1019470/anthropic-ipo-resist-investor-pressure-cut-corners-safety",
+  "https://huggingface.co/blog/allenai/novelty-bench",
+  "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+  "https://openai.com/index/retell-ai",
+  "https://openai.com/index/oracle-apps-in-chatgpt"
  ],
  "missions": [
   "Move Project Jarvis API keys to GitHub Secrets.",
@@ -236,7 +249,8 @@
   "Write a Python SQLite script creating and querying a minimal star schema fact and dimension table set.",
   "Write a FastAPI script demonstrating header authentication dependencies alongside non-blocking background task execution tested with TestClient.",
   "Write a short Python script implementing a basic SQLite-backed task queue.",
-  "Create a clean environment variable template and verify git tracking excludes local credential files."
+  "Create a clean environment variable template and verify git tracking excludes local credential files.",
+  "Write a Python script logging structured JSON trace metrics for a simulated model call to a local log file."
  ],
  "opportunities": [
   "Secure environment variable management with Doppler",
@@ -258,6 +272,7 @@
   "Embedded local analytical transformations with DuckDB",
   "Local layout extraction using PyMuPDF engine",
   "SQLite-backed task queues for reliability",
-  "Headless web execution for data pipelines"
+  "Headless web execution for data pipelines",
+  "Structured OpenTelemetry tracing for model workflows"
  ]
 }
