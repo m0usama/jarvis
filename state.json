@@ -1,5 +1,5 @@
 {
- "curriculum_index": 21,
+ "curriculum_index": 22,
  "seen": [
   "https://simonwillison.net/2026/Oct/7/ben-affleck/",
   "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
@@ -227,7 +227,21 @@
   "https://huggingface.co/blog/allenai/novelty-bench",
   "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
   "https://openai.com/index/retell-ai",
-  "https://openai.com/index/oracle-apps-in-chatgpt"
+  "https://openai.com/index/oracle-apps-in-chatgpt",
+  "https://simonwillison.net/2026/Oct/28/ted-sanders/",
+  "https://www.theverge.com/ai-artificial-intelligence/1021644/adam-mosseri-instagram-ai-negativity",
+  "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/",
+  "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/",
+  "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/",
+  "https://www.theverge.com/gadgets/1021405/akai-open-source-mpc-sample-key",
+  "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier",
+  "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+  "https://simonwillison.net/2026/Oct/28/github-octoverse-2026/",
+  "https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/",
+  "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/",
+  "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+  "https://simonwillison.net/2026/Oct/28/vibe-game-development/",
+  "https://openai.com/index/openai-servicenow-partnership-expansion"
  ],
  "missions": [
   "Move Project Jarvis API keys to GitHub Secrets.",
@@ -250,7 +264,8 @@
   "Write a FastAPI script demonstrating header authentication dependencies alongside non-blocking background task execution tested with TestClient.",
   "Write a short Python script implementing a basic SQLite-backed task queue.",
   "Create a clean environment variable template and verify git tracking excludes local credential files.",
-  "Write a Python script logging structured JSON trace metrics for a simulated model call to a local log file."
+  "Write a Python script logging structured JSON trace metrics for a simulated model call to a local log file.",
+  "Write a Python script using functools lru_cache to demonstrate token estimation and query deduplication for cost control."
  ],
  "opportunities": [
   "Secure environment variable management with Doppler",
@@ -273,6 +288,7 @@
   "Local layout extraction using PyMuPDF engine",
   "SQLite-backed task queues for reliability",
   "Headless web execution for data pipelines",
-  "Structured OpenTelemetry tracing for model workflows"
+  "Structured OpenTelemetry tracing for model workflows",
+  "Local API validation caching with cachetools"
  ]
 }
