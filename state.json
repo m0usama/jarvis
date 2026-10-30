@@ -1,5 +1,5 @@
 {
- "curriculum_index": 22,
+ "curriculum_index": 23,
  "seen": [
   "https://simonwillison.net/2026/Oct/7/ben-affleck/",
   "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
@@ -241,7 +241,20 @@
   "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/",
   "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
   "https://simonwillison.net/2026/Oct/28/vibe-game-development/",
-  "https://openai.com/index/openai-servicenow-partnership-expansion"
+  "https://openai.com/index/openai-servicenow-partnership-expansion",
+  "https://techcrunch.com/2026/10/29/you-dont-need-to-believe-in-a-god-to-get-a-religious-exemption-from-using-ai-at-work/",
+  "https://techcrunch.com/2026/10/29/aws-will-be-a-1t-business-jassy-says-but-first-it-will-spend-big/",
+  "https://simonwillison.net/2026/Oct/29/api-credits/",
+  "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/",
+  "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs",
+  "https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/",
+  "https://openai.com/index/updated-model-spec",
+  "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad",
+  "https://www.theverge.com/ai-artificial-intelligence/1022193/nyt-cooking-app-ai-recipe-modification-tool",
+  "https://simonwillison.net/2026/Oct/29/ben-hylak/",
+  "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1",
+  "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+  "https://openai.com/index/ropes-gray-ai-diligence"
  ],
  "missions": [
   "Move Project Jarvis API keys to GitHub Secrets.",
@@ -265,7 +278,8 @@
   "Write a short Python script implementing a basic SQLite-backed task queue.",
   "Create a clean environment variable template and verify git tracking excludes local credential files.",
   "Write a Python script logging structured JSON trace metrics for a simulated model call to a local log file.",
-  "Write a Python script using functools lru_cache to demonstrate token estimation and query deduplication for cost control."
+  "Write a Python script using functools lru_cache to demonstrate token estimation and query deduplication for cost control.",
+  "Write a Python script using urllib that sends a completion heartbeat ping to an external endpoint wrapped in error logging."
  ],
  "opportunities": [
   "Secure environment variable management with Doppler",
@@ -289,6 +303,7 @@
   "SQLite-backed task queues for reliability",
   "Headless web execution for data pipelines",
   "Structured OpenTelemetry tracing for model workflows",
-  "Local API validation caching with cachetools"
+  "Local API validation caching with cachetools",
+  "Automated scheduled pipeline health check monitoring"
  ]
 }
