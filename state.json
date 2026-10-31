@@ -1,5 +1,5 @@
 {
- "curriculum_index": 23,
+ "curriculum_index": 24,
  "seen": [
   "https://simonwillison.net/2026/Oct/7/ben-affleck/",
   "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
@@ -254,7 +254,18 @@
   "https://simonwillison.net/2026/Oct/29/ben-hylak/",
   "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1",
   "https://openai.com/index/how-we-detect-frontier-model-misalignment",
-  "https://openai.com/index/ropes-gray-ai-diligence"
+  "https://openai.com/index/ropes-gray-ai-diligence",
+  "https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/",
+  "https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/",
+  "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3",
+  "https://simonwillison.net/2026/Oct/30/nesformer/",
+  "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/",
+  "https://arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours/",
+  "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers",
+  "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
+  "https://huggingface.co/blog/nvidia/nemotron-halloween",
+  "https://openai.com/index/helping-websites-express-ai-training-preferences",
+  "https://openai.com/index/community-safety-report-and-new-protections-for-teens"
  ],
  "missions": [
   "Move Project Jarvis API keys to GitHub Secrets.",
@@ -279,7 +290,8 @@
   "Create a clean environment variable template and verify git tracking excludes local credential files.",
   "Write a Python script logging structured JSON trace metrics for a simulated model call to a local log file.",
   "Write a Python script using functools lru_cache to demonstrate token estimation and query deduplication for cost control.",
-  "Write a Python script using urllib that sends a completion heartbeat ping to an external endpoint wrapped in error logging."
+  "Write a Python script using urllib that sends a completion heartbeat ping to an external endpoint wrapped in error logging.",
+  "Write a pytest script mocking an external model response to verify parsing and error handling for job card data."
  ],
  "opportunities": [
   "Secure environment variable management with Doppler",
@@ -304,6 +316,7 @@
   "Headless web execution for data pipelines",
   "Structured OpenTelemetry tracing for model workflows",
   "Local API validation caching with cachetools",
-  "Automated scheduled pipeline health check monitoring"
+  "Automated scheduled pipeline health check monitoring",
+  "Automated schema drift logging with Pydantic"
  ]
 }

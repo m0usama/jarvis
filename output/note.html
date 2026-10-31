@@ -1,61 +1,59 @@
-<h1>Morning Brief: Friday 30 October 2026</h1>
+<h1>Morning Brief: Saturday 31 October 2026</h1>
 <h2>Weather</h2>
 <p>{{WEATHER}}</p>
 <h2>Top Stories</h2>
-<h3>API Credits Bundled with Consumer Subscriptions</h3>
+<h3>Anthropic VS Code Extension Backdoored on Cursor Marketplace</h3>
 <ul>
-<li><b>What happened</b>: Platforms like Anthropic are offering API credits alongside consumer chat subscriptions, lowering costs for experimental backends.</li>
-<li><b>Why it matters</b>: Lowers the recurring operational barrier for developers building prototype agents and background pipelines without needing separate metered billing.</li>
-<li><b>Hype check</b>: A real commercial shift driven by provider competition.</li>
-<li><b>Verdict</b>: Test</li>
-<li><b>Your angle</b>: Connects to your job card print automation and Claude2InDesign workflows by providing headroom to test larger vision and layout parsing models without raising overhead.</li>
-<li><b>Source</b>: <a href="https://simonwillison.net/2026/Oct/29/api-credits/">API credits benefit for eligible ChatGPT subscriptions (Simon Willison)</a></li>
+<li><b>What happened</b>: Attackers compromised Anthropic's verified publisher account on the Cursor editor marketplace, leaving their VS Code extension backdoored for nearly twelve hours.</li>
+<li><b>Why it matters</b>: It highlights severe vulnerabilities in the AI developer tooling supply chain, where editors execute arbitrary code and integrate models directly into private codebases.</li>
+<li><b>Hype check</b>: A severe, real security incident rather than hype.</li>
+<li><b>Verdict</b>: Learn.</li>
+<li><b>Your angle</b>: Directly connects to your automated GitHub Actions pipeline for Project Jarvis; gives you an edge in understanding dev environment security, credential pinning, and treating third-party extensions as attack vectors.</li>
+<li><b>Source</b>: <a href="https://arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours/">Ars Technica</a></li>
 </ul>
-<h3>AWS Projects $1T Scale Amid Heavy Infrastructure Spending</h3>
+<h3>Major AI Labs Back Unified Scraping Opt-Out Standard</h3>
 <ul>
-<li><b>What happened</b>: Amazon Web Services expects to become a $1 trillion business, backed by substantial capital expenditure on data centres and custom accelerators.</li>
-<li><b>Why it matters</b>: Industry expectations are shifting from running local scripts to deploying robust cloud services interfacing with managed backends.</li>
-<li><b>Hype check</b>: Revenue targets involve executive posturing, but physical data centre and accelerator investments are concrete reality.</li>
-<li><b>Verdict</b>: Learn</li>
-<li><b>Your angle</b>: Connects to your roadmap of mastering containerised cloud deployments for FastAPI services to stand out from candidates with local-only projects.</li>
-<li><b>Source</b>: <a href="https://techcrunch.com/2026/10/29/aws-will-be-a-1t-business-jassy-says-but-first-it-will-spend-big/">AWS will be a $1T business, Jassy says — but first, it will spend big (TechCrunch AI)</a></li>
+<li><b>What happened</b>: OpenAI, Google, Microsoft, and Anthropic agreed to back a unified robots.txt standard for web publishers to express training opt-out preferences.</li>
+<li><b>Why it matters</b>: Replaces fragmented crawler exclusions with a shared signal across multiple providers, establishing a standard for production scrapers.</li>
+<li><b>Hype check</b>: A genuine operational standard that will shape production crawlers.</li>
+<li><b>Verdict</b>: Test.</li>
+<li><b>Your angle</b>: Links to your RSS news feed gathering in Project Jarvis and product catalog restructuring; proves your data pipelines follow enterprise legal standards.</li>
+<li><b>Source</b>: <a href="https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out">The Verge AI</a></li>
 </ul>
-<h3>Layered Monitoring to Detect Frontier Model Misalignment</h3>
+<h3>Privacy AI Assistant Ollie Shuts Down Under Market Pressure</h3>
 <ul>
-<li><b>What happened</b>: OpenAI detailed a layered monitoring approach to detect model misalignment and unauthorised agent behaviour in real time.</li>
-<li><b>Why it matters</b>: Multi-step tool calls require active runtime boundary monitoring and intervention rather than passive logging to stop failures.</li>
-<li><b>Hype check</b>: A real architectural development rather than public relations marketing.</li>
-<li><b>Verdict</b>: Learn</li>
-<li><b>Your angle</b>: Directly links to Project Jarvis and autonomous scripts, ensuring runtime boundary checks and structured error handling prevent silent failures.</li>
-<li><b>Source</b>: <a href="https://openai.com/index/how-we-detect-frontier-model-misalignment">How we detect frontier model misalignment (OpenAI)</a></li>
+<li><b>What happened</b>: Consumer AI assistant Ollie is shutting down operations within a week after being outcompeted by heavily funded conversational tools.</li>
+<li><b>Why it matters</b>: Demonstrates that generic, privacy-branded wrapper apps struggle without distinct technical utility or direct workflow integration.</li>
+<li><b>Hype check</b>: A real market correction in the consumer AI assistant space.</li>
+<li><b>Verdict</b>: Ignore consumer side, learn market lesson.</li>
+<li><b>Your angle</b>: Validates your work on Claude to InDesign and job card print automation; your edge is building unglamorous, domain-specific vertical automation instead of basic chat wrappers.</li>
+<li><b>Source</b>: <a href="https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/">TechCrunch AI</a></li>
 </ul>
 <h2>Automation Opportunity</h2>
 <ul>
-<li><b>What it is</b>: Automated uptime and health check pings using free external monitoring webhooks like Healthchecks.io.</li>
-<li><b>Problem it solves</b>: Prevents silent failures in unattended background tasks, such as GitHub Actions or print intake scripts, from going unnoticed.</li>
-<li><b>Free to try</b>: Free to implement using standard Python HTTP libraries or curl.</li>
-<li><b>Skill gained</b>: Builds operational reliability discipline valued by enterprise engineering teams.</li>
+<li>Schema validation and automated drift alerts using Pydantic log parsing.</li>
+<li>Detects subtle breaking changes or missing fields in changing data streams (webhooks, scrapers) instead of silently failing mid-stream.</li>
+<li>Completely open source and free to try.</li>
+<li>Builds professional error-handling and data quality skills for data engineering and LLM ingestion scripts.</li>
 </ul>
-<h2>Learning Moment: Cloud Deployment Options for Small Services</h2>
+<h2>Learning Moment: Testing Strategy for Data and AI Code</h2>
 <ul>
-<li>Choosing where to host involves balancing operational overhead, cost, and architectural control.</li>
-<li>Fully managed PaaS (Render, Railway, Fly.io) handles provisioning, TLS certificates, and commit rebuilds with minimal overhead.</li>
-<li>Serverless container platforms (AWS App Runner, Google Cloud Run, Azure Container Apps) scale automatically and charge only for active compute time.</li>
-<li>Raw virtual machines (AWS EC2, DigitalOcean Droplets) offer absolute OS control but require manual maintenance, security patching, and process management.</li>
-<li>Small production services typically start on serverless container platforms or lightweight PaaS.</li>
-<li><b>Example</b>: Standardising your FastAPI service inside a lean Docker container allows you to move seamlessly between Google Cloud Run or a managed container host without changing application code.</li>
+<li>Testing cannot be an afterthought when handling non-deterministic responses, external API downtime, and data anomalies.</li>
+<li>A robust strategy uses three layers: unit tests with mocking, data validation tests, and evaluation assertions.</li>
+<li>High-performing teams test deterministic parsing and fallback handling on mocked services in CI, avoiding live API calls.</li>
+<li><b>Example:</b> In the job card print automation, use pytest and unittest.mock to mock the vision client with three fixed payloads (valid, malformed missing customer name, empty), asserting parsing succeeds or catches errors gracefully without hitting the live model or sheets.</li>
 </ul>
 <h2>Career Move</h2>
 <ul>
-<li>Translate your job card print automation into a portfolio system architecture case study focusing on infrastructure rather than just user features.</li>
-<li>Document the end-to-end unattended workflow—physical capture, payload transfer, free-tier vision inference, headless Fiery routing, and Google Sheets state tracking—to demonstrate expertise in zero-cost, resilient operational pipelines.</li>
+<li>Document the testing and resilience narrative of your job card automation project by adding a failure-modes section to its repository detailing how it handles unreadable photos, rate limits, empty text, and duplicate prints.</li>
+<li>Discussing mocked unit tests and automated error logging in interviews highlights the maturity of an engineer building autonomous production software.</li>
 </ul>
 <h2>Today's Mission</h2>
-<p>Write a minimal Python script using the standard library urllib request module that executes a simple HTTP get request to simulate sending a completion heartbeat ping to an external monitoring endpoint, wrapped in a basic try-except block that logs whether the ping succeeded or failed.</p>
+<p>Write a Python script using pytest and unittest.mock that tests an extraction function designed for your job card workflow within fifteen to twenty minutes.</p>
 <ul>
-<li>☐ Set up a Python script importing the `urllib.request` module</li>
-<li>☐ Define the target external monitoring heartbeat URL</li>
-<li>☐ Implement an HTTP GET request inside a `try` block to simulate the completion ping</li>
-<li>☐ Add an `except` block to catch request errors</li>
-<li>☐ Log whether the heartbeat ping succeeded or failed</li>
+<li>☐ Set up a test file using pytest and unittest.mock.</li>
+<li>☐ Mock the external model call to return a fixed JSON payload.</li>
+<li>☐ Execute the extraction logic against the mocked response.</li>
+<li>☐ Assert that the function parses fields correctly on valid input.</li>
+<li>☐ Assert that the function raises a custom error when a required field is missing.</li>
 </ul>
