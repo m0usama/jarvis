@@ -1,5 +1,5 @@
 {
- "curriculum_index": 24,
+ "curriculum_index": 25,
  "seen": [
   "https://simonwillison.net/2026/Oct/7/ben-affleck/",
   "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
@@ -265,7 +265,13 @@
   "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
   "https://huggingface.co/blog/nvidia/nemotron-halloween",
   "https://openai.com/index/helping-websites-express-ai-training-preferences",
-  "https://openai.com/index/community-safety-report-and-new-protections-for-teens"
+  "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+  "https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/",
+  "https://simonwillison.net/2026/Oct/31/datasette-llm/",
+  "https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/",
+  "https://techcrunch.com/2026/10/31/4-days-left-how-techcrunch-founder-summit-helps-you-make-more-useful-connections-to-scale/",
+  "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/",
+  "https://www.theverge.com/gadgets/1013375/muse-charm-gadgets-preview-waveshare-esp32-claude-vibe-code"
  ],
  "missions": [
   "Move Project Jarvis API keys to GitHub Secrets.",
@@ -291,7 +297,8 @@
   "Write a Python script logging structured JSON trace metrics for a simulated model call to a local log file.",
   "Write a Python script using functools lru_cache to demonstrate token estimation and query deduplication for cost control.",
   "Write a Python script using urllib that sends a completion heartbeat ping to an external endpoint wrapped in error logging.",
-  "Write a pytest script mocking an external model response to verify parsing and error handling for job card data."
+  "Write a pytest script mocking an external model response to verify parsing and error handling for job card data.",
+  "Write a Python script that sanitises input text and wraps it in delimited tags with basic override phrase detection."
  ],
  "opportunities": [
   "Secure environment variable management with Doppler",
@@ -317,6 +324,7 @@
   "Structured OpenTelemetry tracing for model workflows",
   "Local API validation caching with cachetools",
   "Automated scheduled pipeline health check monitoring",
-  "Automated schema drift logging with Pydantic"
+  "Automated schema drift logging with Pydantic",
+  "Deterministic document boundary input sanitisation"
  ]
 }
