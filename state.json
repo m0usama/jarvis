@@ -1,5 +1,5 @@
 {
- "curriculum_index": 25,
+ "curriculum_index": 26,
  "seen": [
   "https://simonwillison.net/2026/Oct/7/ben-affleck/",
   "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
@@ -271,7 +271,12 @@
   "https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/",
   "https://techcrunch.com/2026/10/31/4-days-left-how-techcrunch-founder-summit-helps-you-make-more-useful-connections-to-scale/",
   "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/",
-  "https://www.theverge.com/gadgets/1013375/muse-charm-gadgets-preview-waveshare-esp32-claude-vibe-code"
+  "https://www.theverge.com/gadgets/1013375/muse-charm-gadgets-preview-waveshare-esp32-claude-vibe-code",
+  "https://simonwillison.net/2026/Nov/1/delete-uv-lock-first/",
+  "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/",
+  "https://github.blog/open-source/gaming/game-off-2026-the-theme-is-shift/",
+  "https://techcrunch.com/2026/11/01/ai-can-make-tech-ceos-lives-easier-what-about-everyone-else/",
+  "https://simonwillison.net/2026/Nov/1/kyle-kingsbury/"
  ],
  "missions": [
   "Move Project Jarvis API keys to GitHub Secrets.",
@@ -298,7 +303,8 @@
   "Write a Python script using functools lru_cache to demonstrate token estimation and query deduplication for cost control.",
   "Write a Python script using urllib that sends a completion heartbeat ping to an external endpoint wrapped in error logging.",
   "Write a pytest script mocking an external model response to verify parsing and error handling for job card data.",
-  "Write a Python script that sanitises input text and wraps it in delimited tags with basic override phrase detection."
+  "Write a Python script that sanitises input text and wraps it in delimited tags with basic override phrase detection.",
+  "Write a Python script using Pydantic defining a validated JobCard schema that rejects non-positive quantities and disallowed print stocks."
  ],
  "opportunities": [
   "Secure environment variable management with Doppler",
@@ -325,6 +331,7 @@
   "Local API validation caching with cachetools",
   "Automated scheduled pipeline health check monitoring",
   "Automated schema drift logging with Pydantic",
-  "Deterministic document boundary input sanitisation"
+  "Deterministic document boundary input sanitisation",
+  "Automated Extraction Validation with Instructor"
  ]
 }
