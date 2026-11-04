@@ -1,5 +1,5 @@
 {
- "curriculum_index": 27,
+ "curriculum_index": 28,
  "seen": [
   "https://simonwillison.net/2026/Oct/7/ben-affleck/",
   "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
@@ -289,7 +289,21 @@
   "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
   "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
   "https://www.theverge.com/tech/1024588/brave-lawsuit-ai-scraping-new-york-times",
-  "https://openai.com/index/scaling-git-at-openai"
+  "https://openai.com/index/scaling-git-at-openai",
+  "https://www.theverge.com/games/1026085/nexus-mods-ai-disclosures",
+  "https://www.theverge.com/ai-artificial-intelligence/1025826/ai-bubble-pimco-apollo-bonds",
+  "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/",
+  "https://techcrunch.com/2026/11/03/data-centers-are-turning-to-old-jet-engines-as-the-wait-for-power-grows/",
+  "https://techcrunch.com/2026/11/03/ted-schleins-ballistic-ventures-seeks-490m-for-new-funds-amid-ai-driven-cybersecurity-boom/",
+  "https://www.theverge.com/tech/1025745/fake-jeff-bezos-hair-replacement-photos-debunk",
+  "https://huggingface.co/blog/allenai/statebench",
+  "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+  "https://huggingface.co/blog/ibm-research/palette-deck-building",
+  "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+  "https://arstechnica.com/security/2026/11/uefi-bootkit-infected-fully-patched-windows-machines-is-microsoft-to-blame/",
+  "https://github.blog/open-source/maintainers/arnis-turns-any-place-on-earth-into-a-minecraft-world/",
+  "https://openai.com/index/accelerating-engineering-for-the-physical-world",
+  "https://openai.com/index/cisco-cyber"
  ],
  "missions": [
   "Move Project Jarvis API keys to GitHub Secrets.",
@@ -318,7 +332,8 @@
   "Write a pytest script mocking an external model response to verify parsing and error handling for job card data.",
   "Write a Python script that sanitises input text and wraps it in delimited tags with basic override phrase detection.",
   "Write a Python script using Pydantic defining a validated JobCard schema that rejects non-positive quantities and disallowed print stocks.",
-  "Write a Python script that parses messy OCR text into structured data."
+  "Write a Python script that parses messy OCR text into structured data.",
+  "Write a Python script that validates an incoming webhook payload and stores the enriched record in SQLite."
  ],
  "opportunities": [
   "Secure environment variable management with Doppler",
@@ -347,6 +362,7 @@
   "Automated schema drift logging with Pydantic",
   "Deterministic document boundary input sanitisation",
   "Automated Extraction Validation with Instructor",
-  "Local media and document feature extraction"
+  "Local media and document feature extraction",
+  "Webhook enrichment and CRM integration pipelines"
  ]
 }
