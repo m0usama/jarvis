@@ -1,5 +1,5 @@
 {
- "curriculum_index": 28,
+ "curriculum_index": 29,
  "seen": [
   "https://simonwillison.net/2026/Oct/7/ben-affleck/",
   "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
@@ -303,7 +303,21 @@
   "https://arstechnica.com/security/2026/11/uefi-bootkit-infected-fully-patched-windows-machines-is-microsoft-to-blame/",
   "https://github.blog/open-source/maintainers/arnis-turns-any-place-on-earth-into-a-minecraft-world/",
   "https://openai.com/index/accelerating-engineering-for-the-physical-world",
-  "https://openai.com/index/cisco-cyber"
+  "https://openai.com/index/cisco-cyber",
+  "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/",
+  "https://techcrunch.com/2026/11/04/after-the-midterms-a-bigger-clash-over-data-centers-could-be-coming/",
+  "https://techcrunch.com/2026/11/04/ai-pacs-spent-millions-trying-to-shape-congress-heres-how-they-fared/",
+  "https://www.theverge.com/ai-artificial-intelligence/1026867/qualcomm-earnings-data-centers",
+  "https://arstechnica.com/security/2026/11/hackers-exploited-ios-and-android-flaws-to-infect-phones/",
+  "https://www.theverge.com/ai-artificial-intelligence/1026878/not-even-good-at-being-rich",
+  "https://arstechnica.com/information-technology/2026/11/vmware-releases-vsphere-express-for-virtualization-on-up-to-128-cores/",
+  "https://www.theverge.com/tech/1026787/att-gemini-for-home-connected-life-security-system",
+  "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor",
+  "https://arstechnica.com/information-technology/2026/11/binance-says-hackers-who-stole-billions-in-crypto-spent-months-planning-heist/",
+  "https://simonwillison.net/2026/Nov/4/datasette-llm/",
+  "https://openai.com/index/openai-to-acquire-pierre",
+  "https://openai.com/index/a-thousand-fewer-paths-to-root",
+  "https://openai.com/index/daybreak-red-aws-govcloud"
  ],
  "missions": [
   "Move Project Jarvis API keys to GitHub Secrets.",
@@ -333,7 +347,8 @@
   "Write a Python script that sanitises input text and wraps it in delimited tags with basic override phrase detection.",
   "Write a Python script using Pydantic defining a validated JobCard schema that rejects non-positive quantities and disallowed print stocks.",
   "Write a Python script that parses messy OCR text into structured data.",
-  "Write a Python script that validates an incoming webhook payload and stores the enriched record in SQLite."
+  "Write a Python script that validates an incoming webhook payload and stores the enriched record in SQLite.",
+  "Build a FastAPI endpoint returning two-hundred-and-two while executing an asynchronous background logging task."
  ],
  "opportunities": [
   "Secure environment variable management with Doppler",
@@ -363,6 +378,7 @@
   "Deterministic document boundary input sanitisation",
   "Automated Extraction Validation with Instructor",
   "Local media and document feature extraction",
-  "Webhook enrichment and CRM integration pipelines"
+  "Webhook enrichment and CRM integration pipelines",
+  "Headless payload validation using Python jsonschema"
  ]
 }
