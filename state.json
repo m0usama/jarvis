@@ -1,5 +1,5 @@
 {
- "curriculum_index": 29,
+ "curriculum_index": 30,
  "seen": [
   "https://simonwillison.net/2026/Oct/7/ben-affleck/",
   "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
@@ -317,7 +317,21 @@
   "https://simonwillison.net/2026/Nov/4/datasette-llm/",
   "https://openai.com/index/openai-to-acquire-pierre",
   "https://openai.com/index/a-thousand-fewer-paths-to-root",
-  "https://openai.com/index/daybreak-red-aws-govcloud"
+  "https://openai.com/index/daybreak-red-aws-govcloud",
+  "https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/",
+  "https://www.theverge.com/ai-artificial-intelligence/1028454/openai-data-center-nda",
+  "https://www.theverge.com/tech/1028412/airbnb-ai-travel-agent-q3-2026-earnings",
+  "https://arstechnica.com/security/2026/11/vulnerability-allows-attackers-to-log-into-some-linux-devices-sans-password/",
+  "https://techcrunch.com/2026/11/05/airbnb-says-its-launching-an-ai-travel-agent-in-the-first-half-of-2027/",
+  "https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work",
+  "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/",
+  "https://openai.com/index/cultfit-builds-with-codex",
+  "https://techcrunch.com/2026/11/05/meta-says-us-users-can-now-video-chat-with-their-muse-ai-avatar/",
+  "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+  "https://simonwillison.net/2026/Nov/5/paul-ford/",
+  "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
+  "https://openai.com/index/australian-universities-ai-native-graduates",
+  "https://github.blog/open-source/maintainers/accessibility-statements-now-have-a-home-on-github/"
  ],
  "missions": [
   "Move Project Jarvis API keys to GitHub Secrets.",
@@ -348,7 +362,8 @@
   "Write a Python script using Pydantic defining a validated JobCard schema that rejects non-positive quantities and disallowed print stocks.",
   "Write a Python script that parses messy OCR text into structured data.",
   "Write a Python script that validates an incoming webhook payload and stores the enriched record in SQLite.",
-  "Build a FastAPI endpoint returning two-hundred-and-two while executing an asynchronous background logging task."
+  "Build a FastAPI endpoint returning two-hundred-and-two while executing an asynchronous background logging task.",
+  "Write a Python script using filelock to safely handle concurrent file updates across processes."
  ],
  "opportunities": [
   "Secure environment variable management with Doppler",
@@ -379,6 +394,7 @@
   "Automated Extraction Validation with Instructor",
   "Local media and document feature extraction",
   "Webhook enrichment and CRM integration pipelines",
-  "Headless payload validation using Python jsonschema"
+  "Headless payload validation using Python jsonschema",
+  "Local file locking for process isolation"
  ]
 }

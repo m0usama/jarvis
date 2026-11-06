@@ -1,69 +1,59 @@
-<h1>Morning Brief: Thursday 5 November 2026</h1>
+<h1>Morning Brief: Friday 6 November 2026</h1>
 <h2>Weather</h2>
 <p>{{WEATHER}}</p>
 <h2>Top Stories</h2>
-<h3>OpenAI builds autonomous pipeline for Linux kernel vulnerabilities</h3>
+<h3>Inside GitHub’s new Git storage architecture</h3>
 <ul>
-<li><b>What happened</b>: OpenAI developed an autonomous pipeline that discovered, validated, and generated patches for 948 local privilege-escalation vulnerabilities in the Linux kernel.</li>
-<li><b>Why it matters</b>: It is a massive leap beyond static code analysis by actively proving exploitability and writing functional patches through automated verification loops.</li>
-<li><b>Hype check</b>: Very real engineering milestone for automated validation pipelines.</li>
-<li><b>Verdict</b>: Learn</li>
-<li><b>Your angle</b>: Connects directly to Project Jarvis, your automation background, and your focus on orchestrating deterministic verification around language model outputs.</li>
-<li><b>Source</b>: <a href="https://openai.com/index/a-thousand-fewer-paths-to-root">A thousand fewer paths to root</a></li>
-</ul>
-<h3>Simon Willison releases datasette-llm 0.1a10</h3>
-<ul>
-<li><b>What happened</b>: Simon Willison released version 0.1a10 of datasette-llm to fix a configuration bug where the system failed to restrict available models exclusively to those defined in configuration files.</li>
-<li><b>Why it matters</b>: It addresses runtime configuration safety to prevent cost blowouts and unexpected fallback behaviour in backend integrations.</li>
-<li><b>Hype check</b>: Small, honest open-source development addressing runtime configuration safety.</li>
+<li><b>What happened</b>: GitHub redesigned its Git storage architecture to handle thousands of AI agents pushing code to a single repository concurrently without branch state corruption or object storage bottlenecks.</li>
+<li><b>Why it matters</b>: Software delivery is shifting toward agentic workflows and multi-agent systems, requiring infrastructure to handle non-human concurrent writes.</li>
+<li><b>Hype check</b>: A genuinely important infrastructure evolution rather than marketing hype.</li>
 <li><b>Verdict</b>: Test</li>
-<li><b>Your angle</b>: Ties directly to your FastAPI and API integration track, reinforcing the need for defensive, secure backends.</li>
-<li><b>Source</b>: <a href="https://simonwillison.net/2026/Nov/4/datasette-llm/">datasette-llm 0.1a10</a></li>
+<li><b>Your angle</b>: Connects to your background building scheduled GitHub Actions pipelines (Project Jarvis); understanding high-concurrency state management helps prevent merge collisions in multi-agent pipeline repos.</li>
+<li><b>Source</b>: <a href="https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/">Inside GitHub’s new Git storage architecture (GitHub Blog)</a></li>
 </ul>
-<h3>Apple cuts internal AI usage budgets</h3>
+<h3>Palo Alto Networks in talks to buy AI agent security startup Clutch</h3>
 <ul>
-<li><b>What happened</b>: TechCrunch reported that Apple is cutting budgets for internal AI usage across its engineering teams.</li>
-<li><b>Why it matters</b>: Signals a corporate transition away from experimental token consumption toward demanding a rigorous return on investment.</li>
-<li><b>Hype check</b>: Genuine corporate shift.</li>
+<li><b>What happened</b>: Palo Alto Networks is in talks to acquire Clutch for $500M to secure non-human identities, agent permissions, and model integrations.</li>
+<li><b>Why it matters</b>: Enterprise tech spend and security priorities are rapidly shifting toward governing autonomous agent access and API credentials.</li>
+<li><b>Hype check</b>: A solid signal of enterprise technology direction.</li>
 <li><b>Verdict</b>: Learn</li>
-<li><b>Your angle</b>: Links directly to your experience at Redo Print and Design building job card print automation using free-tier models and zero-cost tools.</li>
-<li><b>Source</b>: <a href="https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/">Apple is reportedly cutting budgets for its internal AI usage</a></li>
+<li><b>Your angle</b>: Connects to your work with webhooks, FastAPI endpoints, and automated workflows; highlights the importance of zero-trust security, API key protection, and model input/output validation.</li>
+<li><b>Source</b>: <a href="https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/">Palo Alto Networks in talks to buy AI agent security startup Clutch for $500M (TechCrunch AI)</a></li>
 </ul>
-<h3>Hugging Face features Dharma Field Extractor</h3>
+<h3>Perplexity launches Teammates workspace AI agents</h3>
 <ul>
-<li><b>What happened</b>: Hugging Face featured the release of Dharma Field Extractor, designed to parse arbitrary document formats and output structured JSON fields directly.</li>
-<li><b>Why it matters</b>: Solves the persistent industry challenge of transforming unstructured business records into machine-readable formats without fragile regex.</li>
-<li><b>Hype check</b>: Practical utility rather than marketing fluff.</li>
+<li><b>What happened</b>: Perplexity launched Teammates, enterprise workspace agents that retain project memory and execute continuous background tasks across team tools.</li>
+<li><b>Why it matters</b>: Represents a clear shift from reactive, chat-based interfaces to persistent, always-on background workers.</li>
+<li><b>Hype check</b>: A clear functional transition in workplace automation tools.</li>
 <li><b>Verdict</b>: Test</li>
-<li><b>Your angle</b>: Aligns squarely with Claude2InDesign and your job card pipeline work.</li>
-<li><b>Source</b>: <a href="https://huggingface.co/blog/Dharma-AI/dharma-field-extractor">Dharma Field Extractor: Any Document In, Structured Fields in JSON Out</a></li>
+<li><b>Your angle</b>: Connects to your trade platform and real-world automation work at Redo Print; studying state and context management aids in architecting unattended, multi-step workflows.</li>
+<li><b>Source</b>: <a href="https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work">Perplexity launches its own take on AI agents for work (The Verge AI)</a></li>
 </ul>
 <h2>Automation Opportunity</h2>
 <ul>
-<li><b>What it is</b>: Headless document validation using the Python `jsonschema` library to define structural contracts for incoming payloads.</li>
-<li><b>Problem it solves</b>: Prevents downstream data pipeline crashes caused by unpredictable JSON shapes or missing keys when document layouts shift.</li>
-<li><b>Free to try</b>: Open-source, lightweight, and runs entirely locally.</li>
-<li><b>Skill gained</b>: Strengthens data pipeline reliability and defensiveness by adding strict schema validation before processing.</li>
+<li><b>What it is</b>: Local file locking for concurrent pipeline tasks using Python's `filelock` library.</li>
+<li><b>Problem it solves</b>: Prevents race conditions and data corruption when multiple background processes or GitHub Actions access shared storage simultaneously.</li>
+<li><b>Free to try</b>: Yes, lightweight and open source (takes 10 minutes to integrate into a Python script).</li>
+<li><b>Skill gained</b>: Builds engineering discipline in process isolation, state safety, and concurrent pipeline management.</li>
 </ul>
-<h2>Learning Moment: System Design Basics for Junior Engineers</h2>
+<h2>Learning Moment: STAR Method for Technical Interviews</h2>
 <ul>
-<li>Focuses on understanding the single request journey, data boundaries, and system failure modes rather than massive distributed architectures.</li>
-<li>Built on five core blocks: client interface, application layer, background asynchronous processing, persistent storage, and observability.</li>
-<li>Decouples long-running operations from synchronous HTTP endpoints to protect user experience and database integrity.</li>
-<li>Employs queue-driven background workers with retry logic and exponential backoff to handle external failures resiliently.</li>
-<li><b>Example:</b> An automated invoice intake service where an HTTP endpoint validates upload schemas and saves raw files immediately, while an asynchronous background worker handles 15-second OCR tasks and database writes without stalling the client.</li>
+<li><b>Situation</b>: Briefly set the stage and outline the real-world constraints of the scenario.</li>
+<li><b>Task</b>: Define your exact role and technical responsibilities within the project.</li>
+<li><b>Action</b>: Explain your step-by-step technical implementation, architecture decisions, and choices.</li>
+<li><b>Result</b>: Close with the measurable business outcome, cost impact, or efficiency gains.</li>
+<li><b>Example:</b> For the Job Card print automation, the Situation was staff losing time manually retyping card details into desktop software. The Task was building a zero-cost pipeline to automate card processing and printer triggers. The Action was a Python pipeline receiving phone photos, using a free-tier vision model for parameter extraction, issuing direct socket commands to the printer, and logging to Google Sheets. The Result was zero manual desktop clicks and cutting hands-on processing time to zero minutes.</li>
 </ul>
 <h2>Career Move</h2>
 <ul>
-<li>Reframe the Redo Print and Design job card automation on your CV and GitHub using explicit system design terms: describe client ingestion, vision model parsing layers, local transformation, unattended Fiery spooling, and asynchronous logging.</li>
-<li>Document failure handling explicitly (e.g., handling blurry photos, dropped networks, or invalid JSON) to prove your placement experience translates directly into professional software engineering rigor.</li>
+<li>Draft a concise, three-paragraph technical case study for your portfolio repository README using the Redo Print placement work.</li>
+<li>Frame the write-up with the STAR structure, detailing the manual problem, technology choices (FastAPI, Python, vision models), and concrete business outcomes.</li>
 </ul>
 <h2>Today's Mission</h2>
-<p>Build a Python FastAPI script that validates an incoming request payload using Pydantic and offloads a processing step asynchronously while returning an immediate 202 response.</p>
+<p>Write a short Python script that simulates two concurrent processes writing to a shared file, using the filelock library to prevent race conditions and ensure safe state updates.</p>
 <ul>
-<li>☐ Set up a basic FastAPI application structure with an endpoint returning a 202 Accepted status code.</li>
-<li>☐ Define a Pydantic model to validate the incoming job payload structure.</li>
-<li>☐ Implement an asynchronous background function using `BackgroundTasks` that sleeps for two seconds to simulate processing.</li>
-<li>☐ Update the background function to append the completed job result to a local text log.</li>
-<li>☐ Test the endpoint to verify that the client receives an immediate response containing a job identifier before the background task completes.</li>
+<li>☐ Create a Python script setting up two concurrent processes targeting a single shared file.</li>
+<li>☐ Import and implement the `filelock` library to manage file access permissions.</li>
+<li>☐ Execute both processes simultaneously to confirm lock acquisition and graceful waiting.</li>
+<li>☐ Verify that shared file updates occur sequentially without data corruption.</li>
 </ul>

@@ -1,20 +1,18 @@
-# Sources for 2026-11-05 (full)
+# Sources for 2026-11-06 (full)
 
-Learning concept: System design basics for junior interviews
+Learning concept: Explaining a project in an interview using STAR
 
-- [Apple is reportedly cutting budgets for its internal AI usage](https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/) (TechCrunch AI, 05 Nov 01:26 UTC)
-- [After the midterms, a bigger clash over data centers could be coming](https://techcrunch.com/2026/11/04/after-the-midterms-a-bigger-clash-over-data-centers-could-be-coming/) (TechCrunch AI, 05 Nov 01:02 UTC)
-- [AI PACs spent millions trying to shape Congress — here’s how they fared](https://techcrunch.com/2026/11/04/ai-pacs-spent-millions-trying-to-shape-congress-heres-how-they-fared/) (TechCrunch AI, 04 Nov 22:45 UTC)
-- [Qualcomm is betting big on data centers as smartphone sales sink](https://www.theverge.com/ai-artificial-intelligence/1026867/qualcomm-earnings-data-centers) (The Verge AI, 04 Nov 17:42 UTC)
-- [Hackers exploited iOS and Android flaws to infect phones](https://arstechnica.com/security/2026/11/hackers-exploited-ios-and-android-flaws-to-infect-phones/) (Ars Technica, 04 Nov 22:26 UTC)
-- [17 better ways Elon Musk could have wasted $446 million](https://www.theverge.com/ai-artificial-intelligence/1026878/not-even-good-at-being-rich) (The Verge AI, 04 Nov 16:45 UTC)
-- [VMware releases vSphere Express for virtualization on up to 128 cores](https://arstechnica.com/information-technology/2026/11/vmware-releases-vsphere-express-for-virtualization-on-up-to-128-cores/) (Ars Technica, 04 Nov 21:38 UTC)
-- [Gemini for Home now plugs into AT&T’s smart security system](https://www.theverge.com/tech/1026787/att-gemini-for-home-connected-life-security-system) (The Verge AI, 04 Nov 15:23 UTC)
-- [Dharma Field Extractor: Any Document In, Structured Fields in JSON Out](https://huggingface.co/blog/Dharma-AI/dharma-field-extractor) (Hugging Face, 04 Nov 17:50 UTC)
-- [Binance says hackers who stole billions in crypto spent months planning heist](https://arstechnica.com/information-technology/2026/11/binance-says-hackers-who-stole-billions-in-crypto-spent-months-planning-heist/) (Ars Technica, 04 Nov 16:06 UTC)
-- [datasette-llm 0.1a10](https://simonwillison.net/2026/Nov/4/datasette-llm/) (Simon Willison, 04 Nov 15:26 UTC)
-- [OpenAI to acquire Pierre Computer Company, Inc.](https://openai.com/index/openai-to-acquire-pierre) (OpenAI, 04 Nov 14:30 UTC)
-- [A thousand fewer paths to root](https://openai.com/index/a-thousand-fewer-paths-to-root) (OpenAI, 04 Nov 08:00 UTC)
-- [Daybreak Red is now available in AWS GovCloud (US-East)](https://openai.com/index/daybreak-red-aws-govcloud) (OpenAI, 04 Nov 07:00 UTC)
-
-Feeds that failed: Google DeepMind
+- [Palo Alto Networks in talks to buy AI agent security startup Clutch for $500M](https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/) (TechCrunch AI, 06 Nov 06:28 UTC)
+- [OpenAI is stepping back from NDAs for data center projects](https://www.theverge.com/ai-artificial-intelligence/1028454/openai-data-center-nda) (The Verge AI, 05 Nov 19:37 UTC)
+- [Airbnb is working on an AI travel agent](https://www.theverge.com/tech/1028412/airbnb-ai-travel-agent-q3-2026-earnings) (The Verge AI, 05 Nov 19:06 UTC)
+- [Meet *sshole, the vulnerability that lets hackers SSH into Linux devices](https://arstechnica.com/security/2026/11/vulnerability-allows-attackers-to-log-into-some-linux-devices-sans-password/) (Ars Technica, 05 Nov 23:09 UTC)
+- [Airbnb says it’s launching an AI travel agent in the first half of 2027](https://techcrunch.com/2026/11/05/airbnb-says-its-launching-an-ai-travel-agent-in-the-first-half-of-2027/) (TechCrunch AI, 05 Nov 22:40 UTC)
+- [Perplexity launches its own take on AI agents for work](https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work) (The Verge AI, 05 Nov 17:26 UTC)
+- [Inside GitHub’s new Git storage architecture](https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/) (GitHub Blog, 05 Nov 20:23 UTC)
+- [Cult.fit builds operational muscle with Codex](https://openai.com/index/cultfit-builds-with-codex) (OpenAI, 05 Nov 20:00 UTC)
+- [Meta says US users can now video chat with their Muse AI avatar](https://techcrunch.com/2026/11/05/meta-says-us-users-can-now-video-chat-with-their-muse-ai-avatar/) (TechCrunch AI, 05 Nov 19:48 UTC)
+- [New NVIDIA Cosmos 3 Open Models for Interactive World Simulation](https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation) (Hugging Face, 05 Nov 19:35 UTC)
+- [Quoting Paul Ford](https://simonwillison.net/2026/Nov/5/paul-ford/) (Simon Willison, 05 Nov 17:34 UTC)
+- [Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips](https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/) (Google DeepMind, 05 Nov 17:05 UTC)
+- [Australian universities are creating AI-native graduates](https://openai.com/index/australian-universities-ai-native-graduates) (OpenAI, 05 Nov 17:00 UTC)
+- [Accessibility statements now have a home on GitHub](https://github.blog/open-source/maintainers/accessibility-statements-now-have-a-home-on-github/) (GitHub Blog, 05 Nov 16:00 UTC)
