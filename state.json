@@ -1,5 +1,5 @@
 {
- "curriculum_index": 30,
+ "curriculum_index": 31,
  "seen": [
   "https://simonwillison.net/2026/Oct/7/ben-affleck/",
   "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
@@ -331,10 +331,20 @@
   "https://simonwillison.net/2026/Nov/5/paul-ford/",
   "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
   "https://openai.com/index/australian-universities-ai-native-graduates",
-  "https://github.blog/open-source/maintainers/accessibility-statements-now-have-a-home-on-github/"
+  "https://github.blog/open-source/maintainers/accessibility-statements-now-have-a-home-on-github/",
+  "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
+  "https://www.theverge.com/ai-artificial-intelligence/1029380/openai-1-25-trillion-investment-valuation",
+  "https://www.theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy",
+  "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/",
+  "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/",
+  "https://arstechnica.com/security/2026/11/chainalysis-says-hackers-stole-credentials-and-tokens-for-all-of-its-customers/",
+  "https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy",
+  "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/",
+  "https://simonwillison.net/2026/Nov/6/nilay-patel/",
+  "https://huggingface.co/blog/allenai/toyblocks",
+  "https://openai.com/index/partnering-with-hacktron"
  ],
  "missions": [
-  "Move Project Jarvis API keys to GitHub Secrets.",
   "Write a Python script using tiktoken that counts tokens for a text string and triggers a limit warning.",
   "Write a Pydantic schema script that parses and validates sample order JSON.",
   "Build a standalone Python script calculating vector cosine similarity between mock documents and a query string.",
@@ -363,10 +373,10 @@
   "Write a Python script that parses messy OCR text into structured data.",
   "Write a Python script that validates an incoming webhook payload and stores the enriched record in SQLite.",
   "Build a FastAPI endpoint returning two-hundred-and-two while executing an asynchronous background logging task.",
-  "Write a Python script using filelock to safely handle concurrent file updates across processes."
+  "Write a Python script using filelock to safely handle concurrent file updates across processes.",
+  "Write a short Python script demonstrating a polling loop alongside a basic FastAPI webhook receiver."
  ],
  "opportunities": [
-  "Secure environment variable management with Doppler",
   "Automated token budgeting for API calls",
   "Deterministic API mock server testing workflows",
   "Circuit breaker dead letter queue pattern",
@@ -395,6 +405,7 @@
   "Local media and document feature extraction",
   "Webhook enrichment and CRM integration pipelines",
   "Headless payload validation using Python jsonschema",
-  "Local file locking for process isolation"
+  "Local file locking for process isolation",
+  "Declarative resilience using Tenacity retry orchestration"
  ]
 }

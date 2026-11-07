@@ -1,59 +1,65 @@
-<h1>Morning Brief: Friday 6 November 2026</h1>
+<h1>Morning Brief: Saturday 7 November 2026</h1>
 <h2>Weather</h2>
 <p>{{WEATHER}}</p>
 <h2>Top Stories</h2>
-<h3>Inside GitHub’s new Git storage architecture</h3>
+<h3>Agentic Engineering Shift</h3>
 <ul>
-<li><b>What happened</b>: GitHub redesigned its Git storage architecture to handle thousands of AI agents pushing code to a single repository concurrently without branch state corruption or object storage bottlenecks.</li>
-<li><b>Why it matters</b>: Software delivery is shifting toward agentic workflows and multi-agent systems, requiring infrastructure to handle non-human concurrent writes.</li>
-<li><b>Hype check</b>: A genuinely important infrastructure evolution rather than marketing hype.</li>
-<li><b>Verdict</b>: Test</li>
-<li><b>Your angle</b>: Connects to your background building scheduled GitHub Actions pipelines (Project Jarvis); understanding high-concurrency state management helps prevent merge collisions in multi-agent pipeline repos.</li>
-<li><b>Source</b>: <a href="https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/">Inside GitHub’s new Git storage architecture (GitHub Blog)</a></li>
+<li><b>What happened</b>: GitHub published a guide on agentic engineering covering planning, automated reviews, and investigating production issues alongside human judgment.</li>
+<li><b>Why it matters</b>: Signals developer work moving from simple code completion to pragmatic software operations.</li>
+<li><b>Hype check</b>: A solid shift away from marketing hype and toward pragmatic operations.</li>
+<li><b>Verdict</b>: Learn.</li>
+<li><b>Your angle</b>: Connects to Project Jarvis and automation work, reinforcing that reliable automated systems require failure handling and workflow boundaries rather than blind trust in model outputs.</li>
+<li><b>Source</b>: <a href="https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/">Beyond code generation: A developer’s guide to agentic engineering (GitHub Blog)</a></li>
 </ul>
-<h3>Palo Alto Networks in talks to buy AI agent security startup Clutch</h3>
+<h3>Chainalysis Customer Credentials Breach</h3>
 <ul>
-<li><b>What happened</b>: Palo Alto Networks is in talks to acquire Clutch for $500M to secure non-human identities, agent permissions, and model integrations.</li>
-<li><b>Why it matters</b>: Enterprise tech spend and security priorities are rapidly shifting toward governing autonomous agent access and API credentials.</li>
-<li><b>Hype check</b>: A solid signal of enterprise technology direction.</li>
-<li><b>Verdict</b>: Learn</li>
-<li><b>Your angle</b>: Connects to your work with webhooks, FastAPI endpoints, and automated workflows; highlights the importance of zero-trust security, API key protection, and model input/output validation.</li>
-<li><b>Source</b>: <a href="https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/">Palo Alto Networks in talks to buy AI agent security startup Clutch for $500M (TechCrunch AI)</a></li>
+<li><b>What happened</b>: Hackers stole credentials and tokens for all Chainalysis customers using AI agents and on-path interception.</li>
+<li><b>Why it matters</b>: Exposes severe credential risks across integrated platforms.</li>
+<li><b>Hype check</b>: A very real, high-impact security development, not corporate marketing.</li>
+<li><b>Verdict</b>: Learn.</li>
+<li><b>Your angle</b>: Emphasizes mandatory fundamentals in API integrations and webhooks, such as environment variables, access tokens, and least-privilege scoping.</li>
+<li><b>Source</b>: <a href="https://arstechnica.com/security/2026/11/chainalysis-says-hackers-stole-credentials-and-tokens-for-all-of-its-customers/">Chainalysis says hackers stole credentials and tokens for all of its customers (Ars Technica)</a></li>
 </ul>
-<h3>Perplexity launches Teammates workspace AI agents</h3>
+<h3>OpenAI Partners with Hacktron</h3>
 <ul>
-<li><b>What happened</b>: Perplexity launched Teammates, enterprise workspace agents that retain project memory and execute continuous background tasks across team tools.</li>
-<li><b>Why it matters</b>: Represents a clear shift from reactive, chat-based interfaces to persistent, always-on background workers.</li>
-<li><b>Hype check</b>: A clear functional transition in workplace automation tools.</li>
-<li><b>Verdict</b>: Test</li>
-<li><b>Your angle</b>: Connects to your trade platform and real-world automation work at Redo Print; studying state and context management aids in architecting unattended, multi-step workflows.</li>
-<li><b>Source</b>: <a href="https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work">Perplexity launches its own take on AI agents for work (The Verge AI)</a></li>
+<li><b>What happened</b>: OpenAI partnered with security firm Hacktron to find system vulnerabilities and test third-party service connections using frontier models.</li>
+<li><b>Why it matters</b>: Demonstrates external probing and validation of interconnected systems.</li>
+<li><b>Hype check</b>: A mix of engineering practice and public relations reassurance.</li>
+<li><b>Verdict</b>: Test.</li>
+<li><b>Your angle</b>: Informs defensive API design and payload validation for deploying reliable AI pipelines and monitoring systems.</li>
+<li><b>Source</b>: <a href="https://openai.com/index/partnering-with-hacktron">Partnering with Hacktron to find vulnerabilities in OpenAI’s systems (OpenAI)</a></li>
+</ul>
+<h3>Exposed Artex Hacking Tools</h3>
+<ul>
+<li><b>What happened</b>: Researchers found hundreds of servers hosting the Artex penetration testing tool publicly exposed to the internet.</li>
+<li><b>Why it matters</b>: Highlights the risks of unisolated development environments and exposed ports.</li>
+<li><b>Hype check</b>: A clear, factual operational failure.</li>
+<li><b>Verdict</b>: Ignore the tool itself, but take the operational warning seriously.</li>
+<li><b>Your angle</b>: Underscores basic network hygiene, port lockdown, and server isolation when hosting custom FastAPI endpoints and automated pipelines.</li>
+<li><b>Source</b>: <a href="https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/">Hundreds of Artex AI hacking tools found publicly exposed to the web (TechCrunch AI)</a></li>
 </ul>
 <h2>Automation Opportunity</h2>
 <ul>
-<li><b>What it is</b>: Local file locking for concurrent pipeline tasks using Python's `filelock` library.</li>
-<li><b>Problem it solves</b>: Prevents race conditions and data corruption when multiple background processes or GitHub Actions access shared storage simultaneously.</li>
-<li><b>Free to try</b>: Yes, lightweight and open source (takes 10 minutes to integrate into a Python script).</li>
-<li><b>Skill gained</b>: Builds engineering discipline in process isolation, state safety, and concurrent pipeline management.</li>
+<li><b>What it is</b>: Exponential backoff and retry decorators using the open-source Python library Tenacity.</li>
+<li><b>Problem it solves</b>: Prevents pipeline hard crashes caused by transient connection drops and API rate limits.</li>
+<li><b>Free to try</b>: Completely free open-source library.</li>
+<li><b>Skill gained</b>: Strengthens reliability engineering skills by building integrations that survive external failures without manual resets.</li>
 </ul>
-<h2>Learning Moment: STAR Method for Technical Interviews</h2>
+<h2>Learning Moment: Webhooks vs. Polling</h2>
 <ul>
-<li><b>Situation</b>: Briefly set the stage and outline the real-world constraints of the scenario.</li>
-<li><b>Task</b>: Define your exact role and technical responsibilities within the project.</li>
-<li><b>Action</b>: Explain your step-by-step technical implementation, architecture decisions, and choices.</li>
-<li><b>Result</b>: Close with the measurable business outcome, cost impact, or efficiency gains.</li>
-<li><b>Example:</b> For the Job Card print automation, the Situation was staff losing time manually retyping card details into desktop software. The Task was building a zero-cost pipeline to automate card processing and printer triggers. The Action was a Python pipeline receiving phone photos, using a free-tier vision model for parameter extraction, issuing direct socket commands to the printer, and logging to Google Sheets. The Result was zero manual desktop clicks and cutting hands-on processing time to zero minutes.</li>
+<li>Polling repeatedly queries an external server at fixed intervals, whereas webhooks push HTTP POST payloads directly to your endpoint the moment an event occurs.</li>
+<li>Webhooks reduce latency, server bandwidth, and API rate limit usage, but require maintaining a secure, publicly accessible endpoint with fast response times.</li>
+<li>Polling is appropriate when source systems lack webhook support, worker applications live behind private firewalls without public ingress, or data is processed in scheduled batch jobs.</li>
+<li><b>Example:</b> Tracking print jobs via polling queries an endpoint every thirty seconds with mostly empty responses, wasting bandwidth and adding latency, while a FastAPI webhook receives completed order data instantly with zero wasted requests.</li>
 </ul>
 <h2>Career Move</h2>
 <ul>
-<li>Draft a concise, three-paragraph technical case study for your portfolio repository README using the Redo Print placement work.</li>
-<li>Frame the write-up with the STAR structure, detailing the manual problem, technology choices (FastAPI, Python, vision models), and concrete business outcomes.</li>
+<li>Frame your Job Card print automation work as a full-lifecycle reliability case study on your GitHub and CV, detailing mobile upload ingestion, unattended Fiery hand-off, audit trails, and automated retry logic instead of a simple vision model wrapper.</li>
 </ul>
 <h2>Today's Mission</h2>
-<p>Write a short Python script that simulates two concurrent processes writing to a shared file, using the filelock library to prevent race conditions and ensure safe state updates.</p>
+<p>Cement how payload ingress differs between scheduled requests and event-driven endpoints by contrasting a basic polling loop with a webhook listener in fifteen to twenty minutes.</p>
 <ul>
-<li>☐ Create a Python script setting up two concurrent processes targeting a single shared file.</li>
-<li>☐ Import and implement the `filelock` library to manage file access permissions.</li>
-<li>☐ Execute both processes simultaneously to confirm lock acquisition and graceful waiting.</li>
-<li>☐ Verify that shared file updates occur sequentially without data corruption.</li>
+<li>☐ Write a twenty-line Python script using urllib that implements a basic polling loop against a public JSON endpoint.</li>
+<li>☐ Create a simple FastAPI route that receives a simulated webhook payload.</li>
+<li>☐ Contrast how payload ingress differs between the two approaches.</li>
 </ul>
