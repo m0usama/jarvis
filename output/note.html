@@ -1,65 +1,61 @@
-<h1>Morning Brief: Saturday 7 November 2026</h1>
+<h1>Morning Brief: Sunday 8 November 2026</h1>
 <h2>Weather</h2>
 <p>{{WEATHER}}</p>
 <h2>Top Stories</h2>
-<h3>Agentic Engineering Shift</h3>
+<h3>Datasette Link Prefetch Fix</h3>
 <ul>
-<li><b>What happened</b>: GitHub published a guide on agentic engineering covering planning, automated reviews, and investigating production issues alongside human judgment.</li>
-<li><b>Why it matters</b>: Signals developer work moving from simple code completion to pragmatic software operations.</li>
-<li><b>Hype check</b>: A solid shift away from marketing hype and toward pragmatic operations.</li>
-<li><b>Verdict</b>: Learn.</li>
-<li><b>Your angle</b>: Connects to Project Jarvis and automation work, reinforcing that reliable automated systems require failure handling and workflow boundaries rather than blind trust in model outputs.</li>
-<li><b>Source</b>: <a href="https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/">Beyond code generation: A developer’s guide to agentic engineering (GitHub Blog)</a></li>
+<li><b>What happened</b>: Simon Willison stopped emitting `link: rel=next` HTTP headers to Firefox for HTML pages after discovering the browser automatically prefetched next pages, causing expensive database queries and high server load.</li>
+<li><b>Why it matters</b>: Demonstrates how standard client metadata can trigger invisible prefetching that degrades database performance.</li>
+<li><b>Hype check</b>: Real, high-utility engineering lesson rather than marketing.</li>
+<li><b>Verdict</b>: Learn</li>
+<li><b>Your angle</b>: Direct link to your background building FastAPI services and trade catalogue datasets; helps protect databases from unneeded strain during pagination over large inventory tables or CRM databases.</li>
+<li><b>Source</b>: <a href="https://simonwillison.net/2026/Nov/7/link-rel-next/">datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages (Simon Willison)</a></li>
 </ul>
-<h3>Chainalysis Customer Credentials Breach</h3>
+<h3>NYT Cooking AI Assistant Review</h3>
 <ul>
-<li><b>What happened</b>: Hackers stole credentials and tokens for all Chainalysis customers using AI agents and on-path interception.</li>
-<li><b>Why it matters</b>: Exposes severe credential risks across integrated platforms.</li>
-<li><b>Hype check</b>: A very real, high-impact security development, not corporate marketing.</li>
-<li><b>Verdict</b>: Learn.</li>
-<li><b>Your angle</b>: Emphasizes mandatory fundamentals in API integrations and webhooks, such as environment variables, access tokens, and least-privilege scoping.</li>
-<li><b>Source</b>: <a href="https://arstechnica.com/security/2026/11/chainalysis-says-hackers-stole-credentials-and-tokens-for-all-of-its-customers/">Chainalysis says hackers stole credentials and tokens for all of its customers (Ars Technica)</a></li>
+<li><b>What happened</b>: Real-world testing showed the assistant handled dinner adaptations well, but nearly ruined a cake by misjudging structural ingredient ratios.</li>
+<li><b>Why it matters</b>: Exposes generative models failing at strict, deterministic procedures while handling conversational open-ended tasks adequately.</li>
+<li><b>Hype check</b>: Real development highlighting classic generative model failure modes.</li>
+<li><b>Verdict</b>: Learn</li>
+<li><b>Your angle</b>: Directly connects to Claude2InDesign; print workflows, like baking, require exact values rather than loose approximations, underscoring the need to use deterministic templates over generative models for business rules.</li>
+<li><b>Source</b>: <a href="https://www.theverge.com/tech/1029489/nyt-cooking-ai-assistant-review">NYT Cooking’s AI assistant saved my weeknight chicken, but almost ruined my cake (The Verge AI)</a></li>
 </ul>
-<h3>OpenAI Partners with Hacktron</h3>
+<h3>AI and Cybersecurity Shifts</h3>
 <ul>
-<li><b>What happened</b>: OpenAI partnered with security firm Hacktron to find system vulnerabilities and test third-party service connections using frontier models.</li>
-<li><b>Why it matters</b>: Demonstrates external probing and validation of interconnected systems.</li>
-<li><b>Hype check</b>: A mix of engineering practice and public relations reassurance.</li>
-<li><b>Verdict</b>: Test.</li>
-<li><b>Your angle</b>: Informs defensive API design and payload validation for deploying reliable AI pipelines and monitoring systems.</li>
-<li><b>Source</b>: <a href="https://openai.com/index/partnering-with-hacktron">Partnering with Hacktron to find vulnerabilities in OpenAI’s systems (OpenAI)</a></li>
-</ul>
-<h3>Exposed Artex Hacking Tools</h3>
-<ul>
-<li><b>What happened</b>: Researchers found hundreds of servers hosting the Artex penetration testing tool publicly exposed to the internet.</li>
-<li><b>Why it matters</b>: Highlights the risks of unisolated development environments and exposed ports.</li>
-<li><b>Hype check</b>: A clear, factual operational failure.</li>
-<li><b>Verdict</b>: Ignore the tool itself, but take the operational warning seriously.</li>
-<li><b>Your angle</b>: Underscores basic network hygiene, port lockdown, and server isolation when hosting custom FastAPI endpoints and automated pipelines.</li>
-<li><b>Source</b>: <a href="https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/">Hundreds of Artex AI hacking tools found publicly exposed to the web (TechCrunch AI)</a></li>
+<li><b>What happened</b>: Alex Stamos discussed how automated code generation and autonomous coding agents introduce new vulnerabilities while providing automated inspection tools for defenders.</li>
+<li><b>Why it matters</b>: Autonomous coding agents entering development pipelines are fundamentally reshaping the security landscape.</li>
+<li><b>Hype check</b>: Reflects a genuine industry shift.</li>
+<li><b>Verdict</b>: Learn</li>
+<li><b>Your angle</b>: Vital for your automation track and Project Jarvis; emphasizes setting strict security boundaries around agentic workflows rather than treating automation as simple glue code.</li>
+<li><b>Source</b>: <a href="https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos">AI broke the cybersecurity world. What’s next? (The Verge AI)</a></li>
 </ul>
 <h2>Automation Opportunity</h2>
 <ul>
-<li><b>What it is</b>: Exponential backoff and retry decorators using the open-source Python library Tenacity.</li>
-<li><b>Problem it solves</b>: Prevents pipeline hard crashes caused by transient connection drops and API rate limits.</li>
-<li><b>Free to try</b>: Completely free open-source library.</li>
-<li><b>Skill gained</b>: Strengthens reliability engineering skills by building integrations that survive external failures without manual resets.</li>
+<li>SQLite with WAL (Write-Ahead Logging) mode for local webhook and job queue state handling.</li>
+<li>Solves table locks and lost events caused by concurrent incoming webhooks writing to standard SQLite databases.</li>
+<li>Free to try via the standard Python `sqlite3` library without needing PostgreSQL.</li>
+<li>Lightweight concurrency management and backend reliability for high-volume pipelines.</li>
 </ul>
-<h2>Learning Moment: Webhooks vs. Polling</h2>
+<h2>Learning Moment: Function Calling</h2>
 <ul>
-<li>Polling repeatedly queries an external server at fixed intervals, whereas webhooks push HTTP POST payloads directly to your endpoint the moment an event occurs.</li>
-<li>Webhooks reduce latency, server bandwidth, and API rate limit usage, but require maintaining a secure, publicly accessible endpoint with fast response times.</li>
-<li>Polling is appropriate when source systems lack webhook support, worker applications live behind private firewalls without public ingress, or data is processed in scheduled batch jobs.</li>
-<li><b>Example:</b> Tracking print jobs via polling queries an endpoint every thirty seconds with mostly empty responses, wasting bandwidth and adding latency, while a FastAPI webhook receives completed order data instantly with zero wasted requests.</li>
+<li>Large language models cannot run code, query live databases, or call external APIs independently.</li>
+<li>You provide the model with tool definitions using JSON schemas that outline function names, purposes, and parameter types.</li>
+<li>The model outputs structured JSON with function arguments instead of standard text when external data is needed.</li>
+<li>Application code intercepts the JSON, runs the native local code, and returns the result to the model for its final response.</li>
+<li>Keeps execution safe within deterministic code rather than trusting the model with business logic.</li>
+<li><b>Example:</b> A user asks for the status of job card 482; the model calls a `get_job_status` tool with ID `482`, your Python script queries the local SQL database, and returns the string confirming it is in preflight.</li>
 </ul>
 <h2>Career Move</h2>
 <ul>
-<li>Frame your Job Card print automation work as a full-lifecycle reliability case study on your GitHub and CV, detailing mobile upload ingestion, unattended Fiery hand-off, audit trails, and automated retry logic instead of a simple vision model wrapper.</li>
+<li>Update your portfolio repository or CV to document failure handling and edge cases for your Job Card print automation.</li>
+<li>Detail how the script manages physical-world issues like poor lighting, failure logging, and image archiving without crashing the queue to showcase production readiness.</li>
 </ul>
 <h2>Today's Mission</h2>
-<p>Cement how payload ingress differs between scheduled requests and event-driven endpoints by contrasting a basic polling loop with a webhook listener in fifteen to twenty minutes.</p>
+<p>Write a Python script using native `sqlite3` to create a jobs table, enable Write-Ahead Logging via a PRAGMA command, insert mock records, and verify the journal mode.</p>
 <ul>
-<li>☐ Write a twenty-line Python script using urllib that implements a basic polling loop against a public JSON endpoint.</li>
-<li>☐ Create a simple FastAPI route that receives a simulated webhook payload.</li>
-<li>☐ Contrast how payload ingress differs between the two approaches.</li>
+<li>☐ Create a Python script using the standard `sqlite3` library.</li>
+<li>☐ Define and create a simple `jobs` table.</li>
+<li>☐ Execute the explicit PRAGMA command to enable Write-Ahead Logging (WAL).</li>
+<li>☐ Insert three mock print records within a single transaction.</li>
+<li>☐ Query and verify the active journal mode.</li>
 </ul>

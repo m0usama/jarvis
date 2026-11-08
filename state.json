@@ -1,5 +1,5 @@
 {
- "curriculum_index": 31,
+ "curriculum_index": 32,
  "seen": [
   "https://simonwillison.net/2026/Oct/7/ben-affleck/",
   "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
@@ -342,10 +342,15 @@
   "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/",
   "https://simonwillison.net/2026/Nov/6/nilay-patel/",
   "https://huggingface.co/blog/allenai/toyblocks",
-  "https://openai.com/index/partnering-with-hacktron"
+  "https://openai.com/index/partnering-with-hacktron",
+  "https://simonwillison.net/2026/Nov/7/link-rel-next/",
+  "https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers/",
+  "https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/",
+  "https://www.theverge.com/tech/1029489/nyt-cooking-ai-assistant-review",
+  "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
+  "https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos"
  ],
  "missions": [
-  "Write a Python script using tiktoken that counts tokens for a text string and triggers a limit warning.",
   "Write a Pydantic schema script that parses and validates sample order JSON.",
   "Build a standalone Python script calculating vector cosine similarity between mock documents and a query string.",
   "Write a short Python script querying three mock print product descriptions using an in-memory Chroma collection.",
@@ -374,10 +379,10 @@
   "Write a Python script that validates an incoming webhook payload and stores the enriched record in SQLite.",
   "Build a FastAPI endpoint returning two-hundred-and-two while executing an asynchronous background logging task.",
   "Write a Python script using filelock to safely handle concurrent file updates across processes.",
-  "Write a short Python script demonstrating a polling loop alongside a basic FastAPI webhook receiver."
+  "Write a short Python script demonstrating a polling loop alongside a basic FastAPI webhook receiver.",
+  "Write a Python script using sqlite3 that enables Write-Ahead Logging mode via pragma commands and validates the setting with a test transaction."
  ],
  "opportunities": [
-  "Automated token budgeting for API calls",
   "Deterministic API mock server testing workflows",
   "Circuit breaker dead letter queue pattern",
   "Embedded local vector storage with Chroma",
@@ -406,6 +411,7 @@
   "Webhook enrichment and CRM integration pipelines",
   "Headless payload validation using Python jsonschema",
   "Local file locking for process isolation",
-  "Declarative resilience using Tenacity retry orchestration"
+  "Declarative resilience using Tenacity retry orchestration",
+  "Concurrency handling with SQLite Write-Ahead Logging"
  ]
 }
