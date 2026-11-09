@@ -1,5 +1,5 @@
 {
- "curriculum_index": 32,
+ "curriculum_index": 33,
  "seen": [
   "https://simonwillison.net/2026/Oct/7/ben-affleck/",
   "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
@@ -348,10 +348,17 @@
   "https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/",
   "https://www.theverge.com/tech/1029489/nyt-cooking-ai-assistant-review",
   "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
-  "https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos"
+  "https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos",
+  "https://techcrunch.com/2026/11/08/is-jensen-huangs-job-on-the-line-yales-jeffrey-sonnenfeld-estimates-its-about-a-50-50/",
+  "https://simonwillison.net/2026/Nov/9/hn-50421091/",
+  "https://simonwillison.net/2026/Nov/9/details-summary/",
+  "https://www.theverge.com/ai-artificial-intelligence/1029595/full-text-jensen-huang-affair-memo-nvidia",
+  "https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust/",
+  "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/",
+  "https://www.theverge.com/ai-artificial-intelligence/1029562/nvidia-investigating-jensen-huang-relationship-chinese-spy",
+  "https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic"
  ],
  "missions": [
-  "Write a Pydantic schema script that parses and validates sample order JSON.",
   "Build a standalone Python script calculating vector cosine similarity between mock documents and a query string.",
   "Write a short Python script querying three mock print product descriptions using an in-memory Chroma collection.",
   "Write a Python script splitting paragraphs into structured chunks with length metadata.",
@@ -380,10 +387,10 @@
   "Build a FastAPI endpoint returning two-hundred-and-two while executing an asynchronous background logging task.",
   "Write a Python script using filelock to safely handle concurrent file updates across processes.",
   "Write a short Python script demonstrating a polling loop alongside a basic FastAPI webhook receiver.",
-  "Write a Python script using sqlite3 that enables Write-Ahead Logging mode via pragma commands and validates the setting with a test transaction."
+  "Write a Python script using sqlite3 that enables Write-Ahead Logging mode via pragma commands and validates the setting with a test transaction.",
+  "Write a Python script using Pydantic to define and validate a typed print specification schema from raw dictionary input."
  ],
  "opportunities": [
-  "Deterministic API mock server testing workflows",
   "Circuit breaker dead letter queue pattern",
   "Embedded local vector storage with Chroma",
   "Local Model Context Protocol file system integration",
@@ -412,6 +419,7 @@
   "Headless payload validation using Python jsonschema",
   "Local file locking for process isolation",
   "Declarative resilience using Tenacity retry orchestration",
-  "Concurrency handling with SQLite Write-Ahead Logging"
+  "Concurrency handling with SQLite Write-Ahead Logging",
+  "SQLite generated columns for pipeline ingestion"
  ]
 }

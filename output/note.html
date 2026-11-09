@@ -1,61 +1,58 @@
-<h1>Morning Brief: Sunday 8 November 2026</h1>
+<h1>Morning Brief: Monday 9 November 2026</h1>
 <h2>Weather</h2>
 <p>{{WEATHER}}</p>
 <h2>Top Stories</h2>
-<h3>Datasette Link Prefetch Fix</h3>
+<h3>Executive Governance Crisis at Nvidia</h3>
 <ul>
-<li><b>What happened</b>: Simon Willison stopped emitting `link: rel=next` HTTP headers to Firefox for HTML pages after discovering the browser automatically prefetched next pages, causing expensive database queries and high server load.</li>
-<li><b>Why it matters</b>: Demonstrates how standard client metadata can trigger invisible prefetching that degrades database performance.</li>
-<li><b>Hype check</b>: Real, high-utility engineering lesson rather than marketing.</li>
-<li><b>Verdict</b>: Learn</li>
-<li><b>Your angle</b>: Direct link to your background building FastAPI services and trade catalogue datasets; helps protect databases from unneeded strain during pagination over large inventory tables or CRM databases.</li>
-<li><b>Source</b>: <a href="https://simonwillison.net/2026/Nov/7/link-rel-next/">datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages (Simon Willison)</a></li>
+<li><b>What happened</b>: Nvidia's board launched an investigation into CEO Jensen Huang regarding his relationship with an executive at Megaspeed who was allegedly recruited by Chinese intelligence, leading Huang to send an internal memo admitting to an affair while an analysis by Yale's Jeffrey Sonnenfeld estimates a 50-50 chance he loses his job.</li>
+<li><b>Why it matters</b>: This is a major corporate governance crisis for the primary global supplier of AI hardware.</li>
+<li><b>Hype check</b>: It is purely institutional politics rather than a technical shift.</li>
+<li><b>Verdict</b>: Ignore</li>
+<li><b>Your angle</b>: It holds no honest link to your software stack or automation work and requires no code adjustments.</li>
+<li><b>Source</b>: <a href="https://techcrunch.com/2026/11/08/is-jensen-huangs-job-on-the-line-yales-jeffrey-sonnenfeld-estimates-its-about-a-50-50/">Is Jensen Huang’s job on the line? Yale’s Jeffrey Sonnenfeld estimates it’s “about a 50-50” (TechCrunch AI)</a></li>
 </ul>
-<h3>NYT Cooking AI Assistant Review</h3>
+<h3>Custom parse_number() SQLite Extension</h3>
 <ul>
-<li><b>What happened</b>: Real-world testing showed the assistant handled dinner adaptations well, but nearly ruined a cake by misjudging structural ingredient ratios.</li>
-<li><b>Why it matters</b>: Exposes generative models failing at strict, deterministic procedures while handling conversational open-ended tasks adequately.</li>
-<li><b>Hype check</b>: Real development highlighting classic generative model failure modes.</li>
+<li><b>What happened</b>: Simon Willison documented an experiment comparing C and Rust implementations of a custom parse_number SQLite extension to convert messy formatted strings (currency, percentages) directly into numbers during queries.</li>
+<li><b>Why it matters</b>: It is a real technical investigation into pushing transformation logic directly down to the storage layer.</li>
+<li><b>Hype check</b>: Grounded technical exploration of database engine extensibility.</li>
 <li><b>Verdict</b>: Learn</li>
-<li><b>Your angle</b>: Directly connects to Claude2InDesign; print workflows, like baking, require exact values rather than loose approximations, underscoring the need to use deterministic templates over generative models for business rules.</li>
-<li><b>Source</b>: <a href="https://www.theverge.com/tech/1029489/nyt-cooking-ai-assistant-review">NYT Cooking’s AI assistant saved my weeknight chicken, but almost ruined my cake (The Verge AI)</a></li>
+<li><b>Your angle</b>: Directly connects to your experience building product catalogues and processing B2B trade data, helping you explain in interviews why clean data staging matters.</li>
+<li><b>Source</b>: <a href="https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust/">parse_number() as a SQLite extension: C vs Rust (Simon Willison)</a></li>
 </ul>
-<h3>AI and Cybersecurity Shifts</h3>
+<h3>Apple Racing to Make Siri More Agentic</h3>
 <ul>
-<li><b>What happened</b>: Alex Stamos discussed how automated code generation and autonomous coding agents introduce new vulnerabilities while providing automated inspection tools for defenders.</li>
-<li><b>Why it matters</b>: Autonomous coding agents entering development pipelines are fundamentally reshaping the security landscape.</li>
-<li><b>Hype check</b>: Reflects a genuine industry shift.</li>
-<li><b>Verdict</b>: Learn</li>
-<li><b>Your angle</b>: Vital for your automation track and Project Jarvis; emphasizes setting strict security boundaries around agentic workflows rather than treating automation as simple glue code.</li>
-<li><b>Source</b>: <a href="https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos">AI broke the cybersecurity world. What’s next? (The Verge AI)</a></li>
+<li><b>What happened</b>: Apple is accelerating internal roadmaps to push software teams to deliver an AI agent capable of executing actions across applications to compete with OpenAI and Meta.</li>
+<li><b>Why it matters</b>: Reflects an industry-wide move toward agentic task execution across major platforms.</li>
+<li><b>Hype check</b>: Consumer platform announcements carry marketing weight, but agentic execution is genuinely real.</li>
+<li><b>Verdict</b>: Test</li>
+<li><b>Your angle</b>: Connects to your work on Claude to InDesign and job card automation where models trigger downstream mechanical actions, giving you an edge over candidates limited to chatbots.</li>
+<li><b>Source</b>: <a href="https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic">Apple is racing to make Siri more agentic (The Verge AI)</a></li>
 </ul>
 <h2>Automation Opportunity</h2>
 <ul>
-<li>SQLite with WAL (Write-Ahead Logging) mode for local webhook and job queue state handling.</li>
-<li>Solves table locks and lost events caused by concurrent incoming webhooks writing to standard SQLite databases.</li>
-<li>Free to try via the standard Python `sqlite3` library without needing PostgreSQL.</li>
-<li>Lightweight concurrency management and backend reliability for high-volume pipelines.</li>
+<li>Implement SQLite generated virtual columns to run deterministic parsing expressions on raw string inputs as they are inserted.</li>
+<li>Solves the problem of writing external Python cleanup scripts to handle mixed-format numeric fields from unstructured files or legacy spreadsheets.</li>
+<li>Free to try (requires zero paid infrastructure and operates within standard SQLite).</li>
+<li>Skill gained: Advanced pipeline architecture and clean data staging table design.</li>
 </ul>
-<h2>Learning Moment: Function Calling</h2>
+<h2>Learning Moment: Structured Outputs and Pydantic Validation</h2>
 <ul>
-<li>Large language models cannot run code, query live databases, or call external APIs independently.</li>
-<li>You provide the model with tool definitions using JSON schemas that outline function names, purposes, and parameter types.</li>
-<li>The model outputs structured JSON with function arguments instead of standard text when external data is needed.</li>
-<li>Application code intercepts the JSON, runs the native local code, and returns the result to the model for its final response.</li>
-<li>Keeps execution safe within deterministic code rather than trusting the model with business logic.</li>
-<li><b>Example:</b> A user asks for the status of job card 482; the model calls a `get_job_status` tool with ID `482`, your Python script queries the local SQL database, and returns the string confirming it is in preflight.</li>
+<li>Free-form text from LLMs fails in downstream code because automation requires strict keys, data types, and deterministic structures.</li>
+<li>Pydantic enforces runtime type hints in Python, and modern APIs use its JSON schema to constrain token generation so models cannot output invalid data.</li>
+<li>Eliminates fragile regular expressions and manual string parsing, serving as a bridge between LLM outputs and business databases.</li>
+<li><b>Example:</b> In a print workflow, defining a `PrintSpec` Pydantic model with `paper_weight` (integer), `paper_type` (string), and `double_sided` (boolean) forces the API to return valid types, raising a validation error immediately if data fails coercion.</li>
 </ul>
 <h2>Career Move</h2>
 <ul>
-<li>Update your portfolio repository or CV to document failure handling and edge cases for your Job Card print automation.</li>
-<li>Detail how the script manages physical-world issues like poor lighting, failure logging, and image archiving without crashing the queue to showcase production readiness.</li>
+<li>Turn your Claude to InDesign project into a case study focused on deterministic validation and error handling for interviews.</li>
+<li>Frame the system around defensive data layers that inspect model output to catch missing character styles and bad geometries before touching production software.</li>
 </ul>
 <h2>Today's Mission</h2>
-<p>Write a Python script using native `sqlite3` to create a jobs table, enable Write-Ahead Logging via a PRAGMA command, insert mock records, and verify the journal mode.</p>
+<p>Execute a focused fifteen-minute implementation of Pydantic schema validation for print instructions.</p>
 <ul>
-<li>☐ Create a Python script using the standard `sqlite3` library.</li>
-<li>☐ Define and create a simple `jobs` table.</li>
-<li>☐ Execute the explicit PRAGMA command to enable Write-Ahead Logging (WAL).</li>
-<li>☐ Insert three mock print records within a single transaction.</li>
-<li>☐ Query and verify the active journal mode.</li>
+<li>☐ Write a Python script importing Pydantic.</li>
+<li>☐ Define an extraction schema class with `item_name` (string), `quantity` (integer), and an optional `finish_type`.</li>
+<li>☐ Instantiate the model using a simulated input dictionary containing a string-formatted numeric quantity.</li>
+<li>☐ Verify that Pydantic automatically validates the inputs and coercively casts the string quantity to a native integer.</li>
 </ul>

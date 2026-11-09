@@ -1,10 +1,12 @@
-# Sources for 2026-11-08 (full)
+# Sources for 2026-11-09 (full)
 
-Learning concept: Function calling (tool use) in LLM applications
+Learning concept: Structured outputs and JSON schema validation with Pydantic
 
-- [datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages](https://simonwillison.net/2026/Nov/7/link-rel-next/) (Simon Willison, 07 Nov 23:57 UTC)
-- [After the midterms, things are looking rocky for Elon Musk and data centers](https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers/) (TechCrunch AI, 07 Nov 22:07 UTC)
-- [Megaspeed exec was recruited to spy on Nvidia CEO, according to US intelligence memo](https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/) (TechCrunch AI, 07 Nov 21:17 UTC)
-- [NYT Cooking’s AI assistant saved my weeknight chicken, but almost ruined my cake](https://www.theverge.com/tech/1029489/nyt-cooking-ai-assistant-review) (The Verge AI, 07 Nov 10:50 UTC)
-- [The US let Nvidia sell chips to an empty office in China](https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government) (The Verge AI, 07 Nov 10:43 UTC)
-- [AI broke the cybersecurity world. What’s next?](https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos) (The Verge AI, 07 Nov 10:00 UTC)
+- [Is Jensen Huang’s job on the line? Yale’s Jeffrey Sonnenfeld estimates it’s “about a 50-50”](https://techcrunch.com/2026/11/08/is-jensen-huangs-job-on-the-line-yales-jeffrey-sonnenfeld-estimates-its-about-a-50-50/) (TechCrunch AI, 09 Nov 05:26 UTC)
+- [The Web Is More Than Enough, by Paul Ford](https://simonwillison.net/2026/Nov/9/hn-50421091/) (Simon Willison, 09 Nov 04:32 UTC)
+- [Hide your slop PR descriptions behind](https://simonwillison.net/2026/Nov/9/details-summary/) (Simon Willison, 09 Nov 04:25 UTC)
+- [Here’s the full text of Jensen Huang’s memo to Nvidia](https://www.theverge.com/ai-artificial-intelligence/1029595/full-text-jensen-huang-affair-memo-nvidia) (The Verge AI, 08 Nov 17:54 UTC)
+- [parse_number() as a SQLite extension: C vs Rust](https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust/) (Simon Willison, 08 Nov 22:26 UTC)
+- [Nvidia will investigate CEO Jensen Huang’s relationship with possible Chinese spy](https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/) (TechCrunch AI, 08 Nov 21:00 UTC)
+- [Nvidia is investigating Jensen Huang’s relationship with a Chinese spy](https://www.theverge.com/ai-artificial-intelligence/1029562/nvidia-investigating-jensen-huang-relationship-chinese-spy) (The Verge AI, 08 Nov 15:22 UTC)
+- [Apple is racing to make Siri more agentic](https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic) (The Verge AI, 08 Nov 14:18 UTC)
