@@ -1,5 +1,5 @@
 {
- "curriculum_index": 33,
+ "curriculum_index": 34,
  "seen": [
   "https://simonwillison.net/2026/Oct/7/ben-affleck/",
   "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
@@ -356,10 +356,23 @@
   "https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust/",
   "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/",
   "https://www.theverge.com/ai-artificial-intelligence/1029562/nvidia-investigating-jensen-huang-relationship-chinese-spy",
-  "https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic"
+  "https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic",
+  "https://openai.com/index/closing-ai-guidance-gap-education",
+  "https://simonwillison.net/2026/Nov/10/muse-ember/",
+  "https://techcrunch.com/2026/11/09/otter-ai-can-now-follow-conversations-across-30-languages/",
+  "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/",
+  "https://simonwillison.net/2026/Nov/10/yonkers-rises/",
+  "https://techcrunch.com/2026/11/09/anthropic-reportedly-plans-to-move-forward-with-ipo-plans/",
+  "https://www.theverge.com/entertainment/1030510/paramount-skydance-david-ellison-ai",
+  "https://www.theverge.com/ai-artificial-intelligence/1030328/what-could-china-get-from-jensen-huang",
+  "https://www.theverge.com/tech/1030446/trump-jensen-huang-press-conference",
+  "https://techcrunch.com/2026/11/09/jensen-huang-reportedly-engaged-a-pr-firm-with-a-history-of-handling-high-profile-sex-scandals-a-year-ago/",
+  "https://arstechnica.com/security/2026/11/vulnerability-that-lets-hackers-ssh-into-linux-devices-is-under-active-exploitation/",
+  "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
+  "https://huggingface.co/blog/nvidia/nemotron-personas-finance-japan",
+  "https://openai.com/index/control-room"
  ],
  "missions": [
-  "Build a standalone Python script calculating vector cosine similarity between mock documents and a query string.",
   "Write a short Python script querying three mock print product descriptions using an in-memory Chroma collection.",
   "Write a Python script splitting paragraphs into structured chunks with length metadata.",
   "Write a Python script using the watchdog library to monitor a local folder for new files.",
@@ -388,10 +401,10 @@
   "Write a Python script using filelock to safely handle concurrent file updates across processes.",
   "Write a short Python script demonstrating a polling loop alongside a basic FastAPI webhook receiver.",
   "Write a Python script using sqlite3 that enables Write-Ahead Logging mode via pragma commands and validates the setting with a test transaction.",
-  "Write a Python script using Pydantic to define and validate a typed print specification schema from raw dictionary input."
+  "Write a Python script using Pydantic to define and validate a typed print specification schema from raw dictionary input.",
+  "Write a Python script to chunk text with metadata for RAG ingestion."
  ],
  "opportunities": [
-  "Circuit breaker dead letter queue pattern",
   "Embedded local vector storage with Chroma",
   "Local Model Context Protocol file system integration",
   "Python watchdog file monitoring automation",
@@ -420,6 +433,7 @@
   "Local file locking for process isolation",
   "Declarative resilience using Tenacity retry orchestration",
   "Concurrency handling with SQLite Write-Ahead Logging",
-  "SQLite generated columns for pipeline ingestion"
+  "SQLite generated columns for pipeline ingestion",
+  "Local vector retrieval pipeline for business documents"
  ]
 }

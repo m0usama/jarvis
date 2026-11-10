@@ -1,58 +1,59 @@
-<h1>Morning Brief: Monday 9 November 2026</h1>
+<h1>Morning Brief: Tuesday 10 November 2026</h1>
 <h2>Weather</h2>
 <p>{{WEATHER}}</p>
 <h2>Top Stories</h2>
-<h3>Executive Governance Crisis at Nvidia</h3>
+<h3>Meta AI Launches Muse Ember</h3>
 <ul>
-<li><b>What happened</b>: Nvidia's board launched an investigation into CEO Jensen Huang regarding his relationship with an executive at Megaspeed who was allegedly recruited by Chinese intelligence, leading Huang to send an internal memo admitting to an affair while an analysis by Yale's Jeffrey Sonnenfeld estimates a 50-50 chance he loses his job.</li>
-<li><b>Why it matters</b>: This is a major corporate governance crisis for the primary global supplier of AI hardware.</li>
-<li><b>Hype check</b>: It is purely institutional politics rather than a technical shift.</li>
-<li><b>Verdict</b>: Ignore</li>
-<li><b>Your angle</b>: It holds no honest link to your software stack or automation work and requires no code adjustments.</li>
-<li><b>Source</b>: <a href="https://techcrunch.com/2026/11/08/is-jensen-huangs-job-on-the-line-yales-jeffrey-sonnenfeld-estimates-its-about-a-50-50/">Is Jensen Huang’s job on the line? Yale’s Jeffrey Sonnenfeld estimates it’s “about a 50-50” (TechCrunch AI)</a></li>
+<li><b>What happened</b>: Meta launched Muse Ember, a lightweight model optimized for agent execution, complex reasoning, and background tasks.</li>
+<li><b>Why it matters</b>: Low-latency, small-footprint models with strong tool-use abilities cut costs for high-frequency automation and background processing.</li>
+<li><b>Hype check</b>: Meta is positioning it to compete directly with lightweight models like Anthropic's Claude Haiku.</li>
+<li><b>Verdict</b>: test</li>
+<li><b>Your angle</b>: Fits your work building Python automation pipelines and Project Jarvis by routing lightweight reasoning away from expensive frontier models.</li>
+<li><b>Source</b>: <a href="https://simonwillison.net/2026/Nov/10/muse-ember/">Simon Willison</a></li>
 </ul>
-<h3>Custom parse_number() SQLite Extension</h3>
+<h3>Claude Fable 5.2 System Prompting Dynamics</h3>
 <ul>
-<li><b>What happened</b>: Simon Willison documented an experiment comparing C and Rust implementations of a custom parse_number SQLite extension to convert messy formatted strings (currency, percentages) directly into numbers during queries.</li>
-<li><b>Why it matters</b>: It is a real technical investigation into pushing transformation logic directly down to the storage layer.</li>
-<li><b>Hype check</b>: Grounded technical exploration of database engine extensibility.</li>
-<li><b>Verdict</b>: Learn</li>
-<li><b>Your angle</b>: Directly connects to your experience building product catalogues and processing B2B trade data, helping you explain in interviews why clean data staging matters.</li>
-<li><b>Source</b>: <a href="https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust/">parse_number() as a SQLite extension: C vs Rust (Simon Willison)</a></li>
+<li><b>What happened</b>: Tests on Anthropic's Claude Fable 5.2 showed that code ownership framing in system prompts alters coding behavior.</li>
+<li><b>Why it matters</b>: Framing a codebase as external or unowned prompts the model to write cautious, non-destructive additions rather than rewriting core files.</li>
+<li><b>Hype check</b>: Demonstrates how subtle system prompt framing acts as a leverage point for code generation discipline.</li>
+<li><b>Verdict</b>: test</li>
+<li><b>Your angle</b>: Helps in tools like Claude2InDesign to manipulate structured file outputs without overwriting underlying template rules.</li>
+<li><b>Source</b>: <a href="https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/">Simon Willison</a></li>
 </ul>
-<h3>Apple Racing to Make Siri More Agentic</h3>
+<h3>OpenAI Outlines Control Room Architecture</h3>
 <ul>
-<li><b>What happened</b>: Apple is accelerating internal roadmaps to push software teams to deliver an AI agent capable of executing actions across applications to compete with OpenAI and Meta.</li>
-<li><b>Why it matters</b>: Reflects an industry-wide move toward agentic task execution across major platforms.</li>
-<li><b>Hype check</b>: Consumer platform announcements carry marketing weight, but agentic execution is genuinely real.</li>
-<li><b>Verdict</b>: Test</li>
-<li><b>Your angle</b>: Connects to your work on Claude to InDesign and job card automation where models trigger downstream mechanical actions, giving you an edge over candidates limited to chatbots.</li>
-<li><b>Source</b>: <a href="https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic">Apple is racing to make Siri more agentic (The Verge AI)</a></li>
+<li><b>What happened</b>: OpenAI revealed Control Room, an internal monitoring tool that tracks model workloads and terminates jobs violating safety rules.</li>
+<li><b>Why it matters</b>: Shows that enterprise production language models require active execution control, telemetry, and safety circuit breakers.</li>
+<li><b>Hype check</b>: An internal research infrastructure tool detailing real-world operational control rather than a public user feature.</li>
+<li><b>Verdict</b>: learn</li>
+<li><b>Your angle</b>: Implementing monitoring and execution caps in GitHub Actions or FastAPI pipelines demonstrates reliability engineering skills to employers.</li>
+<li><b>Source</b>: <a href="https://openai.com/index/control-room">OpenAI</a></li>
 </ul>
 <h2>Automation Opportunity</h2>
 <ul>
-<li>Implement SQLite generated virtual columns to run deterministic parsing expressions on raw string inputs as they are inserted.</li>
-<li>Solves the problem of writing external Python cleanup scripts to handle mixed-format numeric fields from unstructured files or legacy spreadsheets.</li>
-<li>Free to try (requires zero paid infrastructure and operates within standard SQLite).</li>
-<li>Skill gained: Advanced pipeline architecture and clean data staging table design.</li>
+<li><b>What it is</b>: A local vector retrieval pipeline using Chroma DB or FAISS with Python's sentence-transformers.</li>
+<li><b>Problem it solves</b>: Allows querying unformatted manuals, job logs, or specifications locally without sending private files to third-party APIs.</li>
+<li><b>Free to try</b>: 100% free to build and execute on a standard laptop.</li>
+<li><b>Skill gained</b>: Practical experience with vector embeddings, similarity search, and index management.</li>
 </ul>
-<h2>Learning Moment: Structured Outputs and Pydantic Validation</h2>
+<h2>Learning Moment: Retrieval Augmented Generation (RAG)</h2>
 <ul>
-<li>Free-form text from LLMs fails in downstream code because automation requires strict keys, data types, and deterministic structures.</li>
-<li>Pydantic enforces runtime type hints in Python, and modern APIs use its JSON schema to constrain token generation so models cannot output invalid data.</li>
-<li>Eliminates fragile regular expressions and manual string parsing, serving as a bridge between LLM outputs and business databases.</li>
-<li><b>Example:</b> In a print workflow, defining a `PrintSpec` Pydantic model with `paper_weight` (integer), `paper_type` (string), and `double_sided` (boolean) forces the API to return valid types, raising a validation error immediately if data fails coercion.</li>
+<li>RAG injects external context into prompts before model generation to eliminate outdated knowledge and access private data without retraining.</li>
+<li>The ingestion phase cleans text, splits it into chunks, converts chunks into mathematical embedding vectors, and stores them in a vector database.</li>
+<li>The retrieval phase converts a query into an embedding vector, performs a similarity search, and passes the matching text chunks to the model.</li>
+<li>Real-world quality relies heavily on chunking strategies, retrieval evaluation, and handling missing context.</li>
+<li><b>Example:</b> Converting unformatted trade catalogue PDFs into chunked vector embeddings so an LLM can answer spec questions strictly using retrieved text blocks.</li>
 </ul>
 <h2>Career Move</h2>
 <ul>
-<li>Turn your Claude to InDesign project into a case study focused on deterministic validation and error handling for interviews.</li>
-<li>Frame the system around defensive data layers that inspect model output to catch missing character styles and bad geometries before touching production software.</li>
+<li>Highlight real-world constraints, business context, and failure handling when presenting physical automation projects like paper job card processing in interviews.</li>
+<li>Explain why you chose specific free-tier models and how you handled messy input data to stand out against applicants presenting basic coursework projects.</li>
 </ul>
 <h2>Today's Mission</h2>
-<p>Execute a focused fifteen-minute implementation of Pydantic schema validation for print instructions.</p>
+<p>Build a simple Python script to perform text chunking and metadata generation for a basic RAG pipeline.</p>
 <ul>
-<li>☐ Write a Python script importing Pydantic.</li>
-<li>☐ Define an extraction schema class with `item_name` (string), `quantity` (integer), and an optional `finish_type`.</li>
-<li>☐ Instantiate the model using a simulated input dictionary containing a string-formatted numeric quantity.</li>
-<li>☐ Verify that Pydantic automatically validates the inputs and coercively casts the string quantity to a native integer.</li>
+<li>☐ Load a raw text file into a Python script.</li>
+<li>☐ Divide the text into 300-word chunks with a 50-word overlap between consecutive segments.</li>
+<li>☐ Assign a metadata dictionary to each chunk containing its index and character length.</li>
+<li>☐ Print the chunk output and metadata to verify boundary logic.</li>
 </ul>
