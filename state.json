@@ -1,5 +1,5 @@
 {
- "curriculum_index": 34,
+ "curriculum_index": 35,
  "seen": [
   "https://simonwillison.net/2026/Oct/7/ben-affleck/",
   "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
@@ -370,10 +370,23 @@
   "https://arstechnica.com/security/2026/11/vulnerability-that-lets-hackers-ssh-into-linux-devices-is-under-active-exploitation/",
   "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
   "https://huggingface.co/blog/nvidia/nemotron-personas-finance-japan",
-  "https://openai.com/index/control-room"
+  "https://openai.com/index/control-room",
+  "https://openai.com/index/chatgpt-plus-for-veterans",
+  "https://techcrunch.com/2026/11/10/nvidias-crisis-has-corporate-governance-experts-reaching-for-the-popcorn/",
+  "https://huggingface.co/blog/qvac/botpsy",
+  "https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/",
+  "https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder/",
+  "https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/",
+  "https://simonwillison.net/2026/Nov/10/llm-gemini/",
+  "https://www.theverge.com/ai-artificial-intelligence/1031063/jensen-huang-ai-race-us-china-spy",
+  "https://www.theverge.com/ai-artificial-intelligence/1030552/openai-chatgpt-business-agents-hub",
+  "https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/",
+  "https://www.theverge.com/games/1030994/big-walk-independent-games-festival-igf-ai",
+  "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
+  "https://deepmind.google/blog/introducing-alphaproof-code/",
+  "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life"
  ],
  "missions": [
-  "Write a short Python script querying three mock print product descriptions using an in-memory Chroma collection.",
   "Write a Python script splitting paragraphs into structured chunks with length metadata.",
   "Write a Python script using the watchdog library to monitor a local folder for new files.",
   "Build a standalone Python script running a basic plan-act-observe agent loop against a local dictionary tool.",
@@ -402,10 +415,10 @@
   "Write a short Python script demonstrating a polling loop alongside a basic FastAPI webhook receiver.",
   "Write a Python script using sqlite3 that enables Write-Ahead Logging mode via pragma commands and validates the setting with a test transaction.",
   "Write a Python script using Pydantic to define and validate a typed print specification schema from raw dictionary input.",
-  "Write a Python script to chunk text with metadata for RAG ingestion."
+  "Write a Python script to chunk text with metadata for RAG ingestion.",
+  "Write a Python script using sentence-transformers to calculate cosine similarity between two related print job strings and one unrelated string."
  ],
  "opportunities": [
-  "Embedded local vector storage with Chroma",
   "Local Model Context Protocol file system integration",
   "Python watchdog file monitoring automation",
   "Structured API retry pipelines with Tenacity",
@@ -434,6 +447,7 @@
   "Declarative resilience using Tenacity retry orchestration",
   "Concurrency handling with SQLite Write-Ahead Logging",
   "SQLite generated columns for pipeline ingestion",
-  "Local vector retrieval pipeline for business documents"
+  "Local vector retrieval pipeline for business documents",
+  "Automated local environment secret audit script"
  ]
 }

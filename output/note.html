@@ -1,59 +1,59 @@
-<h1>Morning Brief: Tuesday 10 November 2026</h1>
+<h1>Morning Brief: Wednesday 11 November 2026</h1>
 <h2>Weather</h2>
 <p>{{WEATHER}}</p>
 <h2>Top Stories</h2>
-<h3>Meta AI Launches Muse Ember</h3>
+<h3>Gemini 4 Carbon Released</h3>
 <ul>
-<li><b>What happened</b>: Meta launched Muse Ember, a lightweight model optimized for agent execution, complex reasoning, and background tasks.</li>
-<li><b>Why it matters</b>: Low-latency, small-footprint models with strong tool-use abilities cut costs for high-frequency automation and background processing.</li>
-<li><b>Hype check</b>: Meta is positioning it to compete directly with lightweight models like Anthropic's Claude Haiku.</li>
-<li><b>Verdict</b>: test</li>
-<li><b>Your angle</b>: Fits your work building Python automation pipelines and Project Jarvis by routing lightweight reasoning away from expensive frontier models.</li>
-<li><b>Source</b>: <a href="https://simonwillison.net/2026/Nov/10/muse-ember/">Simon Willison</a></li>
+<li><b>What happened:</b> Google DeepMind announced general availability of Gemini 4 Carbon at $2 per million input tokens and $10 per million output tokens, accompanied by updates to Simon Willison's command-line tools.</li>
+<li><b>Why it matters:</b> Expands cost-effective inference options and directly impacts the operational economics of running continuous background pipelines.</li>
+<li><b>Hype check:</b> Real capability milestone competing directly with frontier offerings from Anthropic and OpenAI.</li>
+<li><b>Verdict:</b> Test.</li>
+<li><b>Your angle:</b> Benchmarking this against current models in Project Jarvis sharpens operational cost management skills for production workflows.</li>
+<li><b>Source:</b> <a href="https://deepmind.google/blog/gemini-4-carbon-is-now-available/">Gemini 4 Carbon is now available (Google DeepMind)</a></li>
 </ul>
-<h3>Claude Fable 5.2 System Prompting Dynamics</h3>
+<h3>Grok Build Coding Agent Leaks Confidential Info</h3>
 <ul>
-<li><b>What happened</b>: Tests on Anthropic's Claude Fable 5.2 showed that code ownership framing in system prompts alters coding behavior.</li>
-<li><b>Why it matters</b>: Framing a codebase as external or unowned prompts the model to write cautious, non-destructive additions rather than rewriting core files.</li>
-<li><b>Hype check</b>: Demonstrates how subtle system prompt framing acts as a leverage point for code generation discipline.</li>
-<li><b>Verdict</b>: test</li>
-<li><b>Your angle</b>: Helps in tools like Claude2InDesign to manipulate structured file outputs without overwriting underlying template rules.</li>
-<li><b>Source</b>: <a href="https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/">Simon Willison</a></li>
+<li><b>What happened:</b> Ars Technica reported 35,000 applications created by Grok Build leaked confidential internal data due to open-by-default public endpoints and unisolated storage.</li>
+<li><b>Why it matters:</b> Highlights major architectural vulnerabilities when relying on default scaffolded code from generative agents.</li>
+<li><b>Hype check:</b> Real-world architectural failure exposing sensitive commercial data.</li>
+<li><b>Verdict:</b> Learn.</li>
+<li><b>Your angle:</b> Parallels your work on the automated job card print system handling shop-floor data with free-tier vision models, emphasizing the necessity of defensive data isolation over blind trust in AI code.</li>
+<li><b>Source:</b> <a href="https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/">Grok Build coding agent leaks oodles of confidential info, some belonging to SpaceXSI (Ars Technica)</a></li>
 </ul>
-<h3>OpenAI Outlines Control Room Architecture</h3>
+<h3>DeepMind Introduces AlphaProof Code</h3>
 <ul>
-<li><b>What happened</b>: OpenAI revealed Control Room, an internal monitoring tool that tracks model workloads and terminates jobs violating safety rules.</li>
-<li><b>Why it matters</b>: Shows that enterprise production language models require active execution control, telemetry, and safety circuit breakers.</li>
-<li><b>Hype check</b>: An internal research infrastructure tool detailing real-world operational control rather than a public user feature.</li>
-<li><b>Verdict</b>: learn</li>
-<li><b>Your angle</b>: Implementing monitoring and execution caps in GitHub Actions or FastAPI pipelines demonstrates reliability engineering skills to employers.</li>
-<li><b>Source</b>: <a href="https://openai.com/index/control-room">OpenAI</a></li>
+<li><b>What happened:</b> DeepMind released an agentic system that wrote 3 million lines of formal proofs in Lean to mathematically verify Signal's cryptographic software.</li>
+<li><b>Why it matters:</b> Transitions agent research from raw code generation into mathematically verified logic and software verification layers.</li>
+<li><b>Hype check:</b> Real engineering milestone for formal software verification.</li>
+<li><b>Verdict:</b> Learn.</li>
+<li><b>Your angle:</b> Builds on the automated QA reporting layers you developed for your Claude-to-InDesign pipeline to catch structural defects before production.</li>
+<li><b>Source:</b> <a href="https://deepmind.google/blog/introducing-alphaproof-code/">Introducing AlphaProof Code: a breakthrough in verifying complex software at depth (Google DeepMind)</a></li>
 </ul>
 <h2>Automation Opportunity</h2>
 <ul>
-<li><b>What it is</b>: A local vector retrieval pipeline using Chroma DB or FAISS with Python's sentence-transformers.</li>
-<li><b>Problem it solves</b>: Allows querying unformatted manuals, job logs, or specifications locally without sending private files to third-party APIs.</li>
-<li><b>Free to try</b>: 100% free to build and execute on a standard laptop.</li>
-<li><b>Skill gained</b>: Practical experience with vector embeddings, similarity search, and index management.</li>
+<li><b>What it is:</b> A Python configuration-auditing script using standard libraries like `pathlib` and `os` to inspect project environments.</li>
+<li><b>Problem it solves:</b> Prevents secret leakage, exposed customer metadata, and configuration drift caused by unvalidated AI-generated scaffolding.</li>
+<li><b>Free to try:</b> Yes, built entirely with standard Python libraries without external paid services.</li>
+<li><b>Skill gained:</b> Practical defensive automation, local secret auditing, and security hygiene.</li>
 </ul>
-<h2>Learning Moment: Retrieval Augmented Generation (RAG)</h2>
+<h2>Learning Moment: Embeddings and Vector Databases</h2>
 <ul>
-<li>RAG injects external context into prompts before model generation to eliminate outdated knowledge and access private data without retraining.</li>
-<li>The ingestion phase cleans text, splits it into chunks, converts chunks into mathematical embedding vectors, and stores them in a vector database.</li>
-<li>The retrieval phase converts a query into an embedding vector, performs a similarity search, and passes the matching text chunks to the model.</li>
-<li>Real-world quality relies heavily on chunking strategies, retrieval evaluation, and handling missing context.</li>
-<li><b>Example:</b> Converting unformatted trade catalogue PDFs into chunked vector embeddings so an LLM can answer spec questions strictly using retrieved text blocks.</li>
+<li>An embedding is a list of floating-point numbers mapping the semantic meaning of text into a high-dimensional mathematical space.</li>
+<li>Concepts with similar meanings are positioned physically close together, matching context even when exact keywords differ.</li>
+<li>Vector databases (like Chroma or SQLite-based vector extensions) store these coordinates to run fast similarity and angular distance searches across millions of documents.</li>
+<li><b>Example:</b> In an automated print catalogue pipeline, embedding raw email inquiries lets the system match customer wording like "thick brochure print run" to past job records like "twenty-four page catalogue on heavy silk stock" based on vector proximity rather than strict keywords.</li>
 </ul>
 <h2>Career Move</h2>
 <ul>
-<li>Highlight real-world constraints, business context, and failure handling when presenting physical automation projects like paper job card processing in interviews.</li>
-<li>Explain why you chose specific free-tier models and how you handled messy input data to stand out against applicants presenting basic coursework projects.</li>
+<li>Refactor your trade platform and product catalogue restructuring work into an end-to-end data engineering case study for your CV and portfolio.</li>
+<li>Highlight how you used Python and pandas to transform unstandardised marketplace listings into clean, validated, production-ready schemas, demonstrating your ability to handle ambiguous commercial data.</li>
 </ul>
 <h2>Today's Mission</h2>
-<p>Build a simple Python script to perform text chunking and metadata generation for a basic RAG pipeline.</p>
+<p>Write a twenty-minute Python script that generates local text embeddings and calculates semantic similarity to separate related print specifications from unrelated data.</p>
 <ul>
-<li>☐ Load a raw text file into a Python script.</li>
-<li>☐ Divide the text into 300-word chunks with a 50-word overlap between consecutive segments.</li>
-<li>☐ Assign a metadata dictionary to each chunk containing its index and character length.</li>
-<li>☐ Print the chunk output and metadata to verify boundary logic.</li>
+<li>☐ Set up a lightweight local script using `sentence-transformers` or a basic vector calculation library.</li>
+<li>☐ Define three test strings: "glossy flyer twenty-page booklet", "coated promotional leaflet", and "heavy steel machine bolt".</li>
+<li>☐ Generate embeddings for all three text inputs.</li>
+<li>☐ Compute the cosine similarity between the vectors.</li>
+<li>☐ Verify that the script mathematically clusters the two print terms closely while separating the unrelated hardware term.</li>
 </ul>
