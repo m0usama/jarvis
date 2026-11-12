@@ -1,59 +1,59 @@
-<h1>Morning Brief: Wednesday 11 November 2026</h1>
+<h1>Morning Brief: Thursday 12 November 2026</h1>
 <h2>Weather</h2>
 <p>{{WEATHER}}</p>
 <h2>Top Stories</h2>
-<h3>Gemini 4 Carbon Released</h3>
+<h3>United Airlines Bans AI Booking Agents</h3>
 <ul>
-<li><b>What happened:</b> Google DeepMind announced general availability of Gemini 4 Carbon at $2 per million input tokens and $10 per million output tokens, accompanied by updates to Simon Willison's command-line tools.</li>
-<li><b>Why it matters:</b> Expands cost-effective inference options and directly impacts the operational economics of running continuous background pipelines.</li>
-<li><b>Hype check:</b> Real capability milestone competing directly with frontier offerings from Anthropic and OpenAI.</li>
-<li><b>Verdict:</b> Test.</li>
-<li><b>Your angle:</b> Benchmarking this against current models in Project Jarvis sharpens operational cost management skills for production workflows.</li>
-<li><b>Source:</b> <a href="https://deepmind.google/blog/gemini-4-carbon-is-now-available/">Gemini 4 Carbon is now available (Google DeepMind)</a></li>
+<li><b>What happened</b>: United Airlines explicitly banned personal AI agents from booking customer flights, citing privacy risks and regulatory hurdles.</li>
+<li><b>Why it matters</b>: Automated systems cannot rely on unauthenticated scraping or public APIs without explicit consent and credentials.</li>
+<li><b>Hype check</b>: Autonomous agent orchestration faces immediate real-world limits around privacy, authorization, and API access boundaries.</li>
+<li><b>Verdict</b>: Test defensive API wrappers in your workflow pipelines.</li>
+<li><b>Your angle</b>: Links to your job card processor and Project Jarvis work; demonstrating defensive execution and credentialed API integration sets you apart.</li>
+<li><b>Source</b>: <a href="https://www.theverge.com/ai-artificial-intelligence/1031623/united-unauthorized-ai-agents">The Verge AI</a></li>
 </ul>
-<h3>Grok Build Coding Agent Leaks Confidential Info</h3>
+<h3>AWS Releases `aws-emulator` for Local Testing</h3>
 <ul>
-<li><b>What happened:</b> Ars Technica reported 35,000 applications created by Grok Build leaked confidential internal data due to open-by-default public endpoints and unisolated storage.</li>
-<li><b>Why it matters:</b> Highlights major architectural vulnerabilities when relying on default scaffolded code from generative agents.</li>
-<li><b>Hype check:</b> Real-world architectural failure exposing sensitive commercial data.</li>
-<li><b>Verdict:</b> Learn.</li>
-<li><b>Your angle:</b> Parallels your work on the automated job card print system handling shop-floor data with free-tier vision models, emphasizing the necessity of defensive data isolation over blind trust in AI code.</li>
-<li><b>Source:</b> <a href="https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/">Grok Build coding agent leaks oodles of confidential info, some belonging to SpaceXSI (Ars Technica)</a></li>
+<li><b>What happened</b>: AWS launched `aws-emulator`, a Rust-based tool providing local clones of major cloud services.</li>
+<li><b>Why it matters</b>: Enables executing automated unit and integration tests locally without provisioning live cloud resources or paying API fees.</li>
+<li><b>Hype check</b>: Delivers cost-effective local test execution without complex cloud permission overhead.</li>
+<li><b>Verdict</b>: Test this in your next local testing setup.</li>
+<li><b>Your angle</b>: Directly supports your roadmap goals for cloud deployment, containerisation, and testing discipline across Project Jarvis and FastAPI services.</li>
+<li><b>Source</b>: <a href="https://simonwillison.net/2026/Nov/11/aws-emulator/">Simon Willison</a></li>
 </ul>
-<h3>DeepMind Introduces AlphaProof Code</h3>
+<h3>Google Launches Gemini Decisions API</h3>
 <ul>
-<li><b>What happened:</b> DeepMind released an agentic system that wrote 3 million lines of formal proofs in Lean to mathematically verify Signal's cryptographic software.</li>
-<li><b>Why it matters:</b> Transitions agent research from raw code generation into mathematically verified logic and software verification layers.</li>
-<li><b>Hype check:</b> Real engineering milestone for formal software verification.</li>
-<li><b>Verdict:</b> Learn.</li>
-<li><b>Your angle:</b> Builds on the automated QA reporting layers you developed for your Claude-to-InDesign pipeline to catch structural defects before production.</li>
-<li><b>Source:</b> <a href="https://deepmind.google/blog/introducing-alphaproof-code/">Introducing AlphaProof Code: a breakthrough in verifying complex software at depth (Google DeepMind)</a></li>
+<li><b>What happened</b>: Google released the Gemini Decisions API featuring dedicated models for binary choices, multi-choice selections, and rubric scoring.</li>
+<li><b>Why it matters</b>: Standardizes classification output patterns, eliminating formatting drift and token overhead compared to general text generators.</li>
+<li><b>Hype check</b>: Replaces general text generation prompts with targeted decision endpoints to enforce structured logical choices.</li>
+<li><b>Verdict</b>: Test structured decision models on classification tasks.</li>
+<li><b>Your angle</b>: Applies directly to Claude2InDesign and vision-based job card automation where models make strict metadata or layout classifications.</li>
+<li><b>Source</b>: <a href="https://simonwillison.net/2026/Nov/11/gemini-decisions-api/">Simon Willison</a></li>
 </ul>
 <h2>Automation Opportunity</h2>
 <ul>
-<li><b>What it is:</b> A Python configuration-auditing script using standard libraries like `pathlib` and `os` to inspect project environments.</li>
-<li><b>Problem it solves:</b> Prevents secret leakage, exposed customer metadata, and configuration drift caused by unvalidated AI-generated scaffolding.</li>
-<li><b>Free to try:</b> Yes, built entirely with standard Python libraries without external paid services.</li>
-<li><b>Skill gained:</b> Practical defensive automation, local secret auditing, and security hygiene.</li>
+<li><b>What it is</b>: Deterministic dry-run verification for automated API payloads.</li>
+<li><b>Problem it solves</b>: Prevents operational risk and system corruption when unattended workflows trigger downstream live actions like print jobs or CRM changes.</li>
+<li><b>Free to try</b>: Built using standard Python libraries and FastAPI middleware.</li>
+<li><b>Skill gained</b>: Enterprise backend validation using Pydantic schemas and defensive pipeline architecture.</li>
 </ul>
-<h2>Learning Moment: Embeddings and Vector Databases</h2>
+<h2>Learning Moment: Chunking Strategies in RAG</h2>
 <ul>
-<li>An embedding is a list of floating-point numbers mapping the semantic meaning of text into a high-dimensional mathematical space.</li>
-<li>Concepts with similar meanings are positioned physically close together, matching context even when exact keywords differ.</li>
-<li>Vector databases (like Chroma or SQLite-based vector extensions) store these coordinates to run fast similarity and angular distance searches across millions of documents.</li>
-<li><b>Example:</b> In an automated print catalogue pipeline, embedding raw email inquiries lets the system match customer wording like "thick brochure print run" to past job records like "twenty-four page catalogue on heavy silk stock" based on vector proximity rather than strict keywords.</li>
+<li>RAG retrieval often fails due to flawed document chunking rather than weak vector embedding models.</li>
+<li>Naive character or token splitting slices across sentences, code blocks, and entities, losing isolated context and causing semantic drift.</li>
+<li>Structure-aware chunking relies on natural boundaries (paragraphs, sentence endings, Markdown headers, code functions) combined with overlapping context windows.</li>
+<li>Debugging RAG systems requires inspecting raw chunk size, overlap, and context completeness before replacing models.</li>
+<li><b>Example</b>: Splitting text mid-sentence breaks key entity associations, causing the resulting vector fragment to drift away from relevant search queries.</li>
 </ul>
 <h2>Career Move</h2>
 <ul>
-<li>Refactor your trade platform and product catalogue restructuring work into an end-to-end data engineering case study for your CV and portfolio.</li>
-<li>Highlight how you used Python and pandas to transform unstandardised marketplace listings into clean, validated, production-ready schemas, demonstrating your ability to handle ambiguous commercial data.</li>
+<li>Frame your 8-month placement at Redo Print and Design around enterprise process optimization and data quality control instead of basic IT support.</li>
+<li>Highlight your relational catalog restructuring, schema validation, and automated physical job workflows to demonstrate tangible commercial value.</li>
 </ul>
 <h2>Today's Mission</h2>
-<p>Write a twenty-minute Python script that generates local text embeddings and calculates semantic similarity to separate related print specifications from unrelated data.</p>
+<p>Write a Python script that compares fixed token chunking against recursive sentence-boundary chunking on a sample document.</p>
 <ul>
-<li>☐ Set up a lightweight local script using `sentence-transformers` or a basic vector calculation library.</li>
-<li>☐ Define three test strings: "glossy flyer twenty-page booklet", "coated promotional leaflet", and "heavy steel machine bolt".</li>
-<li>☐ Generate embeddings for all three text inputs.</li>
-<li>☐ Compute the cosine similarity between the vectors.</li>
-<li>☐ Verify that the script mathematically clusters the two print terms closely while separating the unrelated hardware term.</li>
+<li>☐ Write a Python script using `langchain-text-splitters` or a manual sliding-window function.</li>
+<li>☐ Process a sample multi-paragraph document using fixed token count and recursive sentence-boundary methods.</li>
+<li>☐ Print the resulting chunks side by side to observe context loss across fixed boundaries.</li>
+<li>☐ Save the script in your core utilities repository for future retrieval pipeline reference.</li>
 </ul>

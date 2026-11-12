@@ -1,5 +1,5 @@
 {
- "curriculum_index": 35,
+ "curriculum_index": 36,
  "seen": [
   "https://simonwillison.net/2026/Oct/7/ben-affleck/",
   "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
@@ -384,10 +384,20 @@
   "https://www.theverge.com/games/1030994/big-walk-independent-games-festival-igf-ai",
   "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
   "https://deepmind.google/blog/introducing-alphaproof-code/",
-  "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life"
+  "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life",
+  "https://techcrunch.com/2026/11/11/who-could-replace-jensen-huang-a-highly-unscientific-list-of-possible-successors/",
+  "https://openai.com/index/gilbert-tobin-sam-nickless",
+  "https://techcrunch.com/2026/11/11/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
+  "https://techcrunch.com/2026/11/11/nvidias-stock-drops-as-board-reportedly-preps-to-oust-ceo-jensen-huang/",
+  "https://www.theverge.com/tech/1031652/jensen-huang-rumor",
+  "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
+  "https://www.theverge.com/ai-artificial-intelligence/1031623/united-unauthorized-ai-agents",
+  "https://simonwillison.net/2026/Nov/11/aws-emulator/",
+  "https://simonwillison.net/2026/Nov/11/tools-tags/",
+  "https://www.theverge.com/tech/1031526/google-tabletop-ai-experiment-waitlist-availability",
+  "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/"
  ],
  "missions": [
-  "Write a Python script splitting paragraphs into structured chunks with length metadata.",
   "Write a Python script using the watchdog library to monitor a local folder for new files.",
   "Build a standalone Python script running a basic plan-act-observe agent loop against a local dictionary tool.",
   "Write a Python script that validates mock AI extraction results against threshold rules.",
@@ -416,10 +426,10 @@
   "Write a Python script using sqlite3 that enables Write-Ahead Logging mode via pragma commands and validates the setting with a test transaction.",
   "Write a Python script using Pydantic to define and validate a typed print specification schema from raw dictionary input.",
   "Write a Python script to chunk text with metadata for RAG ingestion.",
-  "Write a Python script using sentence-transformers to calculate cosine similarity between two related print job strings and one unrelated string."
+  "Write a Python script using sentence-transformers to calculate cosine similarity between two related print job strings and one unrelated string.",
+  "Write a Python script comparing fixed-size and sentence-aware text chunking."
  ],
  "opportunities": [
-  "Local Model Context Protocol file system integration",
   "Python watchdog file monitoring automation",
   "Structured API retry pipelines with Tenacity",
   "Python local file log rotation",
@@ -448,6 +458,7 @@
   "Concurrency handling with SQLite Write-Ahead Logging",
   "SQLite generated columns for pipeline ingestion",
   "Local vector retrieval pipeline for business documents",
-  "Automated local environment secret audit script"
+  "Automated local environment secret audit script",
+  "Deterministic dry-run payload validation middleware"
  ]
 }
