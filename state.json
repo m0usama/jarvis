@@ -1,15 +1,6 @@
 {
- "curriculum_index": 36,
+ "curriculum_index": 37,
  "seen": [
-  "https://simonwillison.net/2026/Oct/7/ben-affleck/",
-  "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
-  "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/",
-  "https://techcrunch.com/2026/10/07/microsoft-releases-new-nvidia-chip-ai-pcs-with-revamped-windows-11/",
-  "https://www.theverge.com/ai-artificial-intelligence/1007276/openai-chatgpt-intelligent-ui-gpt-6",
-  "https://www.theverge.com/tech/1007147/microsoft-surface-laptop-ultra-windows-event-everything-announced",
-  "https://techcrunch.com/2026/10/07/metas-muse-launches-on-ipad-just-a-month-after-its-mobile-debut/",
-  "https://www.theverge.com/tech/1007113/microsoft-windows-copilot-ai-control-search-hybrid-intelligence",
-  "https://github.blog/ai-and-ml/github-copilot/secret-protection-must-scale-with-software/",
   "https://huggingface.co/blog/LiquidAI/open-d1",
   "https://simonwillison.net/2026/Oct/7/anti-patterns-in-software-blogging/",
   "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
@@ -395,10 +386,23 @@
   "https://simonwillison.net/2026/Nov/11/aws-emulator/",
   "https://simonwillison.net/2026/Nov/11/tools-tags/",
   "https://www.theverge.com/tech/1031526/google-tabletop-ai-experiment-waitlist-availability",
-  "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/"
+  "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+  "https://github.blog/news-insights/company-news/github-availability-report-october-2026/",
+  "https://simonwillison.net/2026/Nov/12/llm-gemini/",
+  "https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/",
+  "https://techcrunch.com/2026/11/12/democrats-launch-nvidia-investigation-write-scathing-letter-on-huangs-scheme-with-trump/",
+  "https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay/",
+  "https://www.theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen",
+  "https://techcrunch.com/2026/11/12/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
+  "https://openai.com/business/customer-stories/amplitude",
+  "https://www.theverge.com/ai-artificial-intelligence/1032125/ai-agents-maya-site-archeology-discovery",
+  "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+  "https://www.theverge.com/ai-artificial-intelligence/1032126/alex-baby-you-were-recorded-on-video",
+  "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+  "https://openai.com/business/customer-stories/gondola",
+  "https://openai.com/business/customer-stories/holidays-extras-codex"
  ],
  "missions": [
-  "Write a Python script using the watchdog library to monitor a local folder for new files.",
   "Build a standalone Python script running a basic plan-act-observe agent loop against a local dictionary tool.",
   "Write a Python script that validates mock AI extraction results against threshold rules.",
   "Write a standalone Python script using asyncio and httpx that fetches three endpoints concurrently with asyncio dot gather and prints the elapsed time.",
@@ -427,10 +431,10 @@
   "Write a Python script using Pydantic to define and validate a typed print specification schema from raw dictionary input.",
   "Write a Python script to chunk text with metadata for RAG ingestion.",
   "Write a Python script using sentence-transformers to calculate cosine similarity between two related print job strings and one unrelated string.",
-  "Write a Python script comparing fixed-size and sentence-aware text chunking."
+  "Write a Python script comparing fixed-size and sentence-aware text chunking.",
+  "Write a Python JSON-RPC tool responder script."
  ],
  "opportunities": [
-  "Python watchdog file monitoring automation",
   "Structured API retry pipelines with Tenacity",
   "Python local file log rotation",
   "Asynchronous batch webhook dispatch automation",
@@ -459,6 +463,7 @@
   "SQLite generated columns for pipeline ingestion",
   "Local vector retrieval pipeline for business documents",
   "Automated local environment secret audit script",
-  "Deterministic dry-run payload validation middleware"
+  "Deterministic dry-run payload validation middleware",
+  "OpenAPI to agent function schema generator"
  ]
 }

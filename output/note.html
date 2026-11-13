@@ -1,59 +1,60 @@
-<h1>Morning Brief: Thursday 12 November 2026</h1>
+<h1>Morning Brief: Friday 13 November 2026</h1>
 <h2>Weather</h2>
 <p>{{WEATHER}}</p>
 <h2>Top Stories</h2>
-<h3>United Airlines Bans AI Booking Agents</h3>
+<h3>Portable Agent Skills Standard Framework</h3>
 <ul>
-<li><b>What happened</b>: United Airlines explicitly banned personal AI agents from booking customer flights, citing privacy risks and regulatory hurdles.</li>
-<li><b>Why it matters</b>: Automated systems cannot rely on unauthenticated scraping or public APIs without explicit consent and credentials.</li>
-<li><b>Hype check</b>: Autonomous agent orchestration faces immediate real-world limits around privacy, authorization, and API access boundaries.</li>
-<li><b>Verdict</b>: Test defensive API wrappers in your workflow pipelines.</li>
-<li><b>Your angle</b>: Links to your job card processor and Project Jarvis work; demonstrating defensive execution and credentialed API integration sets you apart.</li>
-<li><b>Source</b>: <a href="https://www.theverge.com/ai-artificial-intelligence/1031623/united-unauthorized-ai-agents">The Verge AI</a></li>
+<li><b>What happened</b>: GitHub published a practical guide on defining portable agent skills that separates repeatable engineering tasks into reusable skill files while keeping context, execution tools, and permissions bound to the host environment.</li>
+<li><b>Why it matters</b>: It standardises how AI agents execute multi-step workflows across different host environments.</li>
+<li><b>Hype check</b>: It provides a real architectural standard for decoupling orchestration logic from local platform tools.</li>
+<li><b>Verdict</b>: Test</li>
+<li><b>Your angle</b>: Direct connection to Project Jarvis and Claude2InDesign; structuring prompt workflows as reusable skills demonstrates system architecture thinking to hiring teams.</li>
+<li><b>Source</b>: <a href="https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/">Build once, run on any agent: A practical guide to agent skills</a></li>
 </ul>
-<h3>AWS Releases `aws-emulator` for Local Testing</h3>
+<h3>Gemini 4 Hydrogen Announcement</h3>
 <ul>
-<li><b>What happened</b>: AWS launched `aws-emulator`, a Rust-based tool providing local clones of major cloud services.</li>
-<li><b>Why it matters</b>: Enables executing automated unit and integration tests locally without provisioning live cloud resources or paying API fees.</li>
-<li><b>Hype check</b>: Delivers cost-effective local test execution without complex cloud permission overhead.</li>
-<li><b>Verdict</b>: Test this in your next local testing setup.</li>
-<li><b>Your angle</b>: Directly supports your roadmap goals for cloud deployment, containerisation, and testing discipline across Project Jarvis and FastAPI services.</li>
-<li><b>Source</b>: <a href="https://simonwillison.net/2026/Nov/11/aws-emulator/">Simon Willison</a></li>
+<li><b>What happened</b>: Google DeepMind announced Gemini 4 Hydrogen, a lower-cost model built to process messy real-world text, typos, ambiguous requests, and complex multi-part queries automatically.</li>
+<li><b>Why it matters</b>: It enables complex multi-part reasoning and messy document parsing without incurring high API costs.</li>
+<li><b>Hype check</b>: Simon Willison noted that the pricing tier structure remains complex despite the model's automation capabilities.</li>
+<li><b>Verdict</b>: Test</li>
+<li><b>Your angle</b>: Connects to your job card automation project by offering a cost-effective way to parse messy physical phone photo inputs without expensive top-tier model calls.</li>
+<li><b>Source</b>: <a href="https://deepmind.google/blog/introducing-gemini-4-hydrogen/">Introducing Gemini 4 Hydrogen</a></li>
 </ul>
-<h3>Google Launches Gemini Decisions API</h3>
+<h3>AI Agents False Maya Site Discovery</h3>
 <ul>
-<li><b>What happened</b>: Google released the Gemini Decisions API featuring dedicated models for binary choices, multi-choice selections, and rubric scoring.</li>
-<li><b>Why it matters</b>: Standardizes classification output patterns, eliminating formatting drift and token overhead compared to general text generators.</li>
-<li><b>Hype check</b>: Replaces general text generation prompts with targeted decision endpoints to enforce structured logical choices.</li>
-<li><b>Verdict</b>: Test structured decision models on classification tasks.</li>
-<li><b>Your angle</b>: Applies directly to Claude2InDesign and vision-based job card automation where models make strict metadata or layout classifications.</li>
-<li><b>Source</b>: <a href="https://simonwillison.net/2026/Nov/11/gemini-decisions-api/">Simon Willison</a></li>
+<li><b>What happened</b>: A claim that AI agents discovered an unmapped Maya site in Mexico was refuted when academic journals showed the site was already documented and published last year.</li>
+<li><b>Why it matters</b>: Demonstrates that raw agent retrieval without deterministic verification leads to production failures.</li>
+<li><b>Hype check</b>: Promoted as a novel agent discovery, but failed fundamental cross-referencing against existing literature.</li>
+<li><b>Verdict</b>: Learn</li>
+<li><b>Your angle</b>: Validates your focus on quality assurance and validation loops, such as automated reports feeding into your InDesign engine.</li>
+<li><b>Source</b>: <a href="https://www.theverge.com/ai-artificial-intelligence/1032125/ai-agents-maya-site-archeology-discovery">No, AI agents did not discover a previously unknown Maya site</a></li>
 </ul>
 <h2>Automation Opportunity</h2>
 <ul>
-<li><b>What it is</b>: Deterministic dry-run verification for automated API payloads.</li>
-<li><b>Problem it solves</b>: Prevents operational risk and system corruption when unattended workflows trigger downstream live actions like print jobs or CRM changes.</li>
-<li><b>Free to try</b>: Built using standard Python libraries and FastAPI middleware.</li>
-<li><b>Skill gained</b>: Enterprise backend validation using Pydantic schemas and defensive pipeline architecture.</li>
+<li><b>What it is</b>: An automated OpenAPI to tool schema adapter script written in Python using Pydantic and JSON Schema.</li>
+<li><b>Problem it solves</b>: Eliminates manually writing custom Python wrappers and schema definitions for every REST API or business tool endpoint.</li>
+<li><b>Free to try</b>: Yes, completely free to build with standard Python libraries.</li>
+<li><b>Skill gained</b>: Deeper understanding of API contracts, function calling syntax, and dynamic schema generation.</li>
 </ul>
-<h2>Learning Moment: Chunking Strategies in RAG</h2>
+<h2>Learning Moment: Model Context Protocol</h2>
 <ul>
-<li>RAG retrieval often fails due to flawed document chunking rather than weak vector embedding models.</li>
-<li>Naive character or token splitting slices across sentences, code blocks, and entities, losing isolated context and causing semantic drift.</li>
-<li>Structure-aware chunking relies on natural boundaries (paragraphs, sentence endings, Markdown headers, code functions) combined with overlapping context windows.</li>
-<li>Debugging RAG systems requires inspecting raw chunk size, overlap, and context completeness before replacing models.</li>
-<li><b>Example</b>: Splitting text mid-sentence breaks key entity associations, causing the resulting vector fragment to drift away from relevant search queries.</li>
+<li>Solves the N-by-M integration problem between multiple LLM interfaces and varied data sources.</li>
+<li>Standardises how applications provide context, local files, tools, and live data to large language models.</li>
+<li>Establishes a clean, secure boundary between the client application hosting the model and the server exposing tools or resources.</li>
+<li>Moves AI architecture away from fragile, monolithic prompt scripts toward client-server protocols.</li>
+<li><b>Example:</b> A dedicated Python MCP server exposes tools like `query active jobs` for a local SQLite print order database or `fetch document asset` for graphic assets, letting any connected LLM client discover and execute tools standardly via standard input-output or SSE.</li>
 </ul>
 <h2>Career Move</h2>
 <ul>
-<li>Frame your 8-month placement at Redo Print and Design around enterprise process optimization and data quality control instead of basic IT support.</li>
-<li>Highlight your relational catalog restructuring, schema validation, and automated physical job workflows to demonstrate tangible commercial value.</li>
+<li>Frame your physical print card automation project on GitHub and your resume around operational resilience, edge cases (blurry image fallback, network retries), and real business friction rather than synthetic datasets.</li>
+<li>Emphasize how the solution combines vision models, mobile photos, unattended printing, and spreadsheet logging using zero-cost, free-tier infrastructure.</li>
 </ul>
 <h2>Today's Mission</h2>
-<p>Write a Python script that compares fixed token chunking against recursive sentence-boundary chunking on a sample document.</p>
+<p>Build a minimal Model Context Protocol style tool server in Python under 100 lines of code that operates over standard input and output.</p>
 <ul>
-<li>☐ Write a Python script using `langchain-text-splitters` or a manual sliding-window function.</li>
-<li>☐ Process a sample multi-paragraph document using fixed token count and recursive sentence-boundary methods.</li>
-<li>☐ Print the resulting chunks side by side to observe context loss across fixed boundaries.</li>
-<li>☐ Save the script in your core utilities repository for future retrieval pipeline reference.</li>
+<li>☐ Create a Python script that listens for incoming JSON-RPC formatted requests on standard input.</li>
+<li>☐ Implement a response handler for tool definition requests that returns a `calculate job estimate` tool definition with parameters like print stock and page count.</li>
+<li>☐ Add execution logic to parse incoming tool call arguments, execute a basic calculation function, and return a structured JSON response.</li>
+<li>☐ Test the implementation by piping a JSON-RPC string directly into the script.</li>
+<li>☐ Commit the completed script to a clean test repository.</li>
 </ul>
