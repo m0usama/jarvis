@@ -1,70 +1,59 @@
-<h1>Morning Brief: Saturday 14 November 2026</h1>
+<h1>Morning Brief: Sunday 15 November 2026</h1>
 <h2>Weather</h2>
 <p>{{WEATHER}}</p>
 <h2>Top Stories</h2>
-<h3>ChatGPT Wallet Enables Transaction-Capable AI Agents</h3>
+<h3>datasette-llm 0.1a11</h3>
 <ul>
-<li><b>What happened:</b> OpenAI launched ChatGPT Wallet, allowing Dots AI agents to execute web transactions directly with user approval.</li>
-<li><b>Why it matters:</b> It integrates existing payment card protections into autonomous web actions, moving AI agents from text generation to financial execution.</li>
-<li><b>Hype check:</b> While consumer marketing focuses heavily on automated shopping, the core shift is the underlying transactional architecture.</li>
-<li><b>Verdict:</b> learn</li>
-<li><b>Your angle:</b> Reinforces the importance of human-in-the-loop control logic, pausing autonomous loops, and requesting confirmation in your job processing pipelines.</li>
-<li><b>Source:</b> <a href="https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet">ChatGPT Wallet lets OpenAI’s Dots agents make purchases for you (The Verge AI)</a></li>
+<li><b>What happened</b>: Simon Willison released version 0.1a11 of datasette-llm, adding support for generic OpenAI-compatible endpoints to standardize model configurations for downstream analytics tools.</li>
+<li><b>Why it matters</b>: It allows users to point Datasette toward any self-hosted or alternative model server adhering to standard OpenAI interfaces.</li>
+<li><b>Hype check</b>: Practical development delivering pragmatic, modular data exploration tooling.</li>
+<li><b>Verdict</b>: Learn</li>
+<li><b>Your angle</b>: Connects to Project Jarvis and product catalogue data restructuring by decoupling code from single-vendor proprietary SDKs.</li>
+<li><b>Source</b>: <a href="https://simonwillison.net/2026/Nov/14/datasette-llm/">datasette-llm 0.1a11 (Simon Willison)</a></li>
 </ul>
-<h3>LangChain Reaches $3B Valuation Driven by Agent Tracing</h3>
+<h3>datasette-vega 0.7</h3>
 <ul>
-<li><b>What happened:</b> LangChain hit a $3 billion valuation with 7,000 customers using its LangSmith agent monitoring tool.</li>
-<li><b>Why it matters:</b> Monitoring, evaluating execution traces, latency, and failure points has become a core requirement for enterprise AI teams.</li>
-<li><b>Hype check:</b> Demonstrates that building basic LLM prompts is no longer enough for enterprise adoption.</li>
-<li><b>Verdict:</b> learn</li>
-<li><b>Your angle:</b> Leveraging your background from Project Jarvis, mastering agent tracing and telemetry gives you an advantage over candidates doing basic API calls.</li>
-<li><b>Source:</b> <a href="https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/">AI agent startup LangChain hits $3B valuation (TechCrunch AI)</a></li>
+<li><b>What happened</b>: Simon Willison updated datasette-vega to version 0.7, enabling rendering of Vega-Lite charts directly from SQL tables or custom queries in recent Datasette releases.</li>
+<li><b>Why it matters</b>: Provides declarative, code-driven charting within browser-based data inspection workflows without heavy frontend suites.</li>
+<li><b>Hype check</b>: Solid, practical software maintenance release.</li>
+<li><b>Verdict</b>: Test</li>
+<li><b>Your angle</b>: Links to your data track and e-commerce/trade analytics background from Redo Print.</li>
+<li><b>Source</b>: <a href="https://simonwillison.net/2026/Nov/14/datasette-vega/">datasette-vega 0.7 (Simon Willison)</a></li>
 </ul>
-<h3>llama.cpp Releases Version 1.0.0 for Local AI Execution</h3>
+<h3>The AI Graveyard</h3>
 <ul>
-<li><b>What happened:</b> Hugging Face announced llama.cpp v1.0.0, enabling efficient execution of large language models on standard computer hardware without GPUs.</li>
-<li><b>Why it matters:</b> Marks a major milestone for local, private AI systems and low-cost automation.</li>
-<li><b>Hype check:</b> A genuine milestone for the open-source ecosystem that reduces reliance on expensive cloud APIs.</li>
-<li><b>Verdict:</b> test</li>
-<li><b>Your angle:</b> Directly connects to your job card automation work and local Python pipelines for privacy-conscious, low-cost business workflows.</li>
-<li><b>Source:</b> <a href="https://huggingface.co/blog/ggml-org/llama-cpp-v1">llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem (Hugging Face)</a></li>
-</ul>
-<h3>Amazon Builds World Product Graph to Index Online Shopping</h3>
-<ul>
-<li><b>What happened:</b> Amazon is constructing the World Product Graph to index every physical product sold online regardless of platform.</li>
-<li><b>Why it matters:</b> Highlights the growing enterprise demand for large-scale data enrichment and automated schema normalization across catalog data.</li>
-<li><b>Hype check:</b> Reflects ongoing massive infrastructure investments in e-commerce data indexing.</li>
-<li><b>Verdict:</b> learn</li>
-<li><b>Your angle:</b> Aligns with core automated schema normalization and enterprise data processing concepts.</li>
-<li><b>Source:</b> <a href="https://www.theverge.com/tech/1033697/amazon-world-product-graph-ai-search">Amazon has a plan to index the world’s online shopping data (The Verge AI)</a></li>
+<li><b>What happened</b>: TechCrunch published a retrospective on high-profile AI shutdowns, delayed rollouts, and failed application launches.</li>
+<li><b>Why it matters</b>: Highlights how open-ended consumer assistants and speculative chat interfaces fail under business and production ambiguity.</li>
+<li><b>Hype check</b>: Industry analysis and market commentary.</li>
+<li><b>Verdict</b>: Ignore the drama, but learn from the operational pattern.</li>
+<li><b>Your angle</b>: Reinforces your edge in building narrow, reliable automations for grounded physical business problems (like Claude2InDesign).</li>
+<li><b>Source</b>: <a href="https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/">The AI graveyard: a running list of projects and startups that didn’t make it (TechCrunch AI)</a></li>
 </ul>
 <h2>Automation Opportunity</h2>
 <ul>
-<li><b>What it is:</b> Establishing local execution tracing for multi-step Python workflows using structured JSON lines logging.</li>
-<li><b>Problem it solves:</b> Eliminates silent background failures in unattended scripts without adding heavy database dependencies.</li>
-<li><b>Free to try:</b> Yes, can be built locally using standard Python libraries.</li>
-<li><b>Skill gained:</b> Implementing auditable execution trails and zero-cost telemetry for background automation tools.</li>
+<li><b>What it is</b>: Automated deterministic regression testing runner for document extraction pipelines using Python and pytest fixtures.</li>
+<li><b>Problem it solves</b>: Prevents silent drift and pipeline degradation when tweaking prompts or switching vision model providers.</li>
+<li><b>Free to try</b>: Yes, completely free to build and run locally.</li>
+<li><b>Skill gained</b>: Establishes automated quality assurance discipline and schema validation for production data workflows.</li>
 </ul>
-<h2>Learning Moment: Agent Loop (Plan, Act, Observe)</h2>
+<h2>Learning Moment: Evaluating LLM and Agent Outputs</h2>
 <ul>
-<li>An architectural pattern where an LLM repeatedly decides actions based on environmental feedback rather than running a rigid script.</li>
-<li><b>Plan:</b> The model reviews the goal and past actions to select the next tool to call.</li>
-<li><b>Act:</b> Code executes the tool call (e.g., querying databases, parsing images, or writing files).</li>
-<li><b>Observe:</b> Code feeds the tool output back to the model as context.</li>
-<li>Requires guardrails like strict timeouts, fallback branches, and step logging to prevent infinite loops and cost spikes.</li>
-<li><b>Example:</b> Tasking an agent to format a menu where it plans to parse text, acts by running the parser, observes a missing price field, and updates its plan to run a targeted cleanup tool.</li>
+<li>Evaluation systematically measures non-deterministic generative outputs against strict standards of accuracy, relevance, and safety at scale.</li>
+<li>Component evaluations use deterministic heuristics (e.g., Pydantic schema validation) for structured data extraction tasks.</li>
+<li>End-to-end evaluations use model-graded scoring rubrics to assess open-ended context retrieval, faithfulness, and answer correctness.</li>
+<li>Professional workflows embed evaluation suites directly into automated CI/CD pipelines to block deployments if metrics regress.</li>
+<li><b>Example:</b> Checking whether an extracted print spec JSON conforms to a Pydantic schema with valid integer stock weights versus using an evaluator LLM prompt to grade a technical summary.</li>
 </ul>
 <h2>Career Move</h2>
 <ul>
-<li>Refine how you explain system reliability and failure handling in your physical-world print automation projects.</li>
-<li>Practice detailing how your job card pipeline handles missing fields, poor camera photos, or schema changes to demonstrate a mature engineering mindset.</li>
+<li>Document the quality assurance and output validation loop of your Claude2InDesign project in its GitHub repository README.</li>
+<li>Frame the repository as a resilient, self-verifying layout compiler by detailing failure modes, automated schema checks, and layout refinement loops.</li>
 </ul>
 <h2>Today's Mission</h2>
-<p>Write a Python script that implements a basic three-step plan, act, observe loop within twenty minutes.</p>
+<p>Write a standalone Python evaluation script for model extraction data within 15 to 20 minutes.</p>
 <ul>
-<li>☐ Define a simple target state.</li>
-<li>☐ Provide two mock tools that return dictionary results.</li>
-<li>☐ Run a loop that updates local state based on tool outputs.</li>
-<li>☐ Log each step of the execution trail to standard output or a file.</li>
-<li>☐ Ensure the loop terminates cleanly once the target state is reached.</li>
+<li>☐ Create a list of simulated model extraction dictionaries containing job parameters.</li>
+<li>☐ Define a ground-truth reference dictionary to compare the extractions against.</li>
+<li>☐ Calculate field-level exact match accuracy and missing key rates in Python.</li>
+<li>☐ Print a structured evaluation summary report directly to the console.</li>
 </ul>
