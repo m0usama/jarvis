@@ -1,59 +1,60 @@
-<h1>Morning Brief: Sunday 15 November 2026</h1>
+<h1>Morning Brief: Monday 16 November 2026</h1>
 <h2>Weather</h2>
 <p>{{WEATHER}}</p>
 <h2>Top Stories</h2>
-<h3>datasette-llm 0.1a11</h3>
+<h3>Datasette Ecosystem Updates</h3>
 <ul>
-<li><b>What happened</b>: Simon Willison released version 0.1a11 of datasette-llm, adding support for generic OpenAI-compatible endpoints to standardize model configurations for downstream analytics tools.</li>
-<li><b>Why it matters</b>: It allows users to point Datasette toward any self-hosted or alternative model server adhering to standard OpenAI interfaces.</li>
-<li><b>Hype check</b>: Practical development delivering pragmatic, modular data exploration tooling.</li>
-<li><b>Verdict</b>: Learn</li>
-<li><b>Your angle</b>: Connects to Project Jarvis and product catalogue data restructuring by decoupling code from single-vendor proprietary SDKs.</li>
-<li><b>Source</b>: <a href="https://simonwillison.net/2026/Nov/14/datasette-llm/">datasette-llm 0.1a11 (Simon Willison)</a></li>
+<li><b>What happened</b>: Simon Willison updated the Datasette ecosystem, adding streaming CSV/TSV exports to version 1.0 alpha 43 and releasing a new MapLibre geospatial plugin.</li>
+<li><b>Why it matters</b>: Streaming allows large query results to export directly to users without overloading server memory.</li>
+<li><b>Hype check</b>: A significant practical update for open-source data tools.</li>
+<li><b>Verdict</b>: Test.</li>
+<li><b>Your angle</b>: Links to your data engineering track and print catalogue database work, offering an edge over applicants limited to loading small datasets in pandas.</li>
+<li><b>Source</b>: <a href="https://simonwillison.net/2026/Nov/15/datasette/">datasette 1.0a43 (Simon Willison)</a></li>
 </ul>
-<h3>datasette-vega 0.7</h3>
+<h3>OpenAI Science Blog Launch</h3>
 <ul>
-<li><b>What happened</b>: Simon Willison updated datasette-vega to version 0.7, enabling rendering of Vega-Lite charts directly from SQL tables or custom queries in recent Datasette releases.</li>
-<li><b>Why it matters</b>: Provides declarative, code-driven charting within browser-based data inspection workflows without heavy frontend suites.</li>
-<li><b>Hype check</b>: Solid, practical software maintenance release.</li>
-<li><b>Verdict</b>: Test</li>
-<li><b>Your angle</b>: Links to your data track and e-commerce/trade analytics background from Redo Print.</li>
-<li><b>Source</b>: <a href="https://simonwillison.net/2026/Nov/14/datasette-vega/">datasette-vega 0.7 (Simon Willison)</a></li>
+<li><b>What happened</b>: OpenAI launched a science blog and published a paper on theoretical lattice physics proofs aided by a future model.</li>
+<li><b>Why it matters</b>: Demonstrates an industry pivot toward evaluating AI models on strict ground-truth accuracy over chat style.</li>
+<li><b>Hype check</b>: Highlights domain-specific evaluation and factual performance over conversational tone.</li>
+<li><b>Verdict</b>: Ignore the physics paper, but watch the evaluation methods.</li>
+<li><b>Your angle</b>: Tracking complex evaluation methods helps you design tighter QA loops in your AI engineering projects.</li>
+<li><b>Source</b>: <a href="https://openai.com/index/our-new-blog-for-science">Our new blog for science (OpenAI)</a></li>
 </ul>
-<h3>The AI Graveyard</h3>
+<h3>Apple Health AI Usage Study</h3>
 <ul>
-<li><b>What happened</b>: TechCrunch published a retrospective on high-profile AI shutdowns, delayed rollouts, and failed application launches.</li>
-<li><b>Why it matters</b>: Highlights how open-ended consumer assistants and speculative chat interfaces fail under business and production ambiguity.</li>
-<li><b>Hype check</b>: Industry analysis and market commentary.</li>
-<li><b>Verdict</b>: Ignore the drama, but learn from the operational pattern.</li>
-<li><b>Your angle</b>: Reinforces your edge in building narrow, reliable automations for grounded physical business problems (like Claude2InDesign).</li>
-<li><b>Source</b>: <a href="https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/">The AI graveyard: a running list of projects and startups that didn’t make it (TechCrunch AI)</a></li>
+<li><b>What happened</b>: Apple partnered with OpenEvidence to launch a study evaluating user interactions and response quality in conversational AI health tools.</li>
+<li><b>Why it matters</b>: A real-world research effort targeting output safety and effectiveness in live production environments.</li>
+<li><b>Hype check</b>: A practical research initiative focused on operational usefulness and safety.</li>
+<li><b>Verdict</b>: Test the concept of structured output evaluation in your pipeline projects.</li>
+<li><b>Your angle</b>: Builds on your QA logging experience with Claude2InDesign by demonstrating how to treat non-deterministic LLM outputs with explicit operational controls.</li>
+<li><b>Source</b>: <a href="https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/">Apple launches new app to study how people use AI for health (TechCrunch AI)</a></li>
 </ul>
 <h2>Automation Opportunity</h2>
 <ul>
-<li><b>What it is</b>: Automated deterministic regression testing runner for document extraction pipelines using Python and pytest fixtures.</li>
-<li><b>Problem it solves</b>: Prevents silent drift and pipeline degradation when tweaking prompts or switching vision model providers.</li>
-<li><b>Free to try</b>: Yes, completely free to build and run locally.</li>
-<li><b>Skill gained</b>: Establishes automated quality assurance discipline and schema validation for production data workflows.</li>
+<li><b>What it is</b>: Asynchronous HTTP request orchestration using Python.</li>
+<li><b>Problem it solves</b>: Removes execution bottlenecks caused by sequential network requests in data scraping or API enrichment workflows.</li>
+<li><b>Free to try</b>: Completely free using built-in and open-source Python libraries.</li>
+<li><b>Skill gained</b>: Improves backend reliability, network efficiency, and concurrent execution patterns.</li>
 </ul>
-<h2>Learning Moment: Evaluating LLM and Agent Outputs</h2>
+<h2>Learning Moment: Async Python with asyncio and httpx</h2>
 <ul>
-<li>Evaluation systematically measures non-deterministic generative outputs against strict standards of accuracy, relevance, and safety at scale.</li>
-<li>Component evaluations use deterministic heuristics (e.g., Pydantic schema validation) for structured data extraction tasks.</li>
-<li>End-to-end evaluations use model-graded scoring rubrics to assess open-ended context retrieval, faithfulness, and answer correctness.</li>
-<li>Professional workflows embed evaluation suites directly into automated CI/CD pipelines to block deployments if metrics regress.</li>
-<li><b>Example:</b> Checking whether an extracted print spec JSON conforms to a Pydantic schema with valid integer stock weights versus using an evaluator LLM prompt to grade a technical summary.</li>
+<li>Synchronous Python pauses program execution while waiting for external API responses, causing total runtimes to scale linearly.</li>
+<li>Async Python uses an event loop to pause waiting tasks and run other operations concurrently while network calls complete in the background.</li>
+<li>Implementation relies on the `asyncio` module and `httpx` client, using `async def` for function definitions and `await` for non-blocking network calls.</li>
+<li>Vital for building scalable FastAPI backend services and managing high-throughput workflows like LLM calls or webhooks.</li>
+<li><b>Example:</b> Checking 10 supplier pricing endpoints sequentially at 1 second each takes 10 seconds, whereas executing them concurrently with `asyncio.gather` and `httpx.AsyncClient` takes roughly 1 second total.</li>
 </ul>
 <h2>Career Move</h2>
 <ul>
-<li>Document the quality assurance and output validation loop of your Claude2InDesign project in its GitHub repository README.</li>
-<li>Frame the repository as a resilient, self-verifying layout compiler by detailing failure modes, automated schema checks, and layout refinement loops.</li>
+<li>Highlight real-world automation experience on your CV by structuring projects around three key elements: messy inputs, system architecture, and measurable business outcomes.</li>
+<li>Frame hardware and physical workflow projects—like vision model job processing—as production engineering rather than basic scripting to showcase practical maturity.</li>
 </ul>
 <h2>Today's Mission</h2>
-<p>Write a standalone Python evaluation script for model extraction data within 15 to 20 minutes.</p>
+<p>Complete a 20-minute coding exercise to master asynchronous HTTP requests by building a Python script that fetches website status codes concurrently.</p>
 <ul>
-<li>☐ Create a list of simulated model extraction dictionaries containing job parameters.</li>
-<li>☐ Define a ground-truth reference dictionary to compare the extractions against.</li>
-<li>☐ Calculate field-level exact match accuracy and missing key rates in Python.</li>
-<li>☐ Print a structured evaluation summary report directly to the console.</li>
+<li>☐ Set up a new Python script importing `asyncio` and `httpx`.</li>
+<li>☐ Define a list of five public website URLs to query.</li>
+<li>☐ Write an `async` function using `httpx.AsyncClient` to fetch a single URL's status code.</li>
+<li>☐ Combine and run all five requests concurrently using `asyncio.gather`.</li>
+<li>☐ Print each URL, its returned status code, and the total execution time for the full script.</li>
 </ul>

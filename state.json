@@ -1,17 +1,6 @@
 {
- "curriculum_index": 39,
+ "curriculum_index": 40,
  "seen": [
-  "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/",
-  "https://www.theverge.com/ai-artificial-intelligence/1009090/anthropic-fake-homicide-information-philadelphia-pd-tip",
-  "https://techcrunch.com/2026/10/09/an-anthropic-ai-model-sent-a-false-homicide-tip-to-philadelphia-police/",
-  "https://www.theverge.com/ai-artificial-intelligence/1008726/openai-mathematics-solutions-chaos",
-  "https://arstechnica.com/information-technology/2026/10/pc-shipments-fall-20-1-percent-in-sharpest-decline-since-q1-2023/",
-  "https://www.theverge.com/ai-artificial-intelligence/1008930/nikon-small-world-in-motion-winner-ai",
-  "https://github.blog/developer-skills/career-growth/hack-the-world-why-hackathons-are-still-the-best-place-to-learn-to-build/",
-  "https://huggingface.co/blog/allenai/impactful-scheduling",
-  "https://simonwillison.net/2026/Oct/9/matthew-green/",
-  "https://openai.com/index/sophos",
-  "https://openai.com/index/asana-browser-agent",
   "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
   "https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/",
   "https://techcrunch.com/2026/10/10/apple-discloses-deal-to-hire-team-and-license-tech-from-personalized-podcast-startup-huxe/",
@@ -400,10 +389,20 @@
   "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
   "https://simonwillison.net/2026/Nov/14/datasette-vega/",
   "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview",
-  "https://www.theverge.com/tech/1033781/nvidia-jensen-huang-last-visionary-showman-founder-ceo"
+  "https://www.theverge.com/tech/1033781/nvidia-jensen-huang-last-visionary-showman-founder-ceo",
+  "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
+  "https://www.theverge.com/tech/1033355/apples-new-study-looks-to-improve-the-effectiveness-of-ai-health-tools",
+  "https://simonwillison.net/2026/Nov/15/datasette-maplibre/",
+  "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
+  "https://simonwillison.net/2026/Nov/15/datasette/",
+  "https://simonwillison.net/2026/Nov/15/datasette-2/",
+  "https://openai.com/index/step-toward-defining-the-standard-model",
+  "https://openai.com/index/our-new-blog-for-science",
+  "https://techcrunch.com/2026/11/15/is-bad-news-for-jensen-huang-also-bad-news-for-the-ai-industry/",
+  "https://www.theverge.com/tech/1033999/jensen-huang-return-nvidia-megaspeed",
+  "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china"
  ],
  "missions": [
-  "Write a standalone Python script using asyncio and httpx that fetches three endpoints concurrently with asyncio dot gather and prints the elapsed time.",
   "Write a Python script implementing an idempotent processing function with exponential backoff and duplicate key tracking.",
   "Write a complete production-style Dockerfile for a minimal FastAPI service using a slim Python base image.",
   "Create a GitHub Actions workflow that automatically runs pytest on every push.",
@@ -432,10 +431,10 @@
   "Write a Python script comparing fixed-size and sentence-aware text chunking.",
   "Write a Python JSON-RPC tool responder script.",
   "Write a Python script implementing a plan act observe loop with step logging.",
-  "Write a Python script that calculates field-level exact match accuracy and missing key rates by comparing simulated model extraction outputs against a ground-truth dictionary."
+  "Write a Python script that calculates field-level exact match accuracy and missing key rates by comparing simulated model extraction outputs against a ground-truth dictionary.",
+  "Write a Python script using asyncio and httpx to fetch multiple URL status codes concurrently."
  ],
  "opportunities": [
-  "Asynchronous batch webhook dispatch automation",
   "Local SQLite webhook deduplication idempotency layer",
   "Containerised headless document rendering with WeasyPrint",
   "Automated pipeline validation using Great Expectations",
@@ -464,6 +463,7 @@
   "Deterministic dry-run payload validation middleware",
   "OpenAPI to agent function schema generator",
   "Local agent execution logging with JSON lines",
-  "Automated regression evaluation for extraction pipelines"
+  "Automated regression evaluation for extraction pipelines",
+  "Asynchronous HTTP request orchestration with httpx"
  ]
 }
