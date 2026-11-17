@@ -1,18 +1,6 @@
 {
- "curriculum_index": 40,
+ "curriculum_index": 41,
  "seen": [
-  "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
-  "https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/",
-  "https://techcrunch.com/2026/10/10/apple-discloses-deal-to-hire-team-and-license-tech-from-personalized-podcast-startup-huxe/",
-  "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit",
-  "https://techcrunch.com/2026/10/10/3-days-to-disrupt-2026-meet-the-startups-before-they-hit-mainstream/",
-  "https://www.theverge.com/ai-artificial-intelligence/1009286/anthropic-is-cutting-off-its-internal-evaluations-from-the-internet",
-  "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success/",
-  "https://techcrunch.com/2026/10/11/48-hours-to-techcrunch-disrupt-2026-hear-directly-from-the-people-building-whats-next/",
-  "https://www.theverge.com/ai-artificial-intelligence/1009406/silicon-valley-is-falling-in-line-with-trumps-attempt-to-rename-ai",
-  "https://techcrunch.com/2026/10/11/can-the-ai-industry-persuade-data-center-opponents-by-getting-rid-of-ndas/",
-  "https://www.theverge.com/ai-artificial-intelligence/1008484/learning-local-ai-hermes-qwen-model-mac-studio-testing-diary-progress",
-  "https://simonwillison.net/2026/Oct/11/dwarf-fortress/",
   "https://simonwillison.net/2026/Oct/10/python-actions/",
   "https://www.theverge.com/ai-artificial-intelligence/1009802/character-ai-files-for-bankruptcy-disney",
   "https://simonwillison.net/2026/Oct/12/python-3-15/",
@@ -400,10 +388,21 @@
   "https://openai.com/index/our-new-blog-for-science",
   "https://techcrunch.com/2026/11/15/is-bad-news-for-jensen-huang-also-bad-news-for-the-ai-industry/",
   "https://www.theverge.com/tech/1033999/jensen-huang-return-nvidia-megaspeed",
-  "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china"
+  "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china",
+  "https://simonwillison.net/2026/Nov/17/go-proverbs/",
+  "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
+  "https://simonwillison.net/2026/Nov/16/llm/",
+  "https://techcrunch.com/2026/11/16/cybersecurity-ai-startup-corma-reaches-1b-valuation-in-about-3-months/",
+  "https://www.theverge.com/tech/1035027/tech-leaders-nvidia-jensen-huang-theories",
+  "https://techcrunch.com/2026/11/16/all-the-questions-nvidia-should-answer-on-tuesday-but-probably-wont/",
+  "https://www.theverge.com/ai-artificial-intelligence/1034815/california-openai-hugging-face-lawsuit",
+  "https://www.theverge.com/ai-artificial-intelligence/1034787/sam-altman-ram-shortage-semafor",
+  "https://arstechnica.com/tech-policy/2026/11/shareholders-sue-intel-its-ceo-and-cfo-after-stock-drops-28-6-percent-in-one-day/",
+  "https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents/",
+  "https://openai.com/index/expanding-chatgpt-for-academic-researchers",
+  "https://openai.com/index/strengthening-online-child-safety"
  ],
  "missions": [
-  "Write a Python script implementing an idempotent processing function with exponential backoff and duplicate key tracking.",
   "Write a complete production-style Dockerfile for a minimal FastAPI service using a slim Python base image.",
   "Create a GitHub Actions workflow that automatically runs pytest on every push.",
   "Write a two-task local Prefect workflow script that passes mock job data and logs execution state.",
@@ -432,10 +431,10 @@
   "Write a Python JSON-RPC tool responder script.",
   "Write a Python script implementing a plan act observe loop with step logging.",
   "Write a Python script that calculates field-level exact match accuracy and missing key rates by comparing simulated model extraction outputs against a ground-truth dictionary.",
-  "Write a Python script using asyncio and httpx to fetch multiple URL status codes concurrently."
+  "Write a Python script using asyncio and httpx to fetch multiple URL status codes concurrently.",
+  "Write a simple Python SQLite backup script"
  ],
  "opportunities": [
-  "Local SQLite webhook deduplication idempotency layer",
   "Containerised headless document rendering with WeasyPrint",
   "Automated pipeline validation using Great Expectations",
   "Unified pipeline error alerting with Apprise",
@@ -464,6 +463,7 @@
   "OpenAPI to agent function schema generator",
   "Local agent execution logging with JSON lines",
   "Automated regression evaluation for extraction pipelines",
-  "Asynchronous HTTP request orchestration with httpx"
+  "Asynchronous HTTP request orchestration with httpx",
+  "Automated SQLite database backup script"
  ]
 }
