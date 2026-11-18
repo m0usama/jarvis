@@ -1,20 +1,6 @@
 {
- "curriculum_index": 41,
+ "curriculum_index": 42,
  "seen": [
-  "https://simonwillison.net/2026/Oct/10/python-actions/",
-  "https://www.theverge.com/ai-artificial-intelligence/1009802/character-ai-files-for-bankruptcy-disney",
-  "https://simonwillison.net/2026/Oct/12/python-3-15/",
-  "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
-  "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase/",
-  "https://techcrunch.com/2026/10/12/windborne-wins-a-hefty-us-air-force-contract-for-its-balloon-data/",
-  "https://www.theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model",
-  "https://simonwillison.net/2026/Oct/12/web-edit/",
-  "https://techcrunch.com/2026/10/12/honeyjar-offers-ai-tools-to-improve-pr-and-comms-at-every-company/",
-  "https://www.theverge.com/news/1009465/microsoft-maia-300-chip-improvements-rollout",
-  "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
-  "https://techcrunch.com/2026/10/13/science-corporation-implants-its-vision-restoring-chip-in-its-first-stargardt-disease-patient/",
-  "https://techcrunch.com/2026/10/13/cerebras-ceo-says-were-nearing-a-future-where-everyone-has-a-personal-ai-assistant-at-home/",
-  "https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/",
   "https://techcrunch.com/2026/10/13/industrial-next-wants-factory-robots-to-switch-tasks-in-minutes-not-weeks/",
   "https://simonwillison.net/2026/Oct/13/llm-gemini/",
   "https://arstechnica.com/information-technology/2026/10/topgolf-saved-over-11-3-million-after-leaving-vmware/",
@@ -400,10 +386,23 @@
   "https://arstechnica.com/tech-policy/2026/11/shareholders-sue-intel-its-ceo-and-cfo-after-stock-drops-28-6-percent-in-one-day/",
   "https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents/",
   "https://openai.com/index/expanding-chatgpt-for-academic-researchers",
-  "https://openai.com/index/strengthening-online-child-safety"
+  "https://openai.com/index/strengthening-online-child-safety",
+  "https://techcrunch.com/2026/11/17/nvidias-startup-stakes-ballooned-to-65b-but-huangs-exit-puts-future-deals-in-doubt/",
+  "https://techcrunch.com/2026/11/17/nvidia-promises-that-revenue-will-keep-soaring-for-now/",
+  "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership",
+  "https://www.theverge.com/tech/1036111/satya-nadella-says-hes-agi-pilled-now",
+  "https://techcrunch.com/2026/11/17/nvidia-is-abandoning-china-after-jensen-huangs-ouster/",
+  "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/",
+  "https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/",
+  "https://arstechnica.com/security/2026/11/malicious-code-delivered-through-optimizely-hits-visitors-to-hundreds-of-sites/",
+  "https://www.theverge.com/tech/1036032/nvidia-q3-2027-jensen-huang",
+  "https://www.theverge.com/news/1035957/meta-alexandr-wang-sam-altman-instagram-ai-deepfake",
+  "https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/",
+  "https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/",
+  "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+  "https://simonwillison.net/2026/Nov/17/datasette-lite/"
  ],
  "missions": [
-  "Write a complete production-style Dockerfile for a minimal FastAPI service using a slim Python base image.",
   "Create a GitHub Actions workflow that automatically runs pytest on every push.",
   "Write a two-task local Prefect workflow script that passes mock job data and logs execution state.",
   "Write a Python script using in-memory SQLite demonstrating ELT by loading raw JSON into a staging table and transforming it via SQL into a clean reporting table.",
@@ -432,10 +431,10 @@
   "Write a Python script implementing a plan act observe loop with step logging.",
   "Write a Python script that calculates field-level exact match accuracy and missing key rates by comparing simulated model extraction outputs against a ground-truth dictionary.",
   "Write a Python script using asyncio and httpx to fetch multiple URL status codes concurrently.",
-  "Write a simple Python SQLite backup script"
+  "Write a simple Python SQLite backup script",
+  "Write and execute a minimal Python Dockerfile build locally."
  ],
  "opportunities": [
-  "Containerised headless document rendering with WeasyPrint",
   "Automated pipeline validation using Great Expectations",
   "Unified pipeline error alerting with Apprise",
   "Local tabular data profiling with DuckDB",
@@ -464,6 +463,7 @@
   "Local agent execution logging with JSON lines",
   "Automated regression evaluation for extraction pipelines",
   "Asynchronous HTTP request orchestration with httpx",
-  "Automated SQLite database backup script"
+  "Automated SQLite database backup script",
+  "Containerized service health check implementation"
  ]
 }
