@@ -1,20 +1,6 @@
 {
- "curriculum_index": 42,
+ "curriculum_index": 43,
  "seen": [
-  "https://techcrunch.com/2026/10/13/industrial-next-wants-factory-robots-to-switch-tasks-in-minutes-not-weeks/",
-  "https://simonwillison.net/2026/Oct/13/llm-gemini/",
-  "https://arstechnica.com/information-technology/2026/10/topgolf-saved-over-11-3-million-after-leaving-vmware/",
-  "https://www.theverge.com/ai-artificial-intelligence/1010642/openai-employee-arrested-recording-device",
-  "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
-  "https://www.theverge.com/news/1010365/shopify-opens-its-catalog-up-to-more-ai-agents",
-  "https://www.theverge.com/news/1010406/xbox-labs-game-decompiling-emulation-exploration",
-  "https://github.blog/ai-and-ml/githubs-model-for-secret-detection-finding-more-secrets-with-less-noise/",
-  "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
-  "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
-  "https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/",
-  "https://techcrunch.com/2026/10/14/ricursive-intelligence-is-betting-on-ai-designed-chips-to-help-solve-the-compute-crisis/",
-  "https://techcrunch.com/2026/10/14/gudea-leverages-ai-to-help-organizations-prevent-social-media-crises-before-they-erupt/",
-  "https://www.theverge.com/news/1011654/mckinsey-ai-client-interview",
   "https://arstechnica.com/security/2026/10/fridge-hack-costing-millions-and-sparking-fires-stemmed-from-poor-security/",
   "https://simonwillison.net/2026/Oct/14/tree-appreciator/",
   "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety",
@@ -400,10 +386,23 @@
   "https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/",
   "https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/",
   "https://openai.com/index/introducing-gpt-6-2-astra-sol",
-  "https://simonwillison.net/2026/Nov/17/datasette-lite/"
+  "https://simonwillison.net/2026/Nov/17/datasette-lite/",
+  "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/",
+  "https://simonwillison.net/2026/Nov/18/llm-gemini/",
+  "https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable/",
+  "https://techcrunch.com/2026/11/18/elon-musk-says-ousting-jensen-huang-is-like-kicking-michael-jordan-off-your-team/",
+  "https://www.theverge.com/ai-artificial-intelligence/1037151/school-districts-ditching-google",
+  "https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin",
+  "https://www.theverge.com/policy/1036749/trump-ai-chip-data-center-us-philippines-pax-silica",
+  "https://www.theverge.com/tech/1035924/nvidia-visualized-revenue-profit-earnings-after-huang",
+  "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time",
+  "https://simonwillison.net/2026/Nov/18/datasette-arrows/",
+  "https://simonwillison.net/2026/Nov/18/daniel-stenberg/",
+  "https://huggingface.co/blog/ibm-research/time-series-powered-streamhouse",
+  "https://openai.com/index/the-silent-consensus",
+  "https://openai.com/index/research-acceleration-jagged-frontier"
  ],
  "missions": [
-  "Create a GitHub Actions workflow that automatically runs pytest on every push.",
   "Write a two-task local Prefect workflow script that passes mock job data and logs execution state.",
   "Write a Python script using in-memory SQLite demonstrating ELT by loading raw JSON into a staging table and transforming it via SQL into a clean reporting table.",
   "Write a Python script using SQLite comparing query plans before and after indexing ten thousand records.",
@@ -432,10 +431,10 @@
   "Write a Python script that calculates field-level exact match accuracy and missing key rates by comparing simulated model extraction outputs against a ground-truth dictionary.",
   "Write a Python script using asyncio and httpx to fetch multiple URL status codes concurrently.",
   "Write a simple Python SQLite backup script",
-  "Write and execute a minimal Python Dockerfile build locally."
+  "Write and execute a minimal Python Dockerfile build locally.",
+  "Write a minimal GitHub Actions workflow file that sets up Python and executes pytest on push."
  ],
  "opportunities": [
-  "Automated pipeline validation using Great Expectations",
   "Unified pipeline error alerting with Apprise",
   "Local tabular data profiling with DuckDB",
   "Automated incoming webhook schema validation with Pydantic",
@@ -464,6 +463,7 @@
   "Automated regression evaluation for extraction pipelines",
   "Asynchronous HTTP request orchestration with httpx",
   "Automated SQLite database backup script",
-  "Containerized service health check implementation"
+  "Containerized service health check implementation",
+  "Memory-efficient streaming data export pipelines"
  ]
 }

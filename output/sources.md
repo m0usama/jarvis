@@ -1,18 +1,20 @@
-# Sources for 2026-11-18 (full)
+# Sources for 2026-11-19 (full)
 
-Learning concept: Docker fundamentals for Python services
+Learning concept: CI/CD with GitHub Actions
 
-- [Nvidia’s startup stakes ballooned to $65B, but Huang’s exit puts future deals in doubt](https://techcrunch.com/2026/11/17/nvidias-startup-stakes-ballooned-to-65b-but-huangs-exit-puts-future-deals-in-doubt/) (TechCrunch AI, 18 Nov 01:44 UTC)
-- [Nvidia promises that revenue will keep soaring — for now](https://techcrunch.com/2026/11/17/nvidia-promises-that-revenue-will-keep-soaring-for-now/) (TechCrunch AI, 18 Nov 00:16 UTC)
-- [Le Groupe Figaro and OpenAI partner to bring Le Figaro journalism to ChatGPT](https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership) (OpenAI, 18 Nov 00:00 UTC)
-- [Satya Nadella says he’s AGI-pilled now](https://www.theverge.com/tech/1036111/satya-nadella-says-hes-agi-pilled-now) (The Verge AI, 17 Nov 18:41 UTC)
-- [Nvidia is abandoning China after Jensen Huang’s ouster](https://techcrunch.com/2026/11/17/nvidia-is-abandoning-china-after-jensen-huangs-ouster/) (TechCrunch AI, 17 Nov 23:37 UTC)
-- [External sandboxes for coding agents](https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/) (Simon Willison, 17 Nov 22:52 UTC)
-- [GPT‑6.2 Astra and GPT‑6.2 Sol](https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/) (Simon Willison, 17 Nov 22:38 UTC)
-- [Hundreds of websites deliver potent malware cocktail to unsuspecting visitors](https://arstechnica.com/security/2026/11/malicious-code-delivered-through-optimizely-hits-visitors-to-hundreds-of-sites/) (Ars Technica, 17 Nov 22:32 UTC)
-- [Nvidia’s Q3 earnings hit the mark, without mentioning the whole Jensen Huang thing](https://www.theverge.com/tech/1036032/nvidia-q3-2027-jensen-huang) (The Verge AI, 17 Nov 16:40 UTC)
-- [Not even Sam Altman is safe from AI deepfakes on Instagram](https://www.theverge.com/news/1035957/meta-alexandr-wang-sam-altman-instagram-ai-deepfake) (The Verge AI, 17 Nov 16:00 UTC)
-- [Maintainers don’t need more AI bug reports. They need fixes.](https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/) (GitHub Blog, 17 Nov 18:29 UTC)
-- [Building the Agent Host Protocol for sessions that continue across devices](https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/) (GitHub Blog, 17 Nov 18:20 UTC)
-- [Introducing GPT-6.2 Astra and Sol](https://openai.com/index/introducing-gpt-6-2-astra-sol) (OpenAI, 17 Nov 17:45 UTC)
-- [Running the full server-side Datasette Python app in the browser with service workers and Pyodide](https://simonwillison.net/2026/Nov/17/datasette-lite/) (Simon Willison, 17 Nov 16:48 UTC)
+- [Microsoft CEO Satya Nadella explains why he asked 60K employees to quit](https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/) (TechCrunch AI, 19 Nov 00:42 UTC)
+- [llm-gemini 0.38](https://simonwillison.net/2026/Nov/18/llm-gemini/) (Simon Willison, 18 Nov 23:59 UTC)
+- [Amidst fears of AI cyberattacks, Satya Nadella says lots of critical infrastructure is ‘unpatchable’](https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable/) (TechCrunch AI, 18 Nov 23:45 UTC)
+- [Elon Musk says ousting Jensen Huang is like ‘kicking Michael Jordan off your team’](https://techcrunch.com/2026/11/18/elon-musk-says-ousting-jensen-huang-is-like-kicking-michael-jordan-off-your-team/) (TechCrunch AI, 18 Nov 23:25 UTC)
+- [The nation’s largest school districts consider ditching Google Search](https://www.theverge.com/ai-artificial-intelligence/1037151/school-districts-ditching-google) (The Verge AI, 18 Nov 18:18 UTC)
+- [DaisyRose-27B: Pushing the Frontier of Post-Training Efficiency](https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin) (Hugging Face, 18 Nov 19:54 UTC)
+- [Trump’s latest land grab is an AI hub in the Philippines](https://www.theverge.com/policy/1036749/trump-ai-chip-data-center-us-philippines-pax-silica) (The Verge AI, 18 Nov 14:40 UTC)
+- [Nvidia’s rise, visualized](https://www.theverge.com/tech/1035924/nvidia-visualized-revenue-profit-earnings-after-huang) (The Verge AI, 18 Nov 14:30 UTC)
+- [Why your fine-tuning job takes longer than the FLOPs say](https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time) (Hugging Face, 18 Nov 18:53 UTC)
+- [datasette-arrows 0.1a0](https://simonwillison.net/2026/Nov/18/datasette-arrows/) (Simon Willison, 18 Nov 17:09 UTC)
+- [Quoting Daniel Stenberg](https://simonwillison.net/2026/Nov/18/daniel-stenberg/) (Simon Willison, 18 Nov 15:58 UTC)
+- [Time-Series Models in the Streamhouse: A New Frontier and Use Cases](https://huggingface.co/blog/ibm-research/time-series-powered-streamhouse) (Hugging Face, 18 Nov 15:00 UTC)
+- [The Silent Consensus](https://openai.com/index/the-silent-consensus) (OpenAI, 18 Nov 10:00 UTC)
+- [Research acceleration: The jagged frontier](https://openai.com/index/research-acceleration-jagged-frontier) (OpenAI, 18 Nov 08:00 UTC)
+
+Feeds that failed: Google DeepMind

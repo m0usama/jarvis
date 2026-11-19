@@ -1,57 +1,58 @@
-<h1>Morning Brief: Wednesday 18 November 2026</h1>
+<h1>Morning Brief: Thursday 19 November 2026</h1>
 <h2>Weather</h2>
 <p>{{WEATHER}}</p>
 <h2>Top Stories</h2>
-<h3>External Sandboxes for Coding Agents</h3>
+<h3>Daniel Stenberg on AI Coding Agents vs. Real Maintenance</h3>
 <ul>
-<li><b>What happened:</b> Simon Willison published an analysis on external sandboxes for coding agents, exploring new methods for isolating code executed by AI agents to prevent prompt injection attacks or unexpected errors from executing destructive actions on host machines.</li>
-<li><b>Why it matters:</b> As autonomous execution becomes common, running agent code without process isolation is a major security liability in production.</li>
-<li><b>Hype check:</b> This is a real architectural development, not marketing hype.</li>
-<li><b>Verdict:</b> Test</li>
-<li><b>Your angle:</b> Connects directly to your work on Claude2InDesign, where untrusted LLM outputs trigger local processing workflows. Testing sandbox patterns like micro-containers or restricted runtimes builds a concrete skill in secure agent orchestration.</li>
-<li><b>Source:</b> <a href="https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/">External sandboxes for coding agents (Simon Willison)</a></li>
-</ul>
-<h3>GitHub Introduces Agent Host Protocol</h3>
-<ul>
-<li><b>What happened:</b> The GitHub Blog introduced the Agent Host Protocol, an open standard designed to maintain persistent agent execution sessions across different devices, cloud environments, and local editors.</li>
-<li><b>Why it matters:</b> Standardising how agent state is preserved and handed off solves the problem of brittle, single-environment execution loops.</li>
-<li><b>Hype check:</b> While still early, it represents a real shift toward interoperable agent infrastructure.</li>
+<li><b>What happened:</b> Daniel Stenberg observed that while AI agents converted 185k lines of C to 340k lines of Rust, human maintainers merged 300+ commits and resolved 200+ bug fixes in three weeks.</li>
+<li><b>Why it matters:</b> Highlights the gap between autonomous code generation and real production codebase maintenance requiring contextual bug fixing and domain discernment.</li>
+<li><b>Hype check:</b> AI agents are not wholesale replacements for engineering teams.</li>
 <li><b>Verdict:</b> Learn</li>
-<li><b>Your angle:</b> Links directly to your experience building Project Jarvis, where you managed execution state between GitHub Actions scheduled runs. Learning open state protocols deepens your framework-agnostic system design skills.</li>
-<li><b>Source:</b> <a href="https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/">Building the Agent Host Protocol for sessions that continue across devices (GitHub Blog)</a></li>
+<li><b>Your angle:</b> Mirrors your Claude2InDesign work, where the real achievement was QA feedback loops and handling edge cases rather than raw generation.</li>
+<li><b>Source:</b> <a href="https://simonwillison.net/2026/Nov/18/daniel-stenberg/">Quoting Daniel Stenberg (Simon Willison)</a></li>
 </ul>
-<h3>OpenAI Releases GPT-6.2 Astra and Sol</h3>
+<h3>Simon Willison Releases datasette-arrows 0.1a0</h3>
 <ul>
-<li><b>What happened:</b> OpenAI released GPT-6.2 Astra and GPT-6.2 Sol, featuring updated capabilities in coding, computer use, and structured outputs at a lower cost through the API. Astra focuses on complex reasoning while Sol is tuned for efficient daily workflows.</li>
-<li><b>Why it matters:</b> Lower latency and cost structure make practical application cheaper to run.</li>
-<li><b>Hype check:</b> Standard incremental model update from a provider.</li>
+<li><b>What happened:</b> Simon Willison released `datasette-arrows 0.1a0`, enabling streaming exports using Apache Arrow formats.</li>
+<li><b>Why it matters:</b> Allows exporting millions of records on the fly without loading entire datasets into memory.</li>
+<li><b>Hype check:</b> Incremental plugin release building on existing Datasette streaming capabilities.</li>
 <li><b>Verdict:</b> Test</li>
-<li><b>Your angle:</b> Connects to your job card print automation pipeline, where free-tier vision models process incoming image data. Testing lighter, cheaper endpoints helps optimise API costs and latency in real workflows.</li>
-<li><b>Source:</b> <a href="https://openai.com/index/introducing-gpt-6-2-astra-sol">Introducing GPT-6.2 Astra and Sol (OpenAI)</a></li>
+<li><b>Your angle:</b> Connects to your data engineering placement restructuring product catalogues; memory-efficient streaming prevents production crashes under memory pressure.</li>
+<li><b>Source:</b> <a href="https://simonwillison.net/2026/Nov/18/datasette-arrows/">datasette-arrows 0.1a0 (Simon Willison)</a></li>
+</ul>
+<h3>OpenAI Research on Coding Agents' Jagged Frontier</h3>
+<ul>
+<li><b>What happened:</b> OpenAI released a report showing AI coding agents assist research workflows unevenly across tasks.</li>
+<li><b>Why it matters:</b> Agents excel at bounded, structured tasks but struggle with ambiguity, deep context, and long-horizon verification.</li>
+<li><b>Hype check:</b> Agent utility is jagged and unreliable for tasks requiring nuanced context.</li>
+<li><b>Verdict:</b> Learn</li>
+<li><b>Your angle:</b> Directly relevant to your job card print automation, where you scoped a vision model for structured field extraction instead of brittle end-to-end GUI automation.</li>
+<li><b>Source:</b> <a href="https://openai.com/index/research-acceleration-jagged-frontier">Research acceleration: The jagged frontier (OpenAI)</a></li>
 </ul>
 <h2>Automation Opportunity</h2>
 <ul>
-<li><b>What it is:</b> Automated Docker container health checks for background worker scripts.</li>
-<li><b>Problem it solves:</b> Prevents scheduled Python scripts from hanging silently in production due to network timeouts or rate limits without throwing a hard failure.</li>
-<li><b>Free to try:</b> Yes, completely free to set up using standard Docker commands and lightweight Python HTTP endpoints.</li>
-<li><b>Skill gained:</b> Deepens skills in reliable unattended process management and building resilient background infrastructure.</li>
+<li>Automated schema extraction and data inspection using Datasette and SQLite streaming.</li>
+<li>Solves memory exhaustion when inspecting multi-gigabyte files or irregular legacy business exports.</li>
+<li>Free to try (open-source and runs locally).</li>
+<li>Skill gained: Memory-safe data inspection, streaming workflows, and chunked pipeline handling.</li>
 </ul>
-<h2>Learning Moment: Docker Fundamentals for Python Services</h2>
+<h2>Learning Moment: Continuous Integration and Continuous Deployment with GitHub Actions</h2>
 <ul>
-<li>Docker packages a Python application along with its OS dependencies, packages, and configuration into a single standardized image.</li>
-<li>Running an image creates an isolated container that behaves identically across local environments, team machines, and cloud servers, eliminating deployment discrepancies.</li>
-<li>Continuous integration pipelines automatically build images, run tests inside isolated environments, and push verified containers to cloud registries.</li>
-<li><b>Example:</b> In a FastAPI project, you create a `Dockerfile` declaring a base image (`python:3.11-slim`), set a working directory, copy `requirements.txt`, run `pip install`, copy application code, and specify the `uvicorn` startup command before running `docker build` and `docker run` mapped to port 8000.</li>
+<li>Continuous Integration automatically verifies code on every push via remote configuration.</li>
+<li>Continuous Deployment ships tested code automatically to production environments without manual intervention.</li>
+<li>Enforces code quality, catches regressions early, and separates hobby scripts from production services.</li>
+<li><b>Example:</b> A FastAPI service repository with a YAML workflow in `.github/workflows` that spins up a VM, installs dependencies, and runs `pytest` and linters before allowing pull requests to merge.</li>
 </ul>
 <h2>Career Move</h2>
 <ul>
-<li>Containerise your existing projects (like print automation workflows or Claude2InDesign) by adding clear Docker configurations and a README explaining how to launch the app with a single container command.</li>
-<li>In interviews, explain not just what your automation accomplished, but how you packaged the application, isolated its dependencies, and ensured continuous execution without environment drift.</li>
+<li>Turn Project Jarvis into a production showcase by adding basic `pytest` unit tests for malformed or empty feed state-loading.</li>
+<li>Configure your GitHub Actions workflow to run automated validation tests prior to executing the scheduled daily briefing pipeline.</li>
 </ul>
 <h2>Today's Mission</h2>
-<p>Write a simple Dockerfile for a minimal Python service using a lightweight base image, build the image locally using the Docker command line interface, and verify that the container runs and exits cleanly.</p>
+<p>Set up a minimal GitHub Actions continuous integration workflow locally that checks out code, sets up Python 3.11, and runs pytest.</p>
 <ul>
-<li>☐ Create a lightweight Dockerfile for a minimal Python service using a slim base image</li>
-<li>☐ Build the Docker image locally via the Docker CLI</li>
-<li>☐ Run the container locally and verify that it executes and exits cleanly</li>
+<li>☐ Open your local terminal and create a new directory.</li>
+<li>☐ Write a passing Python test file using `pytest`.</li>
+<li>☐ Create a `.github/workflows` directory containing a minimal YAML workflow file.</li>
+<li>☐ Configure the workflow to check out code, set up Python 3.11, install dependencies, and run `pytest`.</li>
 </ul>
