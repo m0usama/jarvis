@@ -1,58 +1,66 @@
-<h1>Morning Brief: Thursday 19 November 2026</h1>
+<h1>Morning Brief: Friday 20 November 2026</h1>
 <h2>Weather</h2>
 <p>{{WEATHER}}</p>
 <h2>Top Stories</h2>
-<h3>Daniel Stenberg on AI Coding Agents vs. Real Maintenance</h3>
+<h3>Token Fraud Hits Commercial LLM Wrappers</h3>
 <ul>
-<li><b>What happened:</b> Daniel Stenberg observed that while AI agents converted 185k lines of C to 340k lines of Rust, human maintainers merged 300+ commits and resolved 200+ bug fixes in three weeks.</li>
-<li><b>Why it matters:</b> Highlights the gap between autonomous code generation and real production codebase maintenance requiring contextual bug fixing and domain discernment.</li>
-<li><b>Hype check:</b> AI agents are not wholesale replacements for engineering teams.</li>
-<li><b>Verdict:</b> Learn</li>
-<li><b>Your angle:</b> Mirrors your Claude2InDesign work, where the real achievement was QA feedback loops and handling edge cases rather than raw generation.</li>
-<li><b>Source:</b> <a href="https://simonwillison.net/2026/Nov/18/daniel-stenberg/">Quoting Daniel Stenberg (Simon Willison)</a></li>
+<li><b>What happened</b>: Product builder Claire Vo reported that her platform Chat PRD encountered token fraud, where malicious users exploited API access patterns to scrape credentials and drain model usage allocations.</li>
+<li><b>Why it matters</b>: It highlights a critical security concern for any developer shipping commercial LLM wrappers.</li>
+<li><b>Hype check</b>: Real security vulnerability facing production LLM applications.</li>
+<li><b>Verdict</b>: Learn</li>
+<li><b>Your angle</b>: Connects to your experience with API integrations in Project Jarvis and Claude 2 InDesign; validating request signatures and enforcing strict rate limiting on FastAPI endpoints builds defensive backend skills beyond junior levels.</li>
+<li><b>Source</b>: <a href="https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad/">Token fraud is here and it’s BAD (YouTube) (Simon Willison)</a></li>
 </ul>
-<h3>Simon Willison Releases datasette-arrows 0.1a0</h3>
+<h3>Apple Hiring Engineers for OS-Level AI Agent</h3>
 <ul>
-<li><b>What happened:</b> Simon Willison released `datasette-arrows 0.1a0`, enabling streaming exports using Apache Arrow formats.</li>
-<li><b>Why it matters:</b> Allows exporting millions of records on the fly without loading entire datasets into memory.</li>
-<li><b>Hype check:</b> Incremental plugin release building on existing Datasette streaming capabilities.</li>
-<li><b>Verdict:</b> Test</li>
-<li><b>Your angle:</b> Connects to your data engineering placement restructuring product catalogues; memory-efficient streaming prevents production crashes under memory pressure.</li>
-<li><b>Source:</b> <a href="https://simonwillison.net/2026/Nov/18/datasette-arrows/">datasette-arrows 0.1a0 (Simon Willison)</a></li>
+<li><b>What happened</b>: Reports indicate Apple is hiring engineers to build an OS-level AI agent capable of web browsing, cross-app workflows, and code execution on macOS.</li>
+<li><b>Why it matters</b>: Confirms major platform providers are heavily investing in desktop automation and local agent orchestration.</li>
+<li><b>Hype check</b>: High-level platform shift toward local OS automation.</li>
+<li><b>Verdict</b>: Test</li>
+<li><b>Your angle</b>: Aligns with your work on Claude 2 InDesign, proving you can connect language models directly to desktop applications and document software rather than just building web chatbots.</li>
+<li><b>Source</b>: <a href="https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing">Apple is hiring engineers to build its own AI agent (The Verge AI)</a></li>
 </ul>
-<h3>OpenAI Research on Coding Agents' Jagged Frontier</h3>
+<h3>OpenAI Details Performance Factory System</h3>
 <ul>
-<li><b>What happened:</b> OpenAI released a report showing AI coding agents assist research workflows unevenly across tasks.</li>
-<li><b>Why it matters:</b> Agents excel at bounded, structured tasks but struggle with ambiguity, deep context, and long-horizon verification.</li>
-<li><b>Hype check:</b> Agent utility is jagged and unreliable for tasks requiring nuanced context.</li>
-<li><b>Verdict:</b> Learn</li>
-<li><b>Your angle:</b> Directly relevant to your job card print automation, where you scoped a vision model for structured field extraction instead of brittle end-to-end GUI automation.</li>
-<li><b>Source:</b> <a href="https://openai.com/index/research-acceleration-jagged-frontier">Research acceleration: The jagged frontier (OpenAI)</a></li>
+<li><b>What happened</b>: OpenAI published a technical breakdown of its Performance Factory, an automated system using Codex-powered workflows to detect and fix performance bottlenecks in ChatGPT.</li>
+<li><b>Why it matters</b>: Demonstrates how modern engineering teams use automated code agents to maintain continuous system performance rather than just write features.</li>
+<li><b>Hype check</b>: Production engineering infrastructure in active use.</li>
+<li><b>Verdict</b>: Learn</li>
+<li><b>Your angle</b>: Links to your scheduled Python pipelines in Project Jarvis, emphasizing operational monitoring, automated telemetry, and latency measurement skills.</li>
+<li><b>Source</b>: <a href="https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast">How OpenAI’s Performance Factory keeps ChatGPT fast (OpenAI)</a></li>
+</ul>
+<h3>PostgreSQL 19 Released Following Delay</h3>
+<ul>
+<li><b>What happened</b>: PostgreSQL 19 was released after a two-month delay caused by a high volume of AI-generated vulnerability reports that required manual review by core maintainers.</li>
+<li><b>Why it matters</b>: Highlights modern operational challenges of automated security audits alongside core relational database updates.</li>
+<li><b>Hype check</b>: Core infrastructure milestone.</li>
+<li><b>Verdict</b>: Learn</li>
+<li><b>Your angle</b>: Ties to your backend SQL and schema management experience at Redo Print, showing awareness of how foundational databases evolve alongside AI tooling.</li>
+<li><b>Source</b>: <a href="https://simonwillison.net/2026/Nov/19/postgresql-19/">PostgreSQL 19 Released (Simon Willison)</a></li>
 </ul>
 <h2>Automation Opportunity</h2>
 <ul>
-<li>Automated schema extraction and data inspection using Datasette and SQLite streaming.</li>
-<li>Solves memory exhaustion when inspecting multi-gigabyte files or irregular legacy business exports.</li>
-<li>Free to try (open-source and runs locally).</li>
-<li>Skill gained: Memory-safe data inspection, streaming workflows, and chunked pipeline handling.</li>
+<li><b>What it is</b>: Lightweight pipeline orchestration for local automation tasks using open-source Python libraries.</li>
+<li><b>Problem it solves</b>: Prevents silent pipeline failures in data enrichment and document generation when APIs time out or network drops.</li>
+<li><b>Free to try</b>: Yes, using open-source Python libraries and dedicated orchestration patterns.</li>
+<li><b>Skill gained</b>: Workflow engineering, state persistence, error logging, and retry handling.</li>
 </ul>
-<h2>Learning Moment: Continuous Integration and Continuous Deployment with GitHub Actions</h2>
+<h2>Learning Moment: Workflow Orchestration</h2>
 <ul>
-<li>Continuous Integration automatically verifies code on every push via remote configuration.</li>
-<li>Continuous Deployment ships tested code automatically to production environments without manual intervention.</li>
-<li>Enforces code quality, catches regressions early, and separates hobby scripts from production services.</li>
-<li><b>Example:</b> A FastAPI service repository with a YAML workflow in `.github/workflows` that spins up a VM, installs dependencies, and runs `pytest` and linters before allowing pull requests to merge.</li>
+<li>Cron runs commands at fixed intervals; it is lightweight and Unix-native but lacks awareness of task dependencies, execution state, or automatic retries.</li>
+<li>Orchestrators like Prefect or Airflow use Directed Acyclic Graphs (DAGs) to define explicit task dependencies, handle automatic retries with backoff, record state, and provide visibility.</li>
+<li>Mature system design involves knowing when to start with simple schedulers and when to transition complex multi-step workflows to dedicated orchestrators.</li>
+<li><b>Example:</b> In a print automation pipeline, an orchestrator ensures image ingestion completes successfully before vision model extraction runs, handling API retries automatically if a request fails.</li>
 </ul>
 <h2>Career Move</h2>
 <ul>
-<li>Turn Project Jarvis into a production showcase by adding basic `pytest` unit tests for malformed or empty feed state-loading.</li>
-<li>Configure your GitHub Actions workflow to run automated validation tests prior to executing the scheduled daily briefing pipeline.</li>
+<li>Frame your physical job card print automation on your CV and in interviews by highlighting system reliability, failure handling, image validation, and API retry logic.</li>
+<li>Position the project as a production-style unattended automation system rather than a simple script to demonstrate mature software discipline.</li>
 </ul>
 <h2>Today's Mission</h2>
-<p>Set up a minimal GitHub Actions continuous integration workflow locally that checks out code, sets up Python 3.11, and runs pytest.</p>
+<p>Complete a fifteen-minute Python coding exercise to build a state-aware task execution pipeline.</p>
 <ul>
-<li>☐ Open your local terminal and create a new directory.</li>
-<li>☐ Write a passing Python test file using `pytest`.</li>
-<li>☐ Create a `.github/workflows` directory containing a minimal YAML workflow file.</li>
-<li>☐ Configure the workflow to check out code, set up Python 3.11, install dependencies, and run `pytest`.</li>
+<li>☐ Write a Python function that simulates fetching raw data and logs the status and result to a JSON state file.</li>
+<li>☐ Write a second Python function that reads the JSON state file and verifies the prior step status is complete.</li>
+<li>☐ Execute the second step conditionally based on the state file verification.</li>
 </ul>

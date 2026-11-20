@@ -1,18 +1,6 @@
 {
- "curriculum_index": 43,
+ "curriculum_index": 44,
  "seen": [
-  "https://arstechnica.com/security/2026/10/fridge-hack-costing-millions-and-sparking-fires-stemmed-from-poor-security/",
-  "https://simonwillison.net/2026/Oct/14/tree-appreciator/",
-  "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety",
-  "https://github.blog/news-insights/company-news/github-availability-report-september-2026/",
-  "https://github.blog/engineering/architecture-optimization/from-2500-requests-to-24-rebuilding-star-history-without-the-stargazers/",
-  "https://www.theverge.com/ai-artificial-intelligence/1011311/the-ai-race-is-back-on",
-  "https://simonwillison.net/2026/Oct/14/ai-is-mass-decompiling-games/",
-  "https://huggingface.co/blog/allenai/hiro-acev2",
-  "https://arstechnica.com/security/2026/10/anthropic-warns-small-ai-models-could-self-replicate-through-iot-devices/",
-  "https://openai.com/index/amp-beyond-coding",
-  "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
-  "https://techcrunch.com/2026/10/15/when-it-came-to-cal-ais-viral-success-a-small-army-of-influencers-paid-off/",
   "https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs",
   "https://www.theverge.com/games/1012512/sega-total-war-shogun-2-remaster-pulled",
   "https://www.theverge.com/entertainment/1012438/hollywood-tech-backlash-you-can-see-everything-musk-the-social-reckoning-artificial",
@@ -400,10 +388,21 @@
   "https://simonwillison.net/2026/Nov/18/daniel-stenberg/",
   "https://huggingface.co/blog/ibm-research/time-series-powered-streamhouse",
   "https://openai.com/index/the-silent-consensus",
-  "https://openai.com/index/research-acceleration-jagged-frontier"
+  "https://openai.com/index/research-acceleration-jagged-frontier",
+  "https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad/",
+  "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
+  "https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/",
+  "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing",
+  "https://www.theverge.com/ai-artificial-intelligence/1038063/nvidia-stock-market-price-earnings",
+  "https://techcrunch.com/2026/11/19/metas-new-muse-charm-device-may-cost-300/",
+  "https://simonwillison.net/2026/Nov/19/postgresql-19/",
+  "https://arstechnica.com/security/2026/11/man-charged-with-spying-on-silicon-valley-tech-and-defense-company-for-russia/",
+  "https://www.theverge.com/tech/1038087/meta-muse-charm-ai-price",
+  "https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/",
+  "https://arstechnica.com/security/2026/11/how-to-tell-a-cyberattack-from-a-plain-old-outage/",
+  "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast"
  ],
  "missions": [
-  "Write a two-task local Prefect workflow script that passes mock job data and logs execution state.",
   "Write a Python script using in-memory SQLite demonstrating ELT by loading raw JSON into a staging table and transforming it via SQL into a clean reporting table.",
   "Write a Python script using SQLite comparing query plans before and after indexing ten thousand records.",
   "Write a Python SQLite script creating and querying a minimal star schema fact and dimension table set.",
@@ -432,10 +431,10 @@
   "Write a Python script using asyncio and httpx to fetch multiple URL status codes concurrently.",
   "Write a simple Python SQLite backup script",
   "Write and execute a minimal Python Dockerfile build locally.",
-  "Write a minimal GitHub Actions workflow file that sets up Python and executes pytest on push."
+  "Write a minimal GitHub Actions workflow file that sets up Python and executes pytest on push.",
+  "Write a Python script executing a two-step pipeline that validates prior task state via JSON."
  ],
  "opportunities": [
-  "Unified pipeline error alerting with Apprise",
   "Local tabular data profiling with DuckDB",
   "Automated incoming webhook schema validation with Pydantic",
   "Embedded local analytical transformations with DuckDB",
@@ -464,6 +463,7 @@
   "Asynchronous HTTP request orchestration with httpx",
   "Automated SQLite database backup script",
   "Containerized service health check implementation",
-  "Memory-efficient streaming data export pipelines"
+  "Memory-efficient streaming data export pipelines",
+  "Lightweight local workflow state persistence pattern"
  ]
 }

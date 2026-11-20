@@ -1,20 +1,18 @@
-# Sources for 2026-11-19 (full)
+# Sources for 2026-11-20 (full)
 
-Learning concept: CI/CD with GitHub Actions
+Learning concept: Workflow orchestration: cron versus Airflow and Prefect
 
-- [Microsoft CEO Satya Nadella explains why he asked 60K employees to quit](https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/) (TechCrunch AI, 19 Nov 00:42 UTC)
-- [llm-gemini 0.38](https://simonwillison.net/2026/Nov/18/llm-gemini/) (Simon Willison, 18 Nov 23:59 UTC)
-- [Amidst fears of AI cyberattacks, Satya Nadella says lots of critical infrastructure is ‘unpatchable’](https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable/) (TechCrunch AI, 18 Nov 23:45 UTC)
-- [Elon Musk says ousting Jensen Huang is like ‘kicking Michael Jordan off your team’](https://techcrunch.com/2026/11/18/elon-musk-says-ousting-jensen-huang-is-like-kicking-michael-jordan-off-your-team/) (TechCrunch AI, 18 Nov 23:25 UTC)
-- [The nation’s largest school districts consider ditching Google Search](https://www.theverge.com/ai-artificial-intelligence/1037151/school-districts-ditching-google) (The Verge AI, 18 Nov 18:18 UTC)
-- [DaisyRose-27B: Pushing the Frontier of Post-Training Efficiency](https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin) (Hugging Face, 18 Nov 19:54 UTC)
-- [Trump’s latest land grab is an AI hub in the Philippines](https://www.theverge.com/policy/1036749/trump-ai-chip-data-center-us-philippines-pax-silica) (The Verge AI, 18 Nov 14:40 UTC)
-- [Nvidia’s rise, visualized](https://www.theverge.com/tech/1035924/nvidia-visualized-revenue-profit-earnings-after-huang) (The Verge AI, 18 Nov 14:30 UTC)
-- [Why your fine-tuning job takes longer than the FLOPs say](https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time) (Hugging Face, 18 Nov 18:53 UTC)
-- [datasette-arrows 0.1a0](https://simonwillison.net/2026/Nov/18/datasette-arrows/) (Simon Willison, 18 Nov 17:09 UTC)
-- [Quoting Daniel Stenberg](https://simonwillison.net/2026/Nov/18/daniel-stenberg/) (Simon Willison, 18 Nov 15:58 UTC)
-- [Time-Series Models in the Streamhouse: A New Frontier and Use Cases](https://huggingface.co/blog/ibm-research/time-series-powered-streamhouse) (Hugging Face, 18 Nov 15:00 UTC)
-- [The Silent Consensus](https://openai.com/index/the-silent-consensus) (OpenAI, 18 Nov 10:00 UTC)
-- [Research acceleration: The jagged frontier](https://openai.com/index/research-acceleration-jagged-frontier) (OpenAI, 18 Nov 08:00 UTC)
+- [Token fraud is here and it’s BAD (YouTube)](https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad/) (Simon Willison, 20 Nov 02:49 UTC)
+- [Apple may be developing its own AI agent that runs your Mac](https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/) (TechCrunch AI, 20 Nov 00:56 UTC)
+- [Anthropic’s 7 founders cashed out nearly $2B in record-breaking IPO](https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/) (TechCrunch AI, 20 Nov 00:43 UTC)
+- [Apple is hiring engineers to build its own AI agent](https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing) (The Verge AI, 19 Nov 17:31 UTC)
+- [A brief history of Nvidia’s recent stock fluctuations](https://www.theverge.com/ai-artificial-intelligence/1038063/nvidia-stock-market-price-earnings) (The Verge AI, 19 Nov 16:59 UTC)
+- [Meta’s new Muse Charm device may cost $300](https://techcrunch.com/2026/11/19/metas-new-muse-charm-device-may-cost-300/) (TechCrunch AI, 19 Nov 21:58 UTC)
+- [PostgreSQL 19 Released](https://simonwillison.net/2026/Nov/19/postgresql-19/) (Simon Willison, 19 Nov 20:43 UTC)
+- [Man hired by Russia spied on Silicon Valley tech and defense company, feds say](https://arstechnica.com/security/2026/11/man-charged-with-spying-on-silicon-valley-tech-and-defense-company-for-russia/) (Ars Technica, 19 Nov 20:29 UTC)
+- [Meta’s Muse Charm might cost $300](https://www.theverge.com/tech/1038087/meta-muse-charm-ai-price) (The Verge AI, 19 Nov 15:22 UTC)
+- [The best things in open source are built together](https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/) (GitHub Blog, 19 Nov 16:00 UTC)
+- [How to tell a cyberattack from a plain old outage](https://arstechnica.com/security/2026/11/how-to-tell-a-cyberattack-from-a-plain-old-outage/) (Ars Technica, 19 Nov 11:13 UTC)
+- [How OpenAI’s Performance Factory keeps ChatGPT fast](https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast) (OpenAI, 19 Nov 08:00 UTC)
 
 Feeds that failed: Google DeepMind
