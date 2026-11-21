@@ -1,18 +1,16 @@
-# Sources for 2026-11-20 (full)
+# Sources for 2026-11-21 (full)
 
-Learning concept: Workflow orchestration: cron versus Airflow and Prefect
+Learning concept: Data pipelines: ETL versus ELT
 
-- [Token fraud is here and it’s BAD (YouTube)](https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad/) (Simon Willison, 20 Nov 02:49 UTC)
-- [Apple may be developing its own AI agent that runs your Mac](https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/) (TechCrunch AI, 20 Nov 00:56 UTC)
-- [Anthropic’s 7 founders cashed out nearly $2B in record-breaking IPO](https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/) (TechCrunch AI, 20 Nov 00:43 UTC)
-- [Apple is hiring engineers to build its own AI agent](https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing) (The Verge AI, 19 Nov 17:31 UTC)
-- [A brief history of Nvidia’s recent stock fluctuations](https://www.theverge.com/ai-artificial-intelligence/1038063/nvidia-stock-market-price-earnings) (The Verge AI, 19 Nov 16:59 UTC)
-- [Meta’s new Muse Charm device may cost $300](https://techcrunch.com/2026/11/19/metas-new-muse-charm-device-may-cost-300/) (TechCrunch AI, 19 Nov 21:58 UTC)
-- [PostgreSQL 19 Released](https://simonwillison.net/2026/Nov/19/postgresql-19/) (Simon Willison, 19 Nov 20:43 UTC)
-- [Man hired by Russia spied on Silicon Valley tech and defense company, feds say](https://arstechnica.com/security/2026/11/man-charged-with-spying-on-silicon-valley-tech-and-defense-company-for-russia/) (Ars Technica, 19 Nov 20:29 UTC)
-- [Meta’s Muse Charm might cost $300](https://www.theverge.com/tech/1038087/meta-muse-charm-ai-price) (The Verge AI, 19 Nov 15:22 UTC)
-- [The best things in open source are built together](https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/) (GitHub Blog, 19 Nov 16:00 UTC)
-- [How to tell a cyberattack from a plain old outage](https://arstechnica.com/security/2026/11/how-to-tell-a-cyberattack-from-a-plain-old-outage/) (Ars Technica, 19 Nov 11:13 UTC)
-- [How OpenAI’s Performance Factory keeps ChatGPT fast](https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast) (OpenAI, 19 Nov 08:00 UTC)
+- [Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced.](https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/) (Ars Technica, 20 Nov 20:59 UTC)
+- [Daniel Ek backs AI researcher’s fusion power startup. Here’s what they’re building.](https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building/) (TechCrunch AI, 20 Nov 19:53 UTC)
+- [AI claimed a solution to the 167-year-old Riemann hypothesis — and a human did, too](https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/) (TechCrunch AI, 20 Nov 19:32 UTC)
+- [Quoting Ravi Vakil](https://simonwillison.net/2026/Nov/20/ravi-vakil/) (Simon Willison, 20 Nov 19:21 UTC)
+- [Trump threatens ‘tremendous tax’ for moving AI data centers outside the US](https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax) (The Verge AI, 20 Nov 13:50 UTC)
+- [Chips can survive the space environment — can their financing?](https://techcrunch.com/2026/11/20/chips-can-survive-the-space-environment-can-their-financing/) (TechCrunch AI, 20 Nov 17:40 UTC)
+- [Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude](https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem) (The Verge AI, 20 Nov 11:34 UTC)
+- [Quoting Levent Alpöge](https://simonwillison.net/2026/Nov/20/levent-alpoge/) (Simon Willison, 20 Nov 16:30 UTC)
+- [The week everything fell apart](https://www.theverge.com/podcast/1038419/outage-outlook-ground-stop-tech-failure-vergecast) (The Verge AI, 20 Nov 09:06 UTC)
+- [Combatting adversarial distillation](https://openai.com/index/combatting-adversarial-distillation) (OpenAI, 20 Nov 10:00 UTC)
 
 Feeds that failed: Google DeepMind
