@@ -1,13 +1,6 @@
 {
- "curriculum_index": 45,
+ "curriculum_index": 46,
  "seen": [
-  "https://github.blog/engineering/platform-security/staying-evergreen-how-we-automated-secure-access-and-repo-hygiene-in-a-shared-org/",
-  "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
-  "https://simonwillison.net/2026/Oct/16/code-review/",
-  "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/",
-  "https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/",
-  "https://openai.com/index/itau-generative-ai",
-  "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
   "https://techcrunch.com/video/a-nvidia-insider-turned-vc-on-why-robotics-hasnt-hit-its-chatgpt-moment-yet/",
   "https://www.theverge.com/tech/1012748/nvidia-rtx-spark-windows-arm-laptops-asus-hp-lenovo-impressions",
   "https://www.theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers",
@@ -400,10 +393,16 @@
   "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem",
   "https://simonwillison.net/2026/Nov/20/levent-alpoge/",
   "https://www.theverge.com/podcast/1038419/outage-outlook-ground-stop-tech-failure-vergecast",
-  "https://openai.com/index/combatting-adversarial-distillation"
+  "https://openai.com/index/combatting-adversarial-distillation",
+  "https://simonwillison.net/2026/Nov/21/muru/",
+  "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+  "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/",
+  "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
+  "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/",
+  "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
+  "https://www.theverge.com/games/1038099/chess-classic-games-expansion-ai"
  ],
  "missions": [
-  "Write a Python script using SQLite comparing query plans before and after indexing ten thousand records.",
   "Write a Python SQLite script creating and querying a minimal star schema fact and dimension table set.",
   "Write a FastAPI script demonstrating header authentication dependencies alongside non-blocking background task execution tested with TestClient.",
   "Write a short Python script implementing a basic SQLite-backed task queue.",
@@ -432,10 +431,10 @@
   "Write and execute a minimal Python Dockerfile build locally.",
   "Write a minimal GitHub Actions workflow file that sets up Python and executes pytest on push.",
   "Write a Python script executing a two-step pipeline that validates prior task state via JSON.",
-  "Write a Python script to create and query a local SQLite print job database."
+  "Write a Python script to create and query a local SQLite print job database.",
+  "Write a Python script using SQLite to run EXPLAIN QUERY PLAN on synthetic data before and after creating an index."
  ],
  "opportunities": [
-  "Automated incoming webhook schema validation with Pydantic",
   "Embedded local analytical transformations with DuckDB",
   "Local layout extraction using PyMuPDF engine",
   "SQLite-backed task queues for reliability",
@@ -464,6 +463,7 @@
   "Containerized service health check implementation",
   "Memory-efficient streaming data export pipelines",
   "Lightweight local workflow state persistence pattern",
-  "Local SQLite audit logging middleware for FastAPI"
+  "Local SQLite audit logging middleware for FastAPI",
+  "Diagnostic database query plan analysis"
  ]
 }

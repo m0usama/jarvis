@@ -1,63 +1,59 @@
-<h1>Morning Brief: Saturday 21 November 2026</h1>
+<h1>Morning Brief: Sunday 22 November 2026</h1>
 <h2>Weather</h2>
 <p>{{WEATHER}}</p>
 <h2>Top Stories</h2>
-<h3>AI Supply Chain Privacy Disaster Surfaced</h3>
+<h3>Muru Web Server Introduced</h3>
 <ul>
-<li><b>What happened:</b> A researcher planted two million canaries into the AI supply chain to track unique secrets, proving that training and pipeline data does not stay private.</li>
-<li><b>Why it matters:</b> It exposes critical data governance and privacy risks within model pipelines.</li>
-<li><b>Hype check:</b> This is a real development with real data governance implications rather than marketing hype.</li>
-<li><b>Verdict:</b> Test</li>
-<li><b>Your angle:</b> Relevant to your work on B2B trade data and product catalogues; helps you build skills in data sanitisation and leakage prevention to build secure enterprise pipelines.</li>
-<li><b>Source:</b> <a href="https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/">Ars Technica</a></li>
+<li><b>What happened</b>: Developer Graham Dumpleton announced Muru, a high-performance Rust-based web server designed to run ASGI and WSGI Python applications in production with minimal configuration.</li>
+<li><b>Why it matters</b>: It addresses fundamental performance bottlenecks in Python web services and modernization of application runtimes.</li>
+<li><b>Hype check</b>: Technical development worth watching.</li>
+<li><b>Verdict</b>: learn</li>
+<li><b>Your angle</b>: Connects to your work building web backends with FastAPI; understanding ASGI application server internals aids deployment engineering and sets you apart from junior candidates.</li>
+<li><b>Source</b>: <a href="https://simonwillison.net/2026/Nov/21/muru/">Muru (Simon Willison)</a></li>
 </ul>
-<h3>Anthropic Mathematician Claims AI-Assisted Riemann Solution</h3>
+<h3>Rise of SMS and Messaging AI Agents</h3>
 <ul>
-<li><b>What happened:</b> Anthropic mathematician Levent Alpöge claimed to solve the 167-year-old Riemann hypothesis with the help of Claude, while human-led proofs are also being examined.</li>
-<li><b>Why it matters:</b> Demonstrates an intriguing application of AI in advanced mathematical research, though verification is ongoing.</li>
-<li><b>Hype check:</b> Significant claim, but verification is still ongoing.</li>
-<li><b>Verdict:</b> Ignore</li>
-<li><b>Your angle:</b> No direct link to your print automation or FastAPI projects.</li>
-<li><b>Source:</b> <a href="https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem">The Verge AI</a></li>
+<li><b>What happened</b>: AI agents built into text messaging channels (SMS/DM protocols) are emerging for work, travel, and personal workflows.</li>
+<li><b>Why it matters</b>: Removes friction for non-technical users by delivering AI interactions over standard messaging interfaces.</li>
+<li><b>Hype check</b>: Practical application rather than speculative hype.</li>
+<li><b>Verdict</b>: test</li>
+<li><b>Your angle</b>: Connects to your experience building physical-world business automations and webhook pipelines, specifically managing asynchronous webhooks and persistent state across stateless APIs.</li>
+<li><b>Source</b>: <a href="https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/">Here are the top AI agents that can live in your text messages</a></li>
 </ul>
-<h3>OpenAI Details Strategy Against Adversarial Distillation</h3>
+<h3>Chess.com Expands into Classic Games</h3>
 <ul>
-<li><b>What happened:</b> OpenAI released details on combining model training, safeguards, detection, and enforcement to prevent capability extraction.</li>
-<li><b>Why it matters:</b> Substantive security progress for protecting proprietary models against extraction.</li>
-<li><b>Hype check:</b> Real engineering and security development for LLM deployment.</li>
-<li><b>Verdict:</b> Learn</li>
-<li><b>Your angle:</b> Connects to your AI engineering track around LLM application deployment and monitoring.</li>
-<li><b>Source:</b> <a href="https://openai.com/index/combatting-adversarial-distillation">OpenAI</a></li>
-</ul>
-<h3>US Proposes Taxes on Foreign AI Data Centers</h3>
-<ul>
-<li><b>What happened:</b> Political threats were made regarding a "tremendous tax" on moving AI data centers outside the United States.</li>
-<li><b>Why it matters:</b> Represents ongoing policy posturing alongside global tech infrastructure constraints.</li>
-<li><b>Hype check:</b> Political posturing mixed with policy uncertainty.</li>
-<li><b>Verdict:</b> Ignore</li>
-<li><b>Your angle:</b> No impact on your daily coding work, local pipeline design, or automation tooling.</li>
-<li><b>Source:</b> <a href="https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax">The Verge AI</a></li>
+<li><b>What happened</b>: Chess.com is expanding into a hub for classic games like mahjong, backgammon, and sudoku.</li>
+<li><b>Why it matters</b>: Broadens platform engagement following their launch of a non-gambling poker platform.</li>
+<li><b>Hype check</b>: Commercial platform strategy rather than core technical development.</li>
+<li><b>Verdict</b>: ignore</li>
+<li><b>Your angle</b>: Not applicable; can be safely ignored for daily engineering targets.</li>
+<li><b>Source</b>: <a href="https://www.theverge.com/games/1038099/chess-classic-games-expansion-ai">Chess.com’s next move is a new hub for classic games, from mahjong to sudoku</a></li>
 </ul>
 <h2>Automation Opportunity</h2>
 <ul>
-<li><b>What it is:</b> A local SQLite audit logging middleware for FastAPI applications and webhook handlers.</li>
-<li><b>Problem it solves:</b> Prevents silent failures in asynchronous workflows by capturing payload, processing time, and error states without heavy infrastructure.</li>
-<li><b>Free to try:</b> Yes, entirely free to build using the Python standard library.</li>
-<li><b>Skill gained:</b> Backend engineering and API design skills.</li>
+<li><b>What it is</b>: Database performance diagnostics using SQLite `EXPLAIN QUERY PLAN` commands integrated into Python data ingestion scripts.</li>
+<li><b>Problem it solves</b>: Unindexed database queries causing major workflow slowdowns and production delays during heavy pipeline execution.</li>
+<li><b>Free to try</b>: Yes, relies entirely on standard Python libraries and zero paid tools.</li>
+<li><b>Skill gained</b>: Data pipeline engineering and automated system monitoring.</li>
 </ul>
-<h2>Learning Moment: ETL vs. ELT Data Pipelines</h2>
+<h2>Learning Moment: SQL indexing and query plans</h2>
 <ul>
-<li><b>Key ideas:</b> ETL (Extract, Transform, Load) transforms data in a staging area before loading it into the target database. ELT (Extract, Load, Transform) loads raw data directly into the target system first, running transformations inside the database using native SQL. Modern engineering favors ELT to retain raw historical data and leverage database compute capabilities.</li>
-<li><b>Example:</b> Ingesting product catalogue listings by doing heavy pandas processing in memory before saving is ETL, whereas dumping raw CSV files directly into SQLite and running SQL queries to clean them is ELT.</li>
+<li>Databases use full table scans (linear time) without indexes, or B-tree indexes (logarithmic time) to quickly find records.</li>
+<li>Indexes speed up reads but add disk overhead and slightly slow down writes/updates.</li>
+<li>Query plans reveal backend bottlenecks in APIs and ETL pipelines.</li>
+<li><b>Example:</b> Running `EXPLAIN QUERY PLAN` on an unindexed customer query over 100,000 records shows `SCAN TABLE`, but after running `CREATE INDEX` on the customer ID column, it shows `SEARCH TABLE USING INDEX`, returning results in a fraction of a millisecond.</li>
 </ul>
 <h2>Career Move</h2>
 <ul>
-<li>Frame your Claude2InDesign portfolio project around architectural ownership rather than simple automation: detail how you replaced a manual SVG-to-Illustrator workflow with native InDesign output (featuring named styles, packaged fonts, and multi-page output) and built automated QA feedback loops.</li>
+<li>Highlight database optimization in your portfolio by detailing how primary keys, foreign keys, and indexes support specific operational access patterns.</li>
+<li>Quantify query performance before and after adding targeted indexes to present a concrete story for backend and data engineering interviews.</li>
 </ul>
 <h2>Today's Mission</h2>
-<p>Write a short Python script that creates a local SQLite database, inserts a sample record representing a print job status update, and queries it back using parameterized SQL to prevent injection.</p>
+<p>Inspect query execution plans directly in Python using standard SQLite to observe the performance transition from table scans to index searches.</p>
 <ul>
-<li>☐ Create a local SQLite database using Python.</li>
-<li>☐ Insert a sample record representing a print job status update.</li>
-<li>☐ Query the record back using parameterized SQL.</li>
+<li>☐ Write a Python script that creates an in-memory SQLite database.</li>
+<li>☐ Populate a table with 10,000 synthetic print job records including customer ID and job status.</li>
+<li>☐ Execute `EXPLAIN QUERY PLAN` on a query filtering by customer ID before adding an index, and print the resulting plan string.</li>
+<li>☐ Create an index on the customer ID column.</li>
+<li>☐ Execute `EXPLAIN QUERY PLAN` again and print the updated plan to confirm the transition from `SCAN TABLE` to `SEARCH TABLE USING INDEX`.</li>
 </ul>
