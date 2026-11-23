@@ -1,11 +1,11 @@
-# Sources for 2026-11-22 (full)
+# Sources for 2026-11-23 (basic)
 
-Learning concept: SQL indexing and query plans
+Learning concept: Data modelling: star schemas and dbt
 
-- [Muru](https://simonwillison.net/2026/Nov/21/muru/) (Simon Willison, 21 Nov 23:56 UTC)
-- [Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance](https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/) (TechCrunch AI, 21 Nov 21:37 UTC)
-- [A tale of two Nvidias](https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/) (TechCrunch AI, 21 Nov 21:07 UTC)
-- [The UN fails to agree on rules regulating ‘killer robots’](https://www.theverge.com/tech/1039554/un-regulations-killer-robots) (The Verge AI, 21 Nov 15:03 UTC)
-- [Here are the top AI agents that can live in your text messages](https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/) (TechCrunch AI, 21 Nov 17:00 UTC)
-- [Can Anthropic afford to put safety first?](https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure) (The Verge AI, 21 Nov 10:00 UTC)
-- [Chess.com’s next move is a new hub for classic games, from mahjong to sudoku](https://www.theverge.com/games/1038099/chess-classic-games-expansion-ai) (The Verge AI, 21 Nov 09:00 UTC)
+- [How Notable Capital, GIC, and Baillie Gifford bet big on Anthropic before its IPO](https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/) (TechCrunch AI, 23 Nov 01:25 UTC)
+- [We haven’t seen the last of the major tech outages](https://www.theverge.com/tech/1039851/major-tech-outages) (The Verge AI, 22 Nov 17:48 UTC)
+- [OpenAI’s chief scientist has thoughts on how to limit AI development](https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/) (TechCrunch AI, 22 Nov 21:14 UTC)
+- [Select Styling Specimens](https://simonwillison.net/2026/Nov/22/select-styling/) (Simon Willison, 22 Nov 19:45 UTC)
+- [Why data centers are at the center of the Big Tech backlash](https://techcrunch.com/2026/11/22/why-data-centers-are-at-the-center-of-the-big-tech-backlash/) (TechCrunch AI, 22 Nov 18:08 UTC)
+- [Binding of Isaac developer removes AI music from Repentance Plus](https://www.theverge.com/games/1039770/binding-of-isaac-ai-music) (The Verge AI, 22 Nov 12:25 UTC)
+- [The vibe-coding revolution is coming to all the gadgets](https://www.theverge.com/column/1039139/vibe-coding-gadgets-tv-camera) (The Verge AI, 22 Nov 08:00 UTC)

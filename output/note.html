@@ -1,59 +1,14 @@
-<h1>Morning Brief: Sunday 22 November 2026</h1>
+<h1>Morning Brief: Monday 23 November 2026</h1>
 <h2>Weather</h2>
 <p>{{WEATHER}}</p>
-<h2>Top Stories</h2>
-<h3>Muru Web Server Introduced</h3>
+<h2>Headlines (the last 24 hours)</h2>
+<p>The full briefing could not be generated today.</p>
 <ul>
-<li><b>What happened</b>: Developer Graham Dumpleton announced Muru, a high-performance Rust-based web server designed to run ASGI and WSGI Python applications in production with minimal configuration.</li>
-<li><b>Why it matters</b>: It addresses fundamental performance bottlenecks in Python web services and modernization of application runtimes.</li>
-<li><b>Hype check</b>: Technical development worth watching.</li>
-<li><b>Verdict</b>: learn</li>
-<li><b>Your angle</b>: Connects to your work building web backends with FastAPI; understanding ASGI application server internals aids deployment engineering and sets you apart from junior candidates.</li>
-<li><b>Source</b>: <a href="https://simonwillison.net/2026/Nov/21/muru/">Muru (Simon Willison)</a></li>
-</ul>
-<h3>Rise of SMS and Messaging AI Agents</h3>
-<ul>
-<li><b>What happened</b>: AI agents built into text messaging channels (SMS/DM protocols) are emerging for work, travel, and personal workflows.</li>
-<li><b>Why it matters</b>: Removes friction for non-technical users by delivering AI interactions over standard messaging interfaces.</li>
-<li><b>Hype check</b>: Practical application rather than speculative hype.</li>
-<li><b>Verdict</b>: test</li>
-<li><b>Your angle</b>: Connects to your experience building physical-world business automations and webhook pipelines, specifically managing asynchronous webhooks and persistent state across stateless APIs.</li>
-<li><b>Source</b>: <a href="https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/">Here are the top AI agents that can live in your text messages</a></li>
-</ul>
-<h3>Chess.com Expands into Classic Games</h3>
-<ul>
-<li><b>What happened</b>: Chess.com is expanding into a hub for classic games like mahjong, backgammon, and sudoku.</li>
-<li><b>Why it matters</b>: Broadens platform engagement following their launch of a non-gambling poker platform.</li>
-<li><b>Hype check</b>: Commercial platform strategy rather than core technical development.</li>
-<li><b>Verdict</b>: ignore</li>
-<li><b>Your angle</b>: Not applicable; can be safely ignored for daily engineering targets.</li>
-<li><b>Source</b>: <a href="https://www.theverge.com/games/1038099/chess-classic-games-expansion-ai">Chess.com’s next move is a new hub for classic games, from mahjong to sudoku</a></li>
-</ul>
-<h2>Automation Opportunity</h2>
-<ul>
-<li><b>What it is</b>: Database performance diagnostics using SQLite `EXPLAIN QUERY PLAN` commands integrated into Python data ingestion scripts.</li>
-<li><b>Problem it solves</b>: Unindexed database queries causing major workflow slowdowns and production delays during heavy pipeline execution.</li>
-<li><b>Free to try</b>: Yes, relies entirely on standard Python libraries and zero paid tools.</li>
-<li><b>Skill gained</b>: Data pipeline engineering and automated system monitoring.</li>
-</ul>
-<h2>Learning Moment: SQL indexing and query plans</h2>
-<ul>
-<li>Databases use full table scans (linear time) without indexes, or B-tree indexes (logarithmic time) to quickly find records.</li>
-<li>Indexes speed up reads but add disk overhead and slightly slow down writes/updates.</li>
-<li>Query plans reveal backend bottlenecks in APIs and ETL pipelines.</li>
-<li><b>Example:</b> Running `EXPLAIN QUERY PLAN` on an unindexed customer query over 100,000 records shows `SCAN TABLE`, but after running `CREATE INDEX` on the customer ID column, it shows `SEARCH TABLE USING INDEX`, returning results in a fraction of a millisecond.</li>
-</ul>
-<h2>Career Move</h2>
-<ul>
-<li>Highlight database optimization in your portfolio by detailing how primary keys, foreign keys, and indexes support specific operational access patterns.</li>
-<li>Quantify query performance before and after adding targeted indexes to present a concrete story for backend and data engineering interviews.</li>
-</ul>
-<h2>Today's Mission</h2>
-<p>Inspect query execution plans directly in Python using standard SQLite to observe the performance transition from table scans to index searches.</p>
-<ul>
-<li>☐ Write a Python script that creates an in-memory SQLite database.</li>
-<li>☐ Populate a table with 10,000 synthetic print job records including customer ID and job status.</li>
-<li>☐ Execute `EXPLAIN QUERY PLAN` on a query filtering by customer ID before adding an index, and print the resulting plan string.</li>
-<li>☐ Create an index on the customer ID column.</li>
-<li>☐ Execute `EXPLAIN QUERY PLAN` again and print the updated plan to confirm the transition from `SCAN TABLE` to `SEARCH TABLE USING INDEX`.</li>
+<li><b>TechCrunch AI:</b> <a href="https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/">How Notable Capital, GIC, and Baillie Gifford bet big on Anthropic before its IPO</a></li>
+<li><b>The Verge AI:</b> <a href="https://www.theverge.com/tech/1039851/major-tech-outages">We haven’t seen the last of the major tech outages</a></li>
+<li><b>TechCrunch AI:</b> <a href="https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/">OpenAI’s chief scientist has thoughts on how to limit AI development</a></li>
+<li><b>Simon Willison:</b> <a href="https://simonwillison.net/2026/Nov/22/select-styling/">Select Styling Specimens</a></li>
+<li><b>TechCrunch AI:</b> <a href="https://techcrunch.com/2026/11/22/why-data-centers-are-at-the-center-of-the-big-tech-backlash/">Why data centers are at the center of the Big Tech backlash</a></li>
+<li><b>The Verge AI:</b> <a href="https://www.theverge.com/games/1039770/binding-of-isaac-ai-music">Binding of Isaac developer removes AI music from Repentance Plus</a></li>
+<li><b>The Verge AI:</b> <a href="https://www.theverge.com/column/1039139/vibe-coding-gadgets-tv-camera">The vibe-coding revolution is coming to all the gadgets</a></li>
 </ul>
