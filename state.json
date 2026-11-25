@@ -1,20 +1,6 @@
 {
- "curriculum_index": 48,
+ "curriculum_index": 49,
  "seen": [
-  "https://arstechnica.com/security/2026/10/recently-fixed-plex-media-vulnerabilities-are-being-exploited-to-install-malware/",
-  "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code/",
-  "https://arstechnica.com/information-technology/2026/10/reactos-reaches-major-milestone-with-ntfs-install-support/",
-  "https://www.theverge.com/podcast/1012839/pritzker-ai-privacy-data-centers-flock-congress-laws",
-  "https://openai.com/index/low-resource-programming-languages",
-  "https://arstechnica.com/security/2026/10/php-maintainers-tell-web-devs-to-prepare-themselves-for-critical-security-patches/",
-  "https://simonwillison.net/2026/Oct/20/emudhra-certificates/",
-  "https://www.theverge.com/ai-artificial-intelligence/1014976/sam-altman-ann-altman-lawsuit-dismissed",
-  "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/",
-  "https://techcrunch.com/2026/10/20/hugging-face-ceo-warns-that-netflixs-openai-hack-documentary-isnt-accurate/",
-  "https://www.theverge.com/tech/1014999/google-gemini-ai-cars-android-auto",
-  "https://techcrunch.com/2026/10/20/anthropics-cloud-partnerships-are-getting-messy/",
-  "https://arstechnica.com/security/2026/10/the-internet-goes-on-high-alert-after-discovery-of-8-compromised-tls-certs/",
-  "https://simonwillison.net/2026/Oct/20/battledrones/",
   "https://huggingface.co/blog/nvidia/cosmos3-h-dreams",
   "https://www.theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats",
   "https://huggingface.co/blog/allenai/fairstress",
@@ -400,10 +386,23 @@
   "https://huggingface.co/blog/allenai/robotrack",
   "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
   "https://openai.com/business/learn/connected-intelligence-for-in-house-legal",
-  "https://openai.com/business/customer-stories/richpanel-ai-customer-support"
+  "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
+  "https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga",
+  "https://techcrunch.com/2026/11/24/yales-sonnenfeld-nvidia-is-a-detriment-to-u-s-industrial-might-not-a-champion/",
+  "https://simonwillison.net/2026/Nov/24/llm-inflection-points/",
+  "https://techcrunch.com/2026/11/24/jensen-huang-still-thinks-a-succession-plan-creates-unnecessary-hierarchy/",
+  "https://techcrunch.com/2026/11/24/in-all-hands-meeting-jensen-huang-thanks-white-house-and-says-hes-in-therapy/",
+  "https://www.theverge.com/tech/1041571/jensen-huang-all-hands-nvidia-apology",
+  "https://www.theverge.com/entertainment/1041417/david-fincher-netflix-cliff-booth-ai-interpositive",
+  "https://www.theverge.com/entertainment/1041362/tidal-ai-music-ban",
+  "https://simonwillison.net/2026/Nov/24/astra-historical-mystery/",
+  "https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance",
+  "https://github.blog/news-insights/company-news/these-are-the-gifts-developers-will-actually-want/",
+  "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+  "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/",
+  "https://openai.com/index/searching-for-distant-planets-with-astra"
  ],
  "missions": [
-  "Write a short Python script implementing a basic SQLite-backed task queue.",
   "Create a clean environment variable template and verify git tracking excludes local credential files.",
   "Write a Python script logging structured JSON trace metrics for a simulated model call to a local log file.",
   "Write a Python script using functools lru_cache to demonstrate token estimation and query deduplication for cost control.",
@@ -432,10 +431,10 @@
   "Write a Python script to create and query a local SQLite print job database.",
   "Write a Python script using SQLite to run EXPLAIN QUERY PLAN on synthetic data before and after creating an index.",
   "Write a Python script transforming raw order data into a structured schema",
-  "Write a FastAPI app with custom dependency verification and background request logging."
+  "Write a FastAPI app with custom dependency verification and background request logging.",
+  "Write a Python queue script simulating event-driven print job processing in a background thread."
  ],
  "opportunities": [
-  "SQLite-backed task queues for reliability",
   "Headless web execution for data pipelines",
   "Structured OpenTelemetry tracing for model workflows",
   "Local API validation caching with cachetools",
@@ -464,6 +463,7 @@
   "Local SQLite audit logging middleware for FastAPI",
   "Diagnostic database query plan analysis",
   "Modular data transformation with dbt and schemas",
-  "FastAPI Production Dependency and Background Task"
+  "FastAPI Production Dependency and Background Task",
+  "Asynchronous background worker queue with Redis"
  ]
 }
