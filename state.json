@@ -1,20 +1,6 @@
 {
- "curriculum_index": 49,
+ "curriculum_index": 50,
  "seen": [
-  "https://huggingface.co/blog/nvidia/cosmos3-h-dreams",
-  "https://www.theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats",
-  "https://huggingface.co/blog/allenai/fairstress",
-  "https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/",
-  "https://huggingface.co/blog/ibm-research/altk-evolve-bc",
-  "https://techcrunch.com/2026/10/21/blackstones-jas-khaira-says-fears-over-ai-buildout-debt-are-overblown/",
-  "https://www.theverge.com/ai-artificial-intelligence/1015958/data-center-pollution-rising-report",
-  "https://arstechnica.com/information-technology/2026/10/survey-enterprises-waste-28-percent-of-software-budgets-on-unwanted-upgrades/",
-  "https://www.theverge.com/tech/1015799/meta-shares-class-ai-q3-2026-earnings",
-  "https://techcrunch.com/2026/10/21/techcrunch-founder-summit-2026-everything-you-need-to-know/",
-  "https://techcrunch.com/2026/10/21/meta-says-muse-has-over-10m-users-with-shopping-a-top-activity/",
-  "https://openai.com/index/broad-access-through-consistent-standards",
-  "https://www.theverge.com/ai-artificial-intelligence/1015843/anthropic-claude-duet-ai-agent",
-  "https://simonwillison.net/2026/Oct/21/php-security-release/",
   "https://huggingface.co/blog/nvidia/kumo-relational",
   "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
   "https://openai.com/index/att-legal",
@@ -400,10 +386,23 @@
   "https://github.blog/news-insights/company-news/these-are-the-gifts-developers-will-actually-want/",
   "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
   "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/",
-  "https://openai.com/index/searching-for-distant-planets-with-astra"
+  "https://openai.com/index/searching-for-distant-planets-with-astra",
+  "https://www.theverge.com/policy/1042620/character-ai-sale-state-ags-block-selling-users-chats",
+  "https://simonwillison.net/2026/Nov/26/sqlite3-rsync/",
+  "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
+  "https://simonwillison.net/2026/Nov/25/scott-aaronson/",
+  "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
+  "https://www.theverge.com/entertainment/1042221/google-my-channel-ai-video-patent",
+  "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
+  "https://techcrunch.com/2026/11/25/jensen-huang-broke-nvidias-code-of-conduct-and-his-employees-may-not-forget-it/",
+  "https://huggingface.co/blog/allenai/where-scientists-draw-the-line-on-ai-agents",
+  "https://arstechnica.com/information-technology/2026/11/backblaze-explains-why-its-sharing-customer-information-with-advertisers/",
+  "https://simonwillison.net/2026/Nov/25/datasette-charts/",
+  "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
+  "https://github.blog/news-insights/company-news/art-of-play-in-the-age-of-ai/",
+  "https://github.blog/ai-and-ml/github-copilot/how-to-choose-the-next-safe-step-in-application-modernization/"
  ],
  "missions": [
-  "Create a clean environment variable template and verify git tracking excludes local credential files.",
   "Write a Python script logging structured JSON trace metrics for a simulated model call to a local log file.",
   "Write a Python script using functools lru_cache to demonstrate token estimation and query deduplication for cost control.",
   "Write a Python script using urllib that sends a completion heartbeat ping to an external endpoint wrapped in error logging.",
@@ -432,10 +431,10 @@
   "Write a Python script using SQLite to run EXPLAIN QUERY PLAN on synthetic data before and after creating an index.",
   "Write a Python script transforming raw order data into a structured schema",
   "Write a FastAPI app with custom dependency verification and background request logging.",
-  "Write a Python queue script simulating event-driven print job processing in a background thread."
+  "Write a Python queue script simulating event-driven print job processing in a background thread.",
+  "Write a Python script that securely loads configuration via environment variables with validation."
  ],
  "opportunities": [
-  "Headless web execution for data pipelines",
   "Structured OpenTelemetry tracing for model workflows",
   "Local API validation caching with cachetools",
   "Automated scheduled pipeline health check monitoring",
@@ -464,6 +463,7 @@
   "Diagnostic database query plan analysis",
   "Modular data transformation with dbt and schemas",
   "FastAPI Production Dependency and Background Task",
-  "Asynchronous background worker queue with Redis"
+  "Asynchronous background worker queue with Redis",
+  "Local SQLite data charting and visualization"
  ]
 }

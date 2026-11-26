@@ -1,20 +1,18 @@
-# Sources for 2026-11-25 (full)
+# Sources for 2026-11-26 (full)
 
-Learning concept: Queues and event-driven design
+Learning concept: Secrets management and API key hygiene
 
-- [An Indic Voice Agent with CUGA](https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga) (Hugging Face, 25 Nov 10:22 UTC)
-- [Yale’s Sonnenfeld: Nvidia is a ‘detriment’ to US industrial might — not a champion](https://techcrunch.com/2026/11/24/yales-sonnenfeld-nvidia-is-a-detriment-to-u-s-industrial-might-not-a-champion/) (TechCrunch AI, 25 Nov 00:12 UTC)
-- [Three LLM inflection points in twelve months](https://simonwillison.net/2026/Nov/24/llm-inflection-points/) (Simon Willison, 24 Nov 23:02 UTC)
-- [Jensen Huang still thinks a succession plan creates unnecessary hierarchy](https://techcrunch.com/2026/11/24/jensen-huang-still-thinks-a-succession-plan-creates-unnecessary-hierarchy/) (TechCrunch AI, 24 Nov 22:27 UTC)
-- [In all-hands meeting, Jensen Huang thanks White House and says he’s in therapy](https://techcrunch.com/2026/11/24/in-all-hands-meeting-jensen-huang-thanks-white-house-and-says-hes-in-therapy/) (TechCrunch AI, 24 Nov 21:48 UTC)
-- [Jensen Huang reportedly tells Nvidia staff it’s ‘not true’ Trump got him rehired](https://www.theverge.com/tech/1041571/jensen-huang-all-hands-nvidia-apology) (The Verge AI, 24 Nov 15:02 UTC)
-- [David Fincher is being dragged for suspected use of AI in his latest film](https://www.theverge.com/entertainment/1041417/david-fincher-netflix-cliff-booth-ai-interpositive) (The Verge AI, 24 Nov 13:15 UTC)
-- [Tidal will start banning AI-generated music next month](https://www.theverge.com/entertainment/1041362/tidal-ai-music-ban) (The Verge AI, 24 Nov 12:17 UTC)
-- [GPT 6.2 Astra Solves a Historical Mystery](https://simonwillison.net/2026/Nov/24/astra-historical-mystery/) (Simon Willison, 24 Nov 16:53 UTC)
-- [Microduck Obstacle Avoidance: A Sim2Real Workflow with Isaac Lab and Newton](https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance) (Hugging Face, 24 Nov 16:34 UTC)
-- [These are the gifts developers will actually want](https://github.blog/news-insights/company-news/these-are-the-gifts-developers-will-actually-want/) (GitHub Blog, 24 Nov 16:00 UTC)
-- [GPT-6 models demonstrate intrinsic protein-design capabilities](https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities) (OpenAI, 24 Nov 13:00 UTC)
-- [Amazon says hackers' AI agents found and exploited 0-day with little human input](https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/) (Ars Technica, 24 Nov 12:30 UTC)
-- [Searching for distant planets with Astra](https://openai.com/index/searching-for-distant-planets-with-astra) (OpenAI, 24 Nov 11:00 UTC)
-
-Feeds that failed: Google DeepMind
+- [42 state AGs are trying to stop Character.AI from selling users’ chats](https://www.theverge.com/policy/1042620/character-ai-sale-state-ags-block-selling-users-chats) (The Verge AI, 26 Nov 04:54 UTC)
+- [sqlite3_rsync: Database Remote-Copy Tool For SQLite](https://simonwillison.net/2026/Nov/26/sqlite3-rsync/) (Simon Willison, 26 Nov 06:08 UTC)
+- [Building on Nemotron 3.5 Parse: Open Data, Fine-Tuning, and Faster Inference](https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin) (Hugging Face, 26 Nov 05:05 UTC)
+- [Quoting Scott Aaronson](https://simonwillison.net/2026/Nov/25/scott-aaronson/) (Simon Willison, 25 Nov 23:26 UTC)
+- [S&P considers Nvidia credit downgrade over governance and ‘key man’ risks](https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/) (TechCrunch AI, 25 Nov 22:44 UTC)
+- [Google’s patent for custom AI video feeds paints a bleak picture of entertainment’s future](https://www.theverge.com/entertainment/1042221/google-my-channel-ai-video-patent) (The Verge AI, 25 Nov 16:51 UTC)
+- [OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work](https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/) (TechCrunch AI, 25 Nov 20:03 UTC)
+- [Jensen Huang broke Nvidia’s code of conduct, and his employees may not forget it](https://techcrunch.com/2026/11/25/jensen-huang-broke-nvidias-code-of-conduct-and-his-employees-may-not-forget-it/) (TechCrunch AI, 25 Nov 19:54 UTC)
+- [Where scientists draw the line on AI agents](https://huggingface.co/blog/allenai/where-scientists-draw-the-line-on-ai-agents) (Hugging Face, 25 Nov 18:52 UTC)
+- [Backblaze explains why it's sharing customer information with advertisers](https://arstechnica.com/information-technology/2026/11/backblaze-explains-why-its-sharing-customer-information-with-advertisers/) (Ars Technica, 25 Nov 18:38 UTC)
+- [datasette-charts 0.3a0](https://simonwillison.net/2026/Nov/25/datasette-charts/) (Simon Willison, 25 Nov 18:16 UTC)
+- [FCC signs off on SpaceX’s plan to put up to 1 million data center satellites into space](https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers) (The Verge AI, 25 Nov 12:44 UTC)
+- [Art of play in the age of AI](https://github.blog/news-insights/company-news/art-of-play-in-the-age-of-ai/) (GitHub Blog, 25 Nov 16:00 UTC)
+- [How to choose the next safe step in application modernization](https://github.blog/ai-and-ml/github-copilot/how-to-choose-the-next-safe-step-in-application-modernization/) (GitHub Blog, 25 Nov 15:00 UTC)

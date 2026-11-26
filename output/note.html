@@ -1,68 +1,58 @@
-<h1>Morning Brief: Wednesday 25 November 2026</h1>
+<h1>Morning Brief: Thursday 26 November 2026</h1>
 <h2>Weather</h2>
 <p>{{WEATHER}}</p>
 <h2>Top Stories</h2>
-<h3>LLM Inflection Points and Coding Agents</h3>
+<h3>sqlite3_rsync</h3>
 <ul>
-<li><b>What happened</b>: Simon Willison published a keynote breakdown detailing three major inflection points in LLM capabilities and coding agents over the past twelve months.</li>
-<li><b>Why it matters</b>: Developer workflows have shifted from simple text completions to autonomous agent loops and multi-step tool execution, altering production software engineering.</li>
-<li><b>Hype check</b>: It is a real structural development rather than marketing hype.</li>
-<li><b>Verdict</b>: Test.</li>
-<li><b>Your angle</b>: Connects to Project Jarvis, where you built a scheduled Python pipeline with state management; mastering execution loops builds skills in designing resilient agent orchestration systems.</li>
-<li><b>Source</b>: <a href="https://simonwillison.net/2026/Nov/24/llm-inflection-points/">Three LLM inflection points in twelve months</a></li>
+<li><b>What happened</b>: Simon Willison highlighted sqlite3_rsync, a database remote-copy tool for SQLite that handles remote backups and replication.</li>
+<li><b>Why it matters</b>: This is a real development for lightweight data tooling, moving past experimental phases into practical utility.</li>
+<li><b>Hype check</b>: Low hype, high practical utility for SQLite users.</li>
+<li><b>Verdict</b>: learn</li>
+<li><b>Your angle</b>: This connects directly to your work building local database workflows and SQLite-backed systems during your placement, giving you an edge in building robust offline-first automation pipelines.</li>
+<li><b>Source</b>: <a href="https://simonwillison.net/2026/Nov/26/sqlite3-rsync/">sqlite3_rsync: Database Remote-Copy Tool For SQLite</a></li>
 </ul>
-<h3>Autonomous AI Agents Discover Zero-Day Exploits</h3>
+<h3>OpenAI Merges Chat and Work</h3>
 <ul>
-<li><b>What happened</b>: Amazon revealed that its Cairn AI framework enabled autonomous agents to discover and exploit zero-day security vulnerabilities with minimal human input.</li>
-<li><b>Why it matters</b>: Demonstrates an escalation in autonomous software reasoning, showing agent systems can independently navigate complex codebases and state transitions.</li>
-<li><b>Hype check</b>: It is a genuine development with serious implications for modern security engineering.</li>
-<li><b>Verdict</b>: Learn.</li>
-<li><b>Your angle</b>: Links to your experience with API integrations and background processing scripts, reinforcing the need for strict payload validation and secure API architecture.</li>
-<li><b>Source</b>: <a href="https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/">Amazon says hackers' AI agents found and exploited 0-day with little human input</a></li>
+<li><b>What happened</b>: OpenAI is merging its chat and work experiences under a single usage meter, which may cause heavy users to hit limits sooner.</li>
+<li><b>Why it matters</b>: This is a practical shift in LLM product tiers rather than a deep architectural breakthrough.</li>
+<li><b>Hype check</b>: Moderate product update with direct user impact.</li>
+<li><b>Verdict</b>: test</li>
+<li><b>Your angle</b>: This ties into your Project Jarvis setup where you rely on scheduled LLM calls and automated briefings, helping you build graceful degradation and fallback handling.</li>
+<li><b>Source</b>: <a href="https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/">OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work</a></li>
 </ul>
-<h3>Tidal Bans AI-Generated Music</h3>
+<h3>SpaceX Data Center Satellites</h3>
 <ul>
-<li><b>What happened</b>: Tidal announced it will begin banning AI-generated music on December 9th, deleting roughly 29 million tracks and rejecting up to 85,000 new tracks daily.</li>
-<li><b>Why it matters</b>: Signals a major policy pivot across media platforms toward filtering out synthetic content at scale.</li>
-<li><b>Hype check</b>: It is a real operational decision driven by business and legal pressures.</li>
-<li><b>Verdict</b>: Learn.</li>
-<li><b>Your angle</b>: Connects to your data work at Redo Print and Design cleaning marketplace data, highlighting the underlying engineering challenge of automated classification and data quality filtering at high throughput.</li>
-<li><b>Source</b>: <a href="https://www.theverge.com/entertainment/1041362/tidal-ai-music-ban">Tidal will start banning AI-generated music next month</a></li>
-</ul>
-<h3>GPT-6 Protein-Design Capabilities</h3>
-<ul>
-<li><b>What happened</b>: OpenAI released findings showing GPT-6 models demonstrate intrinsic protein-design capabilities by using internal reasoning and Python execution to generate valid lab-tested protein structures.</li>
-<li><b>Why it matters</b>: Shows how deep reasoning models expand into scientific modeling by writing and running execution code internally.</li>
-<li><b>Hype check</b>: It is a real technical advancement in applied artificial intelligence.</li>
-<li><b>Verdict</b>: Learn.</li>
-<li><b>Your angle</b>: Parallels Claude2InDesign, where abstract requirements were translated into concrete, structured document definitions using model reasoning.</li>
-<li><b>Source</b>: <a href="https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities">GPT-6 models demonstrate intrinsic protein-design capabilities</a></li>
+<li><b>What happened</b>: The FCC signed off on SpaceX's plan to put up to one million data center satellites into space under the Starmind initiative.</li>
+<li><b>Why it matters</b>: This is a massive regulatory and long-term infrastructure announcement, though heavily forward-looking.</li>
+<li><b>Hype check</b>: High futuristic hype with distant implementation timelines.</li>
+<li><b>Verdict</b>: ignore</li>
+<li><b>Your angle</b>: It sits far outside junior deployment horizons with no honest link to your current print automation or data engineering work.</li>
+<li><b>Source</b>: <a href="https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers">FCC signs off on SpaceX’s plan to put up to 1 million data center satellites into space</a></li>
 </ul>
 <h2>Automation Opportunity</h2>
 <ul>
-<li><b>What it is</b>: Implementing a background task queue using Redis and Python Queue or Celery.</li>
-<li><b>Problem it solves</b>: Prevents slow interfaces and system timeouts caused by blocking API endpoints while waiting for long-running operations.</li>
-<li><b>Free to try</b>: Completely free to set up locally with Redis and Python.</li>
-<li><b>Skill gained</b>: Builds essential skills in API design and asynchronous workflow management.</li>
+<li><b>What it is</b>: Datasette with the datasette-charts plugin, which now supports chart annotations with lines, shaded areas, and labels.</li>
+<li><b>Problem it solves</b>: Quickly turns SQLite databases into interactive, visual data reports without spinning up a heavy frontend framework.</li>
+<li><b>Free to try</b>: Yes, completely free to try locally.</li>
+<li><b>Skill gained</b>: Builds your data analysis and visualization skills, fitting neatly alongside your pandas and SQL experience.</li>
 </ul>
-<h2>Learning Moment: Queues and Event-Driven Design</h2>
+<h2>Learning Moment: secrets management and API key hygiene</h2>
 <ul>
-<li>Sequential execution in basic scripts causes the entire workflow to halt if one component fails or delays.</li>
-<li>Event-driven design decouples components by sending event payloads to a central queue where independent consumer processes process them at their own pace.</li>
-<li>Queues guarantee reliability, decouple heavy processing from user interfaces, and allow systems to scale horizontally by adding worker processes.</li>
-<li><b>Example:</b> In job card print automation, an API accepts a uploaded photo, writes its file location to a queue, and immediately responds to the user; a background worker reads the queue, runs the vision model, updates Google Sheets, and triggers printing without hanging the app or losing data if the printer is offline.</li>
+<li>Hardcoding API keys or database credentials directly into source code is a major security risk that leaks access to paid services or internal systems.</li>
+<li>Credentials should be stored in environment variables using a local dot env file during development, and injected via CI/CD secrets or cloud provider parameter stores in production.</li>
+<li><b>Example:</b> In a FastAPI or Python automation script, you load configuration using a library like pydantic settings rather than writing raw strings.</li>
 </ul>
 <h2>Career Move</h2>
 <ul>
-<li>Frame your print automation work on your CV and in interviews as an unattended business process pipeline rather than simple scripts.</li>
-<li>Highlight how you separated image ingestion from vision processing and sheet updates, handled network boundary conditions, and kept infrastructure costs at zero.</li>
+<li>Frame your work on Claude2InDesign from your placement at Redo Print and Design as an end-to-end document processing pipeline that replaced a manual workflow, rather than just a script.</li>
+<li>Detail how it handles structured outputs, multi-page document packaging, and automated quality assurance reporting to emphasize business context and problem-solving.</li>
 </ul>
 <h2>Today's Mission</h2>
-<p>Complete a quick 15-to-30-minute practical exercise to build a simulated event-driven job queue in Python.</p>
+<p>Write a small Python script that uses a dot env file to load a simulated API key and database connection string safely, validating that the configuration object raises a clear startup error if any required environment variable is missing.</p>
 <ul>
-<li>☐ Write a simple Python script using the built-in queue module to simulate an event-driven job queue.</li>
-<li>☐ Create a producer function that places five mock print job dictionaries into the queue.</li>
-<li>☐ Create a worker function running in a separate thread that reads jobs from the queue, simulates a short delay using sleep, and prints a success message.</li>
-<li>☐ Test that the queue handles tasks sequentially without blocking the main execution thread.</li>
-<li>☐ Save the script to your portfolio repository and commit it to GitHub.</li>
+<li>☐ Initialize a new Python project directory with a virtual environment.</li>
+<li>☐ Install python-dotenv and pydantic-settings for configuration management.</li>
+<li>☐ Create a local `.env` file containing sample environment variables.</li>
+<li>☐ Write a Python script using Pydantic to load and validate the configuration schema.</li>
+<li>☐ Test that missing required variables trigger a clear and informative startup error.</li>
 </ul>
