@@ -1,11 +1,6 @@
 {
- "curriculum_index": 50,
+ "curriculum_index": 51,
  "seen": [
-  "https://huggingface.co/blog/nvidia/kumo-relational",
-  "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
-  "https://openai.com/index/att-legal",
-  "https://simonwillison.net/2026/Oct/21/panache/",
-  "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
   "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/",
   "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
   "https://openai.com/index/openai-nask-ai-safety-security-partnership",
@@ -400,10 +395,14 @@
   "https://simonwillison.net/2026/Nov/25/datasette-charts/",
   "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
   "https://github.blog/news-insights/company-news/art-of-play-in-the-age-of-ai/",
-  "https://github.blog/ai-and-ml/github-copilot/how-to-choose-the-next-safe-step-in-application-modernization/"
+  "https://github.blog/ai-and-ml/github-copilot/how-to-choose-the-next-safe-step-in-application-modernization/",
+  "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
+  "https://techcrunch.com/2026/11/26/as-anthropic-ipos-grand-theft-auto-vi-proves-why-efficiency-isnt-a-virtue/",
+  "https://simonwillison.net/2026/Nov/26/jack-despain-zhou/",
+  "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
+  "https://simonwillison.net/2026/Nov/26/hn-50651685/"
  ],
  "missions": [
-  "Write a Python script logging structured JSON trace metrics for a simulated model call to a local log file.",
   "Write a Python script using functools lru_cache to demonstrate token estimation and query deduplication for cost control.",
   "Write a Python script using urllib that sends a completion heartbeat ping to an external endpoint wrapped in error logging.",
   "Write a pytest script mocking an external model response to verify parsing and error handling for job card data.",
@@ -432,10 +431,10 @@
   "Write a Python script transforming raw order data into a structured schema",
   "Write a FastAPI app with custom dependency verification and background request logging.",
   "Write a Python queue script simulating event-driven print job processing in a background thread.",
-  "Write a Python script that securely loads configuration via environment variables with validation."
+  "Write a Python script that securely loads configuration via environment variables with validation.",
+  "Write a Python function that wraps model calls and logs prompt metadata and latency to a J.S.O.N. lines file."
  ],
  "opportunities": [
-  "Structured OpenTelemetry tracing for model workflows",
   "Local API validation caching with cachetools",
   "Automated scheduled pipeline health check monitoring",
   "Automated schema drift logging with Pydantic",
@@ -464,6 +463,7 @@
   "Modular data transformation with dbt and schemas",
   "FastAPI Production Dependency and Background Task",
   "Asynchronous background worker queue with Redis",
-  "Local SQLite data charting and visualization"
+  "Local SQLite data charting and visualization",
+  "Structured local L.L.M. trace wrapper logging"
  ]
 }

@@ -1,58 +1,68 @@
-<h1>Morning Brief: Thursday 26 November 2026</h1>
+<h1>Morning Brief: Friday 27 November 2026</h1>
 <h2>Weather</h2>
 <p>{{WEATHER}}</p>
 <h2>Top Stories</h2>
-<h3>sqlite3_rsync</h3>
+<h3>Nvidia Pauses Server Shipments to Southeast Asia</h3>
 <ul>
-<li><b>What happened</b>: Simon Willison highlighted sqlite3_rsync, a database remote-copy tool for SQLite that handles remote backups and replication.</li>
-<li><b>Why it matters</b>: This is a real development for lightweight data tooling, moving past experimental phases into practical utility.</li>
-<li><b>Hype check</b>: Low hype, high practical utility for SQLite users.</li>
-<li><b>Verdict</b>: learn</li>
-<li><b>Your angle</b>: This connects directly to your work building local database workflows and SQLite-backed systems during your placement, giving you an edge in building robust offline-first automation pipelines.</li>
-<li><b>Source</b>: <a href="https://simonwillison.net/2026/Nov/26/sqlite3-rsync/">sqlite3_rsync: Database Remote-Copy Tool For SQLite</a></li>
+<li><b>What happened:</b> Nvidia instructed manufacturing partners to pause server shipments to Malaysia, Singapore, Thailand, and Indonesia due to tightened US trade restrictions targeting China.</li>
+<li><b>Why it matters:</b> Highlights geopolitical hardware friction and potential restrictions or cost increases on high-end server hardware.</li>
+<li><b>Hype check:</b> Significant geopolitical hardware development rather than software marketing.</li>
+<li><b>Verdict:</b> Ignore macro hardware friction and focus on software portability.</li>
+<li><b>Your angle:</b> Underlines the value of understanding model quantization and hardware-agnostic runtime tools to optimize software for standard architecture.</li>
+<li><b>Source:</b> <a href="https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/">TechCrunch AI</a></li>
 </ul>
-<h3>OpenAI Merges Chat and Work</h3>
+<h3>Essay Highlights AI De-individualization in Writing</h3>
 <ul>
-<li><b>What happened</b>: OpenAI is merging its chat and work experiences under a single usage meter, which may cause heavy users to hit limits sooner.</li>
-<li><b>Why it matters</b>: This is a practical shift in LLM product tiers rather than a deep architectural breakthrough.</li>
-<li><b>Hype check</b>: Moderate product update with direct user impact.</li>
-<li><b>Verdict</b>: test</li>
-<li><b>Your angle</b>: This ties into your Project Jarvis setup where you rely on scheduled LLM calls and automated briefings, helping you build graceful degradation and fallback handling.</li>
-<li><b>Source</b>: <a href="https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/">OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work</a></li>
+<li><b>What happened:</b> Jack Despain Zhou published an essay on how widespread language models make written communication sound uniform across talks and pitches.</li>
+<li><b>Why it matters:</b> Shows a growing industry problem of homogenized written communication.</li>
+<li><b>Hype check:</b> Real observation of a growing industry problem, not marketing hype.</li>
+<li><b>Verdict:</b> Learn from it.</li>
+<li><b>Your angle:</b> Connects to Project Jarvis, where you built a personalized daily audio briefing pipeline.</li>
+<li><b>Source:</b> <a href="https://simonwillison.net/2026/Nov/26/jack-despain-zhou/">Simon Willison</a></li>
 </ul>
-<h3>SpaceX Data Center Satellites</h3>
+<h3>Hugging Face Launches llama.cpp Benchmark Dashboard for AMD</h3>
 <ul>
-<li><b>What happened</b>: The FCC signed off on SpaceX's plan to put up to one million data center satellites into space under the Starmind initiative.</li>
-<li><b>Why it matters</b>: This is a massive regulatory and long-term infrastructure announcement, though heavily forward-looking.</li>
-<li><b>Hype check</b>: High futuristic hype with distant implementation timelines.</li>
-<li><b>Verdict</b>: ignore</li>
-<li><b>Your angle</b>: It sits far outside junior deployment horizons with no honest link to your current print automation or data engineering work.</li>
-<li><b>Source</b>: <a href="https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers">FCC signs off on SpaceX’s plan to put up to 1 million data center satellites into space</a></li>
+<li><b>What happened:</b> Hugging Face released an official llama.cpp benchmark dashboard tailored for AMD Ryzen processors and Radeon graphics cards.</li>
+<li><b>Why it matters:</b> Provides clear performance data for running open-source LLMs locally on standard desktop hardware.</li>
+<li><b>Hype check:</b> Practical tooling development for local open-source AI performance tracking.</li>
+<li><b>Verdict:</b> Test this dashboard.</li>
+<li><b>Your angle:</b> Connects to your job card print automation project, helping evaluate local model inference latency and memory footprints for low-cost vision and language processing.</li>
+<li><b>Source:</b> <a href="https://huggingface.co/blog/ggml-org/llamacpp-amd-bench">Hugging Face</a></li>
+</ul>
+<h3>New York Times Warns Against Photoshop Update Over AI Features</h3>
+<ul>
+<li><b>What happened:</b> The NYT advised photojournalists not to update Adobe Photoshop because new generative AI features could alter underlying image data.</li>
+<li><b>Why it matters:</b> Generative features risk violating strict editorial and regulatory standards in enterprise media workflows.</li>
+<li><b>Hype check:</b> Real governance issue for digital asset workflows.</li>
+<li><b>Verdict:</b> Learn.</li>
+<li><b>Your angle:</b> Connects to your Claude to InDesign project, reinforcing the importance of respecting asset integrity and enterprise compliance rules in automated layout workflows.</li>
+<li><b>Source:</b> <a href="https://simonwillison.net/2026/Nov/26/hn-50651685/">Simon Willison</a></li>
 </ul>
 <h2>Automation Opportunity</h2>
 <ul>
-<li><b>What it is</b>: Datasette with the datasette-charts plugin, which now supports chart annotations with lines, shaded areas, and labels.</li>
-<li><b>Problem it solves</b>: Quickly turns SQLite databases into interactive, visual data reports without spinning up a heavy frontend framework.</li>
-<li><b>Free to try</b>: Yes, completely free to try locally.</li>
-<li><b>Skill gained</b>: Builds your data analysis and visualization skills, fitting neatly alongside your pandas and SQL experience.</li>
+<li><b>What it is:</b> Open-source tracing for local AI calls using simple structured logging wrappers (e.g., standard library logging or Logfire).</li>
+<li><b>Problem it solves:</b> Lack of visibility into latency, token consumption, and failure modes when integrating third-party APIs or local models into automation pipelines.</li>
+<li><b>Free to try:</b> Yes, can be built completely free using standard Python libraries or open-source tools.</li>
+<li><b>Skill gained:</b> Backend reliability, failure handling, and operational monitoring.</li>
 </ul>
-<h2>Learning Moment: secrets management and API key hygiene</h2>
+<h2>Learning Moment: Logging, Tracing, and Observability for LLM Applications</h2>
 <ul>
-<li>Hardcoding API keys or database credentials directly into source code is a major security risk that leaks access to paid services or internal systems.</li>
-<li>Credentials should be stored in environment variables using a local dot env file during development, and injected via CI/CD secrets or cloud provider parameter stores in production.</li>
-<li><b>Example:</b> In a FastAPI or Python automation script, you load configuration using a library like pydantic settings rather than writing raw strings.</li>
+<li>Traditional logging tracks status codes, database errors, and basic request latency.</li>
+<li>LLM applications introduce new failure modes like non-deterministic outputs, prompt token spikes, silent formatting failures, and API timeouts.</li>
+<li>AI observability requires capturing three core elements per request: exact input prompt, full raw output, and execution metadata (token usage, cost, elapsed time).</li>
+<li>Tracing records the complete chain of events when an agent makes multiple decisions or tool calls before returning a final output.</li>
+<li>Observability turns fragile scripts into reliable business systems, aiding prompt evaluation, failure diagnosis, and cost optimization.</li>
+<li><b>Example:</b> In a print order pipeline, an un-monitored LLM returning invalid JSON causes downstream code to throw an unexpected exception and fail silently, whereas a proper observability wrapper logs the prompt, raw completion, parse timestamp, and exact error to pinpoint the breakdown immediately.</li>
 </ul>
 <h2>Career Move</h2>
 <ul>
-<li>Frame your work on Claude2InDesign from your placement at Redo Print and Design as an end-to-end document processing pipeline that replaced a manual workflow, rather than just a script.</li>
-<li>Detail how it handles structured outputs, multi-page document packaging, and automated quality assurance reporting to emphasize business context and problem-solving.</li>
+<li>Frame your automated job card print workflow on your resume/portfolio as an unattended end-to-end computer vision and physical automation system rather than a simple Python script.</li>
+<li>Detail how you handled failure cases, managed local state, and integrated free-tier APIs to process physical paper artifacts dispatched directly to a Fiery print controller.</li>
 </ul>
 <h2>Today's Mission</h2>
-<p>Write a small Python script that uses a dot env file to load a simulated API key and database connection string safely, validating that the configuration object raises a clear startup error if any required environment variable is missing.</p>
+<p>Build a Python wrapper around an AI API call or mock completion that logs structured request and execution metadata to a local file.</p>
 <ul>
-<li>☐ Initialize a new Python project directory with a virtual environment.</li>
-<li>☐ Install python-dotenv and pydantic-settings for configuration management.</li>
-<li>☐ Create a local `.env` file containing sample environment variables.</li>
-<li>☐ Write a Python script using Pydantic to load and validate the configuration schema.</li>
-<li>☐ Test that missing required variables trigger a clear and informative startup error.</li>
+<li>☐ Write a single Python wrapper function for an AI API call or mock completion.</li>
+<li>☐ Capture request prompt, response text, latency in milliseconds, and token count inside the wrapper.</li>
+<li>☐ Automatically append the metadata as a structured JSON record into a local log file named `traces.jsonl`.</li>
 </ul>
