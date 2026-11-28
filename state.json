@@ -1,18 +1,6 @@
 {
- "curriculum_index": 51,
+ "curriculum_index": 52,
  "seen": [
-  "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/",
-  "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
-  "https://openai.com/index/openai-nask-ai-safety-security-partnership",
-  "https://huggingface.co/blog/microsoft/thinkingbox-training",
-  "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
-  "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
-  "https://www.theverge.com/tech/1017082/meta-terms-update-ai-training-concerns",
-  "https://www.theverge.com/tech/1017066/meta-muse-sharing-back-on-artifiacts",
-  "https://arstechnica.com/security/2026/10/disgraced-emudhra-drops-out-of-tls-business-following-certificate-debacle/",
-  "https://simonwillison.net/2026/Oct/22/de-staat-freedom/",
-  "https://openai.com/index/decisions-api",
-  "https://simonwillison.net/2026/Oct/22/donating-agent-skills/",
   "https://github.blog/security/how-bug-bounty-sharpens-one-researchers-security-skills/",
   "https://huggingface.co/blog/allenai/olmoearth-v1-3",
   "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
@@ -400,10 +388,21 @@
   "https://techcrunch.com/2026/11/26/as-anthropic-ipos-grand-theft-auto-vi-proves-why-efficiency-isnt-a-virtue/",
   "https://simonwillison.net/2026/Nov/26/jack-despain-zhou/",
   "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
-  "https://simonwillison.net/2026/Nov/26/hn-50651685/"
+  "https://simonwillison.net/2026/Nov/26/hn-50651685/",
+  "https://simonwillison.net/2026/Nov/27/datasette-charts/",
+  "https://www.theverge.com/tech/1041801/android-intelligence-create-my-widget-gemini",
+  "https://simonwillison.net/2026/Nov/27/datasette-mcp/",
+  "https://huggingface.co/blog/video-trainium3",
+  "https://huggingface.co/blog/training-swarms",
+  "https://techcrunch.com/2026/11/25/anthropics-dario-amodei-calls-accusations-of-surrendering-human-control-to-ai-absurd/",
+  "https://techcrunch.com/2026/11/25/want-to-buy-your-kid-an-ai-toy-this-christmas-not-in-new-york/",
+  "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/",
+  "https://www.theverge.com/gadgets/1042162/nothing-ear-note-ai-earbuds-reveal",
+  "https://www.theverge.com/tech/1042071/meta-amazon-muse-ai-shopping-discussions",
+  "https://huggingface.co/blog/inkling-2-mini-inference-hillclimb",
+  "https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity/"
  ],
  "missions": [
-  "Write a Python script using functools lru_cache to demonstrate token estimation and query deduplication for cost control.",
   "Write a Python script using urllib that sends a completion heartbeat ping to an external endpoint wrapped in error logging.",
   "Write a pytest script mocking an external model response to verify parsing and error handling for job card data.",
   "Write a Python script that sanitises input text and wraps it in delimited tags with basic override phrase detection.",
@@ -432,10 +431,10 @@
   "Write a FastAPI app with custom dependency verification and background request logging.",
   "Write a Python queue script simulating event-driven print job processing in a background thread.",
   "Write a Python script that securely loads configuration via environment variables with validation.",
-  "Write a Python function that wraps model calls and logs prompt metadata and latency to a J.S.O.N. lines file."
+  "Write a Python function that wraps model calls and logs prompt metadata and latency to a J.S.O.N. lines file.",
+  "Write a Python script calculating token costs and savings with simulated prompt caching discounts."
  ],
  "opportunities": [
-  "Local API validation caching with cachetools",
   "Automated scheduled pipeline health check monitoring",
   "Automated schema drift logging with Pydantic",
   "Deterministic document boundary input sanitisation",
@@ -464,6 +463,7 @@
   "FastAPI Production Dependency and Background Task",
   "Asynchronous background worker queue with Redis",
   "Local SQLite data charting and visualization",
-  "Structured local L.L.M. trace wrapper logging"
+  "Structured local L.L.M. trace wrapper logging",
+  "Automated document line item database extraction pipeline"
  ]
 }
